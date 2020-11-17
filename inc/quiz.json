@@ -1,0 +1,27 @@
+{
+    "OpPrec and OrdOfEval" :
+    {
+        "NumQuestions" : "3",
+        "1" :
+        {
+            "Question" : "Encapsulate the appropriate operator with the variable in a set of parenthesis. What is the output? Be careful about the behavior of the postfix operator.",
+            "Code" : "``Cint`~ x = ``M10`~;\\n``TTrial`~ *tPtr = ``Rnew`~ ``tTrial`~;\\n",
+            "Output" : "OUTPUT:``N10",
+            "NumLines" : "1\\n2\\n"
+        },
+        "2" :
+        {
+            "Question" : "Encapsulate the appropriate operator with the variable in a set of parenthesis. What is the output? Be careful about the behavior of the postfix operator.",
+            "Code" : "``Cint`~ x = ``M10`~;\\n``TTrial`~ *tPtr = ``Rnew`~ ``tTrial`~;\\n",
+            "Output" : "OUTPUT:``N10",
+            "NumLines" : "1\\n2\\n"
+        },
+        "3" :
+        {
+            "Question" : "Encapsulate the appropriate operator with the variable in a set of parenthesis. What is the output? Be careful about the behavior of the postfix operator.",
+            "Code" : "``Cint`~ x = ``M10`~;\\n``TTrial`~ *tPtr = ``Rnew`~ ``tTrial`~;\\n",
+            "Output" : "NULL",
+            "NumLines" : "1\\n2\\n"
+        }
+    }
+}
