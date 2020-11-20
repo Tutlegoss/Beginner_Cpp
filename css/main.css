@@ -25,9 +25,9 @@ footer {
 	flex-shrink: 0;
 	background-color: rgb(0, 0, 0);
 	color: white;
-	border-top: 4px solid transparent;
-	border-image: linear-gradient(to right, #EFAB00,#F8EB61,  #4994CB, #002664);
-	border-image-slice: 1;
+	border: 4px solid;
+    border-image: linear-gradient(to right, #EFAB00,#F8EB61,  #4994CB, #002664) 1;
+    border-width:4px 0 0 0;
 }
 
 footer p, #banner p {
@@ -42,7 +42,14 @@ footer p, #banner p {
 #article {
 	color: rgb(230, 230, 230);
 	background-color: rgb(26, 26, 26);
-	min-height: calc(100vh - 114px); /* 114 = Navbar + Footer */
+	min-height: calc(100vh - 114px); /* 114 = Navbar 60 + 54 Footer */
+}
+
+@media only screen and (max-width: 767.98px)
+{
+	#article {
+		min-height: calc(100vh - 110.8px); /* Compressed Navbar 57.4/56.8 + 54 Footer */
+	}
 }
 
 /* I need a hover color that isn't so dark on every button */
@@ -88,10 +95,9 @@ nav img, footer img {
 }
 
 #banner {
-	border-bottom: 3px solid transparent;
-	border-top: 3px solid transparent;
-	border-image: linear-gradient(to right, #EFAB00,#F8EB61,  #4994CB, #002664);
-	border-image-slice: 1;
+	border: 3px solid;
+	border-image: linear-gradient(to right, #EFAB00,#F8EB61,  #4994CB, #002664) 1;
+    border-width: 3px 0 3px 0;
 	background-color:  #002664;
 	text-align: center;
 	font-size: 2rem;
@@ -165,9 +171,8 @@ a:active {
 }
 
 hr {
-	border-top: 3px solid transparent;
-	border-image: linear-gradient(to right, #EFAB00, #F8EB61,  #4994CB, #002664);
-	border-image-slice: 1;
+	border-top: 3px solid;
+	border-image: linear-gradient(to right, #EFAB00, #F8EB61,  #4994CB, #002664) 1;
 	margin-top: -5px;
 }
 
@@ -320,11 +325,6 @@ p.text-justify {
 	font-size: 0.9rem;
 }
 
-	/* Comment style */
-.exBoxComment {
-	margin-right: 25%;
-}
-
 /* Colored number list / Bullet point style */
 li {
 	counter-increment: li;
@@ -384,6 +384,13 @@ li {
 
 .code table tr td:first-child {
 	width: 3%;
+	min-width: 3%;
+	max-width: 3%;
+	left: 0;
+	position: -webkit-sticky;
+   	position: sticky;
+	box-shadow: inset 0 15px 12px -12px rgb(56,56,56);
+	background-color: rgb(0, 0, 0);
 }
 
 /* textareas */
@@ -434,4 +441,15 @@ li {
 .replyLink {
     z-index: 100;
     cursor: pointer;
+}
+
+.exBoxComment {
+	margin-right: 25%;
+}
+
+@media only screen and (max-width: 767.98px)
+{
+	.exBoxComment {
+		margin-right: 0;
+	}
 }
