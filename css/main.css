@@ -35,10 +35,6 @@ footer p, #banner p {
 	line-height: 50px;
 }
 
-#content {
-	flex: 1 0 auto;
-}
-
 #article {
 	color: rgb(230, 230, 230);
 	background-color: rgb(26, 26, 26);

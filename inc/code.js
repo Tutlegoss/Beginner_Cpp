@@ -1,5 +1,10 @@
 
 	$(document).ready(function() {
+		window.addEventListener('beforeunload', (event) => {
+			event.preventDefault();
+			event.returnValue = 'Input will be lost.';
+		});
+		
 		$('#add').click(function() {
 			$('.form-group').append('<br>');
 			$('.form-group').append('<textarea class="form-control ln col-1" rows="1"></textarea> \

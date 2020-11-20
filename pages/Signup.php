@@ -104,57 +104,55 @@
 <body>
 	<?php require_once("../inc/navbar.inc.php"); ?>
 
-	<div id="content">
-		<div class="container-fluid">
-			<div class="row">
-				<div id="article" class="col-12">
-					<div class="container d-flex h-100">
-						<div class="row justify-content-center align-self-center mx-auto">
-							<div class="col-12" id="accountTxt">
-								<h3 class="heading">Sign Up</h3>
-								<hr style="border-color: #002664;">
-								<p>Accounts are currently for Kent State students only.</p>
-								<?php loggedIn(); validateSignup() ?>
-								<form action="Signup.php" method="POST">
-									<div class="form-group">
-										<table>
-											<tr>
-												<td>
-													<label class="kentYellow mt-2" for="Email">Email</label>
-												</td>
-												<td class="pl-4">
-													<input class="fieldSize" type="email" name="Email" id="Email"
-                                                           pattern="^(.)*@kent.edu$" placeholder="@kent.edu required" required>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<label class="kentBlue mt-2" for="Username">Username</label>
-												</td>
-												<td class="pl-4">
-													<input class="fieldSize" type="text" name="Username" id="Username" minlength="1"
-                                                           maxlength="16" pattern="^\w{1,16}$" placeholder="1-16 Alphanums|No spaces" required>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<label class="mt-2 text-white" for="Password">Password</label>
-												</td>
-												<td class="pl-4">
-													<input class="fieldSize" type="password" name="Password" id="Password"
-                                                           minlength="1" maxlength="30" pattern=".{8,30}" placeholder="8-30 Chars" required>
-												</td>
-											</tr>
-										</table>
-										<button class="btn btnBlue mt-3" type="submit" id="newAcct">Submit</button>
-									</div>
-								</form>
-							</div>
+	<div class="container-fluid">
+	<div class="row">
+	<div id="article" class="col-12">
+		<div class="container d-flex h-100">
+			<div class="row justify-content-center align-self-center mx-auto">
+				<div class="col-12" id="accountTxt">
+					<h3 class="heading">Sign Up</h3>
+					<hr style="border-color: #002664;">
+					<p>Accounts are currently for Kent State students only.</p>
+					<?php loggedIn(); validateSignup() ?>
+					<form action="Signup.php" method="POST">
+						<div class="form-group">
+							<table>
+								<tr>
+									<td>
+										<label class="kentYellow mt-2" for="Email">Email</label>
+									</td>
+									<td class="pl-4">
+										<input class="fieldSize" type="email" name="Email" id="Email"
+                                               pattern="^(.)*@kent.edu$" placeholder="@kent.edu required" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label class="kentBlue mt-2" for="Username">Username</label>
+									</td>
+									<td class="pl-4">
+										<input class="fieldSize" type="text" name="Username" id="Username" minlength="1"
+                                               maxlength="16" pattern="^\w{1,16}$" placeholder="1-16 Alphanums|No spaces" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label class="mt-2 text-white" for="Password">Password</label>
+									</td>
+									<td class="pl-4">
+										<input class="fieldSize" type="password" name="Password" id="Password"
+                                               minlength="1" maxlength="30" pattern=".{8,30}" placeholder="8-30 Chars" required>
+									</td>
+								</tr>
+							</table>
+							<button class="btn btnBlue mt-3" type="submit" id="newAcct">Submit</button>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
+	</div>
+	</div>
 	</div>
 
 	<?php

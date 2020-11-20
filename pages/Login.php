@@ -36,7 +36,7 @@
 				$_SESSION['Username']  = $accountCheck['Username'];
 				$_SESSION['Privilege'] = $accountCheck['Privilege'];
 				$_SESSION['ID']        = $accountCheck['ID'];
-                
+
 				goToIndex();
 			}
 		}
@@ -54,49 +54,47 @@
 
 	<?php require_once("../inc/navbar.inc.php"); ?>
 
-	<div id="content">
-		<div class="container-fluid">
-			<div class="row">
-				<div id="article" class="col-12">
-					<div class="container d-flex h-100">
-						<div class="row justify-content-center align-self-center mx-auto">
-							<div class="col-12" id="accountTxt">
-								<h3 class="heading">Log In</h3>
-								<hr style="border-color: #002664;">
-								<?php loggedIn(); validateLogin(); ?>
-								<form action="Login.php" method="POST">
-									<div class="form-group">
-										<table>
-											<tr>
-												<td>
-													<label class="mt-2 kentBlue" for="Username">Username</label>
-												</td>
-												<td class="pl-4">
-													<input class="fieldSize" type="text" name="Username" id="Username" required>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<label class="mt-2 kentYellow" for="Password">Password</label>
-												</td>
-												<td class="pl-4">
-													<input class="fieldSize" type="password" name="Password" id="Password" pattern=".{8,30}" required>
-												</td>
-											</tr>
-										</table>
-										<button type="submit" class="btn btnBlue mt-3">Submit</button>
-										<br>
-										<br>
-										<a href="./Forgot.php">Forgot Password?</a><span class="kentYellow"> | </span>
-										<a href="./Signup.php">Sign Up</a>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
+	<div class="container-fluid">
+	<div class="row">
+	<div id="article" class="col-12">
+		<div class="container d-flex h-100">
+		<div class="row justify-content-center align-self-center mx-auto">
+		<div class="col-12" id="accountTxt">
+			<h3 class="heading">Log In</h3>
+			<hr style="border-color: #002664;">
+			<?php loggedIn(); validateLogin(); ?>
+			<form action="Login.php" method="POST">
+				<div class="form-group">
+					<table>
+						<tr>
+							<td>
+								<label class="mt-2 kentBlue" for="Username">Username</label>
+							</td>
+							<td class="pl-4">
+								<input class="fieldSize" type="text" name="Username" id="Username" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="mt-2 kentYellow" for="Password">Password</label>
+							</td>
+							<td class="pl-4">
+								<input class="fieldSize" type="password" name="Password" id="Password" pattern=".{8,30}" required>
+							</td>
+						</tr>
+					</table>
+					<button type="submit" class="btn btnBlue mt-3">Submit</button>
+					<br>
+					<br>
+					<a href="./Forgot.php">Forgot Password?</a><span class="kentYellow"> | </span>
+					<a href="./Signup.php">Sign Up</a>
 				</div>
-			</div>
+			</form>
 		</div>
+		</div>
+		</div>
+	</div>
+	</div>
 	</div>
 
 	<?php

@@ -11,6 +11,7 @@
 			return array("message" => "Empty comment - comment failed to be inserted.",
 						 "comment" => $_POST['comment'], "parentNum" => strtolower($_POST['parentNum']));
 		}
+
 		/* Prevent duplicate inserton */
         if(isset($_SESSION['SameText']) && isset($_SESSION['SameParent']))
         {
@@ -20,13 +21,13 @@
         }
 
 		/* Prevent too large of a comment */
-
 		$comment = addslashes($_POST['comment']);
-		if(strlen($comment) > 4096)
+		if(strlen($comment) > 4500)
 		{
 			return array("message" => "Comment is too large. Please keep it &lt;= 4096 characters.",
 						 "comment" => $_POST['comment'], "parentNum" => strtolower($_POST['parentNum']));
 		}
+
 
 		$timestamp = date("Y-m-d H:i:s");
 		$parentNum = ($_POST['parentNum'] == "NULL") ? NULL : $_POST['parentNum'];
@@ -97,8 +98,14 @@
 			$openOrClose = 0;
 			while(($pos = strpos($comment, "```")) !== FALSE)
             {
+				/* Opening ``` */
 				if($openOrClose % 2 === 0)
                 {
+					/*
+						There is text before the code section
+						However, in the case of two code sections back to back, there
+						will be an empty <p class='text-white'></p> between them 
+					*/
 					if($pos !== 0)
 						$comment = substr_replace($comment, "</p>", $pos, 0);
 					$comment = substr_replace($comment, $exCodeStart, strpos($comment, "```"), 3);
@@ -109,22 +116,23 @@
 			}
 
 			/* Indicate how many code sections there are (will be a multiple of 2) */
-			$openOrClose = $openOrClose / 2.0;
+			$openOrClose = $openOrClose / 2;
 
-			/* Insert <p> after </div> */
+			/* Insert <p class='text-white'> after </div> to match with above </p> */
 			$pos = 0;
-			while($openOrClose-- > 0.0)
+			while($openOrClose-- > 0)
             {
 				$pos = strpos($comment, "</div>", $pos+1);
 				$comment = substr_replace($comment, "<p class='text-white'>", $pos + 6, 0);
 			}
 			$comment .= "</p>";
 
-			/* Remove trailing <p> </p> if no text after last code section */
+			/* Remove trailing <p class='text-white'> </p> if no text after last code section */
 			if(preg_match("/^[\s\S]+<p class='text-white'>[\s]*<\/p>$/m", $comment))
             {
 				$comment = substr($comment, 0, strrpos($comment, "<p"));
 			}
+
 			return $comment;
 		}
 		else
