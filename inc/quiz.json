@@ -1,27 +1,51 @@
 {
-    "OpPrec and OrdOfEval" :
+    "JSON Test" :
     {
         "NumQuestions" : "3",
         "1" :
         {
             "Question" : "Encapsulate the appropriate operator with the variable in a set of parenthesis. What is the output? Be careful about the behavior of the postfix operator.",
+            "NumLines" : "1\\n2\\n",
             "Code" : "``Cint`~ x = ``M10`~;\\n``TTrial`~ *tPtr = ``Rnew`~ ``tTrial`~;\\n",
             "Output" : "OUTPUT:``N10",
-            "NumLines" : "1\\n2\\n"
+            "NumOptions" : "3",
+            "Options" :
+            {
+                "1" : "``Y*`~(ptr``Y++`~);",
+                "2" : "B",
+                "3" : "C"
+            },
+            "Answer" : "1"
         },
         "2" :
         {
             "Question" : "Encapsulate the appropriate operator with the variable in a set of parenthesis. What is the output? Be careful about the behavior of the postfix operator.",
+            "NumLines" : "1\\n2\\n",
             "Code" : "``Cint`~ x = ``M10`~;\\n``TTrial`~ *tPtr = ``Rnew`~ ``tTrial`~;\\n",
             "Output" : "OUTPUT:``N10",
-            "NumLines" : "1\\n2\\n"
+            "NumOptions" : "3",
+            "Options" :
+            {
+                "1" : "``Y*`~(ptr``Y++`~);",
+                "2" : "",
+                "3" : ""
+            },
+            "Answer" : ""
         },
         "3" :
         {
             "Question" : "Encapsulate the appropriate operator with the variable in a set of parenthesis. What is the output? Be careful about the behavior of the postfix operator.",
+            "NumLines" : "1\\n2\\n",
             "Code" : "``Cint`~ x = ``M10`~;\\n``TTrial`~ *tPtr = ``Rnew`~ ``tTrial`~;\\n",
             "Output" : "NULL",
-            "NumLines" : "1\\n2\\n"
+            "NumOptions" : "3",
+            "Options" :
+            {
+                "1" : "``Y*`~(ptr``Y++`~);",
+                "2" : "",
+                "3" : ""
+            },
+            "Answer" : ""
         }
     }
 }
