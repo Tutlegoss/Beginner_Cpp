@@ -28,12 +28,12 @@
 <figure class="code">
 <pre><table class="table borderless my-auto">
 <tr>
-<td><pre id="lineNum" class="co-o">
+<td><pre id="lineNum" class="! co-o">
 </pre></td>
-<td><pre class="co-g" id="sourceCode">
+<td><pre class="@ co-g" id="sourceCode">
 </pre></td>
 </tr></table></pre>
-<p class="ml-2 mb-2" id="output"></p>
+<p class="% ml-2 mb-2" id="output"></p>
 </figure>
 </div>
 

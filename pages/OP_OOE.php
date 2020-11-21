@@ -27,12 +27,11 @@
 		<div class="exBoxYellow">
 			<p class="yellow exBoxTitle text-center mt-3">Prerequisites</p>
 			<ul>
-				<li>
+				<li class="mb-3">
 					Truth tables for <span class="yellow">logical AND (&amp;&amp;)</span> and
                     <span class="yellow">logical OR (||)</span>
 				</li>
-				<br>
-				<li>
+				<li class="mb-3">
 					<span class="yellow">PEMDAS</span> or <span class="yellow">BEDMAS</span>
                     - Basic mathematical order of operations
 					<ol class="numberedList">
@@ -58,27 +57,27 @@
 		<div class="exBoxCyan">
 			<p class="cyan exBoxTitle text-center mt-3">Terms and Definitions</p>
 			<ul>
-				<li>
+				<li class="mb-3">
 					<span class="cyan">Short-Circuit Evaluation</span> -
 					If the left-hand side of a boolean expression determines the outcome, the right-hand
                     side isn't evaluated
 				</li>
-				<br>
-				<li>
+
+				<li class="mb-3">
 					<span class="cyan">Operator</span> - A symbol or keyword denoting an operation, such as
 					<span class="co-y">+</span> (addition), <span class="co-y">++</span> (prefix increment),
 					<span class="co-y">new</span> (dynamic memory allocation)
 				</li>
-				<br>
-				<li>
+
+				<li class="mb-3">
 					<span class="cyan">Unary Operator</span> - An operator that takes one operand
 				</li>
-				<br>
-				<li>
+
+				<li class="mb-3">
 					<span class="cyan">Binary Operator</span> - An operator that takes two operands
 				</li>
-				<br>
-				<li>
+
+				<li class="mb-3">
 					<span class="cyan">Operand</span> -
 					An argument to an operator; An expression
 					<br>(e.g. <span class="co-m">A</span><span class="co-y"> + </span>
@@ -86,8 +85,8 @@
 					and <span class="co-m">9</span> are operands of the<span class="co-y"> + </span>
                     operator)
 				</li>
-				<br>
-				<li>
+
+				<li class="mb-3">
 					<span class="cyan">Operator Precedence</span> -
 					Levels (that are derived from the grammar) indicating how operators are parsed
 					<br>[e.g. <span class="co-m">x</span><span class="co-y"> * </span>
@@ -97,8 +96,8 @@
 					and operators with a lower precedence level have higher priority (see table below)
                     [compile-time]
 				</li>
-				<br>
-				<li>
+
+				<li class="mb-3">
 					<span class="cyan">Associativity</span> -
 					The direction in which operators are parsed
 					<br>[e.g. <span class="co-m">x</span><span class="co-y"> = </span>
@@ -109,8 +108,8 @@
 					(<span class="co-m">z</span> <span class="co-y">=</span> <span class="co-m">2</span>))]
 					since the assignment operator is parsed right-to-left [compile-time]
 				</li>
-				<br>
-				<li>
+
+				<li class="mb-3">
 					<span class="cyan">Order of Evaluation</span> -
 					The sequence that operator's operands are processed;
 					C++ has no specified sequence in most contexts <br>(e.g. <span class="co-m">A</span>
@@ -119,12 +118,12 @@
                     or <span class="co-y">++</span><span class="co-m">B </span>to be evaluated first)
                     [runtime]
 				</li>
-				<br>
-				<li>
+
+				<li class="mb-3">
 					<span class="cyan">LHS / lhs</span> -
 					Left-hand side (left operand of operator)
 				</li>
-				<br>
+
 				<li>
 					<span class="cyan">RHS / rhs</span> -
 					Right-hand side (right operand of operator)
@@ -459,6 +458,7 @@ addl  <span class="co-c">%</span>edx, <span class="co-c">%</span>eax      <span 
 movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="co-c">(%</span>rbp<span class="co-c">)</span> <span class="co-w">/* Store register eax into <span class="co-g">output</span> on the stack */</span>
 </pre></td>
 </tr></table></pre>
+<p class="ml-2 mb-2"></p>
 </figure>
 		</div>
 		<p class="text-justify ml-2 mr-2 mt-3">
@@ -595,20 +595,20 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
 		<div class="exBoxGreen">
 			<p class="green exBoxTitle text-center mt-3">Key Points</p>
 			<ul>
-				<li>
+				<li class="mb-3">
 					Operator Precedence does not affect Order of Evaluation
 				</li>
-				<li>
+				<li class="mb-3">
 					Order of Evaluation of operands is largly unspecified and is a runtime concept.
 					There are exceptions, such as the LHS of logical OR and logical AND operators will
 					be evaluated before the RHS (concept of short-circuit evalation)
 				</li>
-				<li>
+				<li class="mb-3">
 					Operator Precedence is a compile-time concept and determines how the expression will
                     be parsed. That is, the higher the priority (the lower the level number) the
 					closer its operands are bound to the operator
 				</li>
-				<li>
+				<li class="mb-3">
 					Unary operators' associativity is used when at least two unary operators of the
 					same precedence level are attached to a single operand
 				</li>
@@ -649,8 +649,8 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
 
     <script>
     	$(document).ready(function() {
-            $('.lasc').css('color','rgb(245, 239, 66)');
-    		$('.rasc').css('color','rgb(255, 255, 255)');
+            $('.lasc').css('color','white');
+    		$('.rasc').css('color','rgb(255, 140, 0)');
 
             <?php
                 if($replaceText)
