@@ -8,7 +8,7 @@
 
 */
 
-/* Overall style */
+/* -------------------- Overall style -------------------- */
 html {
 	height: 100%;
 }
@@ -30,12 +30,13 @@ footer {
     border-width:4px 0 0 0;
 }
 
-footer p, #banner p {
+footer p, #banner p { /* See Navbar for footer img */
 	height: 50px;
 	line-height: 50px;
 }
 
 #article {
+	font-size: 1.1rem;
 	color: rgb(230, 230, 230);
 	background-color: rgb(26, 26, 26);
 	min-height: calc(100vh - 114px); /* 114 = Navbar 60 + 54 Footer */
@@ -48,16 +49,12 @@ footer p, #banner p {
 	}
 }
 
-/* I need a hover color that isn't so dark on every button */
-button:hover {
-	color: #AEEAE5 !important;
-}
-
-.exBoxGreen, .exBoxCyan, .exBoxPurple, .exBoxPurple, .exBoxYellow, .exFont span, #precTable, .code pre, .inst {
+.exBoxGreen, .exBoxCyan, .exBoxPurple, .exBoxPurple,
+.exBoxYellow, .exFont span, #precTable, .code pre {
 	font-family: 'Roboto Mono', monospace;
 }
 
-/* Navbar */
+/* -------------------- Navbar -------------------- */
 nav img, footer img {
 	width: 70px;
 	height: 30px;
@@ -71,6 +68,10 @@ nav img, footer img {
 	border-radius: 0;
 }
 
+#search {
+	border-radius: 0;
+}
+
 @media only screen and (max-width: 575.98px)
 {
 	#search {
@@ -78,7 +79,20 @@ nav img, footer img {
 	}
 }
 
-/* index.php */
+button#toggler {
+	color: white;
+	border-color: #F8EB61;
+}
+
+#nav-CSI, #nav-Blog {
+	color: #F8EB61;
+}
+
+#nav-CSII {
+ 	color: #4994CB;
+}
+
+/* -------------------- index.php -------------------- */
 .img-size img {
 	width: 75%;
 }
@@ -90,6 +104,7 @@ nav img, footer img {
 	}
 }
 
+	/* index.php banner */
 #banner {
 	border: 3px solid;
 	border-image: linear-gradient(to right, #EFAB00,#F8EB61,  #4994CB, #002664) 1;
@@ -100,67 +115,7 @@ nav img, footer img {
 	margin: 0 -15px;
 }
 
-@media only screen and (max-width: 575.98px)
-{
-	#banner {
-		font-size: 1.4rem;
-	}
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767.98px)
-{
-	#banner {
-		font-size: 1.8rem;
-	}
-}
-
-/*
-	Primary Kent colors for buttons / All hex values are Kent colors
-	except when the alpha channel is utilized
-	#002664 -> rgb(0, 38, 100)
-	#EFAB00 -> rgb(239, 171, 0)
-	https://www.kent.edu/web-standards/redesign-colors
-*/
-
-.btnBlue {
-    background-color: rgb(0, 38, 100);
-	background-color: rgba(0, 38, 100, 0.3);
-	border-color: #4994CB;
-	color: #FFF;
-}
-
-.btnYellow {
-    background-color: rgb(239, 171, 0);
-	background-color: rgba(239, 171, 0, 0.3);
-	border-color: #F8EB61;
-	color: #FFF;
-}
-
-.btnBlack {
-    background-color: rgb(0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.3);
-	border-color: #FFF;
-	color: #FFF;
-}
-
-/* Links LVHA */
-a:link {
-	color: #4994CB;
-}
-
-a:visited {
-	color: #4994CB;
-}
-
-a:hover {
-	color: #F8EB61;
-}
-
-a:active {
-	color: #F8EB61;
-}
-
-/* Article styling */
+/* -------------------- Article styling -------------------- */
 .heading {
 	color: #FFF;
 	font-weight: 500;
@@ -183,7 +138,61 @@ hr {
 	padding: 0 0.5%;
 }
 
-/* Code colors*/
+/* -------------------- Buttons -------------------- */
+/*	#002664 -> rgb(0, 38, 100) , #EFAB00 -> rgb(239, 171, 0) */
+
+.btnSub {
+	background-color:  rgb(55, 212, 97);
+	background-color:  rgba(55, 212, 97, 0.6);
+	border-color: rgb(0, 0, 0);
+	color: #FFF;
+}
+
+.btnBlue {
+    background-color: rgb(0, 38, 100);
+	background-color: rgba(0, 38, 100, 0.3);
+	border-color: #4994CB;
+	color: #FFF;
+}
+
+.btnYellow {
+    background-color: rgb(239, 171, 0);
+	background-color: rgba(239, 171, 0, 0.3);
+	border-color: #F8EB61;
+	color: #FFF;
+}
+
+.btnBlack {
+    background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.3);
+	border-color: #FFF;
+	color: #FFF;
+}
+
+.btnSub:hover, .btnBlue:hover,
+.btnYellow:hover, .btnBlack:hover {
+	color: #FF0000;
+}
+
+/* -------------------- Links LVHA -------------------- */
+a:link {
+	color: #4994CB;
+}
+
+a:visited {
+	color: #4994CB;
+}
+
+a:hover {
+	color: #F8EB61;
+}
+
+a:active {
+	color: #F8EB61;
+}
+
+/* -------------------- Colors -------------------- */
+	/* Code */
 .co-c {
 	color: cyan;
 }
@@ -216,7 +225,7 @@ hr {
 	color: rgb(255, 255, 0);
 }
 
-/* Normal text colors for the exBoxes */
+	/* exBoxes text */
 .cyan {
 	color: rgb(40, 209, 212);
 }
@@ -229,12 +238,7 @@ hr {
 	color: rgb(203, 222, 27);
 }
 
-/* Secondary colors for Kent */
-/*
-	I can't get these colors to work on the navbar without !important
-	or putting style="kentYellow" directly in the html tag, so the
-	latter option is what I have for now
-*/
+	/* Secondary colors */
 .kentYellow {
 	color: #F8EB61;
 }
@@ -243,7 +247,7 @@ hr {
 	color: #4994CB;
 }
 
-/* Text area paddng - See @media below */
+/* -------------------- Text area paddng -------------------- See @media below */
 p.text-justify {
 	padding: 0 5%;
 }
@@ -252,7 +256,7 @@ p.text-justify {
 	padding: 0 10%;
 }
 
-/* Colored boxes */
+/* -------------------- Colored boxes -------------------- */
 	/* Borders */
 .exBoxGreen {
 	border: 3px solid rgb(55, 212, 97);
@@ -276,17 +280,12 @@ p.text-justify {
 	box-shadow: inset 0 0 15px 2px rgb(56, 56, 56);
 	padding-right: 10px;
 	background-color: rgb(0, 0, 0);
-	font-size: 0.9rem;
+	font-size: 0.95rem;
 }
 
 .exBoxGreen, .exBoxCyan, .exBoxPurple, .exBoxYellow {
 	margin-left: 15%;
 	margin-right: 15%;
-}
-
-.exBoxPurpleQuiz, .questionQuiz {
-	margin-left: 0;
-	margin-right: 60%;
 }
 
 @media only screen and (max-width: 767.98px)
@@ -302,7 +301,7 @@ p.text-justify {
 }
 
 .exFont span {
-	font-size: 0.9rem;
+	font-size: 0.95rem;
 	padding: 0 2px 1px 2px;
 }
 
@@ -313,15 +312,38 @@ p.text-justify {
 
 	/* Green style */
 .exBoxGreen li:nth-child(even) {
-	color: rgb(125, 171, 146);
+	color: rgb(55, 212, 97);
 }
 
-	/* Purple style */
-.exBoxPurple p, .exBoxPurpleQuiz p {
-	font-size: 0.9rem;
+/* -------------------- Example code -------------------- */
+.code {
+	padding-left: 1%;
+	margin: 0 0;
 }
 
-/* Colored number list / Bullet point style */
+.code pre {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 0.95rem;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.exBoxPurple .code table tr td:first-child,
+.exBoxPurpleQuiz .code table tr td:first-child {
+	width: 3%;
+	min-width: 3%;
+	max-width: 3%;
+	left: 0;
+	position: -webkit-sticky;
+   	position: sticky;
+	box-shadow: inset 0 15px 12px -12px rgb(56,56,56);
+	background-color: rgb(0, 0, 0);
+}
+
+/* -------------------- Colored number list / Bullet point style -------------------- */
 li {
 	counter-increment: li;
 }
@@ -339,7 +361,7 @@ li {
 	margin-left: -1rem;
 }
 
-/* Table (for Operator Precedence and may change to a universal table) */
+/* -------------------- Table -------------------- */
 #precTable {
 	font-size: 0.9rem;
 	border: 2px inset rgb(0, 0, 0);
@@ -354,77 +376,22 @@ li {
 }
 
 #precTable tr:nth-child(even) td:not(:first-child){
-	color: rgb(125, 171, 146);
+	color: rgb(55, 212, 97);
 }
 
 #precTable tr td:first-child {
-	color: rgb(245, 239, 66);
+	color: rgb(255, 140, 0);
 	text-align: center;
 }
 
-/* Example code */
-.code {
-	padding-left: 1%;
-	margin: 0 0;
-}
-
-.code pre {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 0.9rem;
-}
-
-.borderless td, .borderless th {
-    border: none;
-}
-
-.code table tr td:first-child {
-	width: 3%;
-	min-width: 3%;
-	max-width: 3%;
-	left: 0;
-	position: -webkit-sticky;
-   	position: sticky;
-	box-shadow: inset 0 15px 12px -12px rgb(56,56,56);
-	background-color: rgb(0, 0, 0);
-}
-
-/* textareas */
+/* -------------------- textareas -------------------- */
 .ln, .sc, #out, .ln:focus, .sc:focus, #out:focus, .commentEntry, .commentEntry:focus {
 	resize: none;
 	background-color: rgb(0, 0, 0);
 	color: rgb(230, 230, 230);
 }
 
-/* Links to articles */
-.csLinks > div {
-	padding: 0 2px;
-}
-
-.csLinks button {
-	font-weight: bold;
-	font-size: 1.1rem;
-	height: 100px;
-}
-
-/* Login and Signup */
-.fieldSize {
-	height: 35px;
-}
-
-#accountTxt p {
-	font-size: 1.05rem;
-}
-
-#accountTxt label {
-	font-size: 1.15rem;
-}
-
-#accountTxt input {
-	min-width: 250px;
-}
-
-/* Comment section */
+/* -------------------- Comment section -------------------- */
 .commentBorder {
 	border-top: 1px solid #4994CB;
 	border-bottom: 1px solid #F8EB61;
@@ -448,4 +415,32 @@ li {
 	.exBoxComment {
 		margin-right: 0;
 	}
+}
+
+/* -------------------- Topics -------------------- */
+.csLinks > div {
+	padding: 0 2px;
+}
+
+.csLinks button {
+	font-weight: bold;
+	font-size: 1.1rem;
+	height: 100px;
+}
+
+/* -------------------- Login and Signup -------------------- */
+.fieldSize {
+	height: 35px;
+}
+
+#accountTxt p {
+	font-size: 1.05rem;
+}
+
+#accountTxt label {
+	font-size: 1.15rem;
+}
+
+#accountTxt input {
+	min-width: 250px;
 }
