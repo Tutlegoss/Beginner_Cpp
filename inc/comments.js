@@ -1,16 +1,17 @@
 
 /* In case of comment insertion error, restore state of comment */
-function replaceText(comment, commentNum)
+function replaceText(commentError)
 {
-    if(commentNum !== 'null')
+    /* Any existing comments */
+    if(commentError.parent !== 'null')
     {
-        var clickReply = "#reply" + commentNum + " span.replyLink";
-        var textBox = "#reply" + commentNum + "form textarea";
+        var textBox = "#reply" + commentError.parent + "form textarea";
 
+        /* Since comment IDs will not be in order, find the right one */
         var index = -1;
         $('.replyLink').each(function() {
             ++index;
-            if($(this).parent().attr('id').substr(5) == commentNum)
+            if($(this).parent().attr('id').substr(5) == commentError.parent)
                 return false;
         });
 
@@ -18,12 +19,12 @@ function replaceText(comment, commentNum)
         if(index != -1)
         {
             $('.replyLink')[index].click();
-            $(textBox).val(comment);
+            $(textBox).val(commentError.comment);
         }
     }
     else
     {
-        $('#actionString textArea').val(comment);
+        $('#actionString textArea').val(commentError.comment);
     }
 
     return;

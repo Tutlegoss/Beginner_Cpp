@@ -4,7 +4,7 @@
 			event.preventDefault();
 			event.returnValue = 'Input will be lost.';
 		});
-		
+
 		$('#add').click(function() {
 			$('.form-group').append('<br>');
 			$('.form-group').append('<textarea class="form-control ln col-1" rows="1"></textarea> \
@@ -34,7 +34,7 @@
         {
             // Create new element
 		    var code = document.createElement('textarea');
-			code.value = $('#result').prop('outerHTML');
+			code.value = $('.exBoxPurple').prop('outerHTML');
 			// Set non-editable to avoid focus and move outside of view
 			code.setAttribute('readonly', '');
 			code.style = {position: 'absolute', left: '-9999px'};
@@ -80,10 +80,26 @@
 			$("#sourceCode").empty();
 			$("#output").empty();
 
+
 			$("#lineNum").html(lineNums);
 			$("#sourceCode").html(source);
 			$("#output").html(output);
 
+			/*
+				Remove id's because more than one of these code blocks
+			    will go in a single article
+			*/
+			$("#result").removeAttr('id');
+			$("#lineNum").removeAttr('id');
+			$("#sourceCode").removeAttr('id');
+			$("#output").removeAttr('id');
+
             clipboard();
+
+			/* Put them back in; weird class symbols to ensure correct area */
+			$(".exBoxPurple").attr('id', 'result');
+			$(".\\!").attr('id', 'lineNum');
+			$(".\\@").attr('id', 'sourceCode');
+			$(".\\%").attr('id', 'output');
 		});
 	});
