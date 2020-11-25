@@ -36,6 +36,7 @@
 				$_SESSION['Username']  = $accountCheck['Username'];
 				$_SESSION['Privilege'] = $accountCheck['Privilege'];
 				$_SESSION['ID']        = $accountCheck['ID'];
+                $_SESSION['IP']        = $_SERVER['REMOTE_ADDR'];
 
 				goToIndex();
 			}
@@ -59,37 +60,33 @@
 	<div id="article" class="col-12">
 		<div class="container d-flex h-100">
 		<div class="row justify-content-center align-self-center mx-auto">
-		<div class="col-12" id="accountTxt">
+		<div class="col-12 mt-5 mt-md-0 mb-5 mb-md-0" id="accountTxt">
 			<h3 class="heading">Log In</h3>
-			<hr style="border-color: #002664;">
+			<hr>
 			<?php loggedIn(); validateLogin(); ?>
 			<form action="Login.php" method="POST">
-				<div class="form-group">
-					<table>
-						<tr>
-							<td>
-								<label class="mt-2 kentBlue" for="Username">Username</label>
-							</td>
-							<td class="pl-4">
-								<input class="fieldSize" type="text" name="Username" id="Username" required>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<label class="mt-2 kentYellow" for="Password">Password</label>
-							</td>
-							<td class="pl-4">
-								<input class="fieldSize" type="password" name="Password" id="Password" pattern=".{8,30}" required>
-							</td>
-						</tr>
-					</table>
-					<button type="submit" class="btn btnBlue mt-3">Submit</button>
-					<br>
-					<br>
-					<a href="./Forgot.php">Forgot Password?</a><span class="kentYellow"> | </span>
-					<a href="./Signup.php">Sign Up</a>
-				</div>
-			</form>
+                <div class="row mx-auto">
+                    <div class="col-12 col-md-3">
+                        <label class="mt-2 kentBlue" for="Username">Username</label>
+                    </div>
+                    <div class="col-12 col-md-9 align-self-center">
+                        <input class="fieldSize" type="text" name="Username" id="Username" required>
+                   </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col-12 col-md-3 mt-2 mt-md-0">
+                        <label class="mt-2 kentYellow" for="Password">Password</label>
+                    </div>
+                    <div class="col-12 col-md-9 align-self-center">
+                        <input class="fieldSize" type="password" name="Password" id="Password" pattern=".{8,30}" required>
+                    </div>
+                  </div>
+                <button type="submit" class="btn btnBlue mt-4">Submit</button>
+				<br>
+				<br>
+				<a href="./Forgot.php">Forgot Password?</a><span class="kentYellow"> | </span>
+				<a href="./Signup.php">Sign Up</a>
+            </form>
 		</div>
 		</div>
 		</div>

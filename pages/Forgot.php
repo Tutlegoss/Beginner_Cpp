@@ -105,28 +105,25 @@
 	<div id="article" class="col-12">
 		<div class="container d-flex h-100">
 		<div class="row justify-content-center align-self-center mx-auto">
-		<div class="col-12" id="accountTxt">
+		<div class="col-12 mt-5 mt-md-0 mb-5 mb-md-0" id="accountTxt">
 				<h3 class="heading">Forgot Password</h3>
-				<hr style="border-color: #002664;">
+				<hr>
 				<?php if(validateEmail() === FALSE) { ?>
 					<p>Enter your email and a link will be sent to reset your password.</p>
 
 					<form action="Forgot.php" method="POST">
-						<div class="form-group">
-							<table>
-								<tr>
-									<td>
-										<label class="kentYellow mt-2" for="Email">Email</label>
-									</td>
-									<td class="pl-4">
-										<input class="fieldSize" type="email" name="Email"
-                                               id="Email" placeholder="@kent.edu" required>
-									</td>
-								</tr>
-							</table>
-							<button type="submit" class="btn btnBlue mt-3">Submit</button>
-						</div>
-					</form>
+                        <div class="row mx-auto">
+                            <div class="col-12 col-md-3">
+                                <label class="kentYellow mt-2" for="Email">Email</label>
+                            </div>
+                            <div class="col-12 col-md-9 align-self-center">
+                                <input class="fieldSize" type="email" name="Email"
+                                       id="Email" placeholder="@kent.edu" required>
+                           </div>
+                       </div>
+                        <button type="submit" class="btn btnBlue mt-4">Submit</button>
+                    </form>
+
 				<?php } ?>
 			</div>
 			</div>
