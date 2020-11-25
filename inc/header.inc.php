@@ -28,7 +28,7 @@
 	<link rel="icon" href="<?php echo $headerData["Path"]; ?>img/K_Ico.png">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet"/>
+	<link href="<?php echo $headerData["Path"]; ?>/inc/fa/css/all.min.css" rel="stylesheet"/>
 
 	<!-- Directory relative to article page and not header.inc.php -->
 	<script src="<?php echo $headerData["Path"]; ?>inc/jquery-3.5.1.min.js"></script>

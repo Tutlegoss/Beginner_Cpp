@@ -15,7 +15,8 @@
                 "2" : "B",
                 "3" : "C"
             },
-            "Answer" : "1"
+            "Answer" : "1",
+            "Explanation" : "Because I said so"
         },
         "2" :
         {
@@ -30,7 +31,8 @@
                 "2" : "",
                 "3" : ""
             },
-            "Answer" : ""
+            "Answer" : "",
+            "Explanation" : "Because I said so"
         },
         "3" :
         {
@@ -45,7 +47,8 @@
                 "2" : "",
                 "3" : ""
             },
-            "Answer" : ""
+            "Answer" : "",
+            "Explanation" : "Because I said so"
         }
     }
 }
