@@ -1,0 +1,57 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+.tree-view {
+  // background-color: whitesmoke;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  // color: white;
+  // background-color: hsl(180, 24%, 12%);
+}
+
+// THESE ARE MY MODIFICATIONS ---------------------------------------------------------------------------------
+@font-face {
+  font-family: 'Adam';
+  src:  url('C:/Users/Tutlegoss/Downloads/Glass_TTY_VT220.ttf') format('truetype');
+}
+.leading-whitespace {
+    color: #060606;
+}
+atom-text-editor.is-focused .selection .region {
+  background-color: rgb(10,30,40);
+}
+.highlight.find-result .region {
+    background-color: #421;
+    border: 1px inset;
+}
+.highlight.current-result .region,
+.highlight.current-result ~ .highlight.selection .region {
+  background-color: #128; // to distinguish from the other results
+}
+// ------------------------------------------------------------------------------------------------------------
+
+// style UI elements inside atom-text-editor
+atom-text-editor .cursor {
+  // border-color: red;
+}
+
+atom-notification.error {
+display: none;
+}
