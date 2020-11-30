@@ -1,0 +1,635 @@
+/*
+	Bootstrap Sizing:
+	XS: <576
+	SM: >=576
+	MD: >=768
+	LG: >=992
+	XL: >=1200
+
+*/
+
+/* -------------------- Overall style -------------------- */
+::selection {
+  background: rgb(0, 100, 100, 0.4); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgb(0, 100, 100, 0.4); /* Gecko Browsers */
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Share Tech Mono', Monospace;
+}
+
+footer {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	border: 4px solid #002664;
+    border-image: linear-gradient(to right, #EFAB00,#F8EB61,  #4994CB, #002664) 1;
+    border-width:4px 0 0 0;
+}
+
+footer p, #banner p { /* See Navbar for footer img */
+	height: 50px;
+	line-height: 50px;
+}
+
+#article {
+	font-size: 1.1rem;
+	color: rgb(230, 230, 230);
+	background-color: rgb(26, 26, 26);
+	min-height: calc(100vh - 114px); /* 114 = Navbar 60 + 54 Footer */
+}
+
+@media only screen and (max-width: 767.98px)
+{
+	#article {
+		min-height: calc(100vh - 110.8px); /* Compressed Navbar 57.4/56.8 + 54 Footer */
+	}
+}
+
+/* -------------------- Navbar -------------------- */
+nav img, footer img {
+	width: 70px;
+	height: 30px;
+}
+
+.navbar-dark {
+	background-color: rgb(0, 0, 0);
+}
+
+#collapsibleNavbar:first-child {
+    flex-shrink: 0;
+}
+
+#collapsibleNavbar ul li
+{
+    white-space: nowrap;
+}
+
+#collapsibleNavbar form {
+	border-radius: 0;
+}
+
+#nav-CSI, #nav-Blog {
+	color: #F8EB61;
+}
+
+#nav-CSII {
+ 	color: #4994CB;
+}
+
+#nav-form {
+    min-width: 0;
+}
+
+#search {
+	border-radius: 0;
+    min-width: 0;
+    width: 80%;
+}
+
+button#toggler {
+	color: white;
+	border-color: #F8EB61;
+}
+
+#nav-Account {
+    background-color: rgb(0, 38, 100);
+    background-color: rgba(0, 38, 100, 0.92);
+	border: 2px solid #4994CB;
+    right: 0;
+    left: auto;
+    margin-top: 11%;
+}
+
+#nav-Account a {
+	color: #F8EB61;
+}
+
+#nav-Account a:hover {
+	color: #F8EB61;
+	background-color: rgb(26, 26, 26);
+}
+
+
+@media only screen and (max-width: 767.98px)
+{
+	#search {
+		width: 200px;
+		max-width: 200px;
+	}
+
+	#nav-Account {
+		width: 200px;
+		max-width: 200px;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+	}
+}
+
+/* -------------------- index.php -------------------- */
+.img-size img {
+	width: 75%;
+}
+
+@media only screen and (min-width: 767.98px) and (max-width: 1199.98px)
+{
+	.img-size img {
+		width: 100%;
+	}
+}
+
+	/* index.php banner */
+#banner {
+	border: 3px solid;
+	border-image: linear-gradient(to right, #EFAB00,#F8EB61,  #4994CB, #002664) 1;
+    border-width: 3px 0 3px 0;
+	background-color:  #002664;
+	text-align: center;
+	font-size: 2rem;
+	margin: 0 -15px;
+}
+
+/* -------------------- Article styling -------------------- */
+.heading {
+	color: #FFF;
+	font-weight: 500;
+}
+
+hr {
+	border-top: 3px solid;
+	border-image: linear-gradient(to right, #EFAB00, #F8EB61,  #4994CB, #002664) 1;
+	margin-top: -5px;
+}
+
+.pre {
+	white-space: pre;
+}
+
+.highlight {
+    background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 1px inset rgb(50, 50, 50);
+	padding: 0 0.5%;
+}
+
+/* -------------------- Buttons -------------------- */
+/*	#002664 -> rgb(0, 38, 100) , #EFAB00 -> rgb(239, 171, 0) */
+
+.btnBlue {
+    background-color: rgb(0, 38, 100);
+	background-color: rgba(0, 38, 100, 0.3);
+	border-color: #4994CB;
+	color: #FFF;
+}
+
+.btnYellow {
+    background-color: rgb(239, 171, 0);
+	background-color: rgba(239, 171, 0, 0.3);
+	border-color: #F8EB61;
+	color: #FFF;
+}
+
+.btnBlack {
+    background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.3);
+	border-color: #FFF;
+	color: #FFF;
+}
+
+/* Quiz submit button */
+@-webkit-keyframes pulse {
+      0% { background-color: rgba(55, 212, 97, 0.6); -webkit-box-shadow: 0 0 0 #4994cb;}
+	 20% { background-color: rgba(55, 212, 255, 0.6); -webkit-box-shadow: 0 0 8px #42f551;}
+	 40% { background-color: rgba(55, 212, 255, 0.6); -webkit-box-shadow: 0 0 16px #4994cb;}
+	 50% { background-color: rgba(55, 212, 255, 0.6); -webkit-box-shadow: 0 0 20px #42f551;}
+	 60% { background-color: rgba(55, 212, 255, 0.6); -webkit-box-shadow: 0 0 16px #4994cb;}
+	 80% { background-color: rgba(55, 212, 255, 0.6); -webkit-box-shadow: 0 0 8px #42f551;}
+	100% { background-color: rgba(55, 212, 97, 0.6); -webkit-box-shadow: 0 0 0 #4994cb;}
+}
+
+.btnQuiz {
+	color: rgb(255, 255, 255);
+	border: 3px inset rgb(255, 255, 255);
+	background-color: rgba(55, 212, 97, 0.6);
+    -webkit-animation-name: pulse;
+	-webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-box-shadow: 0 0 20px rgba(55, 212, 97, 0.6);
+}
+
+.cancel {
+	border: 2px inset magenta;
+	color: magenta;
+}
+
+.cancel:hover {
+	background: rgb(255, 0, 255, 0.3);
+	color: white;
+}
+
+/* -------------------- Links LVHA -------------------- */
+a:link {
+	color: #4994CB;
+}
+
+a:visited {
+	color: #4994CB;
+}
+
+a:hover {
+	color: #F8EB61;
+}
+
+a:active {
+	color: #F8EB61;
+}
+
+/* -------------------- Colors -------------------- */
+	/* Code */
+.co-c {
+	color: cyan;
+}
+
+.co-g {
+	color: rgb(70, 255, 46);
+}
+
+.co-kg {
+	color: rgb(10, 200, 120);
+}
+
+.co-m {
+	color: magenta;
+}
+
+.co-o {
+	color: rgb(255, 140, 0);
+}
+
+.co-r {
+	color: red;
+}
+
+.co-t {
+	color: rgb(61, 245, 161);
+}
+
+.co-w {
+	color: rgb(255, 255, 255);
+}
+
+.co-y {
+	color: rgb(255, 255, 0);
+}
+
+	/* exBoxes text */
+.cyan {
+	color: rgb(40, 209, 212);
+}
+
+.green {
+	color: rgb(55, 212, 97);
+}
+
+.yellow {
+	color: rgb(203, 222, 27);
+}
+
+	/* Secondary colors */
+.kentYellow {
+	color: #F8EB61;
+}
+
+.kentBlue {
+	color: #4994CB;
+}
+
+/* -------------------- Text area paddng -------------------- See @media below */
+p.text-justify {
+	padding: 0 5%;
+}
+
+.indent-list {
+	padding: 0 10%;
+}
+
+/* -------------------- Colored boxes -------------------- */
+	/* Font */
+
+.exBoxGreen, .exBoxCyan, .exBoxPurple, .exBoxPurpleQuiz, .exBoxComment,
+.exBoxYellow, .exBoxKelly, .exBoxMagenta, .exFont span, #precTable, .code pre {
+	font-family: 'Roboto Mono', monospace;
+}
+
+	/* Borders */
+
+.exBoxCyan {
+	border: 3px solid rgb(40, 209, 212);
+}
+
+.exBoxGreen {
+	border: 3px solid rgb(55, 212, 97);
+}
+
+.exBoxKelly {
+	border: 3px solid rgb(10, 200, 120);
+}
+
+.exBoxMagenta {
+	border: 3px solid magenta;
+}
+
+.exBoxPurple, .exBoxPurpleQuiz, .exBoxComment {
+	border: 3px solid rgb(161, 13, 124);
+}
+
+.exBoxYellow {
+	border: 3px solid rgb(203, 222, 27);
+}
+
+	/* Overall box style */
+.exBoxGreen, .exBoxCyan, .exBoxPurple, .exBoxPurpleQuiz,
+.exBoxYellow, .exBoxComment, .exBoxKelly, .exBoxMagenta {
+	border-radius: 5px;
+	box-shadow: inset 0 0 15px 2px rgb(56, 56, 56);
+	padding-right: 10px;
+	background-color: rgb(0, 0, 0);
+	font-size: 0.95rem;
+}
+
+.exBoxGreen, .exBoxCyan, .exBoxPurple, .exBoxYellow,
+.exBoxKelly, .exBoxMagenta {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+@media only screen and (max-width: 767.98px)
+{
+	.exBoxGreen, .exBoxCyan, .exBoxPurple, .exBoxPurpleQuiz,
+	.exBoxYellow, .exBoxKelly, .exBoxMagenta {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	p.text-justify {
+		padding: 0 0;
+	}
+}
+
+.exFont span {
+	font-size: 0.95rem;
+	padding: 0 2px 1px 2px;
+}
+
+	/* Heading */
+.exBoxTitle {
+	font-size: 22px;
+}
+
+	/* Green style */
+.exBoxGreen li:nth-child(even) {
+	color: rgb(55, 212, 97);
+}
+
+/* -------------------- Quiz Results -------------------- */
+.radioQuizLabel {
+	word-wrap: break-word;
+	max-width: 95%;
+}
+
+[class *= "dispAns"]:not(details) {
+	padding: 1em;
+	margin-top: -1rem;
+    margin-bottom: 5em;
+}
+
+details {
+	padding: 1rem 0 0 1rem;
+}
+
+summary i {
+    padding-right: 1rem;
+}
+
+details p {
+    padding-top: 1rem;
+}
+summary {
+	outline: none;
+	list-style: none;
+}
+
+details:not([open]) {
+	padding-bottom: 1rem;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* -------------------- Example code -------------------- */
+.code {
+	padding-left: 1%;
+	margin: 0 0;
+}
+
+.code pre {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 0.95rem;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.exBoxPurple .code table tr td:first-child,
+.exBoxPurpleQuiz .code table tr td:first-child {
+	width: 3%;
+	min-width: 3%;
+	max-width: 3%;
+	left: 0;
+	position: -webkit-sticky;
+   	position: sticky;
+	box-shadow: inset 0 15px 12px -12px rgb(56,56,56);
+	background-color: rgb(0, 0, 0);
+}
+
+/* -------------------- Colored number list / Bullet point style -------------------- */
+li {
+	counter-increment: li;
+}
+
+.numberedList {
+	list-style: none;
+	counter-reset: li;
+}
+
+.numberedList li::before {
+	content: counter(li);
+	color: rgb(245, 239, 66);
+	display: inline-block;
+	width: 1rem;
+	margin-left: -1rem;
+}
+
+/* -------------------- Table -------------------- */
+#precTable {
+	font-size: 0.9rem;
+	background-color: rgb(0, 0, 0);
+	white-space: nowrap;
+}
+
+#precTable td, #precTable tr {
+	border: 3px inset rgb(255, 255, 255);
+}
+
+#precTable tr td:first-child {
+	text-align: center;
+}
+
+#precTable tr:nth-child(even){
+	color: rgb(55, 212, 97);
+}
+
+#precTable tbody tr:nth-child(4) td:nth-child(4) {
+	color: rgb(255, 255, 255);
+}
+
+#precTable tbody tr:nth-child(3) td:nth-child(4),
+#precTable tbody tr:nth-child(16) td:nth-child(4) {
+	color: #F8EB61;
+}
+
+/* -------------------- textareas -------------------- */
+.ln, .sc, #out, .ln:focus, .sc:focus, #out:focus, .commentEntry, .commentEntry:focus {
+	resize: none;
+	background-color: rgb(0, 0, 0);
+	color: rgb(230, 230, 230);
+}
+
+/* -------------------- Comment section -------------------- */
+.commentBorder {
+	border-top: 1px solid #4994CB;
+	border-bottom: 1px solid #F8EB61;
+}
+
+.fa-comment-dots {
+	font-size: 1.3rem;
+}
+
+.replyLink {
+    z-index: 100;
+    cursor: pointer;
+}
+
+.exBoxComment {
+	margin-right: 25%;
+}
+
+@media only screen and (max-width: 767.98px)
+{
+	.exBoxComment {
+		margin-right: 0;
+	}
+}
+
+/* -------------------- Topics -------------------- */
+.csLinks > div {
+	padding: 0 2px;
+}
+
+.csLinks button {
+	font-weight: bold;
+	font-size: 1.1rem;
+	height: 100px;
+}
+
+/* -------------------- Login and Signup -------------------- */
+.fieldSize {
+	height: 35px;
+}
+
+#accountTxt p {
+	font-size: 1.05rem;
+}
+
+#accountTxt label {
+	font-size: 1.15rem;
+}
+
+#accountTxt input {
+	width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/* -------------------- Radio Buttons -------------------- */
+/* https://codepen.io/manabox/pen/raQmpL with my modifications */
+
+/* Get rid of the default buttons */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+	position: absolute;
+	left: -9999px;
+}
+
+/* Setup for new buttons */
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+	position: relative;
+	padding-left: 28px;
+	cursor: pointer;
+	line-height: 1.5 em;
+	display: inline-block;
+}
+
+/* Setup for change choice */
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	border: 1px solid rgb(26, 26, 26);
+	border-radius: 100%;
+	background: #F8EB61;
+}
+
+/* Setup for choice */
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+	content: '';
+	width: 1em;
+	height: 1em;
+	background: #4994CB;
+	position: absolute;
+	top: 4px;
+	left: 0;
+	border-radius: 100%;
+	-webkit-transition: all 0.4s cubic-bezier(.09,.7,.78,.26);
+	transition: all 0.4s cubic-bezier(.09,.7,.78,.26);
+}
+
+/* Change choice animation */
+[type="radio"]:not(:checked) + label:after {
+	opacity: 0;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* Choice animation (blue button) */
+[type="radio"]:checked + label:after {
+	opacity: 1;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}

@@ -1,0 +1,51 @@
+{
+    "NumQuestions" : "3",
+    "1" :
+    {
+        "Question" : "Encapsulate the appropriate operator with the variable in a set of parenthesis. What is the output? Be careful about the behavior of the postfix operator.",
+        "NumLines" : "1\\n2\\n",
+        "Code" : "``Cint`~ x = ``M10`~;\\n``TTrial`~ *tPtr = ``Rnew`~ ``tTrial`~;\\n",
+        "Output" : "OUTPUT:``N10",
+        "NumOptions" : "3",
+        "Options" :
+        {
+            "1" : "``Y*`~(ptr``Y++`~);",
+            "2" : "B",
+            "3" : "C"
+        },
+        "Answer" : "1",
+        "Explanation" : "Because I said so"
+    },
+    "2" :
+    {
+        "Question" : "Encapsulate the appropriate operator with the variable in a set of parenthesis. What is the output? Be careful about the behavior of the postfix operator.",
+        "NumLines" : "1\\n2\\n",
+        "Code" : "``Cint`~ x = ``M10`~;\\n``TTrial`~ *tPtr = ``Rnew`~ ``tTrial`~;\\n",
+        "Output" : "OUTPUT:``N10",
+        "NumOptions" : "3",
+        "Options" :
+        {
+            "1" : "@@``Y*`~(ptr``Y++`~);`~",
+            "2" : "",
+            "3" : ""
+        },
+        "Answer" : "",
+        "Explanation" : "Because I said so"
+    },
+    "3" :
+    {
+        "Question" : "Encapsulate the appropriate operator with the variable in a set of parenthesis. What is the output? Be careful about the behavior of the postfix operator.",
+        "NumLines" : "1\\n2\\n",
+        "Code" : "``Cint`~ x = ``M10`~;\\n``TTrial`~ *tPtr = ``Rnew`~ ``tTrial`~;\\n",
+        "Output" : "NULL",
+        "NumOptions" : "3",
+        "Options" :
+        {
+            "1" : "``Y*`~(ptr``Y++`~);",
+            "2" : "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC Now I am going to see if words work the same way as the characters aqbovbe asdlfja.. TI heop they do. Now I am going to see if words work the same way as the characters aqbovbe asdlfja.. TI heop they do.Now I am going to see if words work the same way as the characters aqbovbe asdlfja.. TI heop they do. Now I am going to see if words work the same way as the characters aqbovbe asdlfja.. TI heop they do. Now I am going to see if words work the same way as the characters aqbovbe asdlfja.. TI heop they do. Now I am going to see if words work the same way as the characters aqbovbe asdlfja.. TI heop they do. Now I am going to see if words work the same way as the characters aqbovbe asdlfja.. TI heop they do.",
+            "3" : "Test"
+        },
+        "Answer" : "",
+        "Explanation" : "Because I said so"
+    }
+}

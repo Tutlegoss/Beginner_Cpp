@@ -3,7 +3,7 @@
     session_start();
 
 	$article = "Kpp Main Page";
-	require_once("./inc/header.inc.php");
+	require_once("./inc/php/Fringes/header.inc.php");
 ?>
 	<title><?php echo $headerData["Title"]; ?></title>
 	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
@@ -12,7 +12,7 @@
 
 <body>
 
-	<?php require_once("./inc/navbar.inc.php"); ?>
+	<?php require_once("./inc/php/Fringes/navbar.inc.php"); ?>
 
 	<div class="container-fluid">
 	<div class="row">
@@ -109,7 +109,7 @@
 	</div>
 
 	<?php
-		require_once("./inc/footer.inc.php");
+		require_once("./inc/php/Fringes/footer.inc.php");
 	?>
 
 </body>
