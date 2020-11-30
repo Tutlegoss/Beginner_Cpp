@@ -15,7 +15,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
 
@@ -26,6 +26,7 @@
 	<meta name="keywords" content="meta description, C++, Cpp, Tutorial, Beginner, Programming">
 
 	<link rel="icon" href="<?php echo $headerData["Path"]; ?>img/K_Ico.png">
+	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Share+Tech+Mono&display=swap" rel="stylesheet">

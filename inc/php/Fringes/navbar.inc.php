@@ -2,7 +2,7 @@
     <nav class="navbar navbar-dark navbar-expand-md">
         <a class="navbar-brand" href="<?php echo $headerData["Path"]; ?>index.php">
             <img src="<?php echo $headerData["Path"]; ?>img/Kpp.png" alt="Kpp"></a>
-        <button id="toggler" class="navbar-toggler" type="button"
+        <button id="toggler" class="navbar-toggler" type="button" aria-label="Hamburger"
                 data-toggle="collapse" data-target="#collapsibleNavbar">
             <i class="fas fa-bars"></i>
         </button>
@@ -25,24 +25,29 @@
             </ul>
             <div id="nav-form">
                 <form action="#" class="form-inline flex-nowrap" method="GET" >
-                    <label for="search"></label>
                     <input class="form-control" name="search" id="search" type="search" placeholder="Search">
-                    <button class="btn text-white" type="submit"><i class="fas fa-search"></i></button>
+                    <label for="search"></label>
+                    <button class="btn text-white" type="submit" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                    </button>
                 </form>
             </div>
             <ul class="navbar-nav nav mt-2 mt-md-0 flex-nowrap">
                 <li class="nav-item dropdown">
-                    <a class="text-white nav-link dropdown-toggle" href="#" role="Button"
-                                                                   data-toggle="dropdown">Account</a>
+                    <a class="text-white nav-link dropdown-toggle" href="#" data-toggle="dropdown">Account</a>
                     <div id="nav-Account" class="dropdown-menu">
                         <?php
                             $login = "$headerData[Path]pages/Account/Login.php";
+                            $admin = "$headerData[Path]pages/Admin/";
                             $personal = "$headerData[Path]pages/Account/Personal.php";
                             $logout = "$headerData[Path]pages/Account/Logout.php";
                             $signup = "$headerData[Path]pages/Account/Signup.php";
 
                             if(isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"] == TRUE)
                             {
+                                if(isset($_SESSION["Privilege"]) && $_SESSION["Privilege"] == "Admin")
+                                    echo "<a class='dropdown-item' href='$admin'>Admin</a>";
+
                                 echo "<a class='dropdown-item' href='$personal'>Personal</a>
                                       <a class='dropdown-item' href='$logout'>Logout</a>";
                             }
