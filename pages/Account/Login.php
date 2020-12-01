@@ -55,12 +55,8 @@
 
 	<?php require_once("$headerData[Path]inc/php/Fringes/navbar.inc.php"); ?>
 
-	<div class="container-fluid">
-	<div class="row">
-	<div id="article" class="col-12">
-		<div class="container d-flex h-100">
-		<div class="row justify-content-center align-self-center mx-auto">
-		<div class="col-11 col-md-12 mt-5 mt-md-0 mb-5 mb-md-0" id="accountTxt">
+	<div class="d-flex justify-content-center" id="article">
+        <div class="my-auto" id="accountTxt">
 			<h3 class="heading">Log In</h3>
 			<hr>
 			<?php loggedIn(); validateLogin(); ?>
@@ -69,7 +65,7 @@
                     <div class="col-12 col-md-3">
                         <label class="mt-2 kentBlue" for="Username">Username</label>
                     </div>
-                    <div class="col-12 col-md-9 align-self-center">
+                    <div class="col-10 col-md-8 align-self-center ml-md-auto">
                         <input class="fieldSize" type="text" name="Username" id="Username" autofocus required>
                    </div>
                 </div>
@@ -77,7 +73,7 @@
                     <div class="col-12 col-md-3 mt-2 mt-md-0">
                         <label class="mt-2 kentYellow" for="Password">Password</label>
                     </div>
-                    <div class="col-12 col-md-9 align-self-center">
+                    <div class="col-10 col-md-8 align-self-center ml-md-auto">
                         <input class="fieldSize" type="password" name="Password" id="Password" pattern=".{8,30}" required>
                     </div>
                   </div>
@@ -88,10 +84,6 @@
 				<a href="./Signup.php">Sign Up</a>
             </form>
 		</div>
-		</div>
-		</div>
-	</div>
-	</div>
 	</div>
 
 	<?php

@@ -103,36 +103,28 @@
 <body>
 	<?php require_once("$headerData[Path]inc/php/Fringes/navbar.inc.php"); ?>
 
-	<div class="container-fluid">
-	<div class="row">
-	<div id="article" class="col-12">
-		<div class="container d-flex h-100">
-		<div class="row justify-content-center align-self-center mx-auto">
-		<div class="col-11 col-md-12 mt-5 mt-md-0 mb-5 mb-md-0" id="accountTxt">
-				<h3 class="heading">Forgot Password</h3>
-				<hr>
-				<?php if(validateEmail() === FALSE) { ?>
-					<p>Enter your email and a link will be sent to reset your password.</p>
+	<div class="d-flex justify-content-center" id="article">
+        <div class="my-auto" id="accountTxt">
+			<h3 class="heading">Forgot Password</h3>
+			<hr>
+			<?php if(validateEmail() === FALSE) { ?>
+				<p>Enter your email and a link will be sent to reset your password.</p>
 
-					<form action="Forgot.php" method="POST">
-                        <div class="row mx-auto">
-                            <div class="col-12 col-md-3">
-                                <label class="kentYellow mt-2" for="Email">Email</label>
-                            </div>
-                            <div class="col-12 col-md-9 align-self-center">
-                                <input class="fieldSize" type="email" name="Email"
-                                       id="Email" placeholder="@kent.edu" autofocus required>
-                           </div>
+				<form action="Forgot.php" method="POST">
+                    <div class="row mx-auto">
+                        <div class="col-12 col-md-3">
+                            <label class="kentYellow mt-2" for="Email">Email</label>
+                        </div>
+                        <div class="col-12 col-md-9 align-self-center">
+                            <input class="fieldSize" type="email" name="Email"
+                                   id="Email" placeholder="@kent.edu" autofocus required>
                        </div>
-                        <button type="submit" class="btn btnBlue mt-4">Submit</button>
-                    </form>
+                   </div>
+                    <button type="submit" class="btn btnBlue mt-4">Submit</button>
+                </form>
 
-				<?php } ?>
-			</div>
-			</div>
-			</div>
-	</div>
-	</div>
+			<?php } ?>
+		</div>
 	</div>
 
 	<?php

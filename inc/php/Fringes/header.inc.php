@@ -12,6 +12,7 @@
 	                            ON Headers.Title = Articles.Title WHERE Headers.Title = '$article';");
 	$headerData->execute();
 	$headerData = $headerData->fetch(PDO::FETCH_ASSOC);
+
 ?>
 
 <!DOCTYPE html>

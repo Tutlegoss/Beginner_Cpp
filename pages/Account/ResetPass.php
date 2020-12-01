@@ -21,7 +21,7 @@
 		/* Can't access page directly */
 		if(!$_POST && !isset($_GET['ext'])) {
 			echo "<p class='ml-4 kentYellow'>No valid reset password configuration found. Redirecting to login...</p>";
-			header("refresh: 3; url='./login.php'");
+			header("refresh: 2; url='./login.php'");
 			return TRUE;
 		}
 
@@ -117,57 +117,43 @@
 <body>
 	<?php require_once("$headerData[Path]inc/php/Fringes/navbar.inc.php"); ?>
 
-	<div class="container-fluid">
-	<div class="row">
-	<div id="article" class="col-12">
-		<div class="container d-flex h-100">
-		<div class="row justify-content-center align-self-center mx-auto">
-		<div class="col-11 col-md-12" id="accountTxt">
-			<h3 class="heading">Reset Password</h3>
-			<hr style="border-color: #002664;">
-			<?php if(resetPassword() === FALSE) { ?>
-				<p>Enter your new password, please.</p>
-
-				<form action="ResetPass.php" method="POST">
-					<div class="form-group">
-						<table>
-							<tr>
-								<td>
-									<label class="mt-2 kentYellow" for="Password">New Password</label>
-								</td>
-								<td class="pl-4">
-									<input class="fieldSize" type="password" name="Password"
-                                           id="Password" pattern=".{8,30}" placeholder="8-30 Chars" autofocus required>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<label class="mt-2 kentBlue"
-                                           for="PasswordVerify">Re-Enter Password</label>
-								</td>
-								<td class="pl-4">
-									<input class="fieldSize" type="password" name="PasswordVerify"
-                                           id="PasswordVerify" pattern=".{8,30}" required>
-								</td>
-							</tr>
-						</table>
-						<input type="hidden" id="ext" name="ext"
-                               value="<?php
-											if(isset($_GET['ext']))
-												echo $_GET['ext'];
-											else if(isset($_POST['ext']))
-												echo $_POST['ext'];
-											else
-												echo ""; ?>">
-						<button type="submit" class="btn btnBlue mt-3">Submit</button>
-					</div>
-				</form>
-			<?php } ?>
+	<div class="d-flex justify-content-center" id="article">
+        <div class="my-auto" id="accountTxt">
+    		<h3 class="heading">Reset Password</h3>
+    		<hr>
+            <?php if(resetPassword() === FALSE) { ?>
+                <p>Enter your new password, please.</p>
+                <form action="" method="POST">
+                    <div class="row mx-auto">
+                        <div class="col-12 col-md-3">
+                            <label class="kentYellow mt-2" for="Email">New Password</label>
+                        </div>
+                        <div class="col-10 col-md-9 align-self-center">
+                            <input class="fieldSize" type="password" name="Password"
+                                   id="Password" pattern=".{8,30}" placeholder="8-30 Chars" autofocus required>
+                       </div>
+                    </div>
+                    <div class="row mx-auto">
+                        <div class="col-12 col-md-3 mt-2 mt-md-0">
+                            <label class="kentBlue mt-2" for="Username">Re-Enter Password</label>
+                        </div>
+                        <div class="col-10 col-md-9 align-self-center">
+                            <input class="fieldSize" type="password" name="PasswordVerify"
+                                   id="PasswordVerify" pattern=".{8,30}" required>
+                        </div>
+                    </div>
+                    <input type="hidden" id="ext" name="ext"
+                           value=<?php
+                                        if(isset($_GET['ext']))
+                                            echo "$_GET[ext]";
+                                        else if(isset($_POST['ext']))
+                                            echo "$_POST[ext]";
+                                        else
+                                            echo ""; ?>>
+                    <button type="submit" class="btn btnBlue mt-4">Submit</button>
+                </form>
+            <?php } ?>
 		</div>
-		</div>
-		</div>
-	</div>
-	</div>
 	</div>
 
 	<?php

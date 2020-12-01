@@ -31,18 +31,10 @@
 <body>
 	<?php require_once("$headerData[Path]inc/php/Fringes/navbar.inc.php"); ?>
 
-	<div class="container-fluid">
-	<div class="row">
-	<div id="article" class="col-12">
-		<div class="container d-flex h-100">
-			<div class="row justify-content-center align-self-center mx-auto">
-				<div class="col-11 col-md-12" id="accountTxt">
-					<?php logout() ?>
-				</div>
-			</div>
+	<div class="d-flex justify-content-center" id="article">
+        <div class="my-auto" id="accountTxt">
+			<?php logout() ?>
 		</div>
-	</div>
-	</div>
 	</div>
 
 	<?php

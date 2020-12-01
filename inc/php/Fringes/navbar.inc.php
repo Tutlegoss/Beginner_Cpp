@@ -7,33 +7,33 @@
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="nav mr-auto mt-2 mt-md-0 justify-content-around flex-nowrap">
-                <li class="nav-item">
-                    <a id="nav-CSI" class="nav-link mr-2 mt-1"
+            <ul class="nav mr-auto mt-2 mt-md-0 justify-content-around flex-nowrap align-items-center">
+                <li>
+                    <a id="nav-CSI" class="nav-link"
                        href="<?php echo $headerData["Path"]; ?>pages/CSI/CSI_Topics.php">CS I</a>
                 </li>
-                <li class="nav-item">
-                    <a id="nav-CSII" class="nav-link mr-2 mt-1" href="#">CS II</a>
+                <li>
+                    <a id="nav-CSII" class="nav-link" href="#">CS II</a>
                 </li>
-                <li class="nav-item">
-                    <a id="nav-CSIII" class="nav-link mr-2 text-white mt-1" href="#">CS III</a>
+                <li>
+                    <a id="nav-CSIII" class="nav-link text-white" href="#">CS III</a>
                 </li>
-                <li class="nav-item">
-                    <a id="nav-Blog" class="nav-link mb-2 mb-md-0 mt-1"
+                <li>
+                    <a id="nav-Blog" class="nav-link"
                        href="<?php echo $headerData["Path"]; ?>pages/Blog/OP_OOE.php">Blog</a>
                 </li>
             </ul>
-            <div id="nav-form">
-                <form action="#" class="form-inline flex-nowrap" method="GET" >
-                    <input class="form-control" name="search" id="search" type="search" placeholder="Search">
-                    <label for="search"></label>
-                    <button class="btn text-white" type="submit" aria-label="Search">
-                            <i class="fas fa-search"></i>
-                    </button>
-                </form>
-            </div>
-            <ul class="navbar-nav nav mt-2 mt-md-0 flex-nowrap">
-                <li class="nav-item dropdown">
+            <ul id="searchAcct" class="nav flex-nowrap mt-3 mb-2 mt-md-0 mb-md-0">
+                <li>
+                    <form action="#" class="form-inline my-auto" method="GET" >
+                        <input class="form-control" name="search" id="search" type="search" placeholder="Search">
+                        <label for="search"></label>
+                        <button class="btn text-white" type="submit" aria-label="Search">
+                                <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </li>
+                <li class="nav-item dropdown text-center">
                     <a class="text-white nav-link dropdown-toggle" href="#" data-toggle="dropdown">Account</a>
                     <div id="nav-Account" class="dropdown-menu">
                         <?php

@@ -41,14 +41,7 @@ footer p, #banner p { /* See Navbar for footer img */
 	font-size: 1.1rem;
 	color: rgb(230, 230, 230);
 	background-color: rgb(26, 26, 26);
-	min-height: calc(100vh - 114px); /* 114 = Navbar 60 + 54 Footer */
-}
-
-@media only screen and (max-width: 767.98px)
-{
-	#article {
-		min-height: calc(100vh - 110.8px); /* Compressed Navbar 57.4/56.8 + 54 Footer */
-	}
+	min-height: calc(100vh - 111.6px);
 }
 
 /* -------------------- Navbar -------------------- */
@@ -82,10 +75,6 @@ nav img, footer img {
  	color: #4994CB;
 }
 
-#nav-form {
-    min-width: 0;
-}
-
 #search {
 	border-radius: 0;
     min-width: 0;
@@ -99,15 +88,16 @@ button#toggler {
 
 #nav-Account {
     background-color: rgb(0, 38, 100);
-    background-color: rgba(0, 38, 100, 0.92);
+    background-color: rgba(0, 38, 100, 0.95);
 	border: 2px solid #4994CB;
     right: 0;
     left: auto;
-    margin-top: 11%;
+    margin-top: 8%;
 }
 
 #nav-Account a {
 	color: #F8EB61;
+    margin: 6px 0;
 }
 
 #nav-Account a:hover {
@@ -115,21 +105,21 @@ button#toggler {
 	background-color: rgb(26, 26, 26);
 }
 
-
 @media only screen and (max-width: 767.98px)
 {
-	#search {
-		width: 200px;
-		max-width: 200px;
-	}
+    #searchAcct li:first-child {
+        width: 70%;
+    }
 
-	#nav-Account {
-		width: 200px;
-		max-width: 200px;
-        margin-top: 0;
-        margin-bottom: 0.5rem;
+    #searchAcct li:not(:first-child) {
+    	width: 30%;
+    }
+
+    #nav-Account {
+		right: 10%;
 	}
 }
+
 
 /* -------------------- index.php -------------------- */
 .img-size img {
@@ -554,6 +544,10 @@ li {
 /* -------------------- Login and Signup -------------------- */
 .fieldSize {
 	height: 35px;
+}
+
+#accountTxt {
+    padding: 7% 7%;
 }
 
 #accountTxt p {

@@ -618,23 +618,18 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
 				</li>
 			</ul>
 		</div>
-		<br>
-		<br>
-		<br>
-		<h3 class="heading ml-4">Quiz</h3>
+		<h3 class="heading ml-4 mt-5">Quiz</h3>
 		<hr>
-		<br>
-		<br>
-		<br>
+		<?php
+            require_once("$headerData[Path]inc/php/quiz.php");
+            echo "<script>var numQuestions = $numQuestions; var fn = '$fn'; var path = '$headerData[Path]';</script>";
+        ?>
 		<h3 class="heading ml-4" id="commentArea">Comments</h3>
 		<hr>
-
 		<?php
             /* Comment entry / display functions */
             require_once("$headerData[Path]inc/php/comments.inc.php");
 		?>
-
-		<br>
 		<br>
 		<br>
 	</div> <!-- End Article -->
@@ -645,8 +640,8 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
 		require_once("$headerData[Path]inc/php/Fringes/footer.inc.php");
 	?>
 
+    <script src="<?php echo $headerData['Path']; ?>inc/js/quiz.js"?></script>
     <script src="<?php echo $headerData['Path'] ?>inc/js/comments.js"></script>
-
     <script>
     	$(document).ready(function() {
             <?php
