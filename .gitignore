@@ -1,3 +1,4 @@
 pdoconfig.php
 dbconnect2.php
 .htaccess
+*.sql
