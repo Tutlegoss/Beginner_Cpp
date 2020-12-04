@@ -1,19 +1,17 @@
 # C-Supplement
 
-C++ Supplement for Kent State - Stark.
+C++ Supplement for beginners.
 
-This website is tailored to the CS courses at Kent State - Stark.
-Features: accounts, topic supplements, quiz questions (multiple choice), comments, personal blog highlighting C++ misconceptions and other topics of my choice.
+This website is just a personal project to learn about HTML, CSS, JS, JQuery, Bootstrap, SQL, PHP, webside hosting, etc.
+Features: accounts, topic supplements, quiz questions (multiple choice), comments, personal blog containing interesting programming topics.
 
 **This is currently a work in progress and is currently incomplete.**
-
-Site has current issues for extra small viewports, such as the login/signup form fields go too far to the right and 'off the page'. Please use landscape mode for now. ~~Additionally, there is an issue with the navbar on Safari and is hard to fix without any Apple products, currently.~~ Please use Edge, Firefox, Opera, or Chrome as I can readily test these browsers with ease. Thank you.
 
 TODO:
 
 - [x] Make navbar work with Safari
 
-- [ ] Make login/signup fields smaller for phones
+- [x] Make login/signup fields smaller for phones
 
 - [ ] Syntax highlighting on comment code
 
@@ -29,7 +27,7 @@ TODO:
 
 - [ ] index.php Add links to Topic pages and blog
 
-- [ ] navbar.php Change inline style to main.css
+- [x] navbar.php Change inline style to main.css
 
 - [x] Generator.php Output needs to be more than one line long
 
@@ -37,4 +35,4 @@ TODO:
 
 - [ ] comments.inc.php refactor the comment queries.
 
-- [ ] comments.inc.php ensure no empty comments / no pure whitespace comments
+- [x] comments.inc.php ensure no empty comments / no pure whitespace comments
