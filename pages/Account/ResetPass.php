@@ -128,7 +128,7 @@
                         <div class="col-12 col-md-3">
                             <label class="kentYellow mt-2" for="Email">New Password</label>
                         </div>
-                        <div class="col-10 col-md-9 align-self-center">
+                        <div class="col-12 col-md-9 align-self-center">
                             <input class="fieldSize" type="password" name="Password"
                                    id="Password" pattern=".{8,30}" placeholder="8-30 Chars" autofocus required>
                        </div>
@@ -137,7 +137,7 @@
                         <div class="col-12 col-md-3 mt-2 mt-md-0">
                             <label class="kentBlue mt-2" for="Username">Re-Enter Password</label>
                         </div>
-                        <div class="col-10 col-md-9 align-self-center">
+                        <div class="col-12 col-md-9 align-self-center">
                             <input class="fieldSize" type="password" name="PasswordVerify"
                                    id="PasswordVerify" pattern=".{8,30}" required>
                         </div>

@@ -65,7 +65,7 @@
                     <div class="col-12 col-md-3">
                         <label class="mt-2 kentBlue" for="Username">Username</label>
                     </div>
-                    <div class="col-10 col-md-8 align-self-center ml-md-auto">
+                    <div class="col-12 col-md-8 align-self-center ml-md-auto">
                         <input class="fieldSize" type="text" name="Username" id="Username" autofocus required>
                    </div>
                 </div>
@@ -73,7 +73,7 @@
                     <div class="col-12 col-md-3 mt-2 mt-md-0">
                         <label class="mt-2 kentYellow" for="Password">Password</label>
                     </div>
-                    <div class="col-10 col-md-8 align-self-center ml-md-auto">
+                    <div class="col-12 col-md-8 align-self-center ml-md-auto">
                         <input class="fieldSize" type="password" name="Password" id="Password" pattern=".{8,30}" required>
                     </div>
                   </div>

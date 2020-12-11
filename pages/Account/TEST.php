@@ -7,30 +7,22 @@
 
 	function sendEmail($emailExists, $URL)
 	{
-		$subject = "Tutlegoss.com Password Reset";
-		$message = "<html>"
-            		."<head>"
-            		  ."<title>Tutlegoss.com Password Reset</title>"
-            		."</head>"
-            		."<body>"
-            		  ."<p>Please use the link below to reset your password:</p>"
-            		  ."<a href='$URL'>$URL</a>"
-            		  ."<p>Please do not reply to this message as the email is unmonitored.</p>"
-            		."</body>"
-            	  ."</html>";
-		$headers = "MIME-Version: 1.0\r\n"
-		          ."Content-type:text/html;charset=UTF-8\r\n"
-                  ."From: <tutlegoss@tutlegoss.com>\r\n";
+		$subject = "";
+		$message = "Elizabeth Marchand, M&M collector.";
+		$headers = "MIME-Version: 1.0\r\n";
+		$headers .= "Content-type:text/html;charset=UTF-8\r\n";
+		$headers .= "From: <IKnowYou@Loves2Cook.com>\r\n";
 
-		mail($emailExists['Email'], $subject, $message, $headers);
-		echo "<p class='kentYellow ml-4'>Email has been sent and will arrive shortly.</p>"
-    		."<p class='kentYellow ml-4'>It may take up to 10 minutes for email to arrive.</p>"
-    		."<p class='co-m ml-4'>REMEMBER: Check your spam folder if email doesn't appear!<p>"
-    		."<p class='kentYellow ml-4'>No further action is needed on this page.</p>";
+		if(mail($emailExists, $subject, $message, $headers))
+		    echo "<p> SUCC </p>;";
+		echo "<p class='kentYellow ml-4'>Email has been sent and will arrive shortly.</p>";
+		echo "<p class='kentYellow ml-4'>It may take up to 10 minutes for email to arrive.</p>";
+		echo "<p class='co-m ml-4'>REMEMBER: Check your spam folder if email doesn't appear!<p>";
+		echo "<p class='kentYellow ml-4'>No further action is needed on this page.</p>";
 	}
 
 	function validateEmail()
-	{  return FALSE;
+	{
 		if($_POST) {
 			global $conn;
 
@@ -107,20 +99,22 @@
         <div class="my-auto" id="accountTxt">
 			<h3 class="heading">Forgot Password</h3>
 			<hr>
-			<?php if(validateEmail() === FALSE) { ?>
+			<?php sendEmail("tutlegoss@aol.com",""); { ?>
 				<p>Enter your email and a link will be sent to reset your password.</p>
+
 				<form action="Forgot.php" method="POST">
                     <div class="row mx-auto">
                         <div class="col-12 col-md-3">
                             <label class="kentYellow mt-2" for="Email">Email</label>
                         </div>
-                        <div class="col-12 col-md-7 align-self-center">
+                        <div class="col-12 col-md-9 align-self-center">
                             <input class="fieldSize" type="email" name="Email"
-                                   id="Email" placeholder="Won't work" autofocus required>
+                                   id="Email" placeholder="@kent.edu" autofocus required>
                        </div>
                    </div>
                     <button type="submit" class="btn btnBlue mt-4">Submit</button>
                 </form>
+
 			<?php } ?>
 		</div>
 	</div>

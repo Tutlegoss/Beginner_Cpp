@@ -8,12 +8,38 @@
 
 */
 
+/* -------------------- ROOT VARS -------------------- */
+:root {
+    --main-bkgnd-color: rgb(26 26 26);
+    --main-txt-color: rgb(230 230 230);
+    --blk: rgb(0 0 0);
+    --wht: rgb(255 255 255);
+    --sdw: rgb(56 56 56);
+    --dk-blue: rgb(0 38 100);
+    --dk-gold: rgb(239 171 0);
+    --lt-gold: rgb(248 235 97);
+    --lt-blue: rgb(73 148 203);
+    --grn: rgb(70 255 46);
+    --kgrn: rgb(10 200 120);
+    --orng: rgb(255 140 0);
+    --teal: rgb(61 245 161);
+    --yellow: rgb(255 255 0);
+    --ex-cyan: rgb(40 209 212);
+    --ex-grn: rgb(55 212 97);
+    --ex-yellow: rgb(203 222 27);
+    --ex-purple: rgb(161 13 124);
+    --select: rgb(0 150 150 / 0.4);
+    --quiz-btn-grn: rgb(55 212 97 / 0.6);
+    --quiz-btn-blu: rgb(55 212 255 / 0.6);
+    --quiz-btn-sdw: rgb(66 245 81);
+}
+
 /* -------------------- Overall style -------------------- */
 ::selection {
-  background: rgb(0, 100, 100, 0.4); /* WebKit/Blink Browsers */
+  background: var(--select); /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: rgb(0, 100, 100, 0.4); /* Gecko Browsers */
+  background: var(--select); /* Gecko Browsers */
 }
 
 html {
@@ -25,10 +51,10 @@ body {
 }
 
 footer {
-	background-color: rgb(0, 0, 0);
-	color: white;
-	border: 4px solid #002664;
-    border-image: linear-gradient(to right, #EFAB00,#F8EB61,  #4994CB, #002664) 1;
+	background-color: var(--blk);
+	color: var(--wht);
+	border: 4px solid var(--dk-blue);
+    border-image: linear-gradient(to right, var(--dk-gold), var(--lt-gold),  var(--lt-blue), var(--dk-blue)) 1;
     border-width:4px 0 0 0;
 }
 
@@ -39,8 +65,8 @@ footer p, #banner p { /* See Navbar for footer img */
 
 #article {
 	font-size: 1.1rem;
-	color: rgb(230, 230, 230);
-	background-color: rgb(26, 26, 26);
+	color: var(--main-txt-color);
+	background-color: var(--main-bkgnd-color);
 	min-height: calc(100vh - 111.6px);
 }
 
@@ -51,7 +77,7 @@ nav img, footer img {
 }
 
 .navbar-dark {
-	background-color: rgb(0, 0, 0);
+	background-color: var(--blk);
 }
 
 #collapsibleNavbar:first-child {
@@ -68,11 +94,11 @@ nav img, footer img {
 }
 
 #nav-CSI, #nav-Blog {
-	color: #F8EB61;
+	color: var(--lt-gold);
 }
 
 #nav-CSII {
- 	color: #4994CB;
+ 	color: var(--lt-blue);
 }
 
 #search {
@@ -82,27 +108,27 @@ nav img, footer img {
 }
 
 button#toggler {
-	color: white;
-	border-color: #F8EB61;
+	color: var(--wht);
+	border-color: var(--lt-gold);
 }
 
 #nav-Account {
-    background-color: rgb(0, 38, 100);
-    background-color: rgba(0, 38, 100, 0.95);
-	border: 2px solid #4994CB;
+    background-color: var(--dk-blue);
+    background-color: rgba(0 38 100 / 0.95);
+	border: 2px solid var(--lt-blue);
     right: 0;
     left: auto;
     margin-top: 8%;
 }
 
 #nav-Account a {
-	color: #F8EB61;
+	color: var(--lt-gold);
     margin: 6px 0;
 }
 
 #nav-Account a:hover {
-	color: #F8EB61;
-	background-color: rgb(26, 26, 26);
+	color: var(--lt-gold);
+	background-color: var(--main-bkgnd-color);
 }
 
 @media only screen and (max-width: 767.98px)
@@ -120,7 +146,6 @@ button#toggler {
 	}
 }
 
-
 /* -------------------- index.php -------------------- */
 .img-size img {
 	width: 75%;
@@ -136,9 +161,9 @@ button#toggler {
 	/* index.php banner */
 #banner {
 	border: 3px solid;
-	border-image: linear-gradient(to right, #EFAB00,#F8EB61,  #4994CB, #002664) 1;
+	border-image: linear-gradient(to right, var(--dk-gold), var(--lt-gold),  var(--lt-blue), var(--dk-blue)) 1;
     border-width: 3px 0 3px 0;
-	background-color:  #002664;
+	background-color: var(--dk-blue);
 	text-align: center;
 	font-size: 2rem;
 	margin: 0 -15px;
@@ -146,13 +171,13 @@ button#toggler {
 
 /* -------------------- Article styling -------------------- */
 .heading {
-	color: #FFF;
+	color: var(--wht);
 	font-weight: 500;
 }
 
 hr {
 	border-top: 3px solid;
-	border-image: linear-gradient(to right, #EFAB00, #F8EB61,  #4994CB, #002664) 1;
+	border-image: linear-gradient(to right, var(--dk-gold), var(--lt-gold),  var(--lt-blue), var(--dk-blue)) 1;
 	margin-top: -5px;
 }
 
@@ -161,56 +186,55 @@ hr {
 }
 
 .highlight {
-    background-color: rgb(0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 1px inset rgb(50, 50, 50);
+    background-color: var(--blk);
+	background-color: rgba(0 0 0 / 0.5);
+	border: 1px inset var(--sdw);
 	padding: 0 0.5%;
 }
 
 /* -------------------- Buttons -------------------- */
-/*	#002664 -> rgb(0, 38, 100) , #EFAB00 -> rgb(239, 171, 0) */
 
 .btnBlue {
-    background-color: rgb(0, 38, 100);
-	background-color: rgba(0, 38, 100, 0.3);
-	border-color: #4994CB;
-	color: #FFF;
+    background-color: var(--dk-blue);
+	background-color: rgba(0 38 100 / 0.3);
+	border-color: var(--lt-blue);
+	color: var(--wht);
 }
 
 .btnYellow {
-    background-color: rgb(239, 171, 0);
-	background-color: rgba(239, 171, 0, 0.3);
-	border-color: #F8EB61;
-	color: #FFF;
+    background-color: var(--dk-gold);
+	background-color: rgba(239 171 0 / 0.3);
+	border-color: var(--lt-gold);
+	color: var(--wht);
 }
 
 .btnBlack {
-    background-color: rgb(0, 0, 0);
-	background-color: rgba(0, 0, 0, 0.3);
-	border-color: #FFF;
-	color: #FFF;
+    background-color: var(--blk);
+	background-color: rgb(0 0 0 / 0.3);
+	border-color: var(--wht);
+	color: var(--wht);
 }
 
 /* Quiz submit button */
 @-webkit-keyframes pulse {
-      0% { background-color: rgba(55, 212, 97, 0.6); -webkit-box-shadow: 0 0 0 #4994cb;}
-	 20% { background-color: rgba(55, 212, 255, 0.6); -webkit-box-shadow: 0 0 8px #42f551;}
-	 40% { background-color: rgba(55, 212, 255, 0.6); -webkit-box-shadow: 0 0 16px #4994cb;}
-	 50% { background-color: rgba(55, 212, 255, 0.6); -webkit-box-shadow: 0 0 20px #42f551;}
-	 60% { background-color: rgba(55, 212, 255, 0.6); -webkit-box-shadow: 0 0 16px #4994cb;}
-	 80% { background-color: rgba(55, 212, 255, 0.6); -webkit-box-shadow: 0 0 8px #42f551;}
-	100% { background-color: rgba(55, 212, 97, 0.6); -webkit-box-shadow: 0 0 0 #4994cb;}
+      0% { background-color: var(--quiz-btn-grn); -webkit-box-shadow: 0 0 0 var(--lt-blue);}
+	 20% { background-color: var(--quiz-btn-blu); -webkit-box-shadow: 0 0 8px var(--quiz-btn-sdw);}
+	 40% { background-color: var(--quiz-btn-blu); -webkit-box-shadow: 0 0 16px var(--lt-blue);}
+	 50% { background-color: var(--quiz-btn-blu); -webkit-box-shadow: 0 0 20px var(--quiz-btn-sdw);}
+	 60% { background-color: var(--quiz-btn-blu); -webkit-box-shadow: 0 0 16px var(--lt-blue);}
+	 80% { background-color: var(--quiz-btn-blu); -webkit-box-shadow: 0 0 8px var(--quiz-btn-sdw);}
+	100% { background-color: var(--quiz-btn-grn); -webkit-box-shadow: 0 0 0 var(--lt-blue);}
 }
 
 .btnQuiz {
-	color: rgb(255, 255, 255);
-	border: 3px inset rgb(255, 255, 255);
-	background-color: rgba(55, 212, 97, 0.6);
+	color: var(--wht);
+	border: 3px inset var(--wht);
+	background-color: var(--quiz-btn-grn);
     -webkit-animation-name: pulse;
 	-webkit-animation-timing-function: ease-out;
     -webkit-animation-duration: 2s;
     -webkit-animation-iteration-count: infinite;
-    -webkit-box-shadow: 0 0 20px rgba(55, 212, 97, 0.6);
+    -webkit-box-shadow: 0 0 20px var(--quiz-btn-grn);
 }
 
 .cancel {
@@ -219,39 +243,52 @@ hr {
 }
 
 .cancel:hover {
-	background: rgb(255, 0, 255, 0.3);
-	color: white;
+    background: magenta;
+	background: rgb(255 0 255 / 0.3);
+	color: var(--wht);
 }
 
-/* -------------------- Links LVHA -------------------- */
+/* -------------------- Links LVFHA -------------------- */
 a:link {
-	color: #4994CB;
+	color: var(--lt-blue);
 }
 
 a:visited {
-	color: #4994CB;
+	color: var(--lt-blue);
+}
+
+a:focus {
+    color: var(--lt-gold);
 }
 
 a:hover {
-	color: #F8EB61;
+	color: var(--lt-gold);
 }
 
 a:active {
-	color: #F8EB61;
+	color: var(--lt-gold);
 }
 
 /* -------------------- Colors -------------------- */
+.kentYellow {
+	color: var(--lt-gold);
+}
+
+.kentBlue {
+	color: var(--lt-blue);
+}
+
 	/* Code */
 .co-c {
 	color: cyan;
 }
 
 .co-g {
-	color: rgb(70, 255, 46);
+	color: var(--grn);
 }
 
 .co-kg {
-	color: rgb(10, 200, 120);
+	color: var(--kgrn);
 }
 
 .co-m {
@@ -259,7 +296,7 @@ a:active {
 }
 
 .co-o {
-	color: rgb(255, 140, 0);
+	color: var(--orng);
 }
 
 .co-r {
@@ -267,37 +304,28 @@ a:active {
 }
 
 .co-t {
-	color: rgb(61, 245, 161);
+	color: var(--teal);
 }
 
 .co-w {
-	color: rgb(255, 255, 255);
+	color: var(--wht);
 }
 
 .co-y {
-	color: rgb(255, 255, 0);
+	color: var(--yellow);
 }
 
 	/* exBoxes text */
 .cyan {
-	color: rgb(40, 209, 212);
+	color: var(--ex-cyan);
 }
 
 .green {
-	color: rgb(55, 212, 97);
+	color: var(--ex-grn);
 }
 
 .yellow {
-	color: rgb(203, 222, 27);
-}
-
-	/* Secondary colors */
-.kentYellow {
-	color: #F8EB61;
-}
-
-.kentBlue {
-	color: #4994CB;
+	color: var(--ex-yellow);
 }
 
 /* -------------------- Text area paddng -------------------- See @media below */
@@ -320,15 +348,15 @@ p.text-justify {
 	/* Borders */
 
 .exBoxCyan {
-	border: 3px solid rgb(40, 209, 212);
+	border: 3px solid var(--ex-cyan);
 }
 
 .exBoxGreen {
-	border: 3px solid rgb(55, 212, 97);
+	border: 3px solid var(--ex-grn);
 }
 
 .exBoxKelly {
-	border: 3px solid rgb(10, 200, 120);
+	border: 3px solid var(--kgrn);
 }
 
 .exBoxMagenta {
@@ -336,20 +364,20 @@ p.text-justify {
 }
 
 .exBoxPurple, .exBoxPurpleQuiz, .exBoxComment {
-	border: 3px solid rgb(161, 13, 124);
+	border: 3px solid var(--ex-purple);
 }
 
 .exBoxYellow {
-	border: 3px solid rgb(203, 222, 27);
+	border: 3px solid var(--ex-yellow);
 }
 
 	/* Overall box style */
 .exBoxGreen, .exBoxCyan, .exBoxPurple, .exBoxPurpleQuiz,
 .exBoxYellow, .exBoxComment, .exBoxKelly, .exBoxMagenta {
 	border-radius: 5px;
-	box-shadow: inset 0 0 15px 2px rgb(56, 56, 56);
+	box-shadow: inset 0 0 15px 2px var(--sdw);
 	padding-right: 10px;
-	background-color: rgb(0, 0, 0);
+	background-color: var(--blk);
 	font-size: 0.95rem;
 }
 
@@ -384,7 +412,7 @@ p.text-justify {
 
 	/* Green style */
 .exBoxGreen li:nth-child(even) {
-	color: rgb(55, 212, 97);
+	color: var(--ex-grn);
 }
 
 /* -------------------- Quiz Results -------------------- */
@@ -447,8 +475,8 @@ summary::-webkit-details-marker {
 	left: 0;
 	position: -webkit-sticky;
    	position: sticky;
-	box-shadow: inset 0 15px 12px -12px rgb(56,56,56);
-	background-color: rgb(0, 0, 0);
+	box-shadow: inset 0 15px 12px -12px var(--sdw);
+	background-color: var(--blk);
 }
 
 /* -------------------- Colored number list / Bullet point style -------------------- */
@@ -463,7 +491,7 @@ li {
 
 .numberedList li::before {
 	content: counter(li);
-	color: rgb(245, 239, 66);
+	color: var(--lt-gold);
 	display: inline-block;
 	width: 1rem;
 	margin-left: -1rem;
@@ -472,12 +500,12 @@ li {
 /* -------------------- Table -------------------- */
 #precTable {
 	font-size: 0.9rem;
-	background-color: rgb(0, 0, 0);
+	background-color: var(--blk);
 	white-space: nowrap;
 }
 
 #precTable td, #precTable tr {
-	border: 3px inset rgb(255, 255, 255);
+	border: 3px inset var(--wht);
 }
 
 #precTable tr td:first-child {
@@ -485,29 +513,29 @@ li {
 }
 
 #precTable tr:nth-child(even){
-	color: rgb(55, 212, 97);
+	color: var(--ex-grn);
 }
 
 #precTable tbody tr:nth-child(4) td:nth-child(4) {
-	color: rgb(255, 255, 255);
+	color: var(--wht);
 }
 
 #precTable tbody tr:nth-child(3) td:nth-child(4),
 #precTable tbody tr:nth-child(16) td:nth-child(4) {
-	color: #F8EB61;
+	color: var(--lt-gold);
 }
 
 /* -------------------- textareas -------------------- */
 .ln, .sc, #out, .ln:focus, .sc:focus, #out:focus, .commentEntry, .commentEntry:focus {
 	resize: none;
-	background-color: rgb(0, 0, 0);
-	color: rgb(230, 230, 230);
+	background-color: var(--blk);
+	color: var(--main-txt-color);
 }
 
 /* -------------------- Comment section -------------------- */
 .commentBorder {
-	border-top: 1px solid #4994CB;
-	border-bottom: 1px solid #F8EB61;
+	border-top: 1px solid var(--lt-blue);
+	border-bottom: 1px solid var(--lt-gold);
 }
 
 .fa-comment-dots {
@@ -548,6 +576,7 @@ li {
 
 #accountTxt {
     padding: 7% 7%;
+    margin: 0 5%;
 }
 
 #accountTxt p {
@@ -594,9 +623,9 @@ li {
 	left: 0;
 	width: 1em;
 	height: 1em;
-	border: 1px solid rgb(26, 26, 26);
+	border: 1px solid var(--main-bkgnd-color);
 	border-radius: 100%;
-	background: #F8EB61;
+	background: var(--lt-gold);
 }
 
 /* Setup for choice */
@@ -605,13 +634,13 @@ li {
 	content: '';
 	width: 1em;
 	height: 1em;
-	background: #4994CB;
+	background: var(--lt-blue);
 	position: absolute;
 	top: 4px;
 	left: 0;
 	border-radius: 100%;
-	-webkit-transition: all 0.4s cubic-bezier(.09,.7,.78,.26);
-	transition: all 0.4s cubic-bezier(.09,.7,.78,.26);
+	-webkit-transition: all 0.4s cubic-bezier(.09, .7, .78, .26);
+	transition: all 0.4s cubic-bezier(.09, .7, .78, .26);
 }
 
 /* Change choice animation */

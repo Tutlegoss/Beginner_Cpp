@@ -23,8 +23,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Landen Marchand">
-	<meta name="description" content="Beginner's C++ Guide and Personal Project of Landen Marchand">
-	<meta name="keywords" content="meta description, C++, Cpp, Tutorial, Beginner, Programming">
+	<meta name="description" content="Personal Project of Landen Marchand">
+	<meta name="keywords" content="Tutlegoss, C++, Cpp, Tutorial, Beginner, Programming">
 
 	<link rel="icon" href="<?php echo $headerData["Path"]; ?>img/K_Ico.png">
 	<!-- Fonts -->
@@ -37,4 +37,4 @@
 	<link rel="stylesheet" href="<?php echo $headerData["Path"]; ?>inc/css/normalize.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="<?php echo $headerData["Path"]; ?>inc/css/main.min.css">
+	<link rel="stylesheet" href="<?php echo $headerData["Path"]; ?>inc/css/main.css">

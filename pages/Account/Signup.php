@@ -19,8 +19,8 @@
 	{
 		if($_POST) {
 			global $conn;
-			$invalidEntries = FALSE;
-
+			$invalidEntries = TRUE;
+            return;
 			/* Check for @kent.edu email address */
 			$_POST["Email"] = strtolower($_POST["Email"]);
 			if(strpos($_POST["Email"], "@kent.edu") === FALSE ||
@@ -115,22 +115,23 @@
         <div class="my-auto" id="accountTxt">
             <h3 class="heading">Sign Up</h3>
             <hr>
-            <p>Accounts are currently for Kent State students only.</p>
+            <p>Nobody can make an account since I cannot send out emails, sorry.</p>
+            <p>It used to work, so the website is just for my practice now.</p>
             <form action="" method="POST">
                 <div class="row mx-auto">
                     <div class="col-12 col-md-3">
                         <label class="kentYellow mt-2" for="Email">Email</label>
                     </div>
-                    <div class="col-10 col-md-9 align-self-center">
+                    <div class="col-12 col-md-8 align-self-center">
                         <input class="fieldSize" type="email" name="Email" id="Email"
-                               pattern="^(.)*@kent.edu$" placeholder="@kent.edu required" required autofocus>
+                               pattern="" placeholder="Won't work" required autofocus>
                    </div>
                 </div>
                 <div class="row mx-auto">
                     <div class="col-12 col-md-3 mt-2 mt-md-0">
                         <label class="kentBlue mt-2" for="Username">Username</label>
                     </div>
-                    <div class="col-10 col-md-9 align-self-center">
+                    <div class="col-12 col-md-8 align-self-center">
                         <input class="fieldSize" type="text" name="Username" id="Username" minlength="1"
                             maxlength="16" pattern="^\w{1,16}$" placeholder="1-16 Alphanums|No spaces" required>
                     </div>
@@ -139,7 +140,7 @@
                     <div class="col-12 col-md-3 mt-2 mt-md-0">
                         <label class="mt-2" for="Password">Password</label>
                     </div>
-                    <div class="col-10 col-md-9 align-self-center">
+                    <div class="col-12 col-md-8 align-self-center">
                         <input class="fieldSize" type="password" name="Password" id="Password"
                              minlength="1" maxlength="30" pattern=".{8,30}" placeholder="8-30 Chars" required>
                     </div>

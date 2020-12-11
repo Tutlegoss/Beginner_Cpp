@@ -6,7 +6,7 @@
 		global $conn;
 
 		/* Prevent empty comment */
-		if(empty($_POST['comment']))
+		if(empty($_POST['comment']) || ctype_space($_POST['comment']))
 		{
 			return array("message" => "Empty comment - comment failed to be inserted.",
 						 "comment" => $_POST['comment'], "parentNum" => strtolower($_POST['parentNum']));

@@ -4,7 +4,7 @@ TODO:
 		
 		Delete accounts (maybe show on comments)
 		
-		Get rid of any inline styles (look at navbar.inc.php)
+		DONE! Get rid of any inline styles (look at navbar.inc.php)
 		
 		Syntax highlighting on comment code
 		
