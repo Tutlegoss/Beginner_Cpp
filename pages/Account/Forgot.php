@@ -92,7 +92,7 @@
 		}
 	}
 
-	$article = "Kpp Forgot PW";
+	$article = "Forgot PW";
 	require_once("../../inc/php/Fringes/header.inc.php");
 ?>
 	<title><?php echo $headerData["Title"]; ?></title>

@@ -43,7 +43,7 @@
 		}
 	}
 
-	$article = "Kpp Login";
+	$article = "Login";
 	require_once("../../inc/php/Fringes/header.inc.php");
 ?>
 	<title><?php echo $headerData["Title"]; ?></title>

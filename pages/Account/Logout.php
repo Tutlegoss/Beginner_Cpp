@@ -20,7 +20,7 @@
 		}
 	}
 
-	$article = "Kpp Logout";
+	$article = "Logout";
 	require_once("../../inc/php/Fringes/header.inc.php");
 ?>
 	<title><?php echo $headerData["Title"]; ?></title>

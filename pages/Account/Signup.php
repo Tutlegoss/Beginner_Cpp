@@ -100,7 +100,7 @@
 		return;
 	}
 
-	$article = "Kpp Signup";
+	$article = "Signup";
 	require_once("../../inc/php/Fringes/header.inc.php");
 ?>
 	<title><?php echo $headerData["Title"]; ?></title>

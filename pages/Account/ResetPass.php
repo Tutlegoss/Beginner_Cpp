@@ -106,7 +106,7 @@
 		}
 	}
 
-	$article = "Kpp Reset PW";
+	$article = "Reset PW";
 	require_once("../../inc/php/Fringes/header.inc.php");
 ?>
 	<title><?php echo $headerData["Title"]; ?></title>

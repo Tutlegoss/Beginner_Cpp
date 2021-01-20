@@ -10,17 +10,15 @@
             <ul class="nav mr-auto mt-2 mt-md-0 justify-content-around flex-nowrap align-items-center">
                 <li>
                     <a id="nav-CSI" class="nav-link"
-                       href="<?php echo $headerData["Path"]; ?>pages/CSI/CSI_Topics.php">CS I</a>
+                        href="<?php echo $headerData["Path"]; ?>pages/Cpp/CppTopics.php">C++</a>
                 </li>
                 <li>
-                    <a id="nav-CSII" class="nav-link" href="#">CS II</a>
+                    <a id="nav-CSII" class="nav-link"
+                        href="<?php echo $headerData["Path"]; ?>game/connect4.php">Conn4</a>
                 </li>
                 <li>
-                    <a id="nav-CSIII" class="nav-link text-white" href="#">CS III</a>
-                </li>
-                <li>
-                    <a id="nav-Blog" class="nav-link"
-                       href="<?php echo $headerData["Path"]; ?>pages/Blog/OP_OOE.php">Blog</a>
+                    <a id="nav-CSIII" class="nav-link text-white"
+                        href="<?php echo $headerData["Path"]; ?>pages/Blog/OP_OOE.php">Blog</a>
                 </li>
             </ul>
             <ul id="searchAcct" class="nav flex-nowrap mt-3 mb-2 mt-md-0 mb-md-0">
