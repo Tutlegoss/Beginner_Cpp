@@ -20,6 +20,10 @@
                     <a id="nav-CSIII" class="nav-link text-white"
                         href="<?php echo $headerData["Path"]; ?>pages/Blog/OP_OOE.php">Blog</a>
                 </li>
+                <li>
+                    <a id="nav-Algo" class="nav-link"
+                        href="<?php echo $headerData["Path"]; ?>pages/Cpp/AlgoNotes.php">Algo</a>
+                </li>
             </ul>
             <ul id="searchAcct" class="nav flex-nowrap mt-3 mb-2 mt-md-0 mb-md-0">
                 <li>
