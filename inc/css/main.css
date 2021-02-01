@@ -15,6 +15,7 @@
     --blk: rgb(0 0 0);
     --wht: rgb(255 255 255);
     --sdw: rgb(56 56 56);
+    --sdw-grn: rgb(19 94 63);
     --dk-blue: rgb(0 38 100);
     --dk-gold: rgb(239 171 0);
     --lt-gold: rgb(248 235 97);
@@ -23,15 +24,18 @@
     --kgrn: rgb(10 200 120);
     --orng: rgb(255 140 0);
     --teal: rgb(61 245 161);
-    --yellow: rgb(255 255 0);
+    --ylw: rgb(255 255 0);
     --ex-cyan: rgb(40 209 212);
     --ex-grn: rgb(55 212 97);
-    --ex-yellow: rgb(203 222 27);
-    --ex-purple: rgb(161 13 124);
+    --ex-ylw: rgb(203 222 27);
+    --ex-prpl: rgb(161 13 124);
     --select: rgb(0 150 150 / 0.4);
     --quiz-btn-grn: rgb(55 212 97 / 0.6);
     --quiz-btn-blu: rgb(55 212 255 / 0.6);
     --quiz-btn-sdw: rgb(66 245 81);
+    --cpp-topic-grn: rgb(31 178 90);
+    --fontMain: 'Share Tech Mono', Monospace;
+    --fontCode: 'Roboto Mono', Monospace;
 }
 
 /* -------------------- Overall style -------------------- */
@@ -42,12 +46,21 @@
   background: var(--select); /* Gecko Browsers */
 }
 
+.fontMain {
+    font-family: var(--fontMain);
+}
+
+.fontCode {
+    font-family: var(--fontCode);
+    font-size: 0.85rem;
+}
+
 html {
 	height: 100%;
 }
 
 body {
-	font-family: 'Share Tech Mono', Monospace;
+	font-family: var(--fontMain);
 }
 
 footer {
@@ -63,16 +76,20 @@ footer p, #banner p { /* See Navbar for footer img */
 	line-height: 50px;
 }
 
-#article {
+#article, #cppTopics {
 	font-size: 1.1rem;
 	color: var(--main-txt-color);
 	background-color: var(--main-bkgnd-color);
 	min-height: calc(100vh - 111.6px);
 }
 
+#cppTopics {
+    background-color: var(--blk);
+}
+
 /* -------------------- Navbar -------------------- */
 #collapsibleNavbar ul:first-child {
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--fontCode);
     font-size: 15px;
 }
 
@@ -98,7 +115,7 @@ nav img, footer img {
 	border-radius: 0;
 }
 
-#nav-CSI, #nav-Blog {
+#nav-CSI, #nav-Algo, #nav-Blog {
 	color: var(--lt-gold);
 }
 
@@ -317,7 +334,7 @@ a:active {
 }
 
 .co-y {
-	color: var(--yellow);
+	color: var(--ylw);
 }
 
 	/* exBoxes text */
@@ -330,7 +347,12 @@ a:active {
 }
 
 .yellow {
-	color: var(--ex-yellow);
+	color: var(--ex-ylw);
+}
+
+    /* CS Links */
+.begBlu {
+    color: #008800;
 }
 
 /* -------------------- Text area paddng -------------------- See @media below */
@@ -347,7 +369,7 @@ p.text-justify {
 
 .exBoxGreen, .exBoxCyan, .exBoxPurple, .exBoxPurpleQuiz, .exBoxComment,
 .exBoxYellow, .exBoxKelly, .exBoxMagenta, .exFont span, #precTable, .code pre {
-	font-family: 'Roboto Mono', monospace;
+	font-family: var(--fontCode);
 }
 
 	/* Borders */
@@ -369,11 +391,11 @@ p.text-justify {
 }
 
 .exBoxPurple, .exBoxPurpleQuiz, .exBoxComment {
-	border: 3px solid var(--ex-purple);
+	border: 3px solid var(--ex-prpl);
 }
 
 .exBoxYellow {
-	border: 3px solid var(--ex-yellow);
+	border: 3px solid var(--ex-ylw);
 }
 
 	/* Overall box style */
@@ -564,14 +586,57 @@ li {
 }
 
 /* -------------------- Topics -------------------- */
-.csLinks > div {
-	padding: 0 2px;
+.btn-push {
+    position: relative;
+    top: 0px;
+    transition: All 250ms ease;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
-.csLinks button {
-	font-weight: bold;
-	font-size: 1.1rem;
-	height: 100px;
+.btn-push-grn {
+    color: var(--ex-grn);
+    border: 1px inset var(--ex-grn);
+    border-radius: 5px;
+    box-shadow: 0 5px 0 var(--ex-grn);
+}
+
+.btn-push-cyan {
+    color: var(--ex-cyan);
+    border: 1px solid var(--ex-cyan);
+    border-radius: 5px;
+    box-shadow: 0 5px 0 var(--ex-cyan);
+}
+
+.btn-push-ylw {
+    color: var(--ex-ylw);
+    border: 1px solid var(--ex-ylw);
+    border-radius: 5px;
+    box-shadow: 0 5px 0 var(--ex-ylw);
+}
+
+.btn-push-prpl {
+    color: var(--ex-prpl);
+    border: 1px solid var(--ex-prpl);
+    border-radius: 5px;
+    box-shadow: 0 5px 0 var(--ex-prpl);
+}
+
+.btn-push:active {
+    top: 5px;
+    box-shadow: none;
+    transition: All 250ms ease;
+}
+
+#bulletCircle {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    shape-outside: circle();
+    clip-path: circle();
+    background-color: #16B8AA;
+
 }
 
 /* -------------------- Login and Signup -------------------- */
@@ -615,7 +680,7 @@ li {
 	position: relative;
 	padding-left: 28px;
 	cursor: pointer;
-	line-height: 1.5 em;
+	line-height: 1.5em;
 	display: inline-block;
 }
 
@@ -662,61 +727,12 @@ li {
 	transform: scale(1.2);
 }
 
-/* Test Button */
-.btn-push {
-    display: inline-block;
-  position: relative;
-  top: 0px;
-  font-family: "Open Sans";
-  text-decoration: none;
-  font-size: 25px;
-  background: #f7f7f7;
-  border: 1px solid #c4c4c4;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 5px 0px #c4c4c4;
-  -moz-box-shadow: 0px 5px 0px #c4c4c4;
-  -ms-box-shadow: 0px 5px 0px #c4c4c4;
-  -o-box-shadow: 0px 5px 0px #c4c4c4;
-  box-shadow: 0px 5px 0px #c4c4c4;
-  color: #222;
-  text-shadow: 1px 1px 1px #fff;
-  -webkit-transition: All 250ms ease;
-  -moz-transition: All 250ms ease;
-  -o-transition: All 250ms ease;
-  -ms-transition: All 250ms ease;
-  transition: All 250ms ease;
-}
-/*==========  Active State  ==========*/
-.btn-push:active {
-  position: relative;
-  top: 5px;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  -ms-box-shadow: none !important;
-  -o-box-shadow: none !important;
-  box-shadow: none !important;
-  -webkit-transition: All 250ms ease;
-  -moz-transition: All 250ms ease;
-  -o-transition: All 250ms ease;
-  -ms-transition: All 250ms ease;
-  transition: All 250ms ease;
+/* -------------------- Algorithm Class Notes -------------------- */
+.algoNotesPara>pre {
+    color: var(--wht);
+    white-space: pre-wrap;
 }
 
-.testingButton {
-    width: 50%;
-    min-width: 50%;
-    background: #2ec2dd;
-    color: #fff;
-    border: 1px solid #048030;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 5px 0px #177c8e;
-    -moz-box-shadow: 0px 5px 0px #177c8e;
-    -ms-box-shadow: 0px 5px 0px #177c8e;
-    -o-box-shadow: 0px 5px 0px #177c8e;
-    box-shadow: 0px 5px 0px #177c8e;
-    text-shadow: 1px 1px 1px #177c8e;
+.algoNotesPara>p:first-child {
+    font-size: 1.3rem;
 }
