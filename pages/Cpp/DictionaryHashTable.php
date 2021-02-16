@@ -30,9 +30,9 @@
 
             <div class="row mb-4 justify-content-center">
                 <div class="algoNotesPara col-12 col-md-10">
-                    <p class="ml-4">Searchable collection of <span class="co-y">key-element</span> entries
+                    <p class="ml-4">- Searchable collection of <span class="co-y">key-element</span> entries
                         <br>
-                        Keys can be unsorted or sorted
+                        - Keys can be unsorted or sorted
                     </p>
                     <h5 class="text-center co-c">Main Operations</h5>
 <div class="exBoxKelly ml-4 mb-4" style="margin: auto;">
@@ -60,7 +60,7 @@
 
 			<div class="row">
                 <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Hash Table Based Dictionaries</h3>
+                    <h3 class="heading ml-4">Hash Table-Based Dictionaries</h3>
             		<hr>
                 </div>
             </div>
@@ -144,7 +144,8 @@
                     <p class="co-c text-center">Universal Hashing:</p>
                     <br>
                     <pre><span class="co-kg">Universal</span>: Family of hash functions such that for any</pre>
-                    <pre>    <span class="co-m">0 &#x2264; j,k &#x2264; M-1,<span class="co-y">Pr</span>( <span class="co-y">h</span>(j)=<span class="co-y">h</span>(k) ) &#x2264; 1/N</span></pre>
+                    <pre>    <span class="co-m">0 &#x2264; j,k &#x2264; M-1</span></pre>
+                    <pre>    <span class="co-m"><span class="co-y">Pr</span>( <span class="co-y">h</span>(j)=<span class="co-y">h</span>(k) ) &#x2264; 1/N</span></pre>
                     <h5 class="co-c text-center">Theorem</h5>
 <div class="exBoxCyan mb-4" style="margin: auto;">
 <figure class="code">
@@ -293,7 +294,7 @@
             <div class="row">
                 <div class="col-12 d-flex mb-4 pl-5 pr-5 justify-content-between">
                     <a href=".\ElementaryDataStructures.php" style="display: inline-block;">Elementary Data Structures</a>
-                    <a href="#" style="display: inline-block;">Next Lecture</a>
+                    <a href=".\PriorityQueuesHeap.php" style="display: inline-block;">Priority Queues / Heaps</a>
                 </div>
             </div>
 		</div>
