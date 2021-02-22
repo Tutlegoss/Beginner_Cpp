@@ -20,6 +20,7 @@
     --dk-gold: rgb(239 171 0);
     --lt-gold: rgb(248 235 97);
     --lt-blue: rgb(73 148 203);
+    --links: rgb(238 204 0);
     --grn: rgb(70 255 46);
     --kgrn: rgb(10 200 120);
     --orng: rgb(255 140 0);
@@ -271,12 +272,16 @@ hr {
 }
 
 /* -------------------- Links LVFHA -------------------- */
+a {
+    text-decoration: underline;
+}
+
 a:link {
-	color: var(--lt-blue);
+	color: var(--links);
 }
 
 a:visited {
-	color: var(--lt-blue);
+	color: var(--links);
 }
 
 a:focus {
@@ -314,7 +319,7 @@ a:active {
 }
 
 .co-m {
-	color: magenta;
+	color: #cc35cc;
 }
 
 .co-o {
@@ -322,7 +327,7 @@ a:active {
 }
 
 .co-r {
-	color: red;
+	color: #FF5510;
 }
 
 .co-t {
@@ -731,6 +736,7 @@ li {
 .algoNotesPara>pre {
     color: var(--wht);
     white-space: pre-wrap;
+    font-size: 1.1rem;
 }
 
 .algoNotesPara>p:first-child {
