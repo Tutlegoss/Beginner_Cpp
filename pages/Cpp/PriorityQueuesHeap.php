@@ -340,23 +340,23 @@ h <span class="co-y">=</span> <span class="co-m">4</span>, n <span class="co-y">
 <tbody><tr>
 <td><pre class="@ co-g">
 Find new last node <span class="co-r">Z</span>
-              <span class="co-m">       2</span>
-     <span class="co-w">       +</span>--------<span class="co-w">+</span>--------<span class="co-w">+</span>
-     <span class="co-m">       5                 6</span>
-     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>     <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
-     <span class="co-m">9             7</span>     <span class="co-r">Z</span>         <span class="co-o">E</span>
-<span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
-<span class="co-o">E         E   E         E</span>
+              <span class="co-m">           2</span>
+     <span class="co-w">       +</span>------------<span class="co-w">++</span>------------<span class="co-w">+</span>
+     <span class="co-m">       5                          6</span>
+     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>            <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>
+     <span class="co-m">9             7</span>            <span class="co-r">Z</span>             <span class="co-o">E</span>
+<span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>  <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
+<span class="co-o">E         E   E         E  E         E</span>
 
 
 Store k at <span class="co-r">Z</span>
-              <span class="co-m">       2</span>
-     <span class="co-w">       +</span>--------<span class="co-w">+</span>--------<span class="co-w">+</span>
-     <span class="co-m">       5                 6</span>
-     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>     <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
-     <span class="co-m">9             7</span>     <span class="co-r">1</span>         <span class="co-o">E</span>
-<span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
-<span class="co-o">E         E   E         E</span>
+              <span class="co-m">           2</span>
+     <span class="co-w">       +</span>------------<span class="co-w">++</span>------------<span class="co-w">+</span>
+     <span class="co-m">       5                          6</span>
+     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>            <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>
+     <span class="co-m">9             7</span>            <span class="co-r">1</span>             <span class="co-o">E</span>
+<span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>  <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
+<span class="co-o">E         E   E         E  E         E</span>
 
 Restore heap-order below
 </pre></td>
@@ -382,23 +382,23 @@ Restore heap-order below
 <tbody><tr>
 <td><pre class="@ co-g">
 Since <span class="co-m">1</span> is less than its parent, swap
-              <span class="co-m">       2</span>
-     <span class="co-w">       +</span>--------<span class="co-w">+</span>--------<span class="co-w">+</span>
-     <span class="co-m">       5                 1</span> <span class="co-w">&lt;---</span>
-     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>     <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
-     <span class="co-m">9             7</span>     <span class="co-r">6</span> <span class="co-w">&lt;---</span>    <span class="co-o">E</span>
-<span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
-<span class="co-o">E         E   E         E</span>
+              <span class="co-m">           2</span>
+     <span class="co-w">       +</span>------------<span class="co-w">++</span>------------<span class="co-w">+</span>
+     <span class="co-m">       5                          1</span> <span class="co-w">&lt;---</span>
+     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>            <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>
+     <span class="co-m">9             7</span>            <span class="co-r">6</span> <span class="co-w">&lt;---</span>        <span class="co-o">E</span>
+<span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>  <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
+<span class="co-o">E         E   E         E  E         E</span>
 
 
 Since <span class="co-m">1</span> is less than its parent (again), swap
-              <span class="co-m">       1</span> <span class="co-w">&lt;---</span>
-     <span class="co-w">       +</span>--------<span class="co-w">+</span>--------<span class="co-w">+</span>
-     <span class="co-m">       5                 2</span> <span class="co-w">&lt;---</span>
-     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>     <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
-     <span class="co-m">9             7</span>     <span class="co-r">6</span>         <span class="co-o">E</span>
-<span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
-<span class="co-o">E         E   E         E</span>
+              <span class="co-m">           1</span> <span class="co-w">&lt;---</span>
+     <span class="co-w">       +</span>------------<span class="co-w">++</span>------------<span class="co-w">+</span>
+     <span class="co-m">       5                          2</span> <span class="co-w">&lt;---</span>
+     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>            <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>
+     <span class="co-m">9             7</span>            <span class="co-r">6</span>             <span class="co-o">E</span>
+<span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>  <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
+<span class="co-o">E         E   E         E  E         E</span>
 </pre></td>
 </tr></tbody></table></pre>
 <p class="% ml-2 mb-2"></p>
@@ -422,22 +422,22 @@ Since <span class="co-m">1</span> is less than its parent (again), swap
 Remove <span class="co-m">1</span>
 
 Swap <span class="co-m">1</span> and <span class="co-r">6</span>
-              <span class="co-m">       6</span> <span class="co-w">&lt;---</span>
-     <span class="co-w">       +</span>--------<span class="co-w">+</span>--------<span class="co-w">+</span>
-     <span class="co-m">       5                 2</span>
-     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>     <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
-     <span class="co-m">9             7</span>     <span class="co-r">1</span> <span class="co-w">&lt;---</span>    <span class="co-o">E</span>
-<span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
-<span class="co-o">E         E   E         E</span>
+              <span class="co-m">           6</span> <span class="co-w">&lt;---</span>
+     <span class="co-w">       +</span>------------<span class="co-w">++</span>------------<span class="co-w">+</span>
+     <span class="co-m">       5                          2</span>
+     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>            <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>
+     <span class="co-m">9             7</span>            <span class="co-r">1</span> <span class="co-w">&lt;---</span>         <span class="co-o">E</span>
+<span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>  <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
+<span class="co-o">E         E   E         E  E         E</span>
 
 
 Replace <span class="co-r">1</span> with leaf
-Make <span class="co-m">7</span> the new <span class="co-r">Z</span>
-              <span class="co-m">       6</span>
-     <span class="co-w">       +</span>--------<span class="co-w">+</span>--------<span class="co-w">+</span>
-     <span class="co-m">       5                 2</span>
-     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>     <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
-     <span class="co-m">9</span>             <span class="co-r">7</span> <span class="co-w">&lt;--</span> <span class="co-o">E</span> <span class="co-w">&lt;---</span>    <span class="co-o">E</span>
+The leaf is still the last node <span class="co-r">Z</span> (for now)
+              <span class="co-m">           6</span>
+     <span class="co-w">       +</span>------------<span class="co-w">++</span>------------<span class="co-w">+</span>
+     <span class="co-m">       5                          2</span>
+     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>            <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>
+     <span class="co-m">9             7</span>            <span class="co-r">E</span> <span class="co-w">&lt;---</span>         <span class="co-o">E</span>
 <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
 <span class="co-o">E         E   E         E</span>
 
@@ -449,6 +449,55 @@ Restore heap-order below
 </div>
                 </div>
             </div>
+
+            <div class="row mb-4 justify-content-center">
+                <div class="algoNotesPara col-12 col-md-10">
+                    <p class="co-c text-center">Heapify Downward</p>
+                    <pre>    Replacing root key with the <span class="co-r">last node</span>'s key, heap-order may be violated</pre>
+                    <pre>    <span class="co-kg">downheap</span>: Restores heap-order</pre>
+                    <pre>        Swaps k with the key of its smallest child (downward path)</pre>
+                    <pre>    Finish when k is a leaf or child keys are &#x2265; k</pre>
+                    <pre>    Runs in <span class="co-m">O(log(n))</span></pre>
+<h5 class="text-center co-c">Example: removeMin()</h5>
+<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+<figure class="code">
+<pre><table class="table borderless my-auto">
+<tbody><tr>
+<td><pre class="@ co-g">
+Remove <span class="co-m">1</span>
+
+Swap <span class="co-m">6</span> and <span class="co-m">2</span>
+              <span class="co-m">           2</span> <span class="co-w">&lt;---</span>
+     <span class="co-w">       +</span>------------<span class="co-w">++</span>------------<span class="co-w">+</span>
+     <span class="co-m">       5                          6</span> <span class="co-w">&lt;---</span>
+     <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>            <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>
+     <span class="co-m">9             7</span>            <span class="co-r">E</span> <span class="co-w">&lt;---</span>         <span class="co-o">E</span>
+<span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
+<span class="co-o">E         E   E         E</span>
+
+Node with key <span class="co-m">6</span> has two leaf nodes as children
+No more actions need to take place to correct heap-order
+Last node now needs to be found below
+</pre></td>
+</tr></tbody></table></pre>
+<p class="% ml-2 mb-2"></p>
+</figure>
+</div>
+                </div>
+            </div>
+
+            <div class="row mb-4 justify-content-center">
+                <div class="algoNotesPara col-12 col-md-10">
+                    <p class="co-c text-center">Find New Last Node</p>
+                    <pre>    Traverse path of <span class="co-m">O(log(n))</span> nodes:</pre>
+                    <pre>        While current node is right child, go to parent</pre>
+                    <pre>        If current node is left child, go to parent's right child</pre>
+                    <pre>        While current node is internal, go to left child</pre>
+                    <pre>    Akin to updating last node after removal</pre>
+                </div>
+            </div>
+
+
 
             <div class="row">
                 <div class="col-12 d-flex mb-4 pl-5 pr-5 justify-content-between">
