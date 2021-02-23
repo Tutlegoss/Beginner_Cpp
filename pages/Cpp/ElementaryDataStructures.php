@@ -580,7 +580,9 @@ Update:
                     <p class="co-c text-center">Terms</p>
                     <pre>    <span class="co-kg">Root Node</span>: Top (first) element</pre>
                     <pre>    <span class="co-kg">Internal Node</span>: Elements with at least one child</pre>
+                    <pre>        <span class="co-o">{Internal Nodes can contain NULLPTRs as children}</span></pre>
                     <pre>    <span class="co-kg">External Node/Leaves</span>: Elements with no children</pre>
+                    <pre>        <span class="co-o">{External Nodes can be the NULLPTR itself}</span></pre>
                     <pre>    <span class="co-kg">Height</span>: Longest path from root to any leaf node <span class="co-r">(Don't count the root)</span></pre>
                     <pre>        <span class="co-c">Min</span>: <span class="co-y">floor</span>(<span class="co-m">log<sub>2</sub>(numOfNodes)</span>)</pre>
                     <pre>        <span class="co-c">Max</span>: <span class="co-m">numOfNodes - 1</span>  (Skewed left/right)</pre>
@@ -589,6 +591,7 @@ Update:
                     <pre>            <span class="co-c">Max</span>: <span class="co-m">2<sup>Height + 1</sup> - 1</span></pre>
                     <pre>            <span class="co-c">Range</span>: {<span class="co-m">Height + 1</span>}&#x222A;[<span class="co-m">2<sup>Height</sup> , 2<sup>Height + 1</sup> - 1</span>]</pre>
                     <pre>    <span class="co-kg">Depth</span>: Same as Height</pre>
+                    <pre>        <span class="co-o">{Overall. From a specific node, height may not be the same as depth}</span></pre>
                 </div>
             </div>
 

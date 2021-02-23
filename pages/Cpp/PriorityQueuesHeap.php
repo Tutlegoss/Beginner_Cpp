@@ -146,7 +146,7 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
                         <br>
                         - Implemented with an unsorted sequence
                         <br>
-                        - Runs in <span class="co-m">O(n<sup>2</sup>)</span>
+                        - Runs in <span class="co-m">O(n<sup class="co-c">2</sup>)</span>
                         <br>
                         - <a href="https://stackoverflow.com/tags/selection-sort/info">Stack Overflow: Selection Sort</a>
                     </p>
@@ -158,9 +158,9 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
             <div class="row mb-4 justify-content-center">
                 <div class="algoNotesPara col-12 col-md-10">
                     <p class="co-c text-center">Running Time</p>
-                    <pre>    <span class="co-y">insertItem</span> with n insertions takes <span class="co-m">O(n)</span> time</pre>
-                    <pre>    Remove elements in sorted order with n <span class="co-y">removeMin</span> operations takes</pre>
-                    <pre>        <span class="co-m">1 + 2 + ... + n</span></pre>
+                    <pre>    <span class="co-y">insertItem</span> with <span class="co-m">n</span> insertions takes <span class="co-m">O(n)</span> time</pre>
+                    <pre>    Remove elements in sorted order with <span class="co-m">n</span> <span class="co-y">removeMin</span> operations takes</pre>
+                    <pre>        <span class="co-m">1 + 2 + ... + <span class="co-m">n</span></span></pre>
                     <pre>    Bottleneck during selecting minimum element</pre>
                 </div>
             </div>
@@ -178,7 +178,7 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
                         <br>
                         - Implemented with a sorted sequence
                         <br>
-                        - Runs in <span class="co-m">O(n<sup>2</sup>)</span>
+                        - Runs in <span class="co-m">O(n<sup class="co-c">2</sup>)</span>
                     </p>
                 </div>
             </div>
@@ -186,9 +186,9 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
             <div class="row mb-4 justify-content-center">
                 <div class="algoNotesPara col-12 col-md-10">
                     <p class="co-c text-center">Running Time</p>
-                    <pre>    <span class="co-y">insertItem</span> with n insertion operations takes</pre>
-                    <pre>        <span class="co-m">1 + 2 + ... + n</span></pre>
-                    <pre>    Remove elements in sorted order with n <span class="co-y">removeMin</span> operations takes <span class="co-m">O(n)</span> time</pre>
+                    <pre>    <span class="co-y">insertItem</span> with <span class="co-m">n</span> insertion operations takes</pre>
+                    <pre>        <span class="co-m">1 + 2 + ... + <span class="co-m">n</span></span></pre>
+                    <pre>    Remove elements in sorted order with <span class="co-m">n</span> <span class="co-y">removeMin</span> operations takes <span class="co-m">O(n)</span> time</pre>
                     <pre>    Bottleneck during insert</pre>
                 </div>
             </div>
@@ -230,11 +230,11 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
                     <pre>    Binary tree that:</pre>
                     <pre>        Stores keys in internal nodes</pre>
                     <pre>        <span class="co-kg">Heap-Order</span>:</pre>
-                    <pre>            <span class="co-y">key</span>(v) <span class="co-o">&#x2265;</span> <span class="co-y">key</span>(<span class="co-y">parent</span>(v))</pre>
-                    <pre>            For every interal node v except the root</pre>
+                    <pre>            <span class="co-y">key</span>(<span class="co-m">v</span>) <span class="co-o">&#x2265;</span> <span class="co-y">key</span>(<span class="co-y">parent</span>(<span class="co-m">v</span>))</pre>
+                    <pre>            For every interal node <span class="co-m">v</span> except the root</pre>
                     <pre>        <span class="co-kg">Complete Binary Tree</span>:</pre>
-                    <pre>            Let h = height</pre>
-                    <pre>            for <span class="co-m">i = 0 ,..., h - 2</span>, there are <span class="co-m">2<sup>i</sup></span> of depth <span class="co-m">i</span></pre>
+                    <pre>            Let <span class="co-m">h</span> = height</pre>
+                    <pre>            for <span class="co-m">i = 0 ,..., h - 2</span>, there are <span class="co-m">2<sup class="co-c">i</sup></span> of depth <span class="co-m">i</span></pre>
                     <pre>            Depth <span class="co-m">h - 1</span>, internal nodes are left of external nodes</pre>
                     <pre>    Last node is the rightmost internal node of depth <span class="co-m">h - 1</span></pre>
 <h5 class="text-center co-c">Example</h5>
@@ -265,12 +265,12 @@ Therefore, the <span class="co-y">last node</span> is <span class="co-m">5</span
                     <p class="co-c text-center">Height of Heap</p>
                     <pre>    Complete binary tree</pre>
                     <pre>    <span class="co-y">Theorem</span>:</pre>
-                    <pre>        A heap storing n keys has height <span class="co-m">O(log(n))</span></pre>
-                    <pre>            Let h = height, n = keys</pre>
-                    <pre>            <span class="co-m">2<sup>i</sup></span> keys at depth <span class="co-m">i = 0 ,..., h - 2</span></pre>
+                    <pre>        A heap storing <span class="co-m">n</span> keys has height <span class="co-m">O(log(n))</span></pre>
+                    <pre>            Let <span class="co-m">h</span> = height, <span class="co-m">n</span> = keys</pre>
+                    <pre>            <span class="co-m">2<sup class="co-c">i</sup></span> keys at depth <span class="co-m">i = 0 ,..., h - 2</span></pre>
                     <pre>            Minimum of one key at depth <span class="co-m">h - 1</span>,</pre>
-                    <pre>            <span class="co-m">n &#x2265; 1 + 2 + 4 + ... + 2<sup>h-2</sup> + 1</span></pre>
-                    <pre>            So, <span class="co-m">n &#x2265; 2<sup>h-1</sup></span>, that is, <span class="co-m"> h &#x2264; log(n) + 1</span></pre>
+                    <pre>            <span class="co-m">n &#x2265; 1 + 2 + 4 + ... + 2<sup class="co-c">h-2</sup> + 1</span></pre>
+                    <pre>            So, <span class="co-m">n &#x2265; 2<sup class="co-c">h-1</sup></span>, that is, <span class="co-m"> h &#x2264; log(n) + 1</span></pre>
 <h5 class="text-center co-c">Example</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
@@ -282,14 +282,14 @@ Depth     Keys
      <span class="co-w">                         +</span>------------<span class="co-w">++</span>------------<span class="co-w">+</span>
   <span class="co-y">1        2</span>           <span class="co-c">       &#x25C9;                         &#x25C9;</span>
                        <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>            <span class="co-w">+</span>------<span class="co-w">+</span>------<span class="co-w">+</span>
- <span class="co-y">h-2      2<sup>h-2</sup>         </span><span class="co-c">&#x25C9;             &#x25C9;            &#x25C9;            &#x25C9;</span>
+ <span class="co-y">h-2      2<sup class="co-c">h-2</sup>         </span><span class="co-c">&#x25C9;             &#x25C9;            &#x25C9;            &#x25C9;</span>
                   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>  <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
  <span class="co-y">h-1       1</span>      <span class="co-c">&#x25C9;</span>         <span class="co-o">E   E         E  E         E   E         E</span>
               <span class="co-w">+</span>---<span class="co-w">+</span>---<span class="co-w">+</span>
                <span class="co-o">E      E</span>
 
-h <span class="co-y">=</span> <span class="co-m">4</span>, n <span class="co-y">=</span> <span class="co-m">8</span>
-<span class="co-m">8</span> <span class="co-y">&#x2265;</span> <span class="co-m">2<sup>3</sup></span>
+h <span class="co-y">=</span> <span class="co-m">4</span>, <span class="co-m">n</span> <span class="co-y">=</span> <span class="co-m">8</span>
+<span class="co-m">8</span> <span class="co-y">&#x2265;</span> <span class="co-m">2<sup class="co-c">3</sup></span>
 <span class="co-m">4</span> <span class="co-y">&#x2264; log</span>(<span class="co-m">8</span>) <span class="co-y">+</span> <span class="co-m">1</span>
 </pre></td>
 </tr></tbody></table></pre>
@@ -331,7 +331,7 @@ h <span class="co-y">=</span> <span class="co-m">4</span>, n <span class="co-y">
                 <div class="algoNotesPara col-12 col-md-10">
                     <p class="co-c text-center">insertItem(k,e)</p>
                     <pre>    Find new <span class="co-r">last node Z</span></pre>
-                    <pre>    Store k at <span class="co-r">Z</span>, and make <span class="co-r">Z</span> an internal node</pre>
+                    <pre>    Store <span class="co-m">k</span> at <span class="co-r">Z</span>, and make <span class="co-r">Z</span> an internal node</pre>
                     <pre>    Restore heap-order</pre>
 <h5 class="text-center co-c">Example: insertItem(1,Elem)</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
@@ -372,8 +372,8 @@ Restore heap-order below
                     <p class="co-c text-center">Heapify Upward</p>
                     <pre>    Heap-order may be violated after insertion</pre>
                     <pre>    <span class="co-kg">upheap</span>: Restores heap-order</pre>
-                    <pre>        Swaps k with its parent node (upward path)</pre>
-                    <pre>    Finish when k is Root or parent is &#x2264; k</pre>
+                    <pre>        Swaps <span class="co-m">k</span> with its parent node (upward path)</pre>
+                    <pre>    Finish when <span class="co-m">k</span> is Root or parent is &#x2264; <span class="co-m">k</span></pre>
                     <pre>    Runs in <span class="co-m">O(log(n))</span></pre>
 <h5 class="text-center co-c">Example: insertItem(1,Elem)</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
@@ -455,8 +455,8 @@ Restore heap-order below
                     <p class="co-c text-center">Heapify Downward</p>
                     <pre>    Replacing root key with the <span class="co-r">last node</span>'s key, heap-order may be violated</pre>
                     <pre>    <span class="co-kg">downheap</span>: Restores heap-order</pre>
-                    <pre>        Swaps k with the key of its smallest child (downward path)</pre>
-                    <pre>    Finish when k is a leaf or child keys are &#x2265; k</pre>
+                    <pre>        Swaps <span class="co-m">k</span> with the key of its smallest child (downward path)</pre>
+                    <pre>    Finish when <span class="co-m">k</span> is a leaf or child keys are <span class="co-o">&#x2265;</span> <span class="co-m">k</span></pre>
                     <pre>    Runs in <span class="co-m">O(log(n))</span></pre>
 <h5 class="text-center co-c">Example: removeMin()</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
@@ -477,7 +477,7 @@ Swap <span class="co-m">6</span> and <span class="co-m">2</span>
 
 Node with key <span class="co-m">6</span> has two leaf nodes as children
 No more actions need to take place to correct heap-order
-Last node now needs to be found below
+Last node now needs to be found (below is the pseudocode)
 </pre></td>
 </tr></tbody></table></pre>
 <p class="% ml-2 mb-2"></p>
@@ -488,16 +488,123 @@ Last node now needs to be found below
 
             <div class="row mb-4 justify-content-center">
                 <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Find New Last Node</p>
+                    <p class="co-c text-center">Find New Last Node (Insertion)</p>
                     <pre>    Traverse path of <span class="co-m">O(log(n))</span> nodes:</pre>
-                    <pre>        While current node is right child, go to parent</pre>
-                    <pre>        If current node is left child, go to parent's right child</pre>
-                    <pre>        While current node is internal, go to left child</pre>
+                    <pre>        While current node is <span class="co-y">right child</span>, go to parent</pre>
+                    <pre>        If current node is <span class="co-y">left child</span>, go to parent's <span class="co-y">right child</span></pre>
+                    <pre>        While current node is internal, go to <span class="co-y">left child</span></pre>
                     <pre>    Akin to updating last node after removal</pre>
                 </div>
             </div>
 
+            <div class="row mb-4 justify-content-center">
+                <div class="algoNotesPara col-12 col-md-10">
+                    <p class="co-c text-center">Find New Last Node (Removal)</p>
+                    <pre>    Traverse path of <span class="co-m">O(log(n))</span> nodes:</pre>
+                    <pre>        While current node is left, go to parent</pre>
+                    <pre>        If current node is <span class="co-y">right child</span>, go to parent's <span class="co-y">left child</span></pre>
+                    <pre>        While current node is internal, go to <span class="co-y">right child</span></pre>
+                    <pre>    Akin to updating last node after removal</pre>
+                </div>
+            </div>
 
+            <div class="row mb-4 justify-content-center">
+                <div class="algoNotesPara col-12 col-md-10">
+                    <p class="co-c text-center">Heap Sort</p>
+                    <pre>    Priority queue with <span class="co-m">n</span> items via a heap</pre>
+                    <pre>    <span class="co-m">O(n)</span> space</pre>
+                    <pre>    <span class="co-kg">insertItem, removeMin</span> take <span class="co-m">O(log(n))</span> time</pre>
+                    <pre>    <span class="co-kg">isEmpty, minKey, minElement</span> take <span class="co-m">O(1)</span> time</pre>
+                    <pre>    Sort <span class="co-m">n</span> elements in <span class="co-m">O(nlog(n))</span> time (faster then quadratic algorithems)</pre>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <p class="co-c">Heap / Heap Sort</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H5kAcmGOn4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mt-4 mb-4">
+                    <h3 class="heading ml-4">Misc Heap Info</h3>
+            		<hr>
+                </div>
+            </div>
+
+            <div class="row mb-4 justify-content-center">
+                <div class="algoNotesPara col-12 col-md-10">
+                    <p class="co-c text-center">Vector-based Heap</p>
+                    <pre>    Heap with <span class="co-m">n</span> keys uses vector of length <span class="co-m">n + 1</span></pre>
+                    <pre>        <span class="co-o">{Start at index 1}</span></pre>
+                    <pre>    Node at rank <span class="co-m">i</span>:</pre>
+                    <pre>        <span class="co-y">Left child</span> is rank <span class="co-m">2i</span></pre>
+                    <pre>        <span class="co-y">Right child</span> is rank <span class="co-m">2i + 1</span></pre>
+                    <pre>    No links nor leaves</pre>
+                    <pre>    Last node is at rank <span class="co-m">n</span></pre>
+                    <pre>        <span class="co-kg">insertItem</span> inserts at rank <span class="co-m">n + 1</span></pre>
+                    <pre>        <span class="co-kg">removeMin</span> removes at rank <span class="co-m">n</span></pre>
+                    <pre>            Swap root with last node</pre>
+                    <pre>    In-place Heap-sort</pre>
+                </div>
+            </div>
+
+            <div class="row mb-4 justify-content-center">
+                <div class="algoNotesPara col-12 col-md-10">
+                    <p class="co-c text-center">Bottom-Up Heap Construction</p>
+                    <pre>    All keys already known:</pre>
+                    <pre>        Build heap recursively</pre>
+                    <pre>    Example:</pre>
+                    <pre>        Number of keys <span class="co-m">n</span> <span class="co-o">=</span> <span class="co-m">2<sup class="co-c">h</sup> - 1</span> (Complete Heap)</pre>
+                    <pre>        Each depth <span class="co-m">i</span> <span class="co-o">=</span> <span class="co-m">0,...,h - 2</span> has <span class="co-m">2<sup class="co-c">i</sup></span> internal nodes</pre>
+                    <pre>    Build heap bottom-up with <span class="co-m">log(n)</span> phases</pre>
+                    <pre>    Phase <span class="co-m">i</span>:</pre>
+                    <pre>        Pairs of heaps with <span class="co-m">2<sup class="co-c">i</sup> - 1</span> keys are merged with <span class="co-m">2<sup class="co-c">i+1</sup> - 1</span> keys</pre>
+                    <pre>        <span class="co-o">{Each sub-heap has this property}</pre>
+<h5 class="text-center co-c">Bottom-Up Heap</h5>
+<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+<figure class="code">
+<pre><table class="table borderless my-auto">
+<tbody><tr>
+<td><pre><?php $STRING = <<<'EOD'
+``G``W+``E-----``W+``E------------``W+``E--------------``W+``E-------------``W+``E
+|  i  ``G|``E  Internal  ``G|``E  Heap Pairs  ``G|``E    Total    ``G|``E
+``G|``E     ``G|``E   Nodes    ``G|``E  w/ __ keys  ``G|``E    Keys     ``G|``E
+``W+``E-----``W+``E------------``W+``E--------------``W+``E-------------``W+``E``E
+``M``G|``E  0  ``G|``E   2``SC0``SE ``Y=``E 1   ``G|``E   2``SC0``SE-1 ``Y=``E 0   ``G|``E  2``SC0+1``SE-1 ``Y=``E 1  ``G|``E
+``G|``E  1  ``G|``E   2``SC1``SE ``Y=``E 2   ``G|``E   2``SC1``SE-1 ``Y=``E 1   ``G|``E  2``SC1+1``SE-1 ``Y=``E 3  ``G|``E
+``G|``E  2  ``G|``E   2``SC2``SE ``Y=``E 4   ``G|``E   2``SC2``SE-1 ``Y=``E 3   ``G|``E  2``SC2+1``SE-1 ``Y=``E 7  ``G|``E
+``G|``E  3  ``G|``E   2``SC3``SE ``Y=``E 8   ``G|``E   2``SC3``SE-1 ``Y=``E 7   ``G|``E  2``SC3+1``SE-1 ``Y=``E 15 ``G|``E
+``G|``E h-2 ``G|``E    2``SCh-2``SE    ``G||``E    2``SCh-2``SE-1    ``G|``E   2``SCh-2+1 ``SE-1   ``G|``E``E
+``G``W+``E-----``W+``E------------``W+``E--------------``W+``E-------------``W+``E
+
+n ``Y=``E ``M15``E | i ``Y=``E ``M2``E | h ``Y=``E ``M4``E
+``CRoot Node``E | ``RSub-Heap 1``E | ``OSub-heap 2``E | Leaf Nodes
+
+``C1)``E When i ``Y=``E ``M0``E, put ``CRoot Node``E
+``T2)``E When i ``Y=``E ``M1``E, attach level ``M1``E to ``CRoot Node``E
+``Y3)``E When i ``Y=``E ``M2``E, attach levels ``M2``E and ``M3``E to above tree
+
+``C1)``E                   ``C*``E                   ``CLEVEL: 0``E
+``T2)``E         ``R*``E                  ``O*``E          ``TLEVEL: 1``E
+``Y3)``E     ``R*        *``E         ``O*        *``E     ``YLEVEL: 2``E
+     ``R*   *    *   *``E     ``O*   *    *   *``E   ``YLEVEL: 3``E
+    * * * *  * * * *   * * * *  * * * *  ``WLEVEL: 4``E
+``E
+EOD;
+
+$lookFor = array("``T", "``C", "``SC", "``G", "``M", "``O", "``R", "``W", "``Y", "``E", "``SE");
+$replaceWith = array('<span class="co-t">', '<span class="co-c">', '<sup class="co-c">', '<span class="co-g">', '<span class="co-m">', '<span class="co-o">',
+                     '<span class="co-r">', '<span class="co-w">', '<span class="co-y">', '</span>', '</sup>');
+echo str_replace($lookFor, $replaceWith, $STRING); ?>
+</pre></td>
+</tr></tbody></table></pre>
+<p class="% ml-2 mb-2"></p>
+</figure>
+</div>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col-12 d-flex mb-4 pl-5 pr-5 justify-content-between">
