@@ -54,7 +54,7 @@
                     <pre><span class="co-kg">Log File</span>: Dictionary implemented by storing items in an <span class="co-c">unsorted sequence</span></pre>
                     <pre class="co-kg">    insertItem: <span class="co-m">O(n)</span></pre>
                     <pre class="co-kg">    findElement / removeElement: <span class="co-m">O(n)</span> (worst case)</pre>
-                    <pre>    Effective for dictionaries that are of small size / insertions are the main operation while searches / removales are rare</pre>
+                    <pre>Effective for dictionaries that are of small size / insertions are the main operation while searches / removales are rare</pre>
                 </div>
             </div>
 
@@ -70,10 +70,10 @@
                     <p class="co-c text-center">Hash Functions and Hash tables</p>
                     <br>
                     <pre><span class="co-kg">Hash Table</span>: for some key type consists of</pre>
-                    <pre>    1] Array of size <span class="co-m">N</span></pre>
-                    <pre>    2] Hash function <span class="co-m">h</span></pre>
+                    <pre>1] Array of size <span class="co-m">N</span></pre>
+                    <pre>2] Hash function <span class="co-m">h</span></pre>
                     <pre><span class="co-kg">Hash Function</span>: <span class="co-m">h</span> maps keys of a given type to integers in the interval <span class="co-m">[0, N-1]</span></pre>
-                    <pre>    <span class="co-m">h(x) = x mod N</span> is a hash function for <span class="co-c">int</span> keys, and <span class="co-m">h(x)</span> is the <span class="co-kg">hash value</span> of key <span class="co-m">x</span></pre>
+                    <pre><span class="co-m">h(x) = x mod N</span> is a hash function for <span class="co-c">int</span> keys, and <span class="co-m">h(x)</span> is the <span class="co-kg">hash value</span> of key <span class="co-m">x</span></pre>
                     <pre>Store item <span class="co-c">(key, value)</span> at index <span class="co-m">i = h(k)</span></pre>
                     <pre>Each index should have the same probability to be mapped to an item</pre>
                     <h5 class="text-center co-c">Example</h5>
@@ -126,15 +126,15 @@
                     <br>
                     <pre>Recall: <span class="co-c">ints</span> --&gt; <span class="co-m">[0, N-1]</span></pre>
                     <pre><span class="co-kg">Division</span>: <span class="co-m">h<sub>2</sub>(y) = y mod N</span>, but repeated keys of the form <span class="co-m">iN + j</span> cause collisions:</pre>
-                    <pre>    Ex] <span class="co-o">N = 11 and iN+j where j is fixed and i is varying</span></pre>
-                    <pre>        <span class="co-o">y = 1 --&gt; 0(11) + 1 --&gt; 1 mod 11 = 1</span></pre>
-                    <pre>        <span class="co-o">y = 12 --&gt; 1(11) + 1 --&gt; 12 mod 11 = 1</span></pre>
+                    <pre>Ex] <span class="co-o">N = 11 and iN+j where j is fixed and i is varying</span></pre>
+                    <pre>    <span class="co-o">y = 1 --&gt; 0(11) + 1 --&gt; 1 mod 11 = 1</span></pre>
+                    <pre>    <span class="co-o">y = 12 --&gt; 1(11) + 1 --&gt; 12 mod 11 = 1</span></pre>
                     <pre><span class="co-kg">Multiply, Add, and Divide (MAD)</span>: <span class="co-m">h<sub>2</sub>(y) = ((ay+b) mod p) mod N</span>, and is a good function</pre>
-                    <pre>    Good functions guarantee small collision probability</pre>
-                    <pre>    <span class="co-m">N</span> is prime to prevent collisions:</pre>
-                    <pre>    Ex] <span class="co-o">N = 11 and ((2y + 3) mod 13) mod 11</span></pre>
-                    <pre>        <span class="co-o">y = 1 --&gt; ((2*1 + 3) mod 13) mod 11 = (5 mod 13) mod 11 = 5</span></pre>
-                    <pre>        <span class="co-o">y = 12 --&gt; ((2*12 + 3) mod 13) mod 11 = (27 mod 13) mod 11 = 1</span></pre>
+                    <pre>Good functions guarantee small collision probability</pre>
+                    <pre><span class="co-m">N</span> is prime to prevent collisions:</pre>
+                    <pre>Ex] <span class="co-o">N = 11 and ((2y + 3) mod 13) mod 11</span></pre>
+                    <pre>    <span class="co-o">y = 1 --&gt; ((2*1 + 3) mod 13) mod 11 = (5 mod 13) mod 11 = 5</span></pre>
+                    <pre>    <span class="co-o">y = 12 --&gt; ((2*12 + 3) mod 13) mod 11 = (27 mod 13) mod 11 = 1</span></pre>
                     <pre>Useful for storing passwords</pre>
                 </div>
             </div>
@@ -144,8 +144,8 @@
                     <p class="co-c text-center">Universal Hashing:</p>
                     <br>
                     <pre><span class="co-kg">Universal</span>: Family of hash functions such that for any</pre>
-                    <pre>    <span class="co-m">0 &#x2264; j,k &#x2264; M-1</span></pre>
-                    <pre>    <span class="co-m"><span class="co-y">Pr</span>( <span class="co-y">h</span>(j)=<span class="co-y">h</span>(k) ) &#x2264; 1/N</span></pre>
+                    <pre><span class="co-m">0 &#x2264; j,k &#x2264; M-1</span></pre>
+                    <pre><span class="co-m"><span class="co-y">Pr</span>( <span class="co-y">h</span>(j)=<span class="co-y">h</span>(k) ) &#x2264; 1/N</span></pre>
                     <h5 class="co-c text-center">Theorem</h5>
 <div class="exBoxCyan mb-4" style="margin: auto;">
 <figure class="code">
@@ -162,8 +162,8 @@
 </figure>
 </div>
                 <pre><span class="co-kg">Takeaway</span>:</pre>
-                <pre>    There exists a hash function that guarantees keys are evenly distributed, so any 2 distinct keys have a probability no more than <span class="co-m">1/N</span> of mapping to the same hash value</pre>
-                <pre>    <span class="co-kg">Multiply, Add, and Divide</span> is universal and runs in <span class="co-m">O(1)</span></pre>
+                <pre>There exists a hash function that guarantees keys are evenly distributed, so any 2 distinct keys have a probability no more than <span class="co-m">1/N</span> of mapping to the same hash value</pre>
+                <pre><span class="co-kg">Multiply, Add, and Divide</span> is universal and runs in <span class="co-m">O(1)</span></pre>
                 </div>
             </div>
 
@@ -179,7 +179,7 @@
                     <pre><span class="co-kg">Collisions</span>: When different elements map to the same cell</pre>
                     <pre><span class="co-kg">Chaining</span>: Each cell of the table points to a linked list of elements, so collisions can exist at the same hash. Requires additional memory</pre>
                     <pre><span class="co-kg">Open Addressing</span>: Colliding item is placed elsewhere in the table. No additional memory but complex searching/removing</pre>
-                    <pre>    Common Types: <span class="co-kg">Linear Probing, Quadratic Probing, Double Hashing</span></pre>
+                    <pre>Common Types: <span class="co-kg">Linear Probing, Quadratic Probing, Double Hashing</span></pre>
                 </div>
             </div>
 
@@ -210,20 +210,20 @@
 </figure>
 </div>
                     <pre><span class="co-kg">Searching</span>: Uses <span class="co-y">findElement(k)</span></pre>
-                    <pre>    1] Start at cell <span class="co-m">h(k)</span></pre>
-                    <pre>    2] Check consecutive locations until:</pre>
-                    <pre>        An item with key <span class="co-m">k</span> is found OR</pre>
-                    <pre>        An empty cell is found OR</pre>
-                    <pre>        <span class="co-m">N</span> cells have been unsuccessfully probed</pre>
+                    <pre>1] Start at cell <span class="co-m">h(k)</span></pre>
+                    <pre>2] Check consecutive locations until:</pre>
+                    <pre>    An item with key <span class="co-m">k</span> is found OR</pre>
+                    <pre>    An empty cell is found OR</pre>
+                    <pre>    <span class="co-m">N</span> cells have been unsuccessfully probed</pre>
                     <pre><span class="co-kg">Removing</span>: Uses <span class="co-y">removeElement(k)</span></pre>
-                    <pre>    <span class="co-r">An object called <span class="co-c">AVAILABLE</span> replaces deleted elements</span></pre>
-                    <pre>    1] Search for item with key <span class="co-m">k</span></pre>
-                    <pre>    2] found ? replace with <span class="co-c">AVAILABLE</span> and return element : return <span class="co-c">NO_SUCH_KEY</span></pre>
+                    <pre><span class="co-r">An object called <span class="co-c">AVAILABLE</span> replaces deleted elements</span></pre>
+                    <pre>1] Search for item with key <span class="co-m">k</span></pre>
+                    <pre>2] found ? replace with <span class="co-c">AVAILABLE</span> and return element : return <span class="co-c">NO_SUCH_KEY</span></pre>
                     <pre><span class="co-kg">Insertion</span>: Uses <span class="co-y">insertItem(k, o)</span></pre>
-                    <pre>    Throw exception if table is full</pre>
-                    <pre>    1] Start at cell <span class="co-m">h(k)</span></pre>
-                    <pre>    2] Search consecutive cells until a cell <span class="co-m">i</span> is found that's empty or contzains <span class="co-c">AVAILABLE</span></pre>
-                    <pre>    3] Store item <span class="co-m">(k, o)</span> in cell <span class="co-m">i</span></pre>
+                    <pre>Throw exception if table is full</pre>
+                    <pre>1] Start at cell <span class="co-m">h(k)</span></pre>
+                    <pre>2] Search consecutive cells until a cell <span class="co-m">i</span> is found that's empty or contzains <span class="co-c">AVAILABLE</span></pre>
+                    <pre>3] Store item <span class="co-m">(k, o)</span> in cell <span class="co-m">i</span></pre>
                 </div>
             </div>
 
@@ -232,12 +232,12 @@
                     <p class="co-c text-center">Double Hashing</p>
                     <br>
                     <pre><span class="co-kg">Secondary Hash Function</span> <span class="co-m">d(k)</span> used to place items in first free cell</pre>
-                    <pre>    <span class="co-m">A[(h(k) + id(k)) mod N]</span> for <span class="co-m">i = 0, 1, 2, ...</span></pre>
+                    <pre><span class="co-m">A[(h(k) + id(k)) mod N]</span> for <span class="co-m">i = 0, 1, 2, ...</span></pre>
                     <pre><span class="co-m">d(k)</span> cannot have zero values <span class="co-r">(This is the interval function)</span></pre>
                     <pre>The table size <span class="co-m">N</span> must be prime to allow probing of all cells</pre>
                     <pre>Works like <span class="co-kg">Linear Probing</span>, but the interval to the next cell is not always 1</pre>
-                    <pre>    The interval depends on the incoming data <span class="co-t">(ex] Check every 3 cells after the original placement)</span></pre>
-                    <pre>    This makes it such that values mapping to the same location will have different intervals</pre>
+                    <pre>The interval depends on the incoming data <span class="co-t">(ex] Check every 3 cells after the original placement)</span></pre>
+                    <pre>This makes it such that values mapping to the same location will have different intervals</pre>
                     <h5 class="co-c text-center">Example</h5>
 <div class="exBoxCyan ml-4 mb-4" style="margin: auto;">
 <figure class="code">
@@ -269,8 +269,8 @@
                     <pre><span class="co-y">Worst Case</span>: (when all keys collide) Searches, insertions, removals are <span class="co-m">O(n)</span></pre>
                     <pre><span class="co-y">Load Factor</span>: (expected size of each cell (bucket))<span class="co-m">a = n/N</span> affects performance</pre>
                     <pre><span class="co-y"># Probes for Insertion</span>: </pre>
-                    <pre>    open addressing is <span class="co-m">1/(1-a)</span></pre>
-                    <pre>    chaining is <span class="co-m">O(1+a)</span></pre>
+                    <pre>open addressing is <span class="co-m">1/(1-a)</span></pre>
+                    <pre>chaining is <span class="co-m">O(1+a)</span></pre>
                     <pre><span class="co-y">Expected Running Time</span>: <span class="co-m">O(1)</span></pre>
                     <pre>Hashing is fast as long as load factor isn't near 100%</pre>
                 </div>
@@ -281,13 +281,13 @@
                     <p class="co-c text-center">Chaining vs Open Addressing</p>
                     <br>
                     <pre><span class="co-y">Chaining</span></pre>
-                    <pre>    Less sensitive to hashing and loaf factor</pre>
-                    <pre>    Supports <span class="co-m">a &gt; 100%</span></pre>
+                    <pre>Less sensitive to hashing and loaf factor</pre>
+                    <pre>Supports <span class="co-m">a &gt; 100%</span></pre>
                     <pre><span class="co-y">Open Addressing</span></pre>
-                    <pre>    Careful selection of hashing to avoid clustering</pre>
-                    <pre>    Degrades past <span class="co-m">a &gt; 70%</span></pre>
-                    <pre>    Can't support <span class="co-m">a &gt; 100%</span></pre>
-                    <pre>    Better memory usage</pre>
+                    <pre>Careful selection of hashing to avoid clustering</pre>
+                    <pre>Degrades past <span class="co-m">a &gt; 70%</span></pre>
+                    <pre>Can't support <span class="co-m">a &gt; 100%</span></pre>
+                    <pre>Better memory usage</pre>
                 </div>
             </div>
 

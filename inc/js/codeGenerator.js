@@ -63,7 +63,8 @@
             output = sanitize(output);
 
 			/* Actual HTML to be displayed */
-			source = source.replace(/``C/gi, '<span class="co-c">')
+			source = source.replace(/``B/gi, '<span class="co-b">')
+						   .replace(/``C/gi, '<span class="co-c">')
                            .replace(/``G/gi, '<span class="co-g">')
 			               .replace(/``M/gi, '<span class="co-m">')
                            .replace(/``O/gi, '<span class="co-o">')

@@ -103,14 +103,14 @@
                     <br>
                     <pre>The total number of operations: <span class="co-c">7n - 1</span></pre>
                     <pre><span class="co-kg">Estimating Running Time</span>:</pre>
-                    <pre>    <span class="co-y">Worst Case</span>: <span class="co-c">7n - 1</span></pre>
-                    <pre>    <span class="co-y">Best Case</span>: <span class="co-c">5n + 1</span></pre>
-                    <pre>        Loop executes 0 times</pre>
-                    <pre>        If loop executes, best case is when the inner <span class="co-r">if</span> statement always returns false. Therefore, <span class="co-c">5n + 1</span> is the best case</pre>
-                    <pre>        Why: Line 5 is excluded</pre>
+                    <pre><span class="co-y">Worst Case</span>: <span class="co-c">7n - 1</span></pre>
+                    <pre><span class="co-y">Best Case</span>: <span class="co-c">5n + 1</span></pre>
+                    <pre>    Loop executes 0 times</pre>
+                    <pre>    If loop executes, best case is when the inner <span class="co-r">if</span> statement always returns false. Therefore, <span class="co-c">5n + 1</span> is the best case</pre>
+                    <pre>    Why: Line 5 is excluded</pre>
                     <pre>Equation: Let <span class="co-c">a</span> be fastest operation time and <span class="co-c">b</span> be the slowest operation time:</pre>
-                    <pre>    <span class="co-c">a(7n - 1) &#x2264; T(n) &#x2264; b(7n - 1)</span></pre>
-                    <pre>    Therefore, <span class="co-c">T(n)</span> is bounded by linear functions</pre>
+                    <pre><span class="co-c">a(7n - 1) &#x2264; T(n) &#x2264; b(7n - 1)</span></pre>
+                    <pre>Therefore, <span class="co-c">T(n)</span> is bounded by linear functions</pre>
                 </div>
             </div>
 

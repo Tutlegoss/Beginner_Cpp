@@ -23,7 +23,9 @@
     --links: rgb(238 204 0);
     --grn: rgb(70 255 46);
     --kgrn: rgb(10 200 120);
+    --mgnta: rgb(204 53 204);
     --orng: rgb(255 140 0);
+    --red: rgb(255 48 48);
     --teal: rgb(61 245 161);
     --ylw: rgb(255 255 0);
     --ex-cyan: rgb(40 209 212);
@@ -36,7 +38,7 @@
     --quiz-btn-sdw: rgb(66 245 81);
     --cpp-topic-grn: rgb(31 178 90);
     --fontMain: 'Share Tech Mono', Monospace;
-    --fontCode: 'Roboto Mono', Monospace;
+    --fontCode: 'Space Mono', Monospace;
 }
 
 /* -------------------- Overall style -------------------- */
@@ -306,6 +308,10 @@ a:active {
 }
 
 	/* Code */
+.co-b {
+    color: #a1a1a1;
+}
+
 .co-c {
 	color: cyan;
 }
@@ -319,7 +325,7 @@ a:active {
 }
 
 .co-m {
-	color: #cc35cc;
+	color: var(--mgnta);
 }
 
 .co-o {
@@ -327,7 +333,7 @@ a:active {
 }
 
 .co-r {
-	color: #FF5510;
+	color: var(--red);
 }
 
 .co-t {
@@ -353,11 +359,6 @@ a:active {
 
 .yellow {
 	color: var(--ex-ylw);
-}
-
-    /* CS Links */
-.begBlu {
-    color: #008800;
 }
 
 /* -------------------- Text area paddng -------------------- See @media below */
@@ -415,8 +416,7 @@ p.text-justify {
 
 .exBoxGreen, .exBoxCyan, .exBoxPurple, .exBoxYellow,
 .exBoxKelly, .exBoxMagenta {
-	margin-left: 15%;
-	margin-right: 15%;
+
 }
 
 @media only screen and (max-width: 767.98px)
@@ -492,7 +492,7 @@ summary::-webkit-details-marker {
 .code pre {
 	margin-top: 0;
 	margin-bottom: 0;
-	font-size: 0.95rem;
+	font-size: 0.98rem;
 }
 
 .borderless td, .borderless th {
@@ -733,6 +733,15 @@ li {
 }
 
 /* -------------------- Algorithm Class Notes -------------------- */
+.algoDirBtnSize {
+    min-width: 50%;
+    width: 50%;
+}
+
+.algoBtnInlnBk {
+    display: inline-block;
+}
+
 .algoNotesPara>pre {
     color: var(--wht);
     white-space: pre-wrap;
@@ -741,4 +750,16 @@ li {
 
 .algoNotesPara>p:first-child {
     font-size: 1.3rem;
+}
+
+.redBlackTreeHighlight {
+    color: #000;
+    font-weight: bold;
+    text-shadow: -1px 0px 4px #fff;
+}
+
+.blackHighlight {
+    color: #000;
+    font-weight: bold;
+    background-color: #999;
 }

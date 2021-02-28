@@ -21,7 +21,7 @@
 	<div class="row">
 	<div id="article" class="col-12">
 		<h2 class="heading mt-3 text-center">Code Generator - V2.0</h2>
-        <h5 class="mt-3 text-center">TODO: OUTPUT whitespace/color, toggle output</h5>
+        <h5 class="mt-3 text-center">TODO: OUTPUT whitespace/color, toggle output / insert line where needed / handle many multiple lines so line and output visible</h5>
 		<br>
 
 <div class="exBoxPurple" id="result">
