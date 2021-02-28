@@ -755,7 +755,7 @@ li {
 .redBlackTreeHighlight {
     color: #000;
     font-weight: bold;
-    text-shadow: -1px 0px 4px #fff;
+    text-shadow: 1px 0px 8px #fff;
 }
 
 .blackHighlight {

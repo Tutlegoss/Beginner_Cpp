@@ -5,7 +5,7 @@
 	$article = "Red Black Trees";
 	require_once("../../inc/php/Fringes/header.inc.php");
 
-    $redBlack = "<span class='redBlackTreeHighlight'><span style='color: #880000;'>Red</span>-Black</span>";
+    $redBlack = "<span style='color: #880000;'>Red-</span><span class='redBlackTreeHighlight'>Black</span>";
 ?>
 	<title><?php echo $headerData["Title"]; ?></title>
 	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
