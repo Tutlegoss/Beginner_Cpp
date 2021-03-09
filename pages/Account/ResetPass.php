@@ -21,7 +21,7 @@
 		/* Can't access page directly */
 		if(!$_POST && !isset($_GET['ext'])) {
 			echo "<p class='ml-4 kentYellow'>No valid reset password configuration found. Redirecting to login...</p>";
-			header("refresh: 2; url='./login.php'");
+			header("refresh: 2; url='./Login.php'");
 			return TRUE;
 		}
 

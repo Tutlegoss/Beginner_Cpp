@@ -150,7 +150,7 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
                         <br>
                         - <a href="https://stackoverflow.com/tags/selection-sort/info">Stack Overflow: Selection Sort</a>
                     </p>
-                    <img src=<?php echo '"' . $headerData["Path"] . 'img/SelectionSort.png"'; ?> alt="Selection Sort Graphic"
+                    <img src=<?php echo '"' . $headerData["Path"] . 'img/Algo/SelectionSort.png"'; ?> alt="Selection Sort Graphic"
                          class="mx-auto d-block">
                 </div>
             </div>
@@ -203,9 +203,9 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
                     <pre>Use <span class="co-y">swapElements</span> versus making a new sequence</pre>
                     <pre><a href="https://www.w3resource.com/php-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-3.php">w3resource: Insertion Sort</a></pre>
                     <pre>    <span class="co-o">Link for next two images (PHP)</span></pre>
-                    <img src=<?php echo '"' . $headerData["Path"] . 'img/SelectionSort.png"'; ?> alt="Selection Sort Graphic"
+                    <img src=<?php echo '"' . $headerData["Path"] . 'img/Algo/SelectionSort.png"'; ?> alt="Selection Sort Graphic"
                          class="mx-auto d-block">
-                    <img src=<?php echo '"' . $headerData["Path"] . 'img/InsertionSortAnim.gif"'; ?> alt="Insertion Sort QR" class="mx-auto d-block mt-4">
+                    <img src=<?php echo '"' . $headerData["Path"] . 'img/Algo/InsertionSortAnim.gif"'; ?> alt="Insertion Sort QR" class="mx-auto d-block mt-4">
                     </p>
                 </div>
             </div>

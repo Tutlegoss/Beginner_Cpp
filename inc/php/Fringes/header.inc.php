@@ -26,7 +26,7 @@
 	<meta name="description" content="Personal Project of Landen Marchand">
 	<meta name="keywords" content="Tutlegoss, C++, Cpp, Tutorial, Beginner, Programming">
 
-	<link rel="icon" href="<?php echo $headerData["Path"]; ?>img/K_Ico.png">
+	<link rel="icon" href="<?php echo $headerData["Path"]; ?>img/SiteImgs/K_Ico.png">
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">

@@ -1,7 +1,7 @@
 
     <nav class="navbar navbar-dark navbar-expand-md">
         <a class="navbar-brand" href="<?php echo $headerData["Path"]; ?>index.php">
-            <img src="<?php echo $headerData["Path"]; ?>img/Kpp.png" alt="Kpp"></a>
+            <img src="<?php echo $headerData["Path"]; ?>img/SiteImgs/Kpp.png" alt="Kpp"></a>
         <button id="toggler" class="navbar-toggler" type="button" aria-label="Hamburger"
                 data-toggle="collapse" data-target="#collapsibleNavbar">
             <i class="fas fa-bars"></i>

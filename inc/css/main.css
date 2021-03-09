@@ -8,6 +8,22 @@
 
 */
 
+/* -------------------- Custom Fonts -------------------- */
+@font-face {
+    font-family: 'SuperMario';
+    src: url('../fonts/SuperMario.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nintendo';
+    src: url('../fonts/Nintendo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SNES';
+    src: url('../fonts/SNESItalic.ttf') format('truetype');
+}
+
 /* -------------------- ROOT VARS -------------------- */
 :root {
     --main-bkgnd-color: rgb(26 26 26);
@@ -37,8 +53,19 @@
     --quiz-btn-blu: rgb(55 212 255 / 0.6);
     --quiz-btn-sdw: rgb(66 245 81);
     --cpp-topic-grn: rgb(31 178 90);
+    --jakks-blu: rgb(7 114 186);
+    --jakks-grn: rgb(20 167 81);
+    --jakks-red: rgb(236 32 40);
+    --mario-blu: rgb(0 155 217);
+    --mario-grn: rgb(68 175 53);
+    --mario-red: rgb(230 35 16);
+    --mario-ylw: rgb(252 207 0);
+    --nintendo-red: rgb(228 0 15);
     --fontMain: 'Share Tech Mono', Monospace;
     --fontCode: 'Space Mono', Monospace;
+    --fontMario: 'SuperMario', 'Share Tech Mono', Monospace;
+    --fontNin: 'Nintendo', 'Share Tech Mono', Monospace;
+    --fontSNES: 'SNES', 'Share Tech Mono', Monospace;
 }
 
 /* -------------------- Overall style -------------------- */
@@ -762,4 +789,151 @@ li {
     color: #000;
     font-weight: bold;
     background-color: #999;
+}
+
+/* -------------------- Catalog -------------------- */
+    /* Colors */
+.mario-blu {
+    color: var(--mario-blu);
+}
+
+.mario-grn {
+    color: var(--mario-grn);
+}
+
+.mario-red {
+    color: var(--mario-red);
+}
+
+.mario-ylw {
+    color: var(--mario-ylw);
+}
+
+.jakks-blu {
+    color: var(--jakks-blu);
+}
+
+.jakks-grn {
+    color: var(--jakks-grn);
+}
+
+.jakks-red {
+    color: var(--jakks-red);
+}
+
+    /* Font Styling */
+.marioTitleSize {
+    font-size: 2.5rem;
+}
+
+.nintendoFont {
+    font-family: var(--fontNin);
+    color: var(--nintendo-red);
+    border: 9px solid var(--wht);
+    border-radius: 50px;
+    padding: 0 25px;
+}
+
+@media only screen and (max-width: 991.98px)
+{
+    .marioTitleSize {
+        font-size: 2.3rem;
+    }
+}
+
+.snes {
+    font-family: var(--fontSNES);
+    font-size: 2.5rem;
+}
+
+.superMario {
+    font-family: var(--fontMario);
+}
+
+    /* Horizontal Rule */
+.nintendohr {
+	border-top: 3px solid;
+	border-image: linear-gradient(to right, var(--nintendo-red), var(--nintendo-red), var(--nintendo-red), var(--wht), var(--wht)) 1;
+	margin-top: -5px;
+}
+
+.mariohr {
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, var(--mario-blu), var(--mario-grn), var(--mario-ylw), var(--mario-red)) 1;
+    margin-top: -5px;
+}
+
+.marioCtnrBtm {
+    margin-bottom: 7rem;
+}
+
+.marioHeader {
+    background-color: var(--blk);
+    border: 5px inset var(--jakks-blu);
+    width: 99.8%;
+    color: var(--wht);
+    line-height: 1.5;
+}
+
+.marioTable {
+     font-family: var(--fontMario);
+     border: 5px inset var(--jakks-blu);
+     font-size: 1.4rem;
+     background: var(--blk);
+ }
+
+.marioTableGrn th {
+    border-right: 4px inset var(--jakks-grn);
+    border-bottom: 4px inset var(--jakks-grn);
+}
+
+.marioTableGrn td {
+    border-bottom: 4px inset var(--jakks-grn);
+}
+
+.marioTableYlw th {
+    border-right: 4px inset var(--mario-ylw);
+    border-bottom: 4px inset var(--mario-ylw);
+}
+
+.marioTableYlw td {
+    border-bottom: 4px inset var(--mario-ylw);
+}
+
+.marioTableBlu th {
+    border-right: 4px inset var(--jakks-blu);
+    border-bottom: 4px inset var(--jakks-blu);
+}
+
+.marioTableBlu td {
+    border-bottom: 4px inset var(--jakks-blu);
+}
+
+@media only screen and (max-width: 575.98px)
+{
+    .marioTable {
+        font-size: 0.96rem;
+    }
+}
+
+.marioImgSize {
+    width: 60%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    border: 2px inset white;
+    height: 30px;
+    width: 30px;
+    margin: auto 5%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px)
+{
+    .marioImgSize {
+        width: 45%;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        margin: auto 8%;
+    }
 }
