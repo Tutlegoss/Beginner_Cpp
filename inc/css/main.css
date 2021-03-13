@@ -506,7 +506,7 @@ details:not([open]) {
 	padding-bottom: 1rem;
 }
 
-summary::-webkit-details-marker {
+summary::marker {
   display: none;
 }
 
@@ -826,19 +826,19 @@ li {
     font-size: 2.5rem;
 }
 
+@media only screen and (max-width: 991.98px)
+{
+    .marioTitleSize {
+        font-size: 2.3rem;
+    }
+}
+
 .nintendoFont {
     font-family: var(--fontNin);
     color: var(--nintendo-red);
     border: 9px solid var(--wht);
     border-radius: 50px;
     padding: 0 25px;
-}
-
-@media only screen and (max-width: 991.98px)
-{
-    .marioTitleSize {
-        font-size: 2.3rem;
-    }
 }
 
 .snes {
@@ -848,6 +848,7 @@ li {
 
 .superMario {
     font-family: var(--fontMario);
+    letter-spacing: 2px;
 }
 
     /* Horizontal Rule */
@@ -870,70 +871,77 @@ li {
 .marioHeader {
     background-color: var(--blk);
     border: 5px inset var(--jakks-blu);
-    width: 99.8%;
     color: var(--wht);
     line-height: 1.5;
+    font-size: 1.4rem;
 }
 
-.marioTable {
-     font-family: var(--fontMario);
-     border: 5px inset var(--jakks-blu);
-     font-size: 1.4rem;
-     background: var(--blk);
- }
-
-.marioTableGrn th {
-    border-right: 4px inset var(--jakks-grn);
-    border-bottom: 4px inset var(--jakks-grn);
+    /* Card (inner/outer) Styling */
+.marioCard {
+     background-color: var(--blk);
+     border: 3px solid var(--jakks-blu);
 }
 
-.marioTableGrn td {
-    border-bottom: 4px inset var(--jakks-grn);
+.marioInfo {
+    font-family: var(--fontMario);
+    letter-spacing: 2px;
 }
 
-.marioTableYlw th {
-    border-right: 4px inset var(--mario-ylw);
-    border-bottom: 4px inset var(--mario-ylw);
+.marioInfo pre {
+    font-family: var(--fontMario);
+    font-size: 1.1rem;
 }
 
-.marioTableYlw td {
-    border-bottom: 4px inset var(--mario-ylw);
+.marioNotes {
+    font-family: var(--fontCode);
+    font-size: 1.1rem;
 }
 
-.marioTableBlu th {
-    border-right: 4px inset var(--jakks-blu);
-    border-bottom: 4px inset var(--jakks-blu);
+.carousel-control-prev,
+.carousel-control-next {
+    border: 2px inset white;
+    height: 30px;
+    width: 30px;
+    margin: auto 3.9%;
 }
 
-.marioTableBlu td {
-    border-bottom: 4px inset var(--jakks-blu);
+.marioHorizImgSize {
+    width: 70%;
+}
+
+.marioImgSize {
+    width: 45%;
 }
 
 @media only screen and (max-width: 575.98px)
 {
-    .marioTable {
-        font-size: 0.96rem;
+    .marioImgSize {
+        width: 55%;
     }
 }
 
-.marioImgSize {
-    width: 60%;
-}
+@media only screen and (min-width: 576px) and (max-width: 767.98px)
+{
+    .marioRowPadding {
+        padding: 0 10%;
+    }
 
-.carousel-control-prev, .carousel-control-next {
-    border: 2px inset white;
-    height: 30px;
-    width: 30px;
-    margin: auto 5%;
+    .marioImgSize {
+        width: 50%;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px)
 {
     .marioImgSize {
-        width: 45%;
+        width: 55%;
     }
+}
 
-    .carousel-control-prev, .carousel-control-next {
-        margin: auto 8%;
+@media only screen and (min-width: 992px)
+{
+    .marioRowPadding {
+        padding: 0 10%;
     }
 }
