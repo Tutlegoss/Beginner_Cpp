@@ -87,11 +87,13 @@
 		if(checkBackticks($comment))
         {
 			/* Comment/Code wrapper */
-			$exCodeStart = "<div class='exBoxComment mb-3 mt-2'>"
+			$exCodeStart = "<div class='row'>"
+						  ."<div class='col-auto'>"
+						  ."<div class='exBoxComment mb-3 mt-2'>"
 						  ."<figure class='code'>"
 						  ."<pre><table class='table borderless my-auto'>"
 						  ."<tr><td><pre class='co-g'>";
-			$exCodeEnd   = "</pre></td></tr></table></pre></figure></div>";
+			$exCodeEnd   = "</pre></td></tr></table></pre></figure></div></div></div>";
 
 			/* Insert </p> before <div> */
 			/* Encapsulate code with appropriate HTML tags in place of ``` */
@@ -174,7 +176,7 @@
 				/* Create comment display area */
 				echo  "<div class='col-12 mt-5 commentBorder'>"
 					 ."<p class='kentYellow'>$user[Username]</p>";
-				echo  comment2Code($parent['Text']);
+				echo "<div class='commentMgn'>" . comment2Code($parent['Text']) . "</div>";
 				echo  "<span id='reply$parent[EntryNum]' class='kentBlue'>$parent[Time] "
 				     ."<span class='kentYellow'>|</span> Post #$parent[EntryNum] "
 				     ."<span class='kentYellow'>|</span> ";
@@ -230,7 +232,7 @@
 			echo  "<div class='col-11 mt-5 ml-auto'>"
 				 ."<p class='kentYellow'>$user[Username] <span class='kentBlue'>-</span> "
 				 ."Reply to $repliedUsername #$repliedPost</p>";
-			echo  comment2Code($child['Text']);
+			echo  "<div class='commentMgn'>" . comment2Code($child['Text']) . "</div>";
 			echo  "<span id='reply$child[EntryNum]' class='kentBlue'>$child[Time] <span class='kentYellow'>|</span> "
 			     ."Post #$child[EntryNum] <span class='kentYellow'>|</span> ";
 

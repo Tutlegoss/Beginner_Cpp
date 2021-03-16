@@ -24,6 +24,10 @@
                     <a id="nav-Algo" class="nav-link"
                         href="<?php echo $headerData["Path"]; ?>pages/Algo/AlgoTopics.php">Algo</a>
                 </li>
+                <li>
+                    <a id="nav-Catalog" class="nav-link"
+                        href="<?php echo $headerData["Path"]; ?>pages/Catalog/Catalogs.php">Catalogs</a>
+                </li>
             </ul>
             <ul id="searchAcct" class="nav flex-nowrap mt-3 mb-2 mt-md-0 mb-md-0">
                 <li>

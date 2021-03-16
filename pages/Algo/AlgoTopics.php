@@ -5,7 +5,6 @@
 	$article = "Algorithm Dir";
 	require_once("../../inc/php/Fringes/header.inc.php");
 
-    $pdfLocation = "window.location.href='$headerData[Path]cppPDF/";
     $idNum = 0;
 ?>
 	<title><?php echo $headerData["Title"]; ?></title>
@@ -26,17 +25,17 @@
             <div class="container mt-4 mb-4">
 
                 <div class="d-flex justify-content-center">
-                    <button id="<?php echo "btn" . strval($idNum++) ?>" class="algoDirBtnSize algoBtnInlnBk btn-push btn-push-grn mb-5"
-                        onclick="window.location.href='AlgoNotes.php';">Pseudocode <br>
-                        Growth <br>
-                        Analysis <br>
-                        Math Review
-                    </button>
+                    <a href="./AlgoNotes.php" id="<?php echo "btn" . strval($idNum++) ?>" class="dirBtn dirBtnGrn btn-push btn-push-grn mb-5" role="button">
+                            Pseudocode <br>
+                            Growth <br>
+                            Analysis <br>
+                            Math Review
+                    </a>
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <button id="<?php echo "btn" . strval($idNum++) ?>" class="algoDirBtnSize algoBtnInlnBk btn-push btn-push-ylw mb-5"
-                        onclick="window.location.href='ElementaryDataStructures.php';">Elementary Data Structures <br>
+                    <a href="./ElementaryDataStructures.php" id="<?php echo "btn" . strval($idNum++) ?>" class="dirBtn dirBtnYlw btn-push btn-push-ylw mb-5">
+                        Elementary Data Structures <br>
                         Stack <br>
                         Amortization <br>
                         Queue <br>
@@ -44,51 +43,52 @@
                         Vector <br>
                         Sequence <br>
                         Tree
-                    </button>
+                    </a>
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <button id="<?php echo "btn" . strval($idNum++) ?>" class="algoDirBtnSize algoBtnInlnBk btn-push btn-push-cyan mb-5"
-                        onclick="window.location.href='DictionaryHashTable.php';">Dictionary <br>
+                    <a href="./DictionaryHashTable.php" id="<?php echo "btn" . strval($idNum++) ?>" class="dirBtn dirBtnCyan btn-push btn-push-cyan mb-5">
+                        Dictionary <br>
                         Hash Table (Dictionary) <br>
                         Collision Handling <br>
-                    </button>
+                    </a>
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <button id="<?php echo "btn" . strval($idNum++) ?>" class="algoDirBtnSize algoBtnInlnBk btn-push btn-push-grn mb-5"
-                        onclick="window.location.href='PriorityQueuesHeap.php';">Priority Queues <br>
+                    <a href="./PriorityQueuesHeap.php" id="<?php echo "btn" . strval($idNum++) ?>" class="dirBtn dirBtnGrn btn-push btn-push-grn mb-5">
+                        Priority Queues <br>
                         Selection Sort <br>
                         Insertion Sort <br>
                         Heap-Based Priority Queue <br>
                         Misc Heap Info
-                    </button>
+                    </a>
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <button id="<?php echo "btn" . strval($idNum++) ?>" class="algoDirBtnSize algoBtnInlnBk btn-push btn-push-ylw mb-5"
-                        onclick="window.location.href='BinaryTreeOrdDict.php';">Ordered Dictionaries <br>
+                    <a href="./BinaryTreeOrdDict.php" id="<?php echo "btn" . strval($idNum++) ?>" class="dirBtn dirBtnYlw btn-push btn-push-ylw mb-5">
+                        Ordered Dictionaries <br>
                         Binary Tree Operations <br>
                         Worst-Case Compare (unordered / ordered)
-                    </button>
+                    </a>
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <button id="<?php echo "btn" . strval($idNum++) ?>" class="algoDirBtnSize algoBtnInlnBk btn-push btn-push-cyan mb-5"
-                        onclick="window.location.href='RedBlackTrees.php';"> (2,4) Trees <br>
+                    <a href="./RedBlackTrees.php" id="<?php echo "btn" . strval($idNum++) ?>" class="dirBtn dirBtnCyan btn-push btn-push-cyan mb-5">
+                        (2,4) Trees <br>
                         Red-Black Trees <br>
                         Fixing Double Red <br>
                         Fixing Double Black <br>
                         Reorganization
-                    </button>
+                    </a>
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <button id="<?php echo "btn" . strval($idNum++) ?>" class="algoDirBtnSize algoBtnInlnBk btn-push btn-push-grn mb-5"
-                        onclick="window.location.href='MergeQuickSelection.php';"> Merge Sort <br>
-                        Quick Sort <br>
-                        Selection Sort
-                    </button>
+                    <a href="./MergeQuickSelection.php" id="<?php echo "btn" . strval($idNum++) ?>" class="dirBtn dirBtnGrn btn-push btn-push-grn mb-5">
+                        Sets <br>
+                        Merge Sort <br>
+                        Selection Sort <br>
+                        Quick Sort
+                    </a>
                 </div>
             </div>
 

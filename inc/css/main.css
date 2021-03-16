@@ -24,6 +24,11 @@
     src: url('../fonts/SNESItalic.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'MarioKart';
+    src: url('../fonts/MarioKart.ttf') format('truetype');
+}
+
 /* -------------------- ROOT VARS -------------------- */
 :root {
     --main-bkgnd-color: rgb(26 26 26);
@@ -66,6 +71,7 @@
     --fontMario: 'SuperMario', 'Share Tech Mono', Monospace;
     --fontNin: 'Nintendo', 'Share Tech Mono', Monospace;
     --fontSNES: 'SNES', 'Share Tech Mono', Monospace;
+    --fontMK: 'MarioKart', 'Share Tech Mono', Monospace;
 }
 
 /* -------------------- Overall style -------------------- */
@@ -120,7 +126,11 @@ footer p, #banner p { /* See Navbar for footer img */
 /* -------------------- Navbar -------------------- */
 #collapsibleNavbar ul:first-child {
     font-family: var(--fontCode);
-    font-size: 15px;
+    font-size: 16px;
+}
+
+.nav-link {
+    padding: 0.5rem 0.6rem;
 }
 
 nav img, footer img {
@@ -149,7 +159,7 @@ nav img, footer img {
 	color: var(--lt-gold);
 }
 
-#nav-CSII {
+#nav-CSII, #nav-Catalog {
  	color: var(--lt-blue);
 }
 
@@ -251,6 +261,10 @@ hr {
 	background-color: rgba(0 38 100 / 0.3);
 	border-color: var(--lt-blue);
 	color: var(--wht);
+}
+
+.btnBlue:hover {
+    color: var(--lt-gold);
 }
 
 .btnYellow {
@@ -398,15 +412,17 @@ p.text-justify {
 }
 
 /* -------------------- Colored boxes -------------------- */
-	/* Font */
+figure {
+    margin: 0;
+}
 
+	/* Font */
 .exBoxGreen, .exBoxCyan, .exBoxPurple, .exBoxPurpleQuiz, .exBoxComment,
 .exBoxYellow, .exBoxKelly, .exBoxMagenta, .exFont span, #precTable, .code pre {
 	font-family: var(--fontCode);
 }
 
 	/* Borders */
-
 .exBoxCyan {
 	border: 3px solid var(--ex-cyan);
 }
@@ -436,14 +452,9 @@ p.text-justify {
 .exBoxYellow, .exBoxComment, .exBoxKelly, .exBoxMagenta {
 	border-radius: 5px;
 	box-shadow: inset 0 0 15px 2px var(--sdw);
-	padding-right: 10px;
+	padding-right: 15px;
 	background-color: var(--blk);
-	font-size: 0.95rem;
-}
-
-.exBoxGreen, .exBoxCyan, .exBoxPurple, .exBoxYellow,
-.exBoxKelly, .exBoxMagenta {
-
+	font-size: 1rem;
 }
 
 @media only screen and (max-width: 767.98px)
@@ -511,15 +522,10 @@ summary::marker {
 }
 
 /* -------------------- Example code -------------------- */
-.code {
-	padding-left: 1%;
-	margin: 0 0;
-}
-
 .code pre {
 	margin-top: 0;
 	margin-bottom: 0;
-	font-size: 0.98rem;
+	font-size: 1rem;
 }
 
 .borderless td, .borderless th {
@@ -558,7 +564,7 @@ li {
 
 /* -------------------- Table -------------------- */
 #precTable {
-	font-size: 0.9rem;
+	font-size: 1rem;
 	background-color: var(--blk);
 	white-space: nowrap;
 }
@@ -606,18 +612,11 @@ li {
     cursor: pointer;
 }
 
-.exBoxComment {
-	margin-right: 25%;
+.commentMgn {
+    margin-left: 3%;
 }
 
-@media only screen and (max-width: 767.98px)
-{
-	.exBoxComment {
-		margin-right: 0;
-	}
-}
-
-/* -------------------- Topics -------------------- */
+/* -------------------- Directory Buttons -------------------- */
 .btn-push {
     position: relative;
     top: 0px;
@@ -653,6 +652,20 @@ li {
     border: 1px solid var(--ex-prpl);
     border-radius: 5px;
     box-shadow: 0 5px 0 var(--ex-prpl);
+}
+
+.btn-push-MarioGrn {
+    color: var(--mario-grn);
+    border: 1px solid var(--mario-grn);
+    border-radius: 5px;
+    box-shadow: 0 5px 0 var(--mario-grn);
+}
+
+.btn-push-MarioBlu {
+    color: var(--mario-blu);
+    border: 1px solid var(--mario-blu);
+    border-radius: 5px;
+    box-shadow: 0 5px 0 var(--mario-blu);
 }
 
 .btn-push:active {
@@ -759,16 +772,47 @@ li {
 	transform: scale(1.2);
 }
 
-/* -------------------- Algorithm Class Notes -------------------- */
-.algoDirBtnSize {
+/* -------------------- Directory Links -------------------- */
+.dirBtn {
     min-width: 50%;
     width: 50%;
+    text-decoration: none;
+    text-align: center;
 }
 
-.algoBtnInlnBk {
-    display: inline-block;
+@media only screen and (max-width: 991.98px)
+{
+    .dirBtn {
+        min-width: 90%;
+        width: 90%
+    }
 }
 
+a.dirBtnGrn {
+    color: var(--ex-grn);
+}
+
+a.dirBtnYlw {
+    color: var(--ex-ylw);
+}
+
+a.dirBtnCyan {
+    color: var(--ex-cyan);
+}
+
+a.dirBtnMarioGrn {
+    color: var(--mario-grn);
+}
+
+a.dirBtnMarioBlu {
+    color: var(--mario-blu);
+}
+
+.dirBtn:hover {
+    text-decoration: none;
+}
+
+/* -------------------- Algorithm Class Notes -------------------- */
 .algoNotesPara>pre {
     color: var(--wht);
     white-space: pre-wrap;
@@ -851,6 +895,10 @@ li {
     letter-spacing: 2px;
 }
 
+.marioKart {
+    font-family: var(--fontMK);
+}
+
     /* Horizontal Rule */
 .nintendohr {
 	border-top: 3px solid;
@@ -923,7 +971,7 @@ li {
 @media only screen and (min-width: 576px) and (max-width: 767.98px)
 {
     .marioRowPadding {
-        padding: 0 10%;
+        padding: 0 15%;
     }
 
     .marioImgSize {
@@ -932,16 +980,26 @@ li {
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991.98px)
+@media only screen and (min-width: 768px) and (max-width: 1199.98px)
 {
+    .marioRowPadding {
+        padding: 0%;
+    }
+
     .marioImgSize {
         width: 55%;
     }
 }
 
-@media only screen and (min-width: 992px)
+@media only screen and (min-width: 1200px)
 {
     .marioRowPadding {
         padding: 0 10%;
     }
+}
+
+.shads {
+    color: var(--blk);
+    text-shadow: -4px -2px 8px #BD00CE, 4px 2px 8px #29A027, 4px 2px 8px #0C00CB,
+                 4px -2px 8px #FF4919;
 }
