@@ -30,9 +30,9 @@
                      .  "<div class='row marioRowPadding'>";
 
                 $numEntries = intval($arrayJSON[$section]["TotalEntryNum"]);
-                for($i = 1; $i <= $numEntries; ++$i, ++$carouselIDCounter)
+                for($marioEntryNum = 1; $marioEntryNum <= $numEntries; ++$marioEntryNum, ++$carouselIDCounter)
                 {
-                    $entry = "Mario" . strval($i);
+                    $entry = "Mario" . strval($marioEntryNum);
 
                     /* Start of card info */
                     echo "<div class='col-12 col-md-6 mt-4 d-flex align-items-stretch'>"
@@ -45,19 +45,19 @@
                     */
                     echo "<p class='text-center superMario marioHeader'>" . $arrayJSON[$section][$entry]["Name"] . "</p>"
                          ."<div id='controls" . $carouselIDCounter . "' class='carousel slide carousel-fade mt-4' data-interval='false'>"
-                         .  "<div class='carousel-inner'>"
-                         .      "<div class='carousel-item active text-center'>"
-                         .          "<a href='$headerData[Path]" . $arrayJSON[$section][$entry]["IMGFnt"] . "' class='" . $arrayJSON[$section][$entry]["IMGCls"] . "' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
-                         .              "<img src='$headerData[Path]" . $arrayJSON[$section][$entry]["IMGFnt"] . "' class='" . $arrayJSON[$section][$entry]["IMGCls"] . "' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
-                         .          "</a>"
-                         .      "</div>";
+                         .  "<div class='carousel-inner'>";
 
-                    /* Reverse image if it exists */
-                    if($arrayJSON[$section]["$entry"]["IMGBak"] != "NOIMG")
+                    /* Attach photos. Entries usually contain a front and back, but there are exceptions such as a 'Funko-esque' box */
+                    $numImgs = intval($arrayJSON[$section][$entry]["ImgCount"]);
+                    for($imgEntryNum = 1; $imgEntryNum <= $numImgs; ++$imgEntryNum)
                     {
-                        echo "<div class='carousel-item text-center'>"
-                             .  "<a href='$headerData[Path]" . $arrayJSON[$section][$entry]["IMGBak"] . "' class='" . $arrayJSON[$section][$entry]["IMGCls"] . "' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
-                             .      "<img src='$headerData[Path]" . $arrayJSON[$section][$entry]["IMGBak"] . "' class='" . $arrayJSON[$section][$entry]["IMGCls"] . "' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
+                        if($imgEntryNum == 1)
+                            echo "<div class='carousel-item active text-center'>";
+                        else
+                            echo "<div class='carousel-item text-center'>";
+
+                        echo    "<a href='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] . "' class='" . $arrayJSON[$section][$entry]["IMGCls"] . "' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
+                             .      "<img src='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] . "' class='" . $arrayJSON[$section][$entry]["IMGCls"] . "' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
                              .  "</a>"
                              ."</div>";
                     }
@@ -103,7 +103,8 @@
                     echo "</div></div>";
                 }
 
-                /* End of      <div class='container-fluid marioCtnrBtm'>
+                /*
+                    End of      <div class='container-fluid marioCtnrBtm'>
                            <div class='row marioRowPadding'>
                 */
                 echo "</div></div>";

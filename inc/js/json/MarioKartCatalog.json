@@ -11,9 +11,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Mario in Standard Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Mario_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Mario_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Mario_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Mario_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario2":
         {
@@ -22,9 +26,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Mario in P-Wing Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Mario_PWing.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Mario_PWingReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Mario_PWing.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Mario_PWingReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario3":
         {
@@ -33,9 +41,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Tanooki Mario in Standard Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/TanookiMario_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/TanookiMario_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/TanookiMario_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/TanookiMario_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario4":
         {
@@ -44,9 +56,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Mario in B-Dasher Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/BabyMario_BDasher.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/BabyMario_BDasherReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/BabyMario_BDasher.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/BabyMario_BDasherReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario5":
         {
@@ -55,9 +71,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Luigi in Standard Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Luigi_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Luigi_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Luigi_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Luigi_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario6":
         {
@@ -66,9 +86,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Luigi in Mach 8 Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Luigi_Mach8.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Luigi_Mach8Reverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Luigi_Mach8.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Luigi_Mach8Reverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario7":
         {
@@ -77,9 +101,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Luigi in Circuit Special Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Luigi_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Luigi_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Luigi_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Luigi_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario8":
         {
@@ -88,9 +116,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Toad in Standard Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Toad_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Toad_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Toad_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Toad_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario9":
         {
@@ -99,9 +131,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Toad in Sneeker Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Toad_Sneeker.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Toad_SneekerReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Toad_Sneeker.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Toad_SneekerReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario10":
         {
@@ -110,9 +146,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Peach in Standard Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Peach_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Peach_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Peach_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Peach_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario11":
         {
@@ -121,9 +161,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Peach in P-Wing Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Peach_PWing.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Peach_PWingReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Peach_PWing.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Peach_PWingReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario12":
         {
@@ -132,9 +176,13 @@
             "Store": "eBay",
             "Date": "RESEARCH",
             "Notes": "Rosalina in Standard Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Rosalina_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Rosalina_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Rosalina_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Rosalina_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario13":
         {
@@ -143,9 +191,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Yoshi in Standard Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Yoshi_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Yoshi_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Yoshi_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Yoshi_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario14":
         {
@@ -154,9 +206,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Yoshi in B-Dasher Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Yoshi_BDasher.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Yoshi_BDasherReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Yoshi_BDasher.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Yoshi_BDasherReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario15":
         {
@@ -165,9 +221,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Mario in Mach 8 Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Yoshi_Mach8.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Yoshi_Mach8Reverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Yoshi_Mach8.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Yoshi_Mach8Reverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario16":
         {
@@ -176,9 +236,13 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Yoshi in Pipe Frame Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Yoshi_Pipe.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Yoshi_PipeReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Yoshi_Pipe.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Yoshi_PipeReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario17":
         {
@@ -187,9 +251,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Red Yoshi in Standard Kart. Has crease on reverse middle",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/RedYoshi_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/RedYoshi_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/RedYoshi_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/RedYoshi_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario18":
         {
@@ -198,9 +266,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Light Blue Yoshi in Standard Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/LtBlueYoshi_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/LtBlueYoshi_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/LtBlueYoshi_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/LtBlueYoshi_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario19":
         {
@@ -209,9 +281,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Wario in Standard Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Wario_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Wario_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Wario_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Wario_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario20":
         {
@@ -220,9 +296,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Waluigi in Bandwagon Kart. Waluigi Wednesday",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Waluigi_Bandwagon.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Waluigi_BandwagonReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Waluigi_Bandwagon.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Waluigi_BandwagonReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario21":
         {
@@ -231,9 +311,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Bowser in Bandwagon Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Bowser_Bandwagon.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Bowser_BandwagonReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Bowser_Bandwagon.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Bowser_BandwagonReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario22":
         {
@@ -242,9 +326,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Shy Guy in Standard Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/ShyGuy_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/ShyGuy_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/ShyGuy_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/ShyGuy_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario23":
         {
@@ -253,9 +341,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Shy Guy in B-Dasher Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/ShyGuy_BDasher.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/ShyGuy_BDasherReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/ShyGuy_BDasher.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/ShyGuy_BDasherReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario24":
         {
@@ -264,9 +356,13 @@
             "Store": "Target, eBay",
             "Date": "RESEARCH",
             "Notes": "Koopa Troopa in Circuit Special Kart. I own two",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/KoopaTroopa_Circuit.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/KoopaTroopa_CircuitReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/KoopaTroopa_Circuit.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/KoopaTroopa_CircuitReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario25":
         {
@@ -275,9 +371,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Dry Bones in Standard Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/DryBones_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/DryBones_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/DryBones_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/DryBones_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario26":
         {
@@ -286,9 +386,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Donkey Kong in Standard Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/DK_Std.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/DK_StdReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/DK_Std.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/DK_StdReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario27":
         {
@@ -297,9 +401,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Donkey Kong in Sports Coupe Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/DK_Sports.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/DK_SportsReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/DK_Sports.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/DK_SportsReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario28":
         {
@@ -308,9 +416,13 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Diddy Kong in Pipe Frame Kart",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Diddy_Pipe.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/Diddy_PipeReverse.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Diddy_Pipe.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Diddy_PipeReverse.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario29":
         {
@@ -319,12 +431,16 @@
             "Store": "Multiple",
             "Date": "Multiple",
             "Notes": "All 28 Karts as of 2021 Mar 16",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/HotWheels_All28Lt.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Karts/HotWheels_All28Dk.jpg",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "2",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/HotWheels_All28Lt.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/HotWheels_All28Dk.jpg"
+            },
+			"IMGCls": "marioHorizImgSize"
         }
     },
-    "2":
+  		"2":
     {
         "SectionName": "Glider Karts - Coming Soon!",
         "TotalEntryNum": "0"
@@ -340,9 +456,13 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = N48A:",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Egg_Black.jpg",
-            "IMGBak": "NOIMG",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "1",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Egg_Black.jpg",
+          		"2": "NOIMG"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario2":
         {
@@ -351,9 +471,13 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = :N48A",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Egg_Blue.jpg",
-            "IMGBak": "NOIMG",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "1",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Egg_Blue.jpg",
+          		"2": "NOIMG"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario3":
         {
@@ -362,9 +486,13 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = -N48A",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Egg_White.jpg",
-            "IMGBak": "NOIMG",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "1",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Egg_White.jpg",
+          		"2": "NOIMG"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario4":
         {
@@ -373,9 +501,13 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = -N48A",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Egg_LtBlue.jpg",
-            "IMGBak": "NOIMG",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "1",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Egg_LtBlue.jpg",
+          		"2": "NOIMG"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario5":
         {
@@ -384,9 +516,13 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = .N48A",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Egg_Yellow.jpg",
-            "IMGBak": "NOIMG",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "1",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Egg_Yellow.jpg",
+          		"2": "NOIMG"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario6":
         {
@@ -395,9 +531,13 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = N48A.",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Egg_Green.jpg",
-            "IMGBak": "NOIMG",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "1",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Egg_Green.jpg",
+          		"2": "NOIMG"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario7":
         {
@@ -406,9 +546,13 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = N48A/",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Egg_Orange.jpg",
-            "IMGBak": "NOIMG",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "1",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Egg_Orange.jpg",
+          		"2": "NOIMG"
+            },
+			"IMGCls": "marioHorizImgSize"
         },
         "Mario8":
         {
@@ -417,9 +561,13 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = /N48A",
-            "IMGFnt": "img/CatalogImgs/Mario/Karts/Egg_Pink.jpg",
-            "IMGBak": "NOIMG",
-            "IMGCls": "marioHorizImgSize"
+			"ImgCount": "1",
+			"Images":
+			{
+				"1": "img/CatalogImgs/Mario/Karts/Egg_Pink.jpg",
+          		"2": "NOIMG"
+            },
+			"IMGCls": "marioHorizImgSize"
         }
     },
     "4":

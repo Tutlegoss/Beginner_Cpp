@@ -11,8 +11,12 @@
             "Store": "GameStop",
             "Date": "2021 Feb 28",
             "Notes": "Wave 28",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/25_RoyKoopa.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/25_RoyKoopaReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/25_RoyKoopa.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/25_RoyKoopaReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         },
         "Mario2":
@@ -22,8 +26,12 @@
             "Store": "GameStop",
             "Date": "2021 Feb 28",
             "Notes": "Wave 28",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/25_BlackShyGuy.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/25_BlackShyGuyReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/25_BlackShyGuy.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/25_BlackShyGuyReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         },
         "Mario3":
@@ -33,8 +41,12 @@
             "Store": "GameStop",
             "Date": "2021 Feb 28",
             "Notes": "Wave 28",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/25_OrangeYoshi.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/25_OrangeYoshiReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/25_OrangeYoshi.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/25_OrangeYoshiReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         },
         "Mario4":
@@ -44,8 +56,12 @@
             "Store": "GameStop",
             "Date": "2021 Feb 28",
             "Notes": "Wave 28",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/25_Goomba.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/25_GoombaReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/25_Goomba.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/25_GoombaReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         },
         "Mario5":
@@ -55,8 +71,12 @@
             "Store": "GameStop",
             "Date": "2021 Feb 28",
             "Notes": "Wave 28",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/25_DryBones.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/25_DryBonesReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/25_DryBones.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/25_DryBonesReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         }
     },
@@ -71,8 +91,12 @@
             "Store": "Target",
             "Date": "2021 Feb 28",
             "Notes": "Wave 27",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/25_BonesPiranha.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/25_BonesPiranhaReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/25_BonesPiranha.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/25_BonesPiranhaReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         },
         "Mario2":
@@ -82,8 +106,12 @@
             "Store": "Target",
             "Date": "2021 Feb 28",
             "Notes": "Wave 27",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/25_Boo.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/25_BooReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/25_Boo.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/25_BooReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         },
         "Mario3":
@@ -93,8 +121,12 @@
             "Store": "Target",
             "Date": "2021 Feb 28",
             "Notes": "Wave 27",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/25_LtBlueYoshi.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/25_LtBlueYoshiReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/25_LtBlueYoshi.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/25_LtBlueYoshiReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         },
         "Mario4":
@@ -104,8 +136,12 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Wave 20",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/25_IceBro.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/25_IceBroReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/25_IceBro.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/25_IceBroReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         },
         "Mario5":
@@ -115,8 +151,12 @@
             "Store": "Mercari",
             "Date": "2020 Feb 20",
             "Notes": "Wave 22",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/25_Magikoopa.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/25_MagikoopaReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/25_Magikoopa.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/25_MagikoopaReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         }
     },
@@ -131,8 +171,12 @@
             "Store": "BAM!",
             "Date": "2021 Mar 05",
             "Notes": "Wave 22 or Wave 23",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/4_BooCoin.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/4_BooCoinReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/4_BooCoin.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/4_BooCoinReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         },
         "Mario2":
@@ -142,8 +186,12 @@
             "Store": "BAM!",
             "Date": "2021 Mar 05",
             "Notes": "Wave 22 or Wave 23",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/4_GreenToadStar.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/4_GreenToadStarReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/4_GreenToadStar.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/4_GreenToadStarReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         }
     },
@@ -158,8 +206,12 @@
             "Store": "Target",
             "Date": "2021 Feb 26",
             "Notes": "2019 Diorama",
-            "IMGFnt": "img/CatalogImgs/Mario/Figures/Mario_DioramaUnderwater.jpg",
-            "IMGBak": "img/CatalogImgs/Mario/Figures/Mario_DioramaUnderwaterReverse.jpg",
+            "ImgCount": "2",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/Mario_DioramaUnderwater.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/Mario_DioramaUnderwaterReverse.jpg"
+            },
             "IMGCls": "marioImgSize"
         }
     }
