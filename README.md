@@ -1,13 +1,13 @@
-# C-Supplement
+# Landen Marchand's General Website
 
-C++ Supplement for beginners.
-
-This website is just a personal project to learn about HTML, CSS, JS, JQuery, Bootstrap, SQL, PHP, webside hosting, etc.
-Features: accounts, topic supplements, quiz questions (multiple choice), comments, personal blog containing interesting programming topics.
+This website is just a personal project to learn about HTML, CSS, JS, JQuery, Bootstrap, SQL, PHP, website hosting, etc.
+Features: Accounts, C++ PDFs (needs reviewed), Programming Quizzes, Comment Section,
+          Personal Blog on Programming Topics, Personal Collection Info, Phaser 3 Connect 4 Game.
+          I'll add whatever I think of as well.
 
 **This is currently a work in progress and is currently incomplete.**
 
-TODO:
+TODO (for Accounts and Comments):
 
 - [x] Make navbar work with Safari
 
