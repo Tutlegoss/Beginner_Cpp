@@ -29,6 +29,16 @@
     src: url('../fonts/MarioKart.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../fonts/SpaceMono.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Share Tech Mono';
+    src: url('../fonts/ShareTechMono.ttf') format('truetype');
+}
+
 /* -------------------- ROOT VARS -------------------- */
 :root {
     --main-bkgnd-color: rgb(26 26 26);
@@ -124,13 +134,8 @@ footer p, #banner p { /* See Navbar for footer img */
 }
 
 /* -------------------- Navbar -------------------- */
-#collapsibleNavbar ul:first-child {
-    font-family: var(--fontCode);
-    font-size: 16px;
-}
-
 .nav-link {
-    padding: 0.5rem 0.6rem;
+    padding: 0.5rem 1rem;
 }
 
 nav img, footer img {
@@ -142,31 +147,13 @@ nav img, footer img {
 	background-color: var(--blk);
 }
 
-#collapsibleNavbar:first-child {
-    flex-shrink: 0;
+#nav-Prog-Link,
+#nav-Search-Link {
+    color: var(--ex-ylw);
 }
 
-#collapsibleNavbar ul li
-{
-    white-space: nowrap;
-}
-
-#collapsibleNavbar form {
-	border-radius: 0;
-}
-
-#nav-CSI, #nav-Algo, #nav-Blog {
-	color: var(--lt-gold);
-}
-
-#nav-CSII, #nav-Catalog {
- 	color: var(--lt-blue);
-}
-
-#search {
-	border-radius: 0;
-    min-width: 0;
-    width: 80%;
+#nav-Collect-Link {
+    color: var(--lt-blue);
 }
 
 button#toggler {
@@ -174,7 +161,11 @@ button#toggler {
 	border-color: var(--lt-gold);
 }
 
-#nav-Account {
+.activeNav {
+    background-color: var(--sdw);
+}
+
+.dropdown-menu {
     background-color: var(--dk-blue);
     background-color: rgba(0 38 100 / 0.95);
 	border: 2px solid var(--lt-blue);
@@ -183,29 +174,28 @@ button#toggler {
     margin-top: 8%;
 }
 
-#nav-Account a {
-	color: var(--lt-gold);
+.dropdown-menu a {
+    color: var(--lt-gold);
     margin: 6px 0;
 }
 
-#nav-Account a:hover {
+.dropdown-menu a:hover {
 	color: var(--lt-gold);
 	background-color: var(--main-bkgnd-color);
 }
 
+#search form {
+    min-width: 15rem;
+    width: 15rem;
+    padding: 4%;
+}
+
 @media only screen and (max-width: 767.98px)
 {
-    #searchAcct li:first-child {
-        width: 70%;
+    #search {
+        left: 0;
+        right: auto;
     }
-
-    #searchAcct li:not(:first-child) {
-    	width: 30%;
-    }
-
-    #nav-Account {
-		right: 10%;
-	}
 }
 
 /* -------------------- index.php -------------------- */
@@ -315,24 +305,20 @@ hr {
 }
 
 /* -------------------- Links LVFHA -------------------- */
-a {
-    text-decoration: underline;
-}
-
 a:link {
-	color: var(--links);
+	color: var(--ex-ylw);
 }
 
 a:visited {
-	color: var(--links);
+	color: var(--ex-ylw);
 }
 
 a:focus {
-    color: var(--lt-gold);
+    color: var(--ex-ylw);
 }
 
 a:hover {
-	color: var(--lt-gold);
+	color: var(--ex-cyan);
 }
 
 a:active {

@@ -27,13 +27,9 @@
 	<meta name="keywords" content="Tutlegoss, C++, Cpp, Tutorial, Beginner, Programming">
 
 	<link rel="icon" href="<?php echo $headerData["Path"]; ?>img/SiteImgs/K_Ico.png">
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="<?php echo $headerData["Path"]; ?>inc/fontAwesome/css/all.min.css">
 
 	<!-- Directory relative to article page and not header.inc.php -->
+	<link rel="stylesheet" href="<?php echo $headerData["Path"]; ?>inc/fontAwesome/css/all.min.css">
 	<link rel="stylesheet" href="<?php echo $headerData["Path"]; ?>inc/css/normalize.min.css">
 	<link rel="stylesheet" href="<?php echo $headerData["Path"]; ?>inc/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo $headerData["Path"]; ?>inc/css/main.css">

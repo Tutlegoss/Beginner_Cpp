@@ -47,6 +47,8 @@
 		require_once("$headerData[Path]inc/php/Fringes/footer.inc.php");
 	?>
 
+<script src="<?php echo $headerData["Path"]; ?>inc/js/lazyImgLoad.js"></script>
+
 </body>
 
 </html>

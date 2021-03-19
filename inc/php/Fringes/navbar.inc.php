@@ -7,41 +7,15 @@
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="nav mr-auto mt-2 mt-md-0 justify-content-around flex-nowrap align-items-center">
-                <li>
-                    <a id="nav-CSI" class="nav-link"
-                        href="<?php echo $headerData["Path"]; ?>pages/Cpp/CppTopics.php">C++</a>
-                </li>
-                <li>
-                    <a id="nav-CSII" class="nav-link"
-                        href="<?php echo $headerData["Path"]; ?>game/connect4.php">Conn4</a>
-                </li>
-                <li>
-                    <a id="nav-CSIII" class="nav-link text-white"
-                        href="<?php echo $headerData["Path"]; ?>pages/Blog/OP_OOE.php">Blog</a>
-                </li>
-                <li>
-                    <a id="nav-Algo" class="nav-link"
-                        href="<?php echo $headerData["Path"]; ?>pages/Algo/AlgoTopics.php">Algo</a>
-                </li>
-                <li>
-                    <a id="nav-Catalog" class="nav-link"
-                        href="<?php echo $headerData["Path"]; ?>pages/Catalog/Catalogs.php">Catalogs</a>
-                </li>
-            </ul>
-            <ul id="searchAcct" class="nav flex-nowrap mt-3 mb-2 mt-md-0 mb-md-0">
-                <li>
-                    <form action="#" class="form-inline my-auto" method="GET" >
-                        <input class="form-control" name="search" id="search" type="search" placeholder="Search">
-                        <label for="search"></label>
-                        <button class="btn text-white" type="submit" aria-label="Search">
-                                <i class="fas fa-search"></i>
-                        </button>
-                    </form>
-                </li>
-                <li class="nav-item dropdown text-center">
-                    <a class="text-white nav-link dropdown-toggle" href="#" data-toggle="dropdown">Account</a>
-                    <div id="nav-Account" class="dropdown-menu">
+            <ul class="nav mt-2 mt-md-0">
+                <li class="nav-item dropdown">
+                    <a class="text-white
+                        <?php
+                            if(preg_match("/(Account|Admin)/", $_SERVER["REQUEST_URI"], $matches))
+                                echo "activeNav";
+                        ?>
+                        nav-link dropdown-toggle" href="#" data-toggle="dropdown">Account</a>
+                    <div class="dropdown-menu">
                         <?php
                             $login = "$headerData[Path]pages/Account/Login.php";
                             $admin = "$headerData[Path]pages/Admin/";
@@ -63,6 +37,54 @@
                                       <a class='dropdown-item' href='$signup'>Signup</a>";
                             }
                         ?>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="nav-Prog-Link" class="
+                        <?php
+                            if(preg_match("/(Cpp|Algo|.+\/Blog)/", $_SERVER["REQUEST_URI"], $matches))
+                                echo "activeNav";
+                        ?>
+                        nav-link dropdown-toggle" href="#" data-toggle="dropdown">Programming</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="<?php echo $headerData["Path"]; ?>pages/Cpp/CppTopics.php">C++ PDFs</a>
+                        <a class="dropdown-item" href="<?php echo $headerData["Path"]; ?>pages/Blog/OP_OOE.php">Blog</a>
+                        <a class="dropdown-item" href="<?php echo $headerData["Path"]; ?>pages/Algo/AlgoTopics.php">Algorithms</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="nav-Collect-Link" class="
+                        <?php
+                            if(preg_match("/(Catalog)/", $_SERVER["REQUEST_URI"], $matches))
+                                echo "activeNav";
+                        ?>
+                        nav-link dropdown-toggle" href="#" data-toggle="dropdown">Collections</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="<?php echo $headerData["Path"]; ?>pages/Catalog/Catalogs.php">Menu</a>
+                        <a class="dropdown-item" href="<?php echo $headerData["Path"]; ?>pages/Catalog/MarioFiguresCatalog.php">Mario Jakks Pacific</a>
+                        <a class="dropdown-item" href="<?php echo $headerData["Path"]; ?>pages/Catalog/MarioKartCatalog.php">Mario Hot Wheels</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="text-white
+                        <?php
+                            if(preg_match("/(game)/", $_SERVER["REQUEST_URI"], $matches))
+                                echo "activeNav";
+                        ?>
+                        nav-link"
+                        href="<?php echo $headerData["Path"]; ?>game/connect4.php">Conn4</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="nav-Search-Link" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <div class="dropdown-menu" id="search">
+                        <form action="#" class="d-flex" method="GET" >
+                            <input class="form-control" name="search" type="search" placeholder="Search">
+                            <button class="btn text-white" type="submit" aria-label="Search">
+                                    <i class="fas fa-search"></i>
+                            </button>
+                        </form>
                     </div>
                 </li>
             </ul>

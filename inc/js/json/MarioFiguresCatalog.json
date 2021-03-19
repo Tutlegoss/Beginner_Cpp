@@ -163,7 +163,7 @@
     "3":
     {
         "SectionName": "4-Inch Figures",
-        "TotalEntryNum": "2",
+        "TotalEntryNum": "3",
         "Mario1":
         {
             "Name": "Boo With Coin",
@@ -191,6 +191,25 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/4_GreenToadStar.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/4_GreenToadStarReverse.jpg"
+            },
+            "IMGCls": "marioImgSize"
+        },
+        "Mario3":
+        {
+            "Name": "Iggy Koopa With Wand",
+            "Price": "9.99",
+            "Store": "GameStop",
+            "Date": "2021 Mar 11",
+            "Notes": "Numbered 04. Box packaging.",
+            "ImgCount": "6",
+            "Images":
+            {
+                "1": "img/CatalogImgs/Mario/Figures/4_IggyKoopaFront.jpg",
+                "2": "img/CatalogImgs/Mario/Figures/4_IggyKoopaRight.jpg",
+                "3": "img/CatalogImgs/Mario/Figures/4_IggyKoopaReverse.jpg",
+                "4": "img/CatalogImgs/Mario/Figures/4_IggyKoopaLeft.jpg",
+                "5": "img/CatalogImgs/Mario/Figures/4_IggyKoopaTop.jpg",
+                "6": "img/CatalogImgs/Mario/Figures/4_IggyKoopaBottom.jpg"
             },
             "IMGCls": "marioImgSize"
         }

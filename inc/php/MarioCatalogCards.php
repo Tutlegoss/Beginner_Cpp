@@ -57,7 +57,7 @@
                             echo "<div class='carousel-item text-center'>";
 
                         echo    "<a href='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] . "' class='" . $arrayJSON[$section][$entry]["IMGCls"] . "' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
-                             .      "<img src='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] . "' class='" . $arrayJSON[$section][$entry]["IMGCls"] . "' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
+                             .      "<img data-src='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] . "' class='lazy " . $arrayJSON[$section][$entry]["IMGCls"] . "' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
                              .  "</a>"
                              ."</div>";
                     }
