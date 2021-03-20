@@ -5,7 +5,7 @@
 	$article = "C++ Topics";
 	require_once("../../inc/php/Fringes/header.inc.php");
 
-    $pdfLocation = "window.location.href='$headerData[Path]cppPDF/";
+    $pdfLocation = "window.location.href='$headerData[Path]inc/cppPDF";
     $idNum = 0;
 ?>
 	<title><?php echo $headerData["Title"]; ?></title>
