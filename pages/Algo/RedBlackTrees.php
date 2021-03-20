@@ -47,7 +47,7 @@
                     <h5 class="text-center co-c">Example (2,4) Tree</h5>
 <div class="exBoxCyan ml-4 mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">3-node           <span class="co-w">+</span>-------------<span class="co-w">+</span>
 <span class="co-r">4-node</span>           |   <span class="co-c">11   24</span>   |
@@ -60,7 +60,7 @@
   |   |   |   |        |  |        |   |   |
   <span class="co-o">E   E   E   E        E  E        E   E   E</span>  &lt;-- External Nodes
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -86,7 +86,7 @@
                     <h5 class="text-center co-c">Translation Example</h5>
 <div class="exBoxCyan">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"> <span class="co-w">+</span>-----<span class="co-w">+</span>                 <span class="co-w">+</span>----------<span class="co-w">+</span>                   <span class="co-w">+</span>---------------<span class="co-w">+</span>
  |  <span class="co-m">4</span>  |                 |   <span class="co-m">3</span>  <span class="co-m">3</span>   |                   |   <span class="co-m">2</span>   <span class="co-m">6</span>   <span class="co-m">7</span>   |
@@ -104,7 +104,7 @@
                /     \                  /     \         /     \    /     \
               /       \                /       \       /       \  /       \
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -127,7 +127,7 @@
                     <h5 class="text-center co-c">Example</h5>
 <div class="exBoxKelly">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Depth: <span class="co-m">3</span>
 
@@ -149,7 +149,7 @@
                        <span class="co-w">+</span>---<span class="co-w">+</span>---<span class="co-w">+</span>
                        <span class="co-b">L       L</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -164,7 +164,7 @@
                     <h5 class="text-center co-c">Proof:</h5>
 <div class="exBoxPurple">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">                <span class="co-b">+-----+         <span class="co-g">Consider shortest path and longest</span>
                 |     |         <span class="co-g">path from <span class="co-c">root</span> to external node</span>
@@ -194,7 +194,7 @@
                                     |     |
                                     +-----+</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -211,7 +211,7 @@
                     <h5 class="text-center co-c">Case 1:</h5>
 <div class="exBoxCyan">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr              >
 <td><pre class="@ co-g">If parent <span class="co-m">P</span> of <span class="co-c">Z</span> is <span class="blackHighlight">Black</span>, Preserve the <span class="co-kg">internal property</span>
 
@@ -245,14 +245,14 @@ Change the node where <span class="co-c">Z</span> is to <span class="co-r">Red</
               |     | |     |
               +-----+ +-----+</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
 
                     <h5 class="text-center co-c mt-4">Case 2:</h5>
 <div class="exBoxCyan">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">If parent <span class="co-m">P</span> of <span class="co-c">Z</span> is <span class="co-r">Red</span>, a <span class="co-r">double red</span> is present
     Reorganize the tree
@@ -287,7 +287,7 @@ Insert <span class="co-m">4</span>
               |     | |     |
               +-----+ +-----+</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -317,7 +317,7 @@ Insert <span class="co-m">4</span>
                     <h5 class="text-center co-c">Case 1:</h5>
 <div class="exBoxCyan">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-y">W</span> is <span class="blackHighlight">Black</span> (Restructuring)
                       <span class="co-b">+-----+
@@ -421,14 +421,14 @@ All four cases restructure to:
               +-----+          +-----+</span>
                 / \              / \
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
 
                     <h5 class="text-center co-c mt-4">Case 2:</h5>
 <div class="exBoxCyan">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-y">W</span> is <span class="co-r">Red</span> (Recoloring)
                       <span class="co-b">+-----+
@@ -465,7 +465,7 @@ Recoloring of above <?php echo $redBlack; ?> tree:
                            +-----+</span>
                              / \
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -486,7 +486,7 @@ Recoloring of above <?php echo $redBlack; ?> tree:
                     <h5 class="text-center co-c mt-4">Algorithm:</h5>
 <div class="exBoxPurple">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Algorithm <span class="co-y">insertItem</span>(<span class="co-m">k</span>, <span class="co-m">e</span>)
 
@@ -501,7 +501,7 @@ Recoloring of above <?php echo $redBlack; ?> tree:
     else</span> <span class="co-w">{ sibling(parent(Z)) is <span class="co-r">Red</span> }</span>
         <span class="co-c">Z</span> <span class="co-y">&lt;-- recolor</span>(<span class="co-c">Z</span>)
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -528,7 +528,7 @@ Recoloring of above <?php echo $redBlack; ?> tree:
                     <h5 class="text-center co-c mt-4">Example:</h5>
 <div class="exBoxCyan mb-4">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">This <?php echo $redBlack; ?> tree:
                       <span class="co-b">+-----+
@@ -557,13 +557,13 @@ Turns into this <?php echo $redBlack; ?> tree:
           |     | |     |
           +-----+ +-----+</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
 
 <div class="exBoxCyan mb-4">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">This <?php echo $redBlack; ?> tree:
                       <span class="co-b">+-----+
@@ -596,7 +596,7 @@ Turns into this <?php echo $redBlack; ?> tree:
           |     | |     |  |     | |     |
           +-----+ +-----+  +-----+ +-----+</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                     <pre>Another situation (if above does not hold):</pre>
@@ -606,7 +606,7 @@ Turns into this <?php echo $redBlack; ?> tree:
                     <h5 class="text-center co-c mt-4">Example:</h5>
 <div class="exBoxCyan mb-4">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Delete <span class="co-m">8</span> (causes a <span class="blackHighlight">Double Black</span>)
                       <span class="co-b">+-----+
@@ -642,7 +642,7 @@ Turns into this <?php echo $redBlack; ?> tree:
               |     | |     |
               +-----+ +-----+</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                     <pre>By removing two <span class="blackHighlight">Black</span> nodes</pre>
@@ -663,7 +663,7 @@ Turns into this <?php echo $redBlack; ?> tree:
                     <h5 class="text-center co-c mt-4">Case 1:</h5>
 <div class="exBoxCyan mb-4">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-kg">Y</span> is <span class="blackHighlight">Black</span> and has a <span class="co-r">Red</span> child <span class="co-c">Z</span>
 Perform <span class="co-y">Restructuring</span> on <span class="co-kg">Y</span>, <span class="co-t">P</span>, <span class="co-c">Z</span>
@@ -698,14 +698,14 @@ Turns into this <?php echo $redBlack; ?> tree:
 
 
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
 
                     <h5 class="text-center co-c mt-4">Case 2:</h5>
 <div class="exBoxCyan mb-4">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-kg">Y</span> is <span class="blackHighlight">Black</span> and has <span class="co-r">Black</span> children
 Perform <span class="co-y">Recoloring</span>.
@@ -741,7 +741,7 @@ Turns into this <?php echo $redBlack; ?> tree:
 
 
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
 
@@ -775,7 +775,7 @@ Turns into this <?php echo $redBlack; ?> tree:
                 <div class="algoNotesPara col-12 col-md-10">
 <div class="exBoxKelly mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">                                   <span class="co-w">RESULT</span>
 INSERTION (Fix <span class="co-r">double red</span>)
@@ -790,7 +790,7 @@ DELETION (Fix <span class="blackHighlight">double black</span>)
     <span class="co-t">Recoloring</span>       ||    <span class="blackHighlight">Double red</span> removed or propogated up
     <span class="co-o">Adjustment</span>       ||    <span class="co-c">Restructuring</span> or <span class="co-t">Recoloring</span> follows
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>

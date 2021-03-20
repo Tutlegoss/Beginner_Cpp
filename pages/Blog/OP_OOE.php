@@ -6,6 +6,9 @@
 	require_once("../../inc/php/Fringes/header.inc.php");
 
 ?>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
 	<title><?php echo $headerData["Title"]; ?></title>
 	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
 
@@ -365,7 +368,7 @@
                     <div class="col-auto">
 <div class="exBoxPurple">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tr>
 <td><pre class="co-o">1
 2
@@ -373,7 +376,7 @@
 <td><pre class="co-g"><span class="co-c">double</span> x = <span class="co-m">2.0</span>, y = <span class="co-m">4.0</span>, z = <span class="co-m">5.0</span>;
 std::cout &lt;&lt; x <span class="co-y">/</span> y <span class="co-y">+</span> z <span class="co-y">/</span> 20.0;
 </pre></td>
-</tr></table></pre>
+</tr></table>
 <p class="ml-2 mb-2">OUTPUT: 0.75</p>
 </figure>
 		                </div>
@@ -418,7 +421,7 @@ std::cout &lt;&lt; x <span class="co-y">/</span> y <span class="co-y">+</span> z
                     <div class="col-auto">
 <div class="exBoxPurple">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tr>
 <td><pre class="co-o">1
 2
@@ -428,7 +431,7 @@ std::cout &lt;&lt; x <span class="co-y">/</span> y <span class="co-y">+</span> z
 <span class="co-c">int</span> output = <span class="co-y">++</span>lhs <span class="co-y">+</span> rhs<span class="co-y">++</span>;
 std::cout &lt;&lt; output;
 </pre></td>
-</tr></table></pre>
+</tr></table>
 <p class="ml-2 mb-2">OUTPUT: 4</p>
 </figure>
         		        </div>
@@ -457,9 +460,9 @@ std::cout &lt;&lt; output;
         		</p>
                 <div class="row justify-content-center mb-5">
                     <div class="col-auto">
-<div class="exBoxPurple" style="-webkit-overflow-scrolling: touch;">
+<div class="exBoxPurple">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tr>
 <td><pre class="co-o">1
 2
@@ -471,17 +474,18 @@ std::cout &lt;&lt; output;
 8
 9
 </pre></td>
+<!-- Safari hates <span class="co-m">1</span> in terms of scrolling. Without it, it works. WHY?! -->
 <td><pre class="co-g">movl  <span class="co-c">$</span><span class="co-m">1</span>, -<span class="co-m">4</span><span class="co-c">(%</span>rbp<span class="co-c">)</span>    <span class="co-w">/* Assign <span class="co-g">lhs</span> to <span class="co-m">1</span> on the stack */</span>
 movl  <span class="co-c">$</span><span class="co-m">2</span>, -<span class="co-m">8</span><span class="co-c">(%</span>rbp<span class="co-c">)</span>    <span class="co-w">/* Assign <span class="co-g">rhs</span> to <span class="co-m">2</span> on the stack */</span>
 addl  <span class="co-c">$</span><span class="co-m">1</span>, -<span class="co-m">4</span><span class="co-c">(%</span>rbp<span class="co-c">)</span>    <span class="co-w">/* Increment <span class="co-g">lhs</span> */</span>
 movl  -<span class="co-m">8</span><span class="co-c">(%</span>rbp<span class="co-c">)</span>, <span class="co-c">%</span>eax  <span class="co-w">/* Put <span class="co-g">rhs</span> into register eax */</span>
-leal  <span class="co-m">1</span><span class="co-c">(%</span>rax<span class="co-c">)</span>, <span class="co-c">%</span>edx   <span class="co-w">/* Increment register rax (eax) and place result into register edx */</span>
+leal  1<span class="co-c">(%</span>rax<span class="co-c">)</span>, <span class="co-c">%</span>edx   <span class="co-w">/* Increment register rax (eax) and place result into register edx */</span>
 movl  <span class="co-c">%</span>edx, -<span class="co-m">8</span><span class="co-c">(%</span>rbp<span class="co-c">)</span>  <span class="co-w">/* Store register edx's value into <span class="co-g">rhs</span> on the stack */</span>
 movl  -<span class="co-m">4</span><span class="co-c">(%</span>rbp<span class="co-c">)</span>, <span class="co-c">%</span>edx  <span class="co-w">/* Put <span class="co-g">lhs</span> into register edx */</span>
 addl  <span class="co-c">%</span>edx, <span class="co-c">%</span>eax      <span class="co-w">/* Add registers edx and eax and store result into eax */</span>
 movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="co-c">(%</span>rbp<span class="co-c">)</span> <span class="co-w">/* Store register eax into <span class="co-g">output</span> on the stack */</span>
 </pre></td>
-</tr></table></pre>
+</tr></table>
 </figure>
 		                </div>
                     </div>
@@ -544,7 +548,7 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
                     <div class="col-auto">
 <div class="exBoxPurple">
 <figure class="code">
-<pre><table table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tr>
 <td><pre class="co-o">1
 2
@@ -558,7 +562,7 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
   std::cout &lt;&lt; <span class="co-m">&quot;lhs: &quot;</span> &lt;&lt; lhs &lt;&lt; <span class="co-m">&quot;, rhs: &quot;</span> &lt;&lt; rhs;
 }
 </pre></td>
-</tr></table></pre>
+</tr></table>
 <p class="ml-2 mb-2">OUTPUT: lhs: 1, rhs: 0</p>
 </figure>
                 		</div>

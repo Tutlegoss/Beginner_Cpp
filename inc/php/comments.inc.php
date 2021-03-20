@@ -91,9 +91,9 @@
 						  ."<div class='col-auto'>"
 						  ."<div class='exBoxComment mb-3 mt-2'>"
 						  ."<figure class='code'>"
-						  ."<pre><table class='table borderless my-auto'>"
+						  ."<table class='table borderless my-auto'>"
 						  ."<tr><td><pre class='co-g'>";
-			$exCodeEnd   = "</pre></td></tr></table></pre></figure></div></div></div>";
+			$exCodeEnd   = "</pre></td></tr></table></figure></div></div></div>";
 
 			/* Insert </p> before <div> */
 			/* Encapsulate code with appropriate HTML tags in place of ``` */

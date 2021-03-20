@@ -32,7 +32,7 @@
                 <div class="col-12 col-md-10">
 <div class="exBoxKelly ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-y">Expressions</span>: &lt;-- is assignment and = is equality
 <span class="co-y">Method Declarations</span>: Algorithm function(param1, param2, ...)
@@ -42,7 +42,7 @@
 <span class="co-y">Method Calls</span>: Object.method(args)
 <span class="co-y">Method Returns</span>: return
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -56,7 +56,7 @@
                 <div class="col-12 col-md-10">
 <div class="exBoxPurple ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="! co-o">1
 2
@@ -73,7 +73,7 @@
         <span class="co-w">{ increment counter i }</span>
     <span class="co-r">return</span> <span class="co-m">currentMax</span>
 </span></pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -125,7 +125,7 @@
                 <div class="col-12 col-md-10">
 <div class="exBoxKelly ml-4 mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-y">Constant</span>: <span class="co-m">1</span>
 <span class="co-y">Logarithmic</span>: <span class="co-m">log(n)</span>  <span class="co-w">/* log base = 2 */</span>
@@ -135,7 +135,7 @@
 <span class="co-y">Polynomial</span>: <span class="co-m">n<sup>k</sup>  <span class="co-w">/* k &#x2265; 1 */</span>
 <span class="co-y">Exponential</span>: <span class="co-m">a<sup>n</sup>  <span class="co-w">/* a &gt; 1 */</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                     <p class="ml-4">Growth rate is not affected by constant factors or lower-order terms</p>
@@ -158,7 +158,7 @@
                     <h5 class="co-c text-center">Asymptotic Notation</h5>
 <div class="exBoxKelly mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-y">Big Oh</span>: O(n) -&gt; Has upper bound / <span class="co-c">0 &#x2264; f(n) &#x2264; cg(n) &#x2200; n &#x2265; n<sub>0</sub></span>
 <span class="co-y">Big Omega</span>: &#x1D76E;(n) -&gt; Has lower bound / <span class="co-c">0 &#x2264; cg(n) &#x2264; f(n) &#x2200; n &#x2265; n<sub>0</sub></span>
@@ -166,7 +166,7 @@
 <span class="co-y">Little Oh</span>: o(n) -&gt; Has upper bound (exclusive)
 <span class="co-y">Little Omega</span>: &#x1D788;(n) -&gt; Has lower bound (exclusive)
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -178,7 +178,7 @@
                     </p>
 <div class="exBoxKelly mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-y">Big Oh</span>: RoG -&gt; same as or lower than <span class="co-c">cg(n)</span>
 <span class="co-y">Big Omega</span>: &#x1D76E;(n) RoG -&gt; same as or higher than <span class="co-c">cg(n)</span>
@@ -186,13 +186,13 @@
 <span class="co-y">Little Oh</span>: o(n) RoG -&gt; strictly lower <span class="co-c">cg(n)</span>
 <span class="co-y">Little Omega</span>: &#x1D788;(n) RoG -&gt; strictly higher than <span class="co-c">cg(n)</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 <h5 class="co-c text-center">Examples</h5>
 <div class="exBoxPurple mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">O(n)
 <span class="co-m">    f(n) = 2n + 10</span>
@@ -203,7 +203,7 @@ O(n<sup>2</sup>)
 <span class="co-m">    f(n) = 2n<sup>2</sup> + 30n + 10</span>
 <span class="co-m">    f(n) = n<sup>1.99</sup> + 10</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                     <p class="ml-4 co-c">n<sup>2</sup> <span class="co-w">is not</span>

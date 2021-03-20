@@ -37,7 +37,7 @@
                     <h5 class="text-center co-c">Main Methods</h5>
 <div class="exBoxKelly ml-4 mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-g">Let k = key, e = element</span>
 <span class="co-y">    insertItem</span>(k, e)
@@ -47,7 +47,7 @@
 <span class="co-y">    size</span>()
 <span class="co-y">    isEmpty</span>()
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                     <pre><span class="co-kg">Applications</span>:</pre>
@@ -69,7 +69,7 @@
                     <h5 class="text-center co-c">Functions</h5>
 <div class="exBoxKelly mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-y">isLessThan<span class="co-g">(x,y)</span>
 isLessThanOrEqualTo<span class="co-g">(x,y)</span>
@@ -77,7 +77,7 @@ isEqualTo<span class="co-g">(x,y)</span>
 isGreaterThan<span class="co-g">(x,y)</span>
 isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -96,7 +96,7 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
                     <h5 class="text-center co-c">Implementation</h5>
 <div class="exBoxPurple mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Algorithm <span class="co-y">PQ-Sort</span>(S,C)
     <span class="co-c">Input</span>:  Sequence S, comparator C for elements of S
@@ -109,7 +109,7 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
         e <span class="co-y">&lt;--</span> P.<span class="co-y">removeMin</span>()
         S.<span class="co-y">insertLast</span>(e)
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -240,7 +240,7 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
 <h5 class="text-center co-c">Example</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
               <span class="co-m">       1</span>
@@ -253,7 +253,7 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
 
 Therefore, the <span class="co-y">last node</span> is <span class="co-m">5</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -274,7 +274,7 @@ Therefore, the <span class="co-y">last node</span> is <span class="co-m">5</span
 <h5 class="text-center co-c">Example</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Depth     Keys
@@ -292,7 +292,7 @@ h <span class="co-y">=</span> <span class="co-m">4</span>, <span class="co-m">n<
 <span class="co-m">8</span> <span class="co-y">&#x2265;</span> <span class="co-m">2<sup class="co-c">3</sup></span>
 <span class="co-m">4</span> <span class="co-y">&#x2264; log</span>(<span class="co-m">8</span>) <span class="co-y">+</span> <span class="co-m">1</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -309,7 +309,7 @@ h <span class="co-y">=</span> <span class="co-m">4</span>, <span class="co-m">n<
 <h5 class="text-center co-c">Example</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
               <span class="co-m">       2</span>
@@ -320,7 +320,7 @@ h <span class="co-y">=</span> <span class="co-m">4</span>, <span class="co-m">n<
 <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
 <span class="co-o">E         E   E         E</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -336,7 +336,7 @@ h <span class="co-y">=</span> <span class="co-m">4</span>, <span class="co-m">n<
 <h5 class="text-center co-c">Example: insertItem(1,Elem)</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Find new last node <span class="co-r">Z</span>
@@ -360,7 +360,7 @@ Store k at <span class="co-r">Z</span>
 
 Restore heap-order below
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -378,7 +378,7 @@ Restore heap-order below
 <h5 class="text-center co-c">Example: insertItem(1,Elem)</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Since <span class="co-m">1</span> is less than its parent, swap
@@ -400,7 +400,7 @@ Since <span class="co-m">1</span> is less than its parent (again), swap
 <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>  <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
 <span class="co-o">E         E   E         E  E         E</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -416,7 +416,7 @@ Since <span class="co-m">1</span> is less than its parent (again), swap
 <h5 class="text-center co-c">Example: removeMin()</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Remove <span class="co-m">1</span>
@@ -443,7 +443,7 @@ The leaf is still the last node <span class="co-r">Z</span> (for now)
 
 Restore heap-order below
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -461,7 +461,7 @@ Restore heap-order below
 <h5 class="text-center co-c">Example: removeMin()</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Remove <span class="co-m">1</span>
@@ -479,7 +479,7 @@ Node with key <span class="co-m">6</span> has two leaf nodes as children
 No more actions need to take place to correct heap-order
 Last node now needs to be found (below is the pseudocode)
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -566,7 +566,7 @@ Last node now needs to be found (below is the pseudocode)
 <h5 class="text-center co-c">Bottom-Up Heap</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre><?php $STRING = <<<'EOD'
 ``TInternal Nodes``E ``Y=``E ``GNum of nodes on current level``E
@@ -606,7 +606,7 @@ $replaceWith = array('<span class="co-t">', '<span class="co-c">', '<sup class="
                      '<span class="co-r">', '<span class="co-w">', '<span class="co-y">', '</span>', '</sup>');
 echo str_replace($lookFor, $replaceWith, $STRING); ?>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -622,7 +622,7 @@ echo str_replace($lookFor, $replaceWith, $STRING); ?>
 <h5 class="text-center co-c">Example</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 ORIGINAL
@@ -708,7 +708,7 @@ HEAPIFY (SWAP 10/4, 10/5, 10/7)
 <span class="co-w">+</span>--<span class="co-w">+</span>--<span class="co-w">+</span> <span class="co-w">+</span>--<span class="co-w">+</span>--<span class="co-w">+</span> <span class="co-w">+</span>--<span class="co-w">+</span>--<span class="co-w">+</span> <span class="co-w">+</span>--<span class="co-w">+</span>--<span class="co-w">+</span>  <span class="co-w">+</span>--<span class="co-w">+</span>--<span class="co-w">+</span> <span class="co-w">+</span>--<span class="co-w">+</span>--<span class="co-w">+</span> <span class="co-w">+</span>--<span class="co-w">+</span>--<span class="co-w">+</span> <span class="co-w">+</span>--<span class="co-w">+</span>--<span class="co-w">+</span>
 <span class="co-o">E     E E     E E     E E     E  E     E E     E E     E E     E</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>

@@ -37,7 +37,7 @@
                     <h5 class="text-center co-c">Main Operations</h5>
 <div class="exBoxKelly ml-4 mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-m">Let k = key, o = object</span>
 <span class="co-y">    findElement</span>(k)
@@ -48,7 +48,7 @@
 <span class="co-y">    keys</span>()
 <span class="co-y">    elements</span>()
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                     <pre><span class="co-kg">Log File</span>: Dictionary implemented by storing items in an <span class="co-c">unsorted sequence</span></pre>
@@ -79,7 +79,7 @@
                     <h5 class="text-center co-c">Example</h5>
 <div class="exBoxPurple mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Basic Hash Table Dictionary for <span class="co-c">(SSN, Name)</span>:
 <span class="co-c">    (853-23-0001, Landen), (877-76-9998, Adam)</span>
@@ -89,7 +89,7 @@
 <span class="co-m">    583-23-0001</span> <span class="co-y">--&gt;</span> <span class="co-m">1</span>       hashTable[<span class="co-m">1</span>] <span class="co-y">=</span> <span class="co-c">Landen</span>
 <span class="co-m">    877-76-9998</span> <span class="co-y">--&gt;</span> <span class="co-m">9998</span>    hashTable[<span class="co-m">9998</span>] <span class="co-y">=</span> <span class="co-c">Adam</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -149,7 +149,7 @@
                     <h5 class="co-c text-center">Theorem</h5>
 <div class="exBoxCyan mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">The set of all functions, <span class="co-y">h</span>
 <span>    Choose <span class="co-c">p</span> as a prime between <span class="co-c">M</span> and <span class="co-c">2M</span></span>
@@ -158,7 +158,7 @@
 <span>        (Otherwise every <span class="co-c">int</span> would map to the same value <span class="co-m">b</span>)</span>
     Define <span class="co-y">h</span>(k) <span class="co-y">=</span> ((ak <span class="co-y">+</span> b) <span class="co-y">mod</span> p) <span class="co-y">mod</span> N
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 <pre><span class="co-kg">Takeaway</span>:</pre>
@@ -193,7 +193,7 @@
                     <h5 class="text-center co-c">Example</h5>
 <div class="exBoxCyan ml-4 mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-y">h</span>(x) <span class="co-y">=</span> x <span class="co-y">mod</span> <span class="co-m">13</span>
 <span>    Insert keys <span class="co-m">18, 41, 22, 44, 49, 32, 31, 73</span> using <span class="co-y">h</span>(x)</span>
@@ -206,7 +206,7 @@
 <span class="co-y">    h</span>(<span class="co-m">31</span>) <span class="co-y">=</span> <span class="co-c">5 --&gt; 6 --&gt; 7 --&gt; 8 --&gt; 9 --&gt; 10</span>
 <span class="co-y">    h</span>(<span class="co-m">73</span>) <span class="co-y">=</span> <span class="co-c">8 --&gt; 9 --&gt; 10 --&gt; 11</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                     <pre><span class="co-kg">Searching</span>: Uses <span class="co-y">findElement(k)</span></pre>
@@ -241,7 +241,7 @@
                     <h5 class="co-c text-center">Example</h5>
 <div class="exBoxCyan ml-4 mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">N <span class="co-y">=</span> <span class="co-m">13</span>
 <span class="co-y">h</span>(k) <span class="co-y">=</span> k <span class="co-y">mod</span> <span class="co-m">13</span>
@@ -256,7 +256,7 @@
 <span class="co-y">    h(<span class="co-m">31</span>) = <span class="co-m">5</span> | d(<span class="co-m">31</span>) = <span class="co-m">4</span> | probes: <span class="co-c">5 --&gt; 9 --&gt; 0</span></span>
 <span class="co-y">    h(<span class="co-m">73</span>) = <span class="co-m">8</span> | d(<span class="co-m">73</span>) = <span class="co-m">4</span> | probes: <span class="co-c">8 --&gt; 12</span></span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>

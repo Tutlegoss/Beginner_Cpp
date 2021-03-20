@@ -37,7 +37,7 @@
                     <h5 class="text-center co-c">Operations</h5>
 <div class="exBoxKelly mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Main:
 <span class="co-y">    push</span>(object): Insert element
@@ -47,7 +47,7 @@ Auxiliary:
 <span class="co-y">    size</span>(): Returns # elements stored
 <span class="co-y">    isEmpty</span>(): Returns <span class="co-c">true</span> if 0 elements stored
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -75,7 +75,7 @@ Auxiliary:
                     <pre>Following functions run in <span class="co-m">O(1)</span></pre>
 <div class="exBoxPurple mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="! co-o">1
 2
@@ -104,7 +104,7 @@ Algorithm <span class="co-y">pop</span>():
         t <span class="co-y">&lt;--</span> t <span class="co-y">-</span> <span class="co-m">1</span>
         <span class="co-r">return</span> S[t <span class="co-y">+</span> <span class="co-m">1</span>]
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -115,7 +115,7 @@ Algorithm <span class="co-y">pop</span>():
                     <pre>        <span class="co-kg">Doubling</span>: Double the size</pre>
 <div class="exBoxPurple mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="! co-o">1
 2
@@ -136,7 +136,7 @@ Algorithm <span class="co-y">pop</span>():
     t <span class="co-y">&lt;--</span> t <span class="co-y">+</span> <span class="co-m">1</span>
     S[t] <span class="co-y">&lt;--</span> o
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -201,7 +201,7 @@ Algorithm <span class="co-y">pop</span>():
                     <h5 class="co-c text-center">Example</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="! co-o">
 
@@ -234,7 +234,7 @@ The number of <span class="co-y">copy</span> operations is seen on lines 1, 2, 4
     This corresponds to <span class="co-m">2<sup>0</sup> <span class="co-y">+</span> 2<sup>1</sup> <span class="co-y">+</span> 2<sup>2</sup> <span class="co-y">+</span> 2<sup>3</sup> <span class="co-y">=</span> 15</span>
 So, <span class="co-m">8 <span class="co-y">+</span> 15 <span class="co-y">=</span> 23 <span class="co-y">=</span> 3n <span class="co-y">-</span> 1</span></span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -259,7 +259,7 @@ So, <span class="co-m">8 <span class="co-y">+</span> 15 <span class="co-y">=</sp
                     <h5 class="co-c text-center">Example</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Let n <span class="co-y">=</span> <span class="co-m">7</span>, c <span class="co-y">=</span> <span class="co-m">3</span>,
     k <span class="co-y">=</span> n/c <span class="co-y">=</span> <span class="co-m">7/3</span> <span class="co-y">=</span> <span class="co-m">2</span> (truncated)
@@ -281,7 +281,7 @@ Last insertion <span class="co-y">==&gt;</span> [<span class="co-m">1</span>][<s
     So,   <span class="co-m">7 <span class="co-y">+</span> 3<span class="co-y">*</span>2(2 <span class="co-y">+</span> 1)<span class="co-y">/</span>2
         <span class="co-y">=</span> 7 <span class="co-y">+</span> 9 <span class="co-y">=</span> 16</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -308,7 +308,7 @@ Last insertion <span class="co-y">==&gt;</span> [<span class="co-m">1</span>][<s
                     <h5 class="co-c text-center">Strategy</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Charging <span class="co-m">$1</span>:
     Put in <span class="co-m">$1</span>:  <span class="co-m">$1</span> <span class="co-y">-</span> Insert <span class="co-y">-</span> <span class="co-m">1</span><span class="co-y">*</span>Copy <span class="co-y">=</span> <span class="co-m">$-1</span> credit
@@ -328,7 +328,7 @@ Charging <span class="co-m">$3</span>:
 
 <span class="co-y">Charge $3 per Push execution. You will always have at least $1 credit for the next execution.</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -353,7 +353,7 @@ Charging <span class="co-m">$3</span>:
                     <h5 class="text-center co-c">Operations</h5>
 <div class="exBoxKelly mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Main:
 <span class="co-y">    enqueue</span>(object): Insert element at the end
@@ -363,7 +363,7 @@ Auxiliary:
 <span class="co-y">    size</span>(): Returns # elements stored
 <span class="co-y">    isEmpty</span>(): Returns <span class="co-c">true</span> if 0 elements stored
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -411,7 +411,7 @@ Auxiliary:
                     <h5 class="text-center co-c">Operations</h5>
 <div class="exBoxKelly mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Query:
 <span class="co-y">    isFirst</span>(p)
@@ -430,7 +430,7 @@ Update:
 <span class="co-y">    insertLast</span>(e)
 <span class="co-y">    remove</span>(p)
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -467,7 +467,7 @@ Update:
                     <h5 class="text-center co-c">Operations</h5>
 <div class="exBoxKelly mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Query:
 <span class="co-y">    size</span>()
@@ -477,7 +477,7 @@ Update:
 <span class="co-y">    insertAtRank</span>(r,e)
 <span class="co-y">    removeAtRank</span>(r)
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -532,7 +532,7 @@ Update:
                     <h5 class="text-center co-c">Operations / Runtime Comparison</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Operation                      Array  List
 <span class="co-y">size, isEmpty               </span><span class="co-m">   O(1)   O(1)</span>
@@ -545,7 +545,7 @@ Update:
 <span class="co-y">insertAfter, insertBefore   </span><span class="co-m">   O(n)   O(1)</span>
 <span class="co-y">remove                      </span><span class="co-m">   O(n)   O(1)</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                     <pre>Example:</pre>
@@ -602,7 +602,7 @@ Update:
                     <h5 class="text-center co-c">Operations</h5>
 <div class="exBoxKelly mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Query:
     boolean <span class="co-y">isInternal</span>(p)
@@ -620,7 +620,7 @@ Generic:
     <span class="co-y">swapElements</span>(p,q)
     Object <span class="co-y">replaceElements</span>(p,o)
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -634,7 +634,7 @@ Generic:
                     <pre><span class="co-kg">Preorder</span>: Node is visited <span class="co-y">before</span> its children</pre>
 <div class="exBoxPurple mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Algorithm <span class="co-y">preOrder</span>(t)
     <span class="co-y">visit</span>(t)
@@ -649,7 +649,7 @@ Generic:
 <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>       <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
 <span class="co-m">5</span>         <span class="co-m">6</span>       <span class="co-m">7</span>    <span class="co-m">8</span>    <span class="co-m">9</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -657,7 +657,7 @@ Generic:
                     <pre><span class="co-kg">Postorder</span>: Node is visited <span class="co-y">after</span> its children</pre>
 <div class="exBoxPurple mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Algorithm <span class="co-y">postOrder</span>(t)
     <span class="co-r">for each</span> <span class="co-t">child</span> c <span class="co-r">of</span> t
@@ -672,7 +672,7 @@ Generic:
 <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>       <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
 <span class="co-m">5</span>         <span class="co-m">6</span>       <span class="co-m">7</span>    <span class="co-m">8</span>    <span class="co-m">9</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -696,7 +696,7 @@ Generic:
                     <h5 class="text-center co-c">Properties</h5>
 <div class="exBoxKelly mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g pb-1">Let n <span class="co-y">=</span> numOfNodes, e <span class="co-y">=</span>numOfExternalNodes,
     i <span class="co-y">=</span> numOfInternalNodes, h <span class="co-y">=</span> height
@@ -709,7 +709,7 @@ e <span class="co-y">&#x2264;</span> 2<sup>h</sup>
 h <span class="co-y">&#x2265; log<sub>2</sub></span>(e)
 h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</span> <span class="co-m">1</span>) <span class="co-y">-</span> <span class="co-m">1</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -724,7 +724,7 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
                     <h5 class="text-center co-c">Example</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">(<span class="co-m">2</span> <span class="co-y">*</span> (a <span class="co-y">-</span> <span class="co-m">1</span>) <span class="co-y">+</span> (<span class="co-m">3</span> <span class="co-y">*</span> b))
 
@@ -736,7 +736,7 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
      <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
      a         <span class="co-m">1</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -752,7 +752,7 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
                     <h5 class="text-center co-c">Example</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-y">
                   Want fast food?
@@ -761,7 +761,7 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
    <span class="co-w">YES</span>              <span class="co-w">NO</span>      <span class="co-w">YES</span>               <span class="co-w">NO</span>
   <span class="co-c">Wendys</span>           <span class="co-c">KFC</span>    <span class="co-c">Table 6</span>            <span class="co-c">Home</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -774,7 +774,7 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
                     <pre><span class="co-kg">Inorder</span>: Node is visited <span class="co-y">after</span> its left subtree and <span class="co-y">before</span> its right subtree</pre>
 <div class="exBoxPurple mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Algorithm <span class="co-y">inOrder</span>(n,t)
     <span class="co-r">if</span> n.<span class="co-y">isInternal</span>(t)
@@ -793,7 +793,7 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
      <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
      <span class="co-m">8         9</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -809,7 +809,7 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
                     <pre>    Print <span class="co-y">)</span> after visiting right subtree</pre>
 <div class="exBoxPurple mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Algorithm <span class="co-y">printExpression</span>(n,t)
     <span class="co-r">if</span> n.<span class="co-y">isInternal</span>(t)
@@ -822,7 +822,7 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
 
 Look at Arithmetic Expression Tree above for example
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -837,7 +837,7 @@ Look at Arithmetic Expression Tree above for example
                     <pre>Visit node 3 times while traversing left to right</pre>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 <span class="co-y">preorder</span> (left)      <span class="co-y">+ *</span> <span class="co-m">2</span> <span class="co-y">-</span> <span class="co-m">5 1</span> <span class="co-y">*</span> <span class="co-m">3 2</span>
@@ -872,7 +872,7 @@ START left   <span class="co-y">+</span>
       right  <span class="co-y">*</span>
 <span class="co-r">END</span>   right  <span class="co-y">+</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -911,7 +911,7 @@ START left   <span class="co-y">+</span>
                     <h5 class="text-center co-c">Example</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
         <span class="co-c">+---++---++---++---++---++---++---+</span>
@@ -935,7 +935,7 @@ E is right child of D:
             <span class="co-y">= <span class="co-m">2</span> * <span class="co-m">3</span> + <span class="co-m">1</span>
             <span class="co-y">=</span> <span class="co-m">7</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>

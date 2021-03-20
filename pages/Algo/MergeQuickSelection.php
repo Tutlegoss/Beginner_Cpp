@@ -43,14 +43,14 @@
                     <h5 class="text-center co-c">Main Operations</h5>
 <div class="exBoxKelly ml-4 mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-g">
 <span class="co-y">    union</span>(B)         <span class="co-w"><em>A</em> &lt;--- A &#x222A; B</span>
 <span class="co-y">    intersect</span>(B)     <span class="co-w"><em>A</em> &lt;--- A &#x2229; B</span>
 <span class="co-y">    subtract</span>(B)      <span class="co-w"><em>A</em> &lt;--- A -- B</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -69,7 +69,7 @@
                     <h5 class="text-center co-c">Generic Merge</h5>
 <div class="exBoxPurple mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-y">genericMerge</span>(A,B)
     <span class="co-c">S</span> <span class="co-y">&lt;--</span> Empty Sequence
@@ -94,7 +94,7 @@
         B.<span class="co-y">remove</span>(B.<span class="co-y">first</span>( ))
     <span class="co-r">return</span> <span class="co-c">S</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                     <pre>Any of the set operations can use generic merge</pre>
@@ -107,7 +107,7 @@
                     <p class="co-c text-center">Union Example</p>
 <div class="exBoxPurple mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-r">if</span> a <span class="co-y">&lt;</span> b
     <span class="co-w">copy</span> a <span class="co-w">to output sequence
@@ -150,7 +150,7 @@ A: <span class="co-c">2  5  6  7  9</span>
 B: <span class="co-c">2  7  8  10</span>
 <span class="co-c">s</span> <span class="co-y">=</span> A <span class="co-y">&#x222A;</span> B: <span class="co-c">2  5  6  7  8  9  10</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -185,7 +185,7 @@ B: <span class="co-c">2  7  8  10</span>
                     <h5 class="text-center co-c">Merge Sort</h5>
 <div class="exBoxPurple mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Let <span class="co-c">S</span> = Sorted Sequence, <span class="co-o">C</span> = Comparator
     <span class="co-y">MergeSort</span>(<span class="co-c">S</span>,<span class="co-o">C</span>)
@@ -197,7 +197,7 @@ B: <span class="co-c">2  7  8  10</span>
             <span class="co-y">mergeSort</span>(<span class="co-c">S<sub>2</sub></span>,<span class="co-o">C</span>)
             <span class="co-c">S</span> <span class="co-y">&lt;-- merge</span>(<span class="co-c">S<sub>1</sub></span>,<span class="co-c">S<sub>2</sub></span>)
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -213,7 +213,7 @@ B: <span class="co-c">2  7  8  10</span>
                     <h5 class="text-center co-c">Pseudocode</h5>
 <div class="exBoxPurple mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-y">merge</span>(A,B)
     <span class="co-w">Input</span>: Sequence <span class="co-c">S</span> with <span class="co-m">n<span class="co-y">/</span>2</span> elements each
@@ -230,7 +230,7 @@ B: <span class="co-c">2  7  8  10</span>
         <span class="co-c">S</span>.<span class="co-y">insertLast</span>(B.<span class="co-y">remove</span>(B.<span class="co-y">first</span>( )))
     <span class="co-r">return</span> <span class="co-c">S</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -247,7 +247,7 @@ B: <span class="co-c">2  7  8  10</span>
                     <pre>Leaves are calls on subsequences of size <span class="co-m">1</span></pre>
 <div class="exBoxPurple mb-4" style="margin:auto">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">          <span class="co-w">+</span>-----------------------------<span class="co-w">+</span>
           |<span class="co-m">7  2  <span class="co-o">|</span>  9  4</span>  <span class="co-y">--&gt;</span> <span class="co-c">2  4  7  9</span>|
@@ -261,7 +261,7 @@ B: <span class="co-c">2  7  8  10</span>
 |<span class="co-m">7</span>  <span class="co-y">--&gt;</span> <span class="co-c">7</span>|  |<span class="co-m">2</span>  <span class="co-y">--&gt;</span> <span class="co-c">2</span>|       |<span class="co-m">9</span>  <span class="co-y">--&gt;</span> <span class="co-c">9</span>|  |<span class="co-m">4</span>  <span class="co-y">--&gt;</span> <span class="co-c">4</span>|   LEAVES
 <span class="co-o">+--------+  +--------+       +--------+  +--------+</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -279,7 +279,7 @@ B: <span class="co-c">2  7  8  10</span>
                     <h5 class="text-center co-c">Example</h5>
 <div class="exBoxCyan mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Depth   #Seqs    Size
@@ -291,7 +291,7 @@ Depth   #Seqs    Size
                       <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>  <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
                       <span class="co-o">L         L   L         L  L         L   L         L</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -433,7 +433,7 @@ Depth   #Seqs    Size
                     <h5 class="text-center co-c">Partition Pseudocode</h5>
 <div class="exBoxPurple mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-y">Partition</span>(<span class="co-c">S</span>,<span class="co-m">p</span>)
     <span class="co-w">Input</span>: Sequence <span class="co-c">S</span>, pivot <span class="co-m">p</span>
@@ -449,13 +449,13 @@ Depth   #Seqs    Size
             <span class="co-o">G</span>.<span class="co-y">insertLast</span>(<span class="co-m">y</span>)
     <span class="co-r">return</span> <strong class="co-o">L, E, G</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                     <h5 class="text-center co-c">Example</h5>
 <div class="exBoxPurple mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">Start with the sequence: <span class="co-m">7  4  9  3  2  6  5  1  8</span>
 <span class="co-r">Recall that k is the kth smallest element</span>
@@ -501,7 +501,7 @@ Since <span class="co-m">k</span> <span class="co-y">&gt;</span> <span class="co
 Since <span class="co-m">k</span> <span class="co-y">=</span> <span class="co-o">L</span> <span class="co-y">+</span> <span class="co-o">E</span>, focus on <span class="co-o">E</span>
 <span class="co-c">Therefore, the 5th smallest element is <span class="co-m">5</span></span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>

@@ -40,7 +40,7 @@
                     <h5 class="text-center co-c">New Operations/Macro</h5>
 <div class="exBoxKelly ml-4 mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-g">Let k = key</span>
 <span class="co-y">    closestkeyBefore</span>(k)
@@ -50,7 +50,7 @@
 
 <span class="co-c">NO_SUCH_KEY</span>: No item in dictionary matches query
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -74,7 +74,7 @@
                     <h5 class="text-center co-c">BinarySearch()</h5>
 <div class="exBoxPurple mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Algorithm <span class="co-y">BinarySearch</span>(S, k, low, high):
@@ -88,14 +88,14 @@ Algorithm <span class="co-y">BinarySearch</span>(S, k, low, high):
     <span class="co-r">if</span> <span class="co-y">key</span>(mid) <span class="co-y">&#x2265;</span> k <span class="co-r">then
         return</span> <span clas="co-y">BinarySearch</span>(S, k, low, mid<span class="co-y">-</span><span class="co-m">1</span>)
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
 
                     <h5 class="text-center co-c">Example</h5>
 <div class="exBoxCyan mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Find k <span class="co-y">=</span> <span class="co-m">68</span>
@@ -121,7 +121,7 @@ S   | <span class="co-m">5</span>  | <span class="co-m">20</span> | <span class=
 Therefore, key <span class="co-m">68</span>'s index is <span class="co-m">5</span>
 
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                     <pre><span  class="co-y">BinarySearch</span>(...) has a runtime of <span class="co-m">O(log(n))</span></pre>
@@ -166,7 +166,7 @@ Therefore, key <span class="co-m">68</span>'s index is <span class="co-m">5</spa
                     <h5 class="text-center co-c">Left/Right Subtrees</h5>
 <div class="exBoxCyan ml-4 mb-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g"><span class="co-g"><span class="co-w">Left Subtree</span>
 <span class="co-o">Right Subtree</span>
@@ -179,7 +179,7 @@ Therefore, key <span class="co-m">68</span>'s index is <span class="co-m">5</spa
 <span class="co-w">E         E   E         E|</span><span class="co-o">|E         E</span>
 <span class="co-w">    Smaller than 6       |</span><span class="co-o">|      Larger than 6</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -200,7 +200,7 @@ Therefore, key <span class="co-m">68</span>'s index is <span class="co-m">5</spa
 <h5 class="text-center co-c">Example:</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Insert the numbers <span class="co-m">22, 80, 18, 9, 90, 20</span>
@@ -263,7 +263,7 @@ Insert the numbers <span class="co-m">22, 80, 18, 9, 90, 20</span>
      <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>                <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
      <span class="co-o">E         E   E         E                E         E</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -286,7 +286,7 @@ Insert the numbers <span class="co-m">22, 80, 18, 9, 90, 20</span>
 <h5 class="text-center co-c">Example:</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Find <span class="co-m">20</span>
@@ -303,7 +303,7 @@ Find <span class="co-m">20</span>
      <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>                <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
      <span class="co-o">E         E   E         E                E         E</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -325,7 +325,7 @@ Find <span class="co-m">20</span>
                     <h5 class="text-center co-c">Case 1a: Two External Children</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Delete <span class="co-r">9</span>
@@ -349,7 +349,7 @@ Delete <span class="co-r">9</span>
                    <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>                <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
                    <span class="co-o">E         E                E         E</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -357,7 +357,7 @@ Delete <span class="co-r">9</span>
                     <h5 class="text-center co-c">Case 1b: Child Is Interal Node</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Delete <span class="co-r">80</span>
@@ -378,7 +378,7 @@ Delete <span class="co-r">80</span>
                    <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
                    <span class="co-o">19         E</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -386,7 +386,7 @@ Delete <span class="co-r">80</span>
                     <h5 class="text-center co-c">Case 2: Two Internal Children</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
 Delete <span class="co-r">18</span>
@@ -414,7 +414,7 @@ Replace n (<span class="co-r">18</span>) with m (<span class="co-t">19</span>)
      <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>   <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
      <span class="co-o">E         E   E         E</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -431,7 +431,7 @@ Replace n (<span class="co-r">18</span>) with m (<span class="co-t">19</span>)
                     <h5 class="text-center co-c">Example Worse-Case:</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">
                               <span class="co-c">22</span>
@@ -444,7 +444,7 @@ Replace n (<span class="co-r">18</span>) with m (<span class="co-t">19</span>)
 <span class="co-w">+</span>----<span class="co-w">+</span>----<span class="co-w">+</span>
 <span class="co-o">E         E</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
@@ -465,7 +465,7 @@ Replace n (<span class="co-r">18</span>) with m (<span class="co-t">19</span>)
                     <h5 class="text-center co-c">Dictionary Worse-Cases:</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">                          <span class="co-c">Unordered                Ordered</span>
 Operation                 Log  Hash     Lookup     Binary   Balanced
@@ -480,7 +480,7 @@ Operation                 Log  Hash     Lookup     Binary   Balanced
 
 <span class="co-t">Expected O(1) running time</span>
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
@@ -499,7 +499,7 @@ Operation                 Log  Hash     Lookup     Binary   Balanced
                     <h5 class="text-center co-c">Two Questions:</h5>
 <div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tbody><tr>
 <td><pre class="@ co-g">1) Two sorted integer arrays <span class="co-c">A</span> and <span class="co-o">B</span>
     Every integer is unique in each array
@@ -536,7 +536,7 @@ Determine if there exists an index i such that <span class="co-c">A</span>[i]</s
             All left-side values are smaller than their index
             Go right
 </pre></td>
-</tr></tbody></table></pre>
+</tr></tbody></table>
 </figure>
 </div>
                 </div>
