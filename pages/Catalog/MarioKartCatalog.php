@@ -26,7 +26,7 @@
                     </h2>
                 </div>
                 <div class="col-12 mt-2">
-                    <h2 class="text-center marioKart marioTitleSize shads">
+                    <h2 class="text-center marioKart marioTitleSize marioKartTxtShade">
                         Super Mario Kart
                     </h2>
                 </div>

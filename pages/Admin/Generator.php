@@ -26,13 +26,13 @@
 
 <div class="exBoxPurple" id="result">
 <figure class="code">
-<pre><table class="table borderless my-auto">
+<table class="table borderless my-auto">
 <tr>
 <td><pre id="lineNum" class="! co-o">
 </pre></td>
 <td><pre class="@ co-g" id="sourceCode">
 </pre></td>
-</tr></table></pre>
+</tr></table>
 <p class="% ml-2 mb-2" id="output"></p>
 </figure>
 </div>

@@ -903,7 +903,6 @@ a.dirBtnMarioBlu {
 
 .snes {
     font-family: var(--fontSNES);
-    font-size: 2.5rem;
 }
 
 .superMario {
@@ -928,16 +927,30 @@ a.dirBtnMarioBlu {
     margin-top: -5px;
 }
 
-.marioCtnrBtm {
-    margin-bottom: 7rem;
-}
-
+    /* Headers */
 .marioHeader {
     background-color: var(--blk);
     border: 5px inset var(--jakks-blu);
     color: var(--wht);
     line-height: 1.5;
     font-size: 1.4rem;
+}
+
+.marioKartTxtShade {
+    color: var(--blk);
+    text-shadow: 4px  2px 8px rgb(41 160 39 / 75%),  4px  2px 8px rgb(12  0 203 / 90%), 
+                 4px -2px 8px rgb(255 73 25 / 55%), -4px -2px 8px rgb(189 0 206 / 64%);
+}
+
+.marioTopNote {
+    border: 6px inset var(--blk);
+    background: linear-gradient(180deg, rgb(189 0 206 / 0.3), rgb(41 160 39 / 0.5) 90%),
+            linear-gradient(0deg, rgb(12 0 203 / 0.6), rgb(255 73 25 / 0.2) 90%);
+    padding: 2%;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #FFFFFFA0;
+    font-family: var(--fontNin);
 }
 
     /* Card (inner/outer) Styling */
@@ -971,10 +984,6 @@ a.dirBtnMarioBlu {
 
 .marioHorizImgSize {
     width: 70%;
-}
-
-.marioImgSize {
-    width: 45%;
 }
 
 @media only screen and (max-width: 575.98px)
@@ -1012,10 +1021,8 @@ a.dirBtnMarioBlu {
     .marioRowPadding {
         padding: 0 10%;
     }
-}
 
-.shads {
-    color: var(--blk);
-    text-shadow: -4px -2px 8px #BD00CE, 4px 2px 8px #29A027, 4px 2px 8px #0C00CB,
-                 4px -2px 8px #FF4919;
+    .marioImgSize {
+        width: 45%;
+    }
 }

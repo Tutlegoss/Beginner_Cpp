@@ -15,18 +15,27 @@
         }
         else
         {
+            if(array_key_exists("Note", $arrayJSON))
+            {
+                echo "<div class='row'>"
+                     .  "<div class='col-12 col-md-8 mt-4 mb-4 mx-auto'>"
+                     .      "<h3 class='marioTopNote snes ml-4 mario-blu'>" . $arrayJSON["Note"] . "</h3>"
+                     .  "</div>"
+                     ."</div>";"<p>Catalog JSON didn't decode.</p>";
+            }
+
             $numSections = intval($arrayJSON["TotalSections"]);
             for($section = 1; $section <= $numSections; ++$section)
             {
                 /* Section Header */
                 echo "<div class='row'>"
                      .  "<div class='col-12 mt-4 mb-4'>"
-                     .      "<h3 class='snes ml-4'>" . $arrayJSON[$section]["SectionName"] . "</h3>"
+                     .      "<h1 class='snes ml-4'>" . $arrayJSON[$section]["SectionName"] . "</h1>"
                      .  "</div>"
                      ."</div>";
 
                 /* Start of cards */
-                echo "<div class='container-fluid marioCtnrBtm'>"
+                echo "<div class='container-fluid'>"
                      .  "<div class='row marioRowPadding'>";
 
                 $numEntries = intval($arrayJSON[$section]["TotalEntryNum"]);
@@ -104,7 +113,7 @@
                 }
 
                 /*
-                    End of      <div class='container-fluid marioCtnrBtm'>
+                    End of      <div class='container-fluid'>
                            <div class='row marioRowPadding'>
                 */
                 echo "</div></div>";
