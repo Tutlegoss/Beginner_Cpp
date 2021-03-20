@@ -143,7 +143,7 @@
             <div class="col-12">
         		<h3 class="heading ml-4">C++ Table of Operator Precedence</h3>
         		<hr>
-        		<p class="text-justify ml-2 mr-2">
+        		<p class="ml-md-3 ml-lg-4 mr-md-3 mr-lg-4">
         			First and foremost, we need to see how C++ orders its operators. Below are all the
                     current operators, but visit cppreference.com for complete details at
         			<a href="https://en.cppreference.com/w/cpp/language/operator_precedence">C++ Operator Precedence</a>.
@@ -353,7 +353,7 @@
             <div class="col-12">
         		<h3 class="heading ml-4">Four Basic Mathematic Operations</h3>
         		<hr>
-        		<p class="text-justify ml-2 mr-2">
+        		<p class="ml-md-3 ml-lg-4 mr-md-3 mr-lg-4">
         			Let's start with something all of us should be familiar with. The four mathematical operations:
         			addition, subtraction, multiplication, and division. We know that addition and subtraction
         			have the same precedence <span class="co-y">(level 6)</span> and multiplication and division
@@ -379,7 +379,7 @@ std::cout &lt;&lt; x <span class="co-y">/</span> y <span class="co-y">+</span> z
 		                </div>
                     </div>
                 </div>
-        		<p class="text-justify ml-2 mr-2 mt-3">
+        		<p class="ml-md-3 ml-lg-4 mr-md-3 mr-lg-4 mt-3">
         			The output is
         			<span class="co-m highlight">0.75</span> or
         			<span class="co-m highlight">3/4</span>. Division, multiplication, and addition have
@@ -410,7 +410,7 @@ std::cout &lt;&lt; x <span class="co-y">/</span> y <span class="co-y">+</span> z
             <div class="col-12">
         		<h3 class="heading ml-4">A Deeper Look at Order of Evaluation</h3>
         		<hr>
-        		<p class="text-justify ml-2 mr-2">
+        		<p class="ml-md-3 ml-lg-4 mr-md-3 mr-lg-4">
         			Now, let's look at an example that involves addition where both operands are variables and
         			both operands are incremented.
         		</p>
@@ -434,7 +434,7 @@ std::cout &lt;&lt; output;
         		        </div>
                     </div>
                 </div>
-        		<p class="text-justify ml-2 mr-2 mt-3">
+        		<p class="ml-md-3 ml-lg-4 mr-md-3 mr-lg-4 mt-3">
         			So, the postfix increment operator <span class="co-y">(level 2)</span> has a higher priority
                     than the prefix increment operator <span class="co-y">(level 3)</span>.
         			Since the unary operators are separated by addition, our expression can be written as
@@ -451,13 +451,13 @@ std::cout &lt;&lt; output;
         				<span class="green highlight">mnemonic source, destination</span>.
         			</li>
         		</ul>
-        		<p class="text-justify ml-2 mr-2">
+        		<p class="ml-md-3 ml-lg-4 mr-md-3 mr-lg-4">
         			Inspecting this file in a text editor, you'll come across the assembly code below.
         			Don't worry if you can't understand assembly as I wrote comments for each line.
         		</p>
                 <div class="row justify-content-center mb-5">
                     <div class="col-auto">
-<div class="exBoxPurple">
+<div class="exBoxPurple" style="-webkit-overflow-scrolling: touch;">
 <figure class="code">
 <pre><table class="table borderless my-auto">
 <tr>
@@ -486,7 +486,7 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
 		                </div>
                     </div>
                 </div>
-        		<p class="text-justify ml-2 mr-2 mt-3">
+        		<p class="ml-md-3 ml-lg-4 mr-md-3 mr-lg-4 mt-3">
         		Look at line 3. The left-hand side was incremented before the right-hand side
         		even though the right-hand side has the postfix operator. The right-hand side
         		doesn't get incremented and placed back onto the stack until lines 5 and 6.
@@ -498,7 +498,7 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
             <div class="col-12">
         		<h3 class="heading ml-4">So, Why Did This Happen?</h3>
         		<hr>
-        		<p class="text-justify ml-2 mr-2">
+        		<p class="ml-md-3 ml-lg-4 mr-md-3 mr-lg-4">
         			Essentially, the purpose of operator precedence is to couple operators with operands.
         			Programmers do this when they surround expressions with parenthesis. They want an expression's
         			operators and operands to be grouped together and calculated before being applied to other
@@ -537,7 +537,7 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
             <div class="col-12">
         		<h3 class="heading ml-4">Okay, Here's A Complex Example</h3>
         		<hr>
-        		<p class="text-justify ml-2 mr-2">
+        		<p class="ml-md-3 ml-lg-4 mr-md-3 mr-lg-4">
         			Let's combine several operators and really see operator precedence and associativity at work!
         		</p>
                 <div class="row justify-content-center mb-5">
@@ -564,7 +564,7 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
                 		</div>
                     </div>
                 </div>
-        		<p class="text-justify ml-2 mr-2 mt-3">
+        		<p class="ml-md-3 ml-lg-4 mr-md-3 mr-lg-4 mt-3">
         			Maybe this isn't the output you expect. Let's parse the expression
         			<span class="green highlight">lhs <span class="co-y">|| ++*</span>ptr
         			<span class="co-y">&amp;&amp; ++</span>rhs</span> using operator precedence and associativity to
@@ -581,7 +581,7 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
         				</ul>
         			</li>
         		</ul>
-        		<p class="text-justify ml-2 mr-2">
+        		<p class="ml-md-3 ml-lg-4 mr-md-3 mr-lg-4">
         			I want to stress that right-to-left associativity does not mean that
         			<span class="green highlight"><span class="co-y">++</span>rhs</span>
         			is evaluated first. These operators are unary and associativity is important
@@ -612,7 +612,7 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
         				</ul>
         			</li>
         		</ul>
-        		<p class="text-justify ml-2 mr-2">
+        		<p class="ml-md-3 ml-lg-4 mr-md-3 mr-lg-4">
         			Take a look at the parenthesis when the logical AND is evaluated. This step makes
         			the logical AND expression the right-hand side of the logical OR expression! We now
         			must recall that logical AND and logical OR use short-circuit evaluation.

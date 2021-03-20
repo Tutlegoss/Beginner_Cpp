@@ -134,10 +134,6 @@ footer p, #banner p { /* See Navbar for footer img */
 }
 
 /* -------------------- Navbar -------------------- */
-.nav-link {
-    padding: 0.5rem 1rem;
-}
-
 nav img, footer img {
 	width: 70px;
 	height: 30px;
@@ -145,6 +141,30 @@ nav img, footer img {
 
 .navbar-dark {
 	background-color: var(--blk);
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+}
+
+.nav-item {
+    padding: 0 1%;
+}
+
+@media only screen and (max-width 767.98px)
+{
+    .nav-item {
+        width: 30%;
+        min-width: 30%;
+    }
+}
+
+@media only screen and (min-width: 768px)
+{
+    .dropdown-menu {
+        left: 0;
+        right: auto;
+    }
 }
 
 #nav-Prog-Link,
@@ -169,9 +189,7 @@ button#toggler {
     background-color: var(--dk-blue);
     background-color: rgba(0 38 100 / 0.95);
 	border: 2px solid var(--lt-blue);
-    right: 0;
-    left: auto;
-    margin-top: 8%;
+    width: 16rem;
 }
 
 .dropdown-menu a {
@@ -184,18 +202,32 @@ button#toggler {
 	background-color: var(--main-bkgnd-color);
 }
 
-#search form {
-    min-width: 15rem;
-    width: 15rem;
-    padding: 4%;
+.nav-right-justified {
+    right: 0;
+    left: auto;
 }
 
-@media only screen and (max-width: 767.98px)
-{
-    #search {
-        left: 0;
-        right: auto;
-    }
+#search form {
+    min-width: 15rem;
+    padding-left: 3%;
+}
+
+#search form input.form-control {
+    background-color: var(--blk);
+    color: var(--wht);
+    border: 4px outset var(--lt-gold);
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+#search form input {
+    padding-left: 3%;
+}
+
+#search form button {
+    margin-right: 2%;
+    margin-top: 0.5%;
+    padding-right: 3%;
 }
 
 /* -------------------- index.php -------------------- */
@@ -238,6 +270,7 @@ hr {
 }
 
 .highlight {
+    display: inline-block;
     background-color: var(--blk);
 	background-color: rgba(0 0 0 / 0.5);
 	border: 1px inset var(--sdw);
@@ -389,12 +422,9 @@ a:active {
 }
 
 /* -------------------- Text area paddng -------------------- See @media below */
-p.text-justify {
-	padding: 0 5%;
-}
-
+p.text-justify,
 .indent-list {
-	padding: 0 10%;
+	padding: 0 5%;
 }
 
 /* -------------------- Colored boxes -------------------- */
