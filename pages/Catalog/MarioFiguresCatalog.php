@@ -40,7 +40,7 @@
                 $JSONID = "MarioFiguresCatalog";
                 require_once("$headerData[Path]inc/php/MarioCatalogCards.php");
             ?>
-
+            
 		</div>
 		</div>
 		</div>
@@ -48,6 +48,8 @@
 	<?php
 		require_once("$headerData[Path]inc/php/Fringes/footer.inc.php");
 	?>
+
+<script src="<?php echo $headerData["Path"]; ?>inc/js/lazyImgLoad.js"></script>
 
 </body>
 
