@@ -211,7 +211,7 @@
                 "5": "img/CatalogImgs/Mario/Figures/4_IggyKoopaTop.jpg",
                 "6": "img/CatalogImgs/Mario/Figures/4_IggyKoopaBottom.jpg"
             },
-            "IMGCls": "marioImgSize"
+            "IMGCls": "marioHorizImgSize"
         }
     },
     "4":

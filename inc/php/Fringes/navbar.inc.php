@@ -86,6 +86,13 @@
                                 echo "activeNav";
                         ?>" href="<?php echo $headerData["Path"]; ?>game/connect4.php">Conn4</a>
                 </li>
+
+                <li class="nav-item mb-1 mb-md-0">
+                    <a a id="nav-Sloth-Link" class="nav-link <?php
+                            if(preg_match("/(Sloth)/", $_SERVER["REQUEST_URI"], $matches))
+                                echo "activeNav";
+                        ?>" href="<?php echo $headerData["Path"]; ?>pages/Sloth/Sloth.php">Giant_Sloth</a>
+                </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mb-1 mb-md-0">
