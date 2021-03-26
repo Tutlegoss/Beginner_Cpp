@@ -39,6 +39,11 @@
     src: url('../fonts/ShareTechMono.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Animal';
+    src: url('../fonts/Animal.ttf') format('truetype');
+}
+
 /* -------------------- ROOT VARS -------------------- */
 :root {
     --main-bkgnd-color: rgb(26 26 26);
@@ -168,11 +173,12 @@ nav img, footer img {
 }
 
 #nav-Prog-Link,
-#nav-Search-Link {
+#nav-Sloth-Link {
     color: var(--ex-ylw);
 }
 
-#nav-Collect-Link {
+#nav-Collect-Link,
+#nav-Search-Link {
     color: var(--lt-blue);
 }
 
@@ -538,10 +544,21 @@ summary::marker {
 }
 
 /* -------------------- Example code -------------------- */
+.code {
+    overflow-x: auto;
+}
+
 .code pre {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 1rem;
+}
+
+@media only screen and (max-width: 767.98px)
+{
+    .code pre {
+        font-size: 0.9rem;
+    }
 }
 
 .borderless td, .borderless th {
@@ -556,8 +573,15 @@ summary::marker {
 	left: 0;
 	position: -webkit-sticky;
    	position: sticky;
-	box-shadow: inset 0 15px 12px -12px var(--sdw);
+	box-shadow: inset 15px 15px 12px -12px var(--sdw);
 	background-color: var(--blk);
+}
+
+figure.code p {
+    left: 0;
+    position: -webkit-sticky;
+   	position: sticky;
+	box-shadow: inset 0 15px 12px -12px var(--sdw);
 }
 
 /* -------------------- Colored number list / Bullet point style -------------------- */
@@ -832,21 +856,25 @@ a.dirBtnMarioBlu {
 .algoNotesPara>pre {
     color: var(--wht);
     white-space: pre-wrap;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
-.algoNotesPara>p:first-child {
-    font-size: 1.3rem;
+@media only screen and (max-width: 767.98px)
+{
+    .algoNotesPara>pre,
+    .algoNotesPara>p:first-child {
+        font-size: 0.95rem;
+    }
 }
 
 .redBlackTreeHighlight {
-    color: #000;
+    color: var(--blk);
     font-weight: bold;
-    text-shadow: 1px 0px 8px #fff;
+    text-shadow: 1px 0px 8px var(--wht);
 }
 
 .blackHighlight {
-    color: #000;
+    color: var(--blk);
     font-weight: bold;
     background-color: #999;
 }
@@ -901,6 +929,10 @@ a.dirBtnMarioBlu {
     padding: 0 25px;
 }
 
+.ninFont {
+    font-family: var(--fontNin);
+}
+
 .snes {
     font-family: var(--fontSNES);
 }
@@ -938,19 +970,17 @@ a.dirBtnMarioBlu {
 
 .marioKartTxtShade {
     color: var(--blk);
-    text-shadow: 4px  2px 8px rgb(41 160 39 / 75%),  4px  2px 8px rgb(12  0 203 / 90%), 
+    text-shadow: 4px  2px 8px rgb(41 160 39 / 75%),  4px  2px 8px rgb(12  0 203 / 90%),
                  4px -2px 8px rgb(255 73 25 / 55%), -4px -2px 8px rgb(189 0 206 / 64%);
 }
 
 .marioTopNote {
     border: 6px inset var(--blk);
     background: linear-gradient(180deg, rgb(189 0 206 / 0.3), rgb(41 160 39 / 0.5) 90%),
-            linear-gradient(0deg, rgb(12 0 203 / 0.6), rgb(255 73 25 / 0.2) 90%);
+                linear-gradient(0deg, rgb(12 0 203 / 0.6), rgb(255 73 25 / 0.2) 90%);
     padding: 2%;
-    font-size: 1.2rem;
     font-weight: 900;
     color: #FFFFFFA0;
-    font-family: var(--fontNin);
 }
 
     /* Card (inner/outer) Styling */
@@ -983,7 +1013,12 @@ a.dirBtnMarioBlu {
 }
 
 .marioHorizImgSize {
+    min-width: 70%;
     width: 70%;
+    max-width: 70%;
+    min-height: 65%;
+    height: 65%;
+    max-height: 65%;
 }
 
 @media only screen and (max-width: 575.98px)

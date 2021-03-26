@@ -19,9 +19,9 @@
             {
                 echo "<div class='row'>"
                      .  "<div class='col-12 col-md-8 mt-4 mb-4 mx-auto'>"
-                     .      "<h3 class='marioTopNote snes ml-4 mario-blu'>" . $arrayJSON["Note"] . "</h3>"
+                     .      "<h5 class='marioTopNote ninFont ml-4'>" . $arrayJSON["Note"] . "</h5>"
                      .  "</div>"
-                     ."</div>";"<p>Catalog JSON didn't decode.</p>";
+                     ."</div>";
             }
 
             $numSections = intval($arrayJSON["TotalSections"]);

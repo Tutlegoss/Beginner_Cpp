@@ -105,8 +105,8 @@
 			"ImgCount": "2",
 			"Images":
 			{
-				"1": "img/CatalogImgs/Mario/Karts/Luigi_Std.jpg",
-          		"2": "img/CatalogImgs/Mario/Karts/Luigi_StdReverse.jpg"
+				"1": "img/CatalogImgs/Mario/Karts/Luigi_Circuit.jpg",
+          		"2": "img/CatalogImgs/Mario/Karts/Luigi_CircuitReverse.jpg"
             },
 			"IMGCls": "marioHorizImgSize"
         },
