@@ -1036,6 +1036,14 @@ a.dirBtnMarioBlu {
     width: 100%;
 }
 
+.carousel-marioSize {
+    height: 480px;
+}
+
+.marioImgSize {
+    width: 95%;
+}
+
 @media only screen and (max-width: 575.98px)
 {
     .carousel-marioSize {
@@ -1043,27 +1051,6 @@ a.dirBtnMarioBlu {
     }
     .marioImgSize {
         width: 80%;
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767.98px)
-{
-    .carousel-marioSize {
-        height: 480px;
-    }
-    .marioImgSize {
-        width: 90%;
-    }
-}
-
-.marioImgSize {
-    width: 95%;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991.98px)
-{
-    .carousel-marioSize {
-        height: 480px;
     }
 }
 

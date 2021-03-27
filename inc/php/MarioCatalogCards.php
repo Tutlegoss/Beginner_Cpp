@@ -44,7 +44,7 @@
                     $entry = "Mario" . strval($marioEntryNum);
 
                     /* Start of card info */
-                    echo "<div class='col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3 mt-4 mb-4 d-flex align-items-stretch mx-auto mx-lg-0 p-md-1 p-lg-0'>"
+                    echo "<div class='col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 mt-4 mb-4 d-flex align-items-stretch mx-sm-0 mx-lg-0 p-sm-0 p-md-1 p-lg-0'>"
                          .   "<div class='card marioCard'>";
 
                     /*
