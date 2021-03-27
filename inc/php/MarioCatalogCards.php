@@ -19,7 +19,7 @@
             {
                 echo "<div class='row'>"
                      .  "<div class='col-12 col-md-8 mt-4 mb-4 mx-auto'>"
-                     .      "<h5 class='marioTopNote ninFont ml-4'>" . $arrayJSON["Note"] . "</h5>"
+                     .      "<h5 class='marioTopNote ninFont'>" . $arrayJSON["Note"] . "</h5>"
                      .  "</div>"
                      ."</div>";
             }
@@ -30,13 +30,13 @@
                 /* Section Header */
                 echo "<div class='row'>"
                      .  "<div class='col-12 mt-4 mb-4'>"
-                     .      "<h1 class='snes ml-4'>" . $arrayJSON[$section]["SectionName"] . "</h1>"
+                     .      "<h1 class='snes'>" . $arrayJSON[$section]["SectionName"] . "</h1>"
                      .  "</div>"
                      ."</div>";
 
                 /* Start of cards */
                 echo "<div class='container-fluid'>"
-                     .  "<div class='row marioRowPadding'>";
+                     .  "<div class='row'>";
 
                 $numEntries = intval($arrayJSON[$section]["TotalEntryNum"]);
                 for($marioEntryNum = 1; $marioEntryNum <= $numEntries; ++$marioEntryNum, ++$carouselIDCounter)
@@ -44,7 +44,7 @@
                     $entry = "Mario" . strval($marioEntryNum);
 
                     /* Start of card info */
-                    echo "<div class='col-12 col-md-6 mt-4 d-flex align-items-stretch'>"
+                    echo "<div class='col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3 mt-4 mb-4 d-flex align-items-stretch mx-auto mx-lg-0 p-md-1 p-lg-0'>"
                          .   "<div class='card marioCard'>";
 
                     /*
@@ -53,7 +53,7 @@
                             This is data-interval='false'. Make true to auto-change
                     */
                     echo "<p class='text-center superMario marioHeader'>" . $arrayJSON[$section][$entry]["Name"] . "</p>"
-                         ."<div id='controls" . $carouselIDCounter . "' class='carousel slide carousel-fade mt-4' data-interval='false'>"
+                         ."<div id='controls" . $carouselIDCounter . "' class='carousel slide carousel-fade' data-interval='false'>"
                          .  "<div class='carousel-inner'>";
 
                     /* Attach photos. Entries usually contain a front and back, but there are exceptions such as a 'Funko-esque' box */
@@ -61,12 +61,12 @@
                     for($imgEntryNum = 1; $imgEntryNum <= $numImgs; ++$imgEntryNum)
                     {
                         if($imgEntryNum == 1)
-                            echo "<div class='carousel-item active text-center'>";
+                            echo "<div class='carousel-item active carousel-marioSize'>";
                         else
-                            echo "<div class='carousel-item text-center'>";
+                            echo "<div class='carousel-item carousel-marioSize'>";
 
-                        echo    "<a href='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] . "' class='" . $arrayJSON[$section][$entry]["IMGCls"] . "' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
-                             .      "<img data-src='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] . "' class='lazy " . $arrayJSON[$section][$entry]["IMGCls"] . "' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
+                        echo    "<a href='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] ."' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
+                             .      "<img data-src='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] . "' class='lazy marioImgSize' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
                              .  "</a>"
                              ."</div>";
                     }
@@ -92,11 +92,11 @@
                     echo "<div class='card-body'>"
                          .  "<div class='marioInfo'>"
                          .      "<div class='row'>"
-                         .          "<div class='col-12 mt-2 text-center'>"
+                         .          "<div class='col-12 mt-1'>"
                          .              "<pre class='jakks-grn'>Price: \$" . $arrayJSON[$section][$entry]["Price"] . "</pre>"
                          .              "<pre class='mario-ylw'>Store: " . $arrayJSON[$section][$entry]["Store"] . "</pre>"
                          .              "<pre class='mario-blu'>Date: " . $arrayJSON[$section][$entry]["Date"] . "</pre>"
-                         .              "<pre class='jakks-red'>Notes:</pre>"
+                         .              "<pre class='jakks-red text-center'>Notes:</pre>"
                          .          "</div>"
                          .          "<div class='col-12'>"
                          .              "<p class='co-w marioNotes'>" . $arrayJSON[$section][$entry]["Notes"] . "</p>"

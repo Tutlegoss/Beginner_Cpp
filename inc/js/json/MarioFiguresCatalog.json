@@ -16,8 +16,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/25_RoyKoopa.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/25_RoyKoopaReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         },
         "Mario2":
         {
@@ -31,8 +30,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/25_BlackShyGuy.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/25_BlackShyGuyReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         },
         "Mario3":
         {
@@ -46,8 +44,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/25_OrangeYoshi.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/25_OrangeYoshiReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         },
         "Mario4":
         {
@@ -61,8 +58,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/25_Goomba.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/25_GoombaReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         },
         "Mario5":
         {
@@ -76,8 +72,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/25_DryBones.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/25_DryBonesReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         }
     },
     "2":
@@ -96,8 +91,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/25_BonesPiranha.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/25_BonesPiranhaReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         },
         "Mario2":
         {
@@ -111,8 +105,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/25_Boo.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/25_BooReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         },
         "Mario3":
         {
@@ -126,8 +119,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/25_LtBlueYoshi.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/25_LtBlueYoshiReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         },
         "Mario4":
         {
@@ -141,8 +133,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/25_IceBro.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/25_IceBroReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         },
         "Mario5":
         {
@@ -156,8 +147,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/25_Magikoopa.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/25_MagikoopaReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         }
     },
     "3":
@@ -176,8 +166,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/4_BooCoin.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/4_BooCoinReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         },
         "Mario2":
         {
@@ -191,8 +180,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/4_GreenToadStar.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/4_GreenToadStarReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         },
         "Mario3":
         {
@@ -210,8 +198,7 @@
                 "4": "img/CatalogImgs/Mario/Figures/4_IggyKoopaLeft.jpg",
                 "5": "img/CatalogImgs/Mario/Figures/4_IggyKoopaTop.jpg",
                 "6": "img/CatalogImgs/Mario/Figures/4_IggyKoopaBottom.jpg"
-            },
-            "IMGCls": "marioHorizImgSize"
+            }
         }
     },
     "4":
@@ -230,8 +217,7 @@
             {
                 "1": "img/CatalogImgs/Mario/Figures/Mario_DioramaUnderwater.jpg",
                 "2": "img/CatalogImgs/Mario/Figures/Mario_DioramaUnderwaterReverse.jpg"
-            },
-            "IMGCls": "marioImgSize"
+            }
         }
     }
 }

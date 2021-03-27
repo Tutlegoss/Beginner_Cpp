@@ -23,14 +23,14 @@
 
 			<div class="row">
                 <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Pseudocode Primitives</h3>
+                    <h3 class="heading">Pseudocode Primitives</h3>
             		<hr>
                 </div>
             </div>
 
             <div class="row mb-4 justify-content-center">
-                <div class="col-12 col-md-10">
-<div class="exBoxKelly ml-4" style="margin: auto;">
+                <div class="col-auto">
+<div class="exBoxKelly ">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -50,11 +50,9 @@
             </div>
 
             <div class="row mb-4 justify-content-center">
-                <div class="col-12 col-md-10">
+                <div class="col-auto">
                     <h5 class="co-c text-center">Example</h5>
-                </div>
-                <div class="col-12 col-md-10">
-<div class="exBoxPurple ml-4" style="margin: auto;">
+<div class="exBoxPurple ">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -72,17 +70,16 @@
             currentMax <span class="co-y">&lt;--</span> A[i]
         <span class="co-w">{ increment counter i }</span>
     <span class="co-r">return</span> <span class="co-m">currentMax</span>
-</span></pre></td>
+</pre></td>
 </tr></tbody></table>
-<p class="% ml-2 mb-2"></p>
 </figure>
 </div>
                 </div>
             </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <ol class="mt-4 ml-4">
+            <div class="row mb-4 pl-md-4">
+                <div class="algoNotesPara col-12">
+                    <ol class="mt-4">
                         <li class="co-c"># of Operations (by line)
                             <ol class="co-o">
                                 <li value="2">&nbsp;2</li>
@@ -97,17 +94,22 @@
                 </div>
             </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Analysis of Example</p>
+            <div class="row mb-4 pl-md-4">
+                <div class="algoNotesPara col-12">
+                    <h5 class="co-c text-center">Analysis of Example</h5>
                     <br>
                     <pre>The total number of operations: <span class="co-c">7n - 1</span></pre>
                     <pre><span class="co-kg">Estimating Running Time</span>:</pre>
                     <pre><span class="co-y">Worst Case</span>: <span class="co-c">7n - 1</span></pre>
                     <pre><span class="co-y">Best Case</span>: <span class="co-c">5n + 1</span></pre>
-                    <pre>    Loop executes 0 times</pre>
-                    <pre>    If loop executes, best case is when the inner <span class="co-r">if</span> statement always returns false. Therefore, <span class="co-c">5n + 1</span> is the best case</pre>
-                    <pre>    Why: Line 5 is excluded</pre>
+
+                    <p class="pl-4">
+                        - Loop executes 0 times
+                        <br>
+                        - If loop executes, best case is when the inner <span class="co-r">if</span> statement always returns false. Therefore, <span class="co-c">5n + 1</span> is the best case
+                        <br>
+                        - Why: Line 5 is excluded
+                    </p>
                     <pre>Equation: Let <span class="co-c">a</span> be fastest operation time and <span class="co-c">b</span> be the slowest operation time:</pre>
                     <pre><span class="co-c">a(7n - 1) &#x2264; T(n) &#x2264; b(7n - 1)</span></pre>
                     <pre>Therefore, <span class="co-c">T(n)</span> is bounded by linear functions</pre>
@@ -116,14 +118,14 @@
 
 			<div class="row">
                 <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Growth Rates</h3>
+                    <h3 class="heading ">Growth Rates</h3>
             		<hr>
                 </div>
             </div>
 
             <div class="row mb-4 justify-content-center">
-                <div class="col-12 col-md-10">
-<div class="exBoxKelly ml-4 mb-4" style="margin: auto;">
+                <div class="col-auto">
+<div class="exBoxKelly  mb-4">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -132,31 +134,39 @@
 <span class="co-y">Linear</span>: <span class="co-m">n</span>
 <span class="co-y">Quadratic</span>: <span class="co-m">n<sup>2</sup></span>
 <span class="co-y">Cubic</span>: <span class="co-m">n<sup>3</sup></span>
-<span class="co-y">Polynomial</span>: <span class="co-m">n<sup>k</sup>  <span class="co-w">/* k &#x2265; 1 */</span>
-<span class="co-y">Exponential</span>: <span class="co-m">a<sup>n</sup>  <span class="co-w">/* a &gt; 1 */</span>
+<span class="co-y">Polynomial</span>: <span class="co-m">n<sup>k</sup></span>  <span class="co-w">/* k &#x2265; 1 */</span>
+<span class="co-y">Exponential</span>: <span class="co-m">a<sup>n</sup></span>  <span class="co-w">/* a &gt; 1 */</span>
 </pre></td>
 </tr></tbody></table>
 </figure>
 </div>
-                    <p class="ml-4">Growth rate is not affected by constant factors or lower-order terms</p>
+                </div>
+            </div>
+            <div class="row pl-md-4">
+                <div class="col-12">
+                    <p>Growth rate is not affected by constant factors or lower-order terms</p>
                 </div>
             </div>
 
 			<div class="row">
                 <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Asymptotic Complexity</h3>
+                    <h3 class="heading">Asymptotic Complexity</h3>
             		<hr>
                 </div>
             </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="col-12 col-md-10">
-                    <p class="ml-4">Worst case running time of an algorithm
+            <div class="row pl-md-4">
+                <div class="col-12">
+                    <p>Worst case running time of an algorithm
                         <br>
                         Do not express as exact time, just the highest-order term
                     </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
                     <h5 class="co-c text-center">Asymptotic Notation</h5>
-<div class="exBoxKelly mb-4" style="margin: auto;">
+<div class="exBoxKelly mb-4">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -170,13 +180,21 @@
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                    <p class="ml-4">Big implies inclusive bounds
+                </div>
+            </div>
+            <div class="row pl-md-4">
+                <div class="col-12">
+                    <p>Big implies inclusive bounds
                         <br>
                         Little implies exclusive bounds
                         <br>
                         These are rate-of-growth relations (RoG)
                     </p>
-<div class="exBoxKelly mb-4" style="margin: auto;">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+<div class="exBoxKelly mb-4">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -189,8 +207,12 @@
 </tr></tbody></table>
 </figure>
 </div>
-                <h5 class="co-c text-center">Examples</h5>
-<div class="exBoxPurple mb-4" style="margin: auto;">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="co-auto">
+                    <h5 class="co-c text-center">Examples</h5>
+<div class="exBoxPurple mb-4">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -206,22 +228,26 @@ O(n<sup>2</sup>)
 </tr></tbody></table>
 </figure>
 </div>
-                    <p class="ml-4 co-c">n<sup>2</sup> <span class="co-w">is not</span>
-                        O(n) <span class="co-w">as<span> n<sup>2</sup> &#x2270; n (not lt or eq to)
-                    <p>
+                </div>
+            </div>
+            <div class="row pl-md-4">
+                <div class="col-12">
+                    <p class=" co-c">n<sup>2</sup> <span class="co-w">is not</span>
+                        O(n) <span class="co-w">as</span> n<sup>2</sup> &#x2270; <span class="co-w">n (not lt or eq to)</span>
+                    </p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Math Review Topics</h3>
+                    <h3 class="heading ">Math Review Topics</h3>
             		<hr>
                 </div>
             </div>
 
-			<div class="row justify-content-center">
-                <div class="col-12 col-md-10 mb-4">
-                    <p class="ml-4">Summations
+			<div class="row pl-md-4">
+                <div class="col-12 mb-4">
+                    <p>Summations
                         <br>
                         Logarithms and Exponents
                         <br>
@@ -234,14 +260,13 @@ O(n<sup>2</sup>)
 
             <div class="row">
                 <div class="col-12 d-flex mb-4 pl-5 pr-5 justify-content-between">
-                    <a href="\index.php" style="display: inline-block;">Home</a>
-                    <a href=".\ElementaryDataStructures.php" style="display: inline-block;">Elementary Data Structures</a>
+                    <a href="/index.php" style="display: inline-block;">Home</a>
+                    <a href="./ElementaryDataStructures.php" style="display: inline-block;">Elementary Data Structures</a>
                 </div>
             </div>
 		</div>
 		</div>
 		</div>
-
 	<?php
 		require_once("$headerData[Path]inc/php/Fringes/footer.inc.php");
 	?>

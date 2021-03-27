@@ -1,3 +1,4 @@
+
 {
     "Note": "Some of these purchased on eBay was due to the fact that I didn't know they were sold at Target and Walmart. Rosalina is the only one I have not seen 'in the wild.'",
     "TotalSections": "4",
@@ -17,9 +18,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Mario_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Mario_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario2":
         {
             "Name": "Mario P-Wing",
@@ -32,9 +32,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Mario_PWing.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Mario_PWingReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario3":
         {
             "Name": "Tanooki Mario",
@@ -47,9 +46,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/TanookiMario_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/TanookiMario_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario4":
         {
             "Name": "Baby Mario",
@@ -62,9 +60,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/BabyMario_BDasher.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/BabyMario_BDasherReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario5":
         {
             "Name": "Luigi Standard",
@@ -77,9 +74,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Luigi_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Luigi_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario6":
         {
             "Name": "Luigi Mach 8",
@@ -92,9 +88,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Luigi_Mach8.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Luigi_Mach8Reverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario7":
         {
             "Name": "Luigi Circuit",
@@ -107,9 +102,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Luigi_Circuit.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Luigi_CircuitReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario8":
         {
             "Name": "Toad Standard",
@@ -122,9 +116,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Toad_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Toad_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario9":
         {
             "Name": "Toad Sneeker",
@@ -137,9 +130,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Toad_Sneeker.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Toad_SneekerReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario10":
         {
             "Name": "Peach Standard",
@@ -152,9 +144,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Peach_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Peach_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario11":
         {
             "Name": "Peach P-Wing",
@@ -167,9 +158,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Peach_PWing.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Peach_PWingReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario12":
         {
             "Name": "Rosalina Standard",
@@ -182,9 +172,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Rosalina_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Rosalina_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario13":
         {
             "Name": "Yoshi Standard",
@@ -197,9 +186,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Yoshi_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Yoshi_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario14":
         {
             "Name": "Yoshi B-Dasher",
@@ -212,9 +200,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Yoshi_BDasher.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Yoshi_BDasherReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario15":
         {
             "Name": "Yoshi Mach 8",
@@ -227,9 +214,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Yoshi_Mach8.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Yoshi_Mach8Reverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario16":
         {
             "Name": "Yoshi Pipe",
@@ -242,9 +228,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Yoshi_Pipe.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Yoshi_PipeReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario17":
         {
             "Name": "Red Yoshi",
@@ -257,9 +242,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/RedYoshi_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/RedYoshi_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario18":
         {
             "Name": "Light Blue Yoshi",
@@ -272,9 +256,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/LtBlueYoshi_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/LtBlueYoshi_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario19":
         {
             "Name": "Wario Standard",
@@ -287,9 +270,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Wario_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Wario_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario20":
         {
             "Name": "Waluigi Bandwagon",
@@ -302,9 +284,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Waluigi_Bandwagon.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Waluigi_BandwagonReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario21":
         {
             "Name": "Bowser Bandwagon",
@@ -317,9 +298,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Bowser_Bandwagon.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Bowser_BandwagonReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario22":
         {
             "Name": "Shy Guy Standard",
@@ -332,9 +312,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/ShyGuy_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/ShyGuy_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario23":
         {
             "Name": "Shy Guy B-Dasher",
@@ -347,9 +326,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/ShyGuy_BDasher.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/ShyGuy_BDasherReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario24":
         {
             "Name": "Koopa Troopa Circuit",
@@ -362,9 +340,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/KoopaTroopa_Circuit.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/KoopaTroopa_CircuitReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario25":
         {
             "Name": "Dry Bones Standard",
@@ -377,9 +354,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/DryBones_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/DryBones_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario26":
         {
             "Name": "Donkey Kong Standard",
@@ -392,9 +368,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/DK_Std.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/DK_StdReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario27":
         {
             "Name": "Donkey Kong Sports",
@@ -407,9 +382,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/DK_Sports.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/DK_SportsReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario28":
         {
             "Name": "Diddy Kong Pipe",
@@ -422,9 +396,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Diddy_Pipe.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/Diddy_PipeReverse.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario29":
         {
             "Name": "Mario Standard",
@@ -437,8 +410,7 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/HotWheels_All28Lt.jpg",
           		"2": "img/CatalogImgs/Mario/Karts/HotWheels_All28Dk.jpg"
-            },
-			"IMGCls": "marioHorizImgSize"
+            }
         }
     },
   		"2":
@@ -462,9 +434,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Egg_Black.jpg",
           		"2": "NOIMG"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario2":
         {
             "Name": "Blue Yoshi",
@@ -477,9 +448,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Egg_Blue.jpg",
           		"2": "NOIMG"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario3":
         {
             "Name": "White Yoshi",
@@ -492,9 +462,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Egg_White.jpg",
           		"2": "NOIMG"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario4":
         {
             "Name": "Light Blue Yoshi",
@@ -507,9 +476,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Egg_LtBlue.jpg",
           		"2": "NOIMG"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario5":
         {
             "Name": "Yellow Yoshi",
@@ -522,9 +490,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Egg_Yellow.jpg",
           		"2": "NOIMG"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario6":
         {
             "Name": "Green Yoshi",
@@ -537,9 +504,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Egg_Green.jpg",
           		"2": "NOIMG"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario7":
         {
             "Name": "Orange Yoshi",
@@ -552,9 +518,8 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Egg_Orange.jpg",
           		"2": "NOIMG"
-            },
-			"IMGCls": "marioHorizImgSize"
-        },
+            }
+		},
         "Mario8":
         {
             "Name": "Pink Yoshi",
@@ -567,8 +532,7 @@
 			{
 				"1": "img/CatalogImgs/Mario/Karts/Egg_Pink.jpg",
           		"2": "NOIMG"
-            },
-			"IMGCls": "marioHorizImgSize"
+            }
         }
     },
     "4":

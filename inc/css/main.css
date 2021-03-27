@@ -402,6 +402,10 @@ a:active {
 	color: var(--red);
 }
 
+.co-sdw {
+    color: var(--sdw);
+}
+
 .co-t {
 	color: var(--teal);
 }
@@ -910,17 +914,6 @@ a.dirBtnMarioBlu {
 }
 
     /* Font Styling */
-.marioTitleSize {
-    font-size: 2.5rem;
-}
-
-@media only screen and (max-width: 991.98px)
-{
-    .marioTitleSize {
-        font-size: 2.3rem;
-    }
-}
-
 .nintendoFont {
     font-family: var(--fontNin);
     color: var(--nintendo-red);
@@ -946,6 +939,27 @@ a.dirBtnMarioBlu {
     font-family: var(--fontMK);
 }
 
+.marioTitleSize {
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 991.98px)
+{
+    .marioTitleSize {
+        font-size: 2.3rem;
+    }
+}
+
+.marioKartTxtShade {
+    color: var(--blk);
+    text-shadow: 4px  2px 8px rgb(41 160 39 / 75%),  4px  2px 8px rgb(12  0 203 / 90%),
+                 4px -2px 8px rgb(255 73 25 / 55%), -4px -2px 8px rgb(189 0 206 / 64%);
+}
+
+.marioKartNameSdw {
+    text-shadow: 0 -1px 0 var(--wht), 0 0 2px var(--wht), 0 1px 2px var(--wht);
+}
+
     /* Horizontal Rule */
 .nintendohr {
 	border-top: 3px solid;
@@ -965,13 +979,7 @@ a.dirBtnMarioBlu {
     border: 5px inset var(--jakks-blu);
     color: var(--wht);
     line-height: 1.5;
-    font-size: 1.4rem;
-}
-
-.marioKartTxtShade {
-    color: var(--blk);
-    text-shadow: 4px  2px 8px rgb(41 160 39 / 75%),  4px  2px 8px rgb(12  0 203 / 90%),
-                 4px -2px 8px rgb(255 73 25 / 55%), -4px -2px 8px rgb(189 0 206 / 64%);
+    font-size: 1.2rem;
 }
 
 .marioTopNote {
@@ -987,6 +995,7 @@ a.dirBtnMarioBlu {
 .marioCard {
      background-color: var(--blk);
      border: 3px solid var(--jakks-blu);
+     width: 100%;
 }
 
 .marioInfo {
@@ -997,67 +1006,103 @@ a.dirBtnMarioBlu {
 .marioInfo pre {
     font-family: var(--fontMario);
     font-size: 1.1rem;
+    white-space: break-spaces;
 }
 
 .marioNotes {
     font-family: var(--fontCode);
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    border: 2px inset white;
+    border: 4px inset var(--blk);
     height: 30px;
     width: 30px;
     margin: auto 3.9%;
+    opacity: .75;
+    background-color: var(--blk);
 }
 
-.marioHorizImgSize {
-    min-width: 70%;
-    width: 70%;
-    max-width: 70%;
-    min-height: 65%;
-    height: 65%;
-    max-height: 65%;
+.carousel-marioSize img {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%)
+}
+
+.carousel-marioSize {
+    overflow: hidden;
+    width: 100%;
 }
 
 @media only screen and (max-width: 575.98px)
 {
+    .carousel-marioSize {
+        height: 405px;
+    }
     .marioImgSize {
-        width: 55%;
+        width: 80%;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767.98px)
 {
-    .marioRowPadding {
-        padding: 0 15%;
+    .carousel-marioSize {
+        height: 480px;
     }
-
     .marioImgSize {
-        width: 50%;
+        width: 90%;
     }
-
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199.98px)
-{
-    .marioRowPadding {
-        padding: 0%;
-    }
+.marioImgSize {
+    width: 95%;
+}
 
-    .marioImgSize {
-        width: 55%;
+@media only screen and (min-width: 768px) and (max-width: 991.98px)
+{
+    .carousel-marioSize {
+        height: 480px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px)
+{
+    .carousel-marioSize {
+        height: 420px;
     }
 }
 
 @media only screen and (min-width: 1200px)
 {
-    .marioRowPadding {
-        padding: 0 10%;
+    .carousel-marioSize {
+        height: 400px;
     }
+}
 
-    .marioImgSize {
-        width: 45%;
+    /* MarioKartTable */
+#marioVersTable {
+    background-color: var(--blk);
+    white-space: nowrap;
+    font-size: 1.2rem;
+    font-family: var(--fontMario);
+    border: 5px inset var(--wht);
+}
+
+.marioCheckTableImg img {
+    height: 50px;
+    width: 50px;
+}
+
+#marioVersTable th,
+#marioVersTable td {
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 575.98px)
+{
+    #marioVersTable {
+        font-size: 1rem;
     }
 }

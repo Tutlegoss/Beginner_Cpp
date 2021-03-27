@@ -156,7 +156,7 @@
         		</p>
         		<div class="row justify-content-center">
         			<div class="col-auto">
-        				<table class="table-dark table-responsive" id="precTable">
+        				<table class="table table-dark table-responsive" id="precTable">
         					<thead>
         						<tr class="text-center">
         							<th>Precedence</th>
