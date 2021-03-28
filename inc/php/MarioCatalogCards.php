@@ -52,7 +52,7 @@
                         The carousel does not automatically change photos, but has a fade effect when < > are clicked
                             This is data-interval='false'. Make true to auto-change
                     */
-                    echo "<p class='text-center superMario marioHeader'>" . $arrayJSON[$section][$entry]["Name"] . "</p>"
+                    echo "<p class='text-center superMario marioHeader' style='color: " . $arrayJSON[$section][$entry]["Color"] . ";'>" . $arrayJSON[$section][$entry]["Name"] . "</p>"
                          ."<div id='controls" . $carouselIDCounter . "' class='carousel slide carousel-fade' data-interval='false'>"
                          .  "<div class='carousel-inner'>";
 

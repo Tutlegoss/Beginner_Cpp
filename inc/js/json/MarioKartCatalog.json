@@ -8,11 +8,12 @@
         "TotalEntryNum": "29",
         "Mario1":
         {
-            "Name": "Mario Standard",
+            "Name": "Mario",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Mario in Standard Kart",
+            "Color": "rgb(161 23 23)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -22,11 +23,12 @@
 		},
         "Mario2":
         {
-            "Name": "Mario P-Wing",
+            "Name": "Mario",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Mario in P-Wing Kart",
+			"Color": "rgb(161 23 23)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -41,6 +43,7 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Tanooki Mario in Standard Kart",
+			"Color": "rgb(128 39 23)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -55,6 +58,7 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Mario in B-Dasher Kart",
+			"Color": "rgb(158 20 20)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -64,11 +68,12 @@
 		},
         "Mario5":
         {
-            "Name": "Luigi Standard",
+            "Name": "Luigi",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Luigi in Standard Kart",
+			"Color": "rgb(71 113 39)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -78,11 +83,12 @@
 		},
         "Mario6":
         {
-            "Name": "Luigi Mach 8",
+            "Name": "Luigi",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Luigi in Mach 8 Kart",
+			"Color": "rgb(71 113 39)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -92,11 +98,12 @@
 		},
         "Mario7":
         {
-            "Name": "Luigi Circuit",
+            "Name": "Luigi",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Luigi in Circuit Special Kart",
+			"Color": "rgb(71 113 39)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -106,11 +113,12 @@
 		},
         "Mario8":
         {
-            "Name": "Toad Standard",
+            "Name": "Toad",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Toad in Standard Kart",
+			"Color": "rgb(202 157 37)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -120,11 +128,12 @@
 		},
         "Mario9":
         {
-            "Name": "Toad Sneeker",
+            "Name": "Toad",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Toad in Sneeker Kart",
+			"Color": "rgb(202 157 37)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -134,11 +143,12 @@
 		},
         "Mario10":
         {
-            "Name": "Peach Standard",
+            "Name": "Peach",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Peach in Standard Kart",
+			"Color": "rgb(193 67 89)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -148,11 +158,12 @@
 		},
         "Mario11":
         {
-            "Name": "Peach P-Wing",
+            "Name": "Peach",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Peach in P-Wing Kart",
+			"Color": "rgb(193 67 89)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -162,11 +173,12 @@
 		},
         "Mario12":
         {
-            "Name": "Rosalina Standard",
+            "Name": "Rosalina",
             "Price": "16.60",
             "Store": "eBay",
             "Date": "2020 Jun 11",
             "Notes": "Rosalina in Standard Kart. Shipping was $2.50. Purchased during the flood of her on eBay driving the price down $30 or so. As of 2021 Mar 17 this is going for $70 - $80 on eBay.",
+			"Color": "rgb(79 111 100)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -176,11 +188,12 @@
 		},
         "Mario13":
         {
-            "Name": "Yoshi Standard",
+            "Name": "Yoshi",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Yoshi in Standard Kart",
+			"Color": "rgb(81 106 51)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -190,11 +203,12 @@
 		},
         "Mario14":
         {
-            "Name": "Yoshi B-Dasher",
+            "Name": "Yoshi",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Yoshi in B-Dasher Kart",
+			"Color": "rgb(81 106 51)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -204,11 +218,12 @@
 		},
         "Mario15":
         {
-            "Name": "Yoshi Mach 8",
+            "Name": "Yoshi",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Mario in Mach 8 Kart",
+			"Color": "rgb(81 106 51)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -218,11 +233,12 @@
 		},
         "Mario16":
         {
-            "Name": "Yoshi Pipe",
+            "Name": "Yoshi",
             "Price": "4.97",
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Yoshi in Pipe Frame Kart",
+			"Color": "rgb(81 106 51)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -237,6 +253,7 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Red Yoshi in Standard Kart. Has crease on reverse middle",
+			"Color": "rgb(175 39 25)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -246,11 +263,12 @@
 		},
         "Mario18":
         {
-            "Name": "Light Blue Yoshi",
+            "Name": "Light-Blue Yoshi",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Light Blue Yoshi in Standard Kart",
+			"Color": "rgb(59 100 131)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -260,11 +278,12 @@
 		},
         "Mario19":
         {
-            "Name": "Wario Standard",
+            "Name": "Wario",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Wario in Standard Kart",
+			"Color": "rgb(103 35 74)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -274,11 +293,12 @@
 		},
         "Mario20":
         {
-            "Name": "Waluigi Bandwagon",
+            "Name": "Waluigi",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Waluigi in Bandwagon Kart. Waluigi Wednesday",
+			"Color": "rgb(100 42 78)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -288,11 +308,12 @@
 		},
         "Mario21":
         {
-            "Name": "Bowser Bandwagon",
+            "Name": "Bowser",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Bowser in Bandwagon Kart",
+			"Color": "rgb(138 71 18)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -302,11 +323,12 @@
 		},
         "Mario22":
         {
-            "Name": "Shy Guy Standard",
+            "Name": "Shy Guy",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Shy Guy in Standard Kart",
+			"Color": "rgb(107 32 27)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -316,11 +338,12 @@
 		},
         "Mario23":
         {
-            "Name": "Shy Guy B-Dasher",
+            "Name": "Shy Guy",
             "Price": "16.69",
             "Store": "RESEARCH",
             "Date": "2020 Jun 11",
             "Notes": "Shy Guy in B-Dasher Kart. Bought with Rosalina. This was before I knew these were sold at Target and Walmart.",
+			"Color": "rgb(107 32 27)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -330,11 +353,12 @@
 		},
         "Mario24":
         {
-            "Name": "Koopa Troopa Circuit",
+            "Name": "Koopa Troopa",
             "Price": "RESEARCH",
             "Store": "Target, eBay",
             "Date": "RESEARCH",
             "Notes": "Koopa Troopa in Circuit Special Kart. I own two",
+			"Color": "rgb(61 86 31)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -344,11 +368,12 @@
 		},
         "Mario25":
         {
-            "Name": "Dry Bones Standard",
+            "Name": "Dry Bones",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Dry Bones in Standard Kart",
+			"Color": "rgb(128 128 128)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -358,11 +383,12 @@
 		},
         "Mario26":
         {
-            "Name": "Donkey Kong Standard",
+            "Name": "Donkey Kong",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Donkey Kong in Standard Kart",
+			"Color": "rgb(138 68 32)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -372,11 +398,12 @@
 		},
         "Mario27":
         {
-            "Name": "Donkey Kong Sports",
+            "Name": "Donkey Kong",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Donkey Kong in Sports Coupe Kart",
+			"Color": "rgb(138 68 32)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -386,11 +413,12 @@
 		},
         "Mario28":
         {
-            "Name": "Diddy Kong Pipe",
+            "Name": "Diddy Kong",
             "Price": "RESEARCH",
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Diddy Kong in Pipe Frame Kart",
+			"Color": "rgb(88 45 29)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -400,11 +428,12 @@
 		},
         "Mario29":
         {
-            "Name": "Mario Standard",
+            "Name": "All 28",
             "Price": "RESEARCH",
             "Store": "Multiple",
             "Date": "Multiple",
             "Notes": "All 28 Karts as of 2021 Mar 16",
+			"Color": "var(--wht)",
 			"ImgCount": "2",
 			"Images":
 			{
@@ -429,6 +458,7 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = N48A:",
+			"Color": "rgb(999 999 999)",
 			"ImgCount": "1",
 			"Images":
 			{
@@ -443,6 +473,7 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = :N48A",
+			"Color": "rgb(999 999 999)",
 			"ImgCount": "1",
 			"Images":
 			{
@@ -457,6 +488,7 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = -N48A",
+			"Color": "rgb(999 999 999)",
 			"ImgCount": "1",
 			"Images":
 			{
@@ -471,6 +503,7 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = -N48A",
+			"Color": "rgb(999 999 999)",
 			"ImgCount": "1",
 			"Images":
 			{
@@ -485,6 +518,7 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = .N48A",
+			"Color": "rgb(999 999 999)",
 			"ImgCount": "1",
 			"Images":
 			{
@@ -499,6 +533,7 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = N48A.",
+			"Color": "rgb(999 999 999)",
 			"ImgCount": "1",
 			"Images":
 			{
@@ -513,6 +548,7 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = N48A/",
+			"Color": "rgb(999 999 999)",
 			"ImgCount": "1",
 			"Images":
 			{
@@ -527,6 +563,7 @@
             "Store": "Walmart",
             "Date": "RESEARCH",
             "Notes": "Code = /N48A",
+			"Color": "rgb(999 999 999)",
 			"ImgCount": "1",
 			"Images":
 			{

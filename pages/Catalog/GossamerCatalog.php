@@ -21,13 +21,13 @@
 		<div id="article" class="col-12">
             <div class="row mt-5">
                 <div class="col-12">
-    			    <p class="text-center">
-                        <span class="nintendoFont marioTitleSize">NINTENDO</span>
+    			    <p class="text-center looneyTunesFont mario-ylw" style="font-size: 2.5rem; margin-bottom: -1rem;">
+                        Looney Tunes
                     </p>
                 </div>
                 <div class="col-12 mt-2">
-                    <p class="text-center marioKart marioTitleSize marioKartTxtShade">
-                        Super Mario Kart
+                    <p class="text-center creepsterFont jakks-red" style="font-size: 2.5rem;">
+                        Gossamer
                     </p>
                 </div>
             </div>

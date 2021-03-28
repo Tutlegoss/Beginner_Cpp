@@ -44,6 +44,16 @@
     src: url('../fonts/Animal.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'LooneyTunes';
+    src: url('../fonts/LooneyTunes.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Creepster';
+    src: url('../fonts/Creepster.ttf') format('truetype');
+}
+
 /* -------------------- ROOT VARS -------------------- */
 :root {
     --main-bkgnd-color: rgb(26 26 26);
@@ -87,6 +97,8 @@
     --fontNin: 'Nintendo', 'Share Tech Mono', Monospace;
     --fontSNES: 'SNES', 'Share Tech Mono', Monospace;
     --fontMK: 'MarioKart', 'Share Tech Mono', Monospace;
+    --fontLT: 'LooneyTunes', 'Share Tech Mono', Monospace;
+    --fontCreep: 'Creepster', 'Share Tech Mono', Monospace;
 }
 
 /* -------------------- Overall style -------------------- */
@@ -883,7 +895,17 @@ a.dirBtnMarioBlu {
     background-color: #999;
 }
 
-/* -------------------- Catalog -------------------- */
+/* -------------------- Gossamer Catalog -------------------- */
+    /* Font */
+.looneyTunesFont {
+    font-family: var(--fontLT);
+}
+
+.creepsterFont {
+    font-family: var(--fontCreep);
+}
+
+/* -------------------- Mario Catalog -------------------- */
     /* Colors */
 .mario-blu {
     color: var(--mario-blu);
@@ -1051,6 +1073,18 @@ a.dirBtnMarioBlu {
     }
     .marioImgSize {
         width: 80%;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991.98px)
+{
+    .carousel-marioSize {
+        height: 340px;
     }
 }
 
