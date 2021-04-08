@@ -37,7 +37,7 @@ $(document).ready(function() {
         }
 
         $.ajax({
-            url:      path + "inc/php/quizResults.php",
+            url:      path + "inc/php/quiz/quizResults.php",
             data:     {Title:fn},
             async:    true,
             method:   "POST",

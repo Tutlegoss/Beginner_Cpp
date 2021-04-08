@@ -1,175 +1,62 @@
 <?php
 
     session_start();
-
     ob_start();
 
-    function goToIndex()
-    {
-       header("Location: ../../index.php");
-    }
-
-	function loggedIn()
-	{
-		if(isset($_SESSION['LoggedIn']) && $_SESSION['LoggedIn'] == TRUE)
-			goToIndex();
-	}
-
-	function validateSignup()
-	{
-		if($_POST) {
-			global $conn;
-			$invalidEntries = TRUE;
-            return;
-			/* Check for @kent.edu email address */
-			$_POST["Email"] = strtolower($_POST["Email"]);
-			if(strpos($_POST["Email"], "@kent.edu") === FALSE ||
-			   preg_match("/^(.)*@kent.edu$/", $_POST["Email"]) == 0) {
-				echo "<p class='kentYellow ml-4'>Invalid email. Please use @kent.edu email.</p>";
-				$invalidEntries = TRUE;
-			}
-
-			/* Check for valid username combination */
-			if(preg_match("/^\w{1,16}$/", $_POST["Username"]) == 0) {
-				echo "<p class='kentYellow ml-4'>Invalid username. Please enter 1 to 16 alphanumeric characters, no spaces.</p>";
-				$invalidEntries = TRUE;
-			}
-
-			/* Check for valid password combination */
-			if(preg_match("/^.{8,30}$/", $_POST["Password"]) == 0) {
-				echo "<p class='kentYellow ml-4'>Invalid password. Please enter 8 to 30 characters.</p>";
-				$invalidEntries = TRUE;
-			}
-
-			/* Don't modify the HTML...rude */
-			if($invalidEntries) {
-				echo "<p class='co-m ml-4'>Please don't modify the HTML. Thank you.</p>";
-			}
-
-			/* Check for existing email */
-			$signUpCheck = $conn->prepare("SELECT 1 FROM Accounts WHERE Email = ?;");
-			$signUpCheck->bindParam(1, $_POST["Email"], PDO::PARAM_STR, 24);
-			$signUpCheck->execute();
-			$signUpCheck = $signUpCheck->fetch(PDO::FETCH_ASSOC);
-			if($signUpCheck) {
-				echo "<p class='kentYellow ml-4'>Email is already associated with an account.</p>";
-				$invalidEntries = TRUE;
-			}
-
-			/* Check for existing username */
-			$signUpCheck = $conn->prepare("SELECT 1 FROM Accounts WHERE Username = ?;");
-			$signUpCheck->bindParam(1, $_POST["Username"], PDO::PARAM_STR, 16);
-			$signUpCheck->execute();
-			$signUpCheck = $signUpCheck->fetch(PDO::FETCH_ASSOC);
-			if($signUpCheck) {
-				echo "<p class='kentYellow ml-4'>Username is already taken.</p>";
-				$invalidEntries = TRUE;
-			}
-
-			/* Don't process if any of the above checks are invalid */
-			if($invalidEntries) {
-				return $invalidEntries;
-			}
-
-			/* Create unique ID for user */
-			$IDMatch = TRUE;
-			while($IDMatch) {
-				$ID = bin2hex(random_bytes(8));
-				$signUpCheck = $conn->prepare("SELECT 1 FROM Accounts WHERE ID = ?;");
-				$signUpCheck->bindParam(1, $ID, PDO::PARAM_STR, 16);
-				$signUpCheck->execute();
-				$signUpCheck = $signUpCheck->fetch(PDO::FETCH_ASSOC);
-				if(!$signUpCheck)
-					$IDMatch = FALSE;
-			}
-
-			/* Hash password */
-			$argonHash = password_hash($_POST['Password'], PASSWORD_ARGON2ID);
-
-			/* Insert account into the database */
-			$accountInsert = $conn->prepare("INSERT INTO Accounts VALUES (?, ?, ?, ?, 'Student');");
-			$accountInsert->bindParam(1, $ID, PDO::PARAM_STR, 16);
-			$accountInsert->bindParam(2, $_POST["Username"], PDO::PARAM_STR, 16);
-			$accountInsert->bindParam(3, $argonHash, PDO::PARAM_STR, 128);
-			$accountInsert->bindParam(4, $_POST["Email"], PDO::PARAM_STR, 16);
-			if($accountInsert->execute())
-				header("Location: ./Login.php");
-			else
-				echo "<p class='ml-4 co-m'>Failure to create account. Try again or contact Landen at Lmarchan@kent.edu</p>";
-		}
-		return;
-	}
+    require_once("../../inc/php/validateSignup.inc.php");
 
 	$article = "Signup";
-	require_once("../../inc/php/Fringes/header.inc.php");
+	require_once("../../inc/php/fringes/header.inc.php");
 ?>
-	<title><?php echo $headerData["Title"]; ?></title>
-	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
 
 </head>
 
 <body>
-	<?php require_once("$headerData[Path]inc/php/Fringes/navbar.inc.php"); ?>
 
-	<div class="d-flex justify-content-center" id="article">
-        <div class="my-auto" id="accountTxt">
-            <h3 class="heading">Sign Up</h3>
-            <hr>
-            <p>Nobody can make an account since I cannot send out emails, sorry.</p>
-            <p>It used to work, so the website is just for my practice now.</p>
-            <form action="" method="POST">
-                <div class="row mx-auto">
-                    <div class="col-12 col-md-3">
-                        <label class="kentYellow mt-2" for="Email">Email</label>
+	<?php require_once("$headerData[Path]inc/php/fringes/navbar.inc.php"); ?>
+
+    <div class="container-fluid">
+    	<div class="row justify-content-center">
+            <div class="col-11 col-sm-10 col-md-8 col-lg-5">
+                <h3 class="heading">Sign Up</h3>
+                <hr>
+                <?php loggedIn(); validateSignup(); ?>
+                <form  id="accountForm" action="Signup.php" method="POST">
+                    <div class="form-group row">
+                        <label for="Email" class="kentYellow col-3 col-form-label">Email</label>
+                        <div class="col-xs-12 col-sm-9">
+                            <input type="email" name="Email" id="Email" class="form-control" placeholder="" autofocus required>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-8 align-self-center">
-                        <input class="fieldSize" type="email" name="Email" id="Email"
-                               pattern="" placeholder="Won't work" required autofocus>
-                   </div>
-                </div>
-                <div class="row mx-auto">
-                    <div class="col-12 col-md-3 mt-2 mt-md-0">
-                        <label class="kentBlue mt-2" for="Username">Username</label>
+                    <div class="form-group row">
+                        <label for="Username" class="kentBlue col-3 col-form-label">Username</label>
+                        <div class="col-xs-12 col-sm-9">
+                            <input type="text" name="Username" id="Username" class="form-control" pattern=".{8,30}" placeholder="8-30 Chars" required>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-8 align-self-center">
-                        <input class="fieldSize" type="text" name="Username" id="Username" minlength="1"
-                            maxlength="16" pattern="^\w{1,16}$" placeholder="1-16 Alphanums|No spaces" required>
+                    <div class="form-group row">
+                        <label for="Password" class="col-3 col-form-label">Password</label>
+                        <div class="col-xs-12 col-sm-9">
+                            <input type="password" name="Password" id="Password" class="form-control" minlength="8" maxlength="30" pattern=".{8,30}" placeholder="8-30 Chars" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row mx-auto">
-                    <div class="col-12 col-md-3 mt-2 mt-md-0">
-                        <label class="mt-2" for="Password">Password</label>
+                    <div class="form-group row">
+                        <div class="col-xs-12 col-sm-9">
+                            <button type="submit" class="btn btnBlue">Submit</button>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-8 align-self-center">
-                        <input class="fieldSize" type="password" name="Password" id="Password"
-                             minlength="1" maxlength="30" pattern=".{8,30}" placeholder="8-30 Chars" required>
-                    </div>
-                  </div>
-                <button class="btn btnBlue mt-4" type="submit" id="newAcct">Submit</button>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 
-	<?php
-		require_once("$headerData[Path]inc/php/Fringes/footer.inc.php");
-
+    <?php
+		require_once("$headerData[Path]inc/php/fringes/footer.inc.php");
         ob_end_flush();
-	?>
+	    require_once("$headerData[Path]inc/php/fringes/required.inc.php");
+    ?>
+
+    <script src="<?php echo $headerData['Path']; ?>inc/js/disableSpaces.js"></script>
 
 </body>
 </html>
-
-<script>
-/* https://stackoverflow.com/questions/14236873/disable-spaces-in-input-and-allow-back-arrow */
-	$(document).ready(function() {
-		$('#Username').on({
-			keydown: function(e) {
-				if(e.which === 32)
-					return false;
-			},
-			change: function() {
-				this.value = this.value.replace(/\s/g, "");
-			}
-		});
-	});
-</script>

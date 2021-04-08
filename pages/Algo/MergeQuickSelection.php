@@ -3,7 +3,7 @@
     session_start();
 
 	$article = "Merge Quick Selection";
-	require_once("../../inc/php/Fringes/header.inc.php");
+	require_once("../../inc/php/fringes/header.inc.php");
 ?>
 	<title><?php echo $headerData["Title"]; ?></title>
 	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
@@ -12,7 +12,7 @@
 
 <body>
 
-	<?php require_once("$headerData[Path]inc/php/Fringes/navbar.inc.php"); ?>
+	<?php require_once("$headerData[Path]inc/php/fringes/navbar.inc.php"); ?>
 
 		<div class="container-fluid">
 		<div class="row">
@@ -522,7 +522,7 @@ Since <span class="co-m">k</span> <span class="co-y">=</span> <span class="co-o"
 		</div>
 
 	<?php
-		require_once("$headerData[Path]inc/php/Fringes/footer.inc.php");
+		require_once("$headerData[Path]inc/php/fringes/footer.inc.php");
 	?>
 
 </body>

@@ -1,7 +1,9 @@
-	<footer class="text-center">
-		<p class="my-auto">Landen</p>
-	</footer>
-
-<script src="<?php echo $headerData["Path"]; ?>inc/bootstrap/js/jquery_3_6_0.min.js"></script>
-<script src="<?php echo $headerData["Path"]; ?>inc/bootstrap/js/popper_1_16_1.min.js"></script>
-<script src="<?php echo $headerData["Path"]; ?>inc/bootstrap/js/bootstrap.min.js"></script>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12 pl-0 pr-0">
+			<footer>
+				<p class="my-auto text-center">Landen</p>
+			</footer>
+		</div>
+	</div>
+</div>

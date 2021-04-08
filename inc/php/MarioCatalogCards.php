@@ -19,7 +19,7 @@
             {
                 echo "<div class='row'>"
                      .  "<div class='col-12 col-md-8 mt-4 mb-4 mx-auto'>"
-                     .      "<h5 class='marioTopNote ninFont'>" . $arrayJSON["Note"] . "</h5>"
+                     .      "<h5 class='marioTopNote fontNin'>" . $arrayJSON["Note"] . "</h5>"
                      .  "</div>"
                      ."</div>";
             }
@@ -30,7 +30,7 @@
                 /* Section Header */
                 echo "<div class='row'>"
                      .  "<div class='col-12 mt-4 mb-4'>"
-                     .      "<h1 class='snes'>" . $arrayJSON[$section]["SectionName"] . "</h1>"
+                     .      "<h1 class='fontSnes'>" . $arrayJSON[$section]["SectionName"] . "</h1>"
                      .  "</div>"
                      ."</div>";
 
@@ -52,7 +52,7 @@
                         The carousel does not automatically change photos, but has a fade effect when < > are clicked
                             This is data-interval='false'. Make true to auto-change
                     */
-                    echo "<p class='text-center superMario marioHeader' style='color: " . $arrayJSON[$section][$entry]["Color"] . ";'>" . $arrayJSON[$section][$entry]["Name"] . "</p>"
+                    echo "<p class='text-center fontSuperMario marioHeader' style='color: " . $arrayJSON[$section][$entry]["Color"] . ";'>" . $arrayJSON[$section][$entry]["Name"] . "</p>"
                          ."<div id='controls" . $carouselIDCounter . "' class='carousel slide carousel-fade' data-interval='false'>"
                          .  "<div class='carousel-inner'>";
 
@@ -65,8 +65,8 @@
                         else
                             echo "<div class='carousel-item carousel-marioSize'>";
 
-                        echo    "<a href='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] ."' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
-                             .      "<img data-src='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] . "' class='lazy marioImgSize' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
+                        echo    "<a href='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] . "'>"
+                             .      "<img src='#' data-src='$headerData[Path]" . $arrayJSON[$section][$entry]["Images"][$imgEntryNum] . "' class='lazy marioImgSize' alt='" . $arrayJSON[$section][$entry]["Name"] . "'>"
                              .  "</a>"
                              ."</div>";
                     }

@@ -3,7 +3,7 @@
     session_start();
 
 	$article = "Red Black Trees";
-	require_once("../../inc/php/Fringes/header.inc.php");
+	require_once("../../inc/php/fringes/header.inc.php");
 
     $redBlack = "<span style='color: #880000;'>Red-</span><span class='redBlackTreeHighlight'>Black</span>";
 ?>
@@ -14,7 +14,7 @@
 
 <body>
 
-	<?php require_once("$headerData[Path]inc/php/Fringes/navbar.inc.php"); ?>
+	<?php require_once("$headerData[Path]inc/php/fringes/navbar.inc.php"); ?>
 
 		<div class="container-fluid">
 		<div class="row">
@@ -808,7 +808,7 @@ DELETION (Fix <span class="blackHighlight">double black</span>)
 		</div>
 
 	<?php
-		require_once("$headerData[Path]inc/php/Fringes/footer.inc.php");
+		require_once("$headerData[Path]inc/php/fringes/footer.inc.php");
 	?>
 
 </body>

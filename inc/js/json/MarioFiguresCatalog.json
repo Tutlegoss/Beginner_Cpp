@@ -11,6 +11,7 @@
             "Store": "GameStop",
             "Date": "2021 Feb 28",
             "Notes": "Wave 28",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {
@@ -25,6 +26,7 @@
             "Store": "GameStop",
             "Date": "2021 Feb 28",
             "Notes": "Wave 28",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {
@@ -39,6 +41,7 @@
             "Store": "GameStop",
             "Date": "2021 Feb 28",
             "Notes": "Wave 28",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {
@@ -53,6 +56,7 @@
             "Store": "GameStop",
             "Date": "2021 Feb 28",
             "Notes": "Wave 28",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {
@@ -67,6 +71,7 @@
             "Store": "GameStop",
             "Date": "2021 Feb 28",
             "Notes": "Wave 28",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {
@@ -86,6 +91,7 @@
             "Store": "Target",
             "Date": "2021 Feb 28",
             "Notes": "Wave 27",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {
@@ -100,6 +106,7 @@
             "Store": "Target",
             "Date": "2021 Feb 28",
             "Notes": "Wave 27",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {
@@ -114,6 +121,7 @@
             "Store": "Target",
             "Date": "2021 Feb 28",
             "Notes": "Wave 27",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {
@@ -128,6 +136,7 @@
             "Store": "RESEARCH",
             "Date": "RESEARCH",
             "Notes": "Wave 20",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {
@@ -142,6 +151,7 @@
             "Store": "Mercari",
             "Date": "2020 Feb 20",
             "Notes": "Wave 22",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {
@@ -161,6 +171,7 @@
             "Store": "BAM!",
             "Date": "2021 Mar 05",
             "Notes": "Wave 22 or Wave 23",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {
@@ -175,6 +186,7 @@
             "Store": "BAM!",
             "Date": "2021 Mar 05",
             "Notes": "Wave 22 or Wave 23",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {
@@ -189,6 +201,7 @@
             "Store": "GameStop",
             "Date": "2021 Mar 11",
             "Notes": "Numbered 04. Box packaging.",
+			"Color": "var(--wht)",
             "ImgCount": "6",
             "Images":
             {
@@ -212,6 +225,7 @@
             "Store": "Target",
             "Date": "2021 Feb 26",
             "Notes": "2019 Diorama",
+			"Color": "var(--wht)",
             "ImgCount": "2",
             "Images":
             {

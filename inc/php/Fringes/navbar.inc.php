@@ -1,5 +1,5 @@
-
-    <nav class="navbar navbar-dark navbar-expand-md">
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="<?php echo $headerData["Path"]; ?>index.php">
             <img src="<?php echo $headerData["Path"]; ?>img/SiteImgs/Kpp.png" alt="Kpp"></a>
         <button id="toggler" class="navbar-toggler" type="button" aria-label="Hamburger"
@@ -88,7 +88,7 @@
                 </li>
 
                 <li class="nav-item mb-1 mb-md-0">
-                    <a a id="nav-Sloth-Link" class="nav-link <?php
+                    <a id="nav-Sloth-Link" class="nav-link <?php
                             if(preg_match("/(Sloth)/", $_SERVER["REQUEST_URI"], $matches))
                                 echo "activeNav";
                         ?>" href="<?php echo $headerData["Path"]; ?>pages/Sloth/Sloth.php">Giant_Sloth</a>
@@ -102,14 +102,12 @@
                         </a>
                         <ul class="dropdown-menu nav-right-justified">
                             <li>
-                                <div id="search">
-                                    <form action="#" class="d-flex" method="GET" >
-                                        <input class="form-control" name="search" type="search" placeholder="Search">
-                                        <button class="btn text-white" type="submit" aria-label="Search">
-                                                <i class="fas fa-search"></i>
-                                        </button>
-                                    </form>
-                                </div>
+                                <form id="search" action="#" class="d-flex" method="GET" >
+                                    <input class="form-control" name="search" type="search" placeholder="Search">
+                                    <button class="btn text-white" type="submit" aria-label="Search">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
                             </li>
                         </ul>
                     </div>
@@ -117,3 +115,10 @@
             </ul>
         </div>
     </nav>
+</div>
+
+<div style="position:absolute; top:0; left:0; z-index: 5000;">
+    <div style="position:fixed; background-color: black;">
+        <p id="dimensions" style="margin:0" class="co-g"></p>
+    </div>
+</div>

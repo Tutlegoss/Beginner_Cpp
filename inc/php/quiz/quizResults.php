@@ -28,7 +28,7 @@
         header('Content-type: application/json');
 
         /* Contains all data for quiz */
-        $getJSON = file_get_contents("../js/json/$_POST[Title].json");
+        $getJSON = file_get_contents("../../js/json/$_POST[Title].json");
 
         /* Take care of any malformed queries */
         if($getJSON == FALSE || !isset($_POST["Title"]) || empty($_POST["Title"]))

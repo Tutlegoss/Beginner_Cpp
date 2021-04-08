@@ -3,7 +3,7 @@
     session_start();
 
 	$article = "BST/Ordered Dict";
-	require_once("../../inc/php/Fringes/header.inc.php");
+	require_once("../../inc/php/fringes/header.inc.php");
 ?>
 	<title><?php echo $headerData["Title"]; ?></title>
 	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
@@ -13,7 +13,7 @@
 
 <body>
 
-	<?php require_once("$headerData[Path]inc/php/Fringes/navbar.inc.php"); ?>
+	<?php require_once("$headerData[Path]inc/php/fringes/navbar.inc.php"); ?>
 
 		<div class="container-fluid">
 		<div class="row">
@@ -24,21 +24,21 @@
 
 			<div class="row">
                 <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Ordered Dictionaries</h3>
+                    <h3 class="heading ">Ordered Dictionaries</h3>
             		<hr>
                 </div>
             </div>
 
             <div class="row mb-4 justify-content-center">
                 <div class="algoNotesPara col-12 col-md-10">
-                    <p class="ml-4">- Ordered keys
+                    <p class="">- Ordered keys
                         <br>
                         - <span class="co-kg">insertItem, removeItem, findElement</span> (usual operations still performed)
                         <br>
                         - Maintains order relation for the keys
                     </p>
                     <h5 class="text-center co-c">New Operations/Macro</h5>
-<div class="exBoxKelly ml-4 mb-4" style="margin: auto;">
+<div class="exBoxKelly mb-4" style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -58,7 +58,7 @@
 
             <div class="row">
                 <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Binary Tree Operations</h3>
+                    <h3 class="heading ">Binary Tree Operations</h3>
             		<hr>
                 </div>
             </div>
@@ -144,14 +144,14 @@ Therefore, key <span class="co-m">68</span>'s index is <span class="co-m">5</spa
 
             <div class="row">
                 <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Binary Search Tree</h3>
+                    <h3 class="heading ">Binary Search Tree</h3>
             		<hr>
                 </div>
             </div>
 
             <div class="row mb-4 justify-content-center">
                 <div class="algoNotesPara col-12 col-md-10">
-                    <p class="ml-4">- Binary Tree
+                    <p class="">- Binary Tree
                         <br>
                         - All internal nodes store a <span class="co-c">(key, element)-pair</span>
                         <br>
@@ -164,7 +164,7 @@ Therefore, key <span class="co-m">68</span>'s index is <span class="co-m">5</spa
                         - <span class="co-kg">Inorder Traversal</span> visits nodes in ascending order
                     </p>
                     <h5 class="text-center co-c">Left/Right Subtrees</h5>
-<div class="exBoxCyan ml-4 mb-4" style="margin: auto;">
+<div class="exBoxCyan  mb-4" style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -198,7 +198,7 @@ Therefore, key <span class="co-m">68</span>'s index is <span class="co-m">5</spa
                     <pre>Runtime is <span class="co-m">O(h)</span></pre>
                     <pre>    <span class="co-m">h</span> is the height of the tree</pre>
 <h5 class="text-center co-c">Example:</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+<div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -284,7 +284,7 @@ Insert the numbers <span class="co-m">22, 80, 18, 9, 90, 20</span>
                     <pre>Runtime is <span class="co-m">O(h)</span></pre>
                     <pre>    <span class="co-m">h</span> is the height of the tree</pre>
 <h5 class="text-center co-c">Example:</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+<div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -323,7 +323,7 @@ Find <span class="co-m">20</span>
                     <pre>Runtime is <span class="co-m">O(h)</span></pre>
                     <pre>    <span class="co-m">h</span> is the height of the tree</pre>
                     <h5 class="text-center co-c">Case 1a: Two External Children</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+<div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -355,7 +355,7 @@ Delete <span class="co-r">9</span>
 </div>
 
                     <h5 class="text-center co-c">Case 1b: Child Is Interal Node</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+<div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -384,7 +384,7 @@ Delete <span class="co-r">80</span>
 </div>
 
                     <h5 class="text-center co-c">Case 2: Two Internal Children</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+<div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -429,7 +429,7 @@ Replace n (<span class="co-r">18</span>) with m (<span class="co-t">19</span>)
                     <pre>    <span class="co-m">h</span> is worse-case when BST has only left childern or only right children</pre>
                     <pre>    Worst-case: <span class="co-m">h</span> <span class="co-y">&#x2208;</span> <span class="co-m">O(n)</span></pre>
                     <h5 class="text-center co-c">Example Worse-Case:</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+<div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -453,7 +453,7 @@ Replace n (<span class="co-r">18</span>) with m (<span class="co-t">19</span>)
 
             <div class="row">
                 <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Worse-Case Comparison</h3>
+                    <h3 class="heading ">Worse-Case Comparison</h3>
                     <hr>
                 </div>
             </div>
@@ -463,7 +463,7 @@ Replace n (<span class="co-r">18</span>) with m (<span class="co-t">19</span>)
                 <div class="algoNotesPara col-12 col-md-10">
 
                     <h5 class="text-center co-c">Dictionary Worse-Cases:</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+<div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -488,7 +488,7 @@ Operation                 Log  Hash     Lookup     Binary   Balanced
 
             <div class="row">
                 <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Questions</h3>
+                    <h3 class="heading ">Questions</h3>
                     <hr>
                 </div>
             </div>
@@ -497,7 +497,7 @@ Operation                 Log  Hash     Lookup     Binary   Balanced
             <div class="row mb-4 justify-content-center">
                 <div class="algoNotesPara col-12 col-md-10">
                     <h5 class="text-center co-c">Two Questions:</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+<div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -553,7 +553,7 @@ Determine if there exists an index i such that <span class="co-c">A</span>[i]</s
 		</div>
 
 	<?php
-		require_once("$headerData[Path]inc/php/Fringes/footer.inc.php");
+		require_once("$headerData[Path]inc/php/fringes/footer.inc.php");
 	?>
 
 </body>

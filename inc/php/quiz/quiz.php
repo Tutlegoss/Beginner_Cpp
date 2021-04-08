@@ -1,5 +1,5 @@
 <?php
-    require_once("$headerData[Path]inc/php/quizCode.php");
+    require_once("$headerData[Path]inc/php/quiz/quizCode.php");
     $fn = str_replace(' ', '_', $headerData["Title"]);
     $getJSON = file_get_contents("$headerData[Path]inc/js/json/$fn.json");
 
@@ -17,7 +17,7 @@
         else
         {
             /* Start the form for AJAX */
-            echo "<form name='quiz' id='quiz' class='mt-4 mb-4' action='./JSONTest.php' method='POST'>";
+            echo "<form name='quiz' id='quiz' class='mt-4 mb-4' action='#' method='POST'>";
             /* Get total number of questions */
             $numQuestions = ord($arrayJSON["NumQuestions"]) - ord('0');
 
@@ -42,7 +42,7 @@
                 {
 
                     colorCode($preparedArray["Code"]);
-                    $HTML = constructCode("1", $preparedArray["Code"], $preparedArray["NumLines"], $preparedArray["Output"]);
+                    $HTML = constructCode("$i", $preparedArray["Code"], $preparedArray["NumLines"], $preparedArray["Output"]);
 
                     echo "<div class='col-xl-7 col-lg-8 col-md-10 col-12 ml-md-3'>".$HTML."</div>";
                 }
@@ -58,27 +58,28 @@
                     echo    "<div class='col-xl-7 col-lg-8 col-md-10 col-12 ml-md-4'>
                                 <p class='ml-3'>
                                     <input type='radio' name='q$i' id='q$i"."o$j' value='$j'>
-                                    <label class='radioQuizLabel' for='q$i"."o$j' value='q$i"."o$j'>"
+                                    <label class='radioQuizLabel' for='q$i"."o$j'>"
                                         . $option .
                                     "</label>
                                 </p>
                             </div>";
                 }
                 echo "<br><br>";
+
                 /* Flickering prevention / Results / End of question */
-                echo  "<div style='display: none' class='dispAnsOuter'
-                                                id='dispAnsOuter$i'></div>"
-                     ."<div style='display: none' class='dispAnsInner'
-                                                id='dispAnsInner$i'></div>";
+                echo "<div class='row'>"
+                     .    "<div class='col-auto'>"
+                     .        "<div style='display: none' class='dispAnsOuter' id='dispAnsOuter$i'></div>"
+                     .        "<div style='display: none' class='dispAnsInner' id='dispAnsInner$i'></div>"
+                     .    "</div>"
+                     ."</div>";
             }
             /* End the AJAX form */
-            echo  "<div class='row'>"
-                    ."<p class='col-4 ml-3 mt-md-0'><button type='submit' id='answers'
-                         class='btn btnQuiz mt-4 ml-3'>Check <br> Answers</button></p>"
-                 ."</div>"
-                 ."<div class='row'>"
-                    ."<p class='col-4 ml-3 mt-3'><button type='button'
-                         class='btn ml-3 cancel text-wrap' id='clearRadio'>Clear <br> Selections</button></p>"
+            echo  "<div class='row mt-3'>"
+                 .     "<div class='col-12'>"
+                 .         "<button type='submit' id='answers' class='btn btnQuiz'>Check <br> Answers</button>"
+                 .         "<button type='button' class='btn ml-3 cancel text-wrap' id='clearRadio'>Clear <br> Selections</button>"
+                 .     "</div>"
                  ."</div>"
                  ."</form><br>";
         }

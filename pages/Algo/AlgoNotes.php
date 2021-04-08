@@ -3,33 +3,31 @@
     session_start();
 
 	$article = "Algo Notes";
-	require_once("../../inc/php/Fringes/header.inc.php");
+	require_once("../../inc/php/fringes/header.inc.php");
 ?>
-	<title><?php echo $headerData["Title"]; ?></title>
-	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
 
 </head>
 
 <body>
 
-	<?php require_once("$headerData[Path]inc/php/Fringes/navbar.inc.php"); ?>
+	<?php require_once("$headerData[Path]inc/php/fringes/navbar.inc.php"); ?>
 
-		<div class="container-fluid">
+	<div class="container-fluid mt-4">
 		<div class="row">
-		<div id="article" class="col-12">
-            <div class="row mt-3">
-			    <h2 class="col-12 heading mt-3 text-center">Notes: Algorithms Class</h2>
+		    <div class="col-12">
+			    <h2 class="heading mt-3 text-center">Notes: Algorithms Class</h2>
             </div>
+        </div>
 
-			<div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading">Pseudocode Primitives</h3>
-            		<hr>
-                </div>
+		<div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading">Pseudocode Primitives</h3>
+        		<hr>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="col-auto">
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
 <div class="exBoxKelly ">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -46,13 +44,13 @@
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="col-auto">
-                    <h5 class="co-c text-center">Example</h5>
-<div class="exBoxPurple ">
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="co-c text-center">Example</h5>
+<div class="exBoxPurple">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -74,57 +72,57 @@
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 pl-md-4">
-                <div class="algoNotesPara col-12">
-                    <ol class="mt-4">
-                        <li class="co-c"># of Operations (by line)
-                            <ol class="co-o">
-                                <li value="2">&nbsp;2</li>
-                                <li>&nbsp;2 + n</li>
-                                <li>&nbsp;2(n - 1)</li>
-                                <li>&nbsp;2(n - 1)</li>
-                                <li>&nbsp;2(n - 1)</li>
-                                <li>&nbsp;1</li>
-                            </ol>
-                        </li>
-                    </ol>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-12">
+                <ol class="mt-4">
+                    <li class="co-c"># of Operations (by line)
+                        <ol class="co-o">
+                            <li value="2">&nbsp;2</li>
+                            <li>&nbsp;2 + n</li>
+                            <li>&nbsp;2(n - 1)</li>
+                            <li>&nbsp;2(n - 1)</li>
+                            <li>&nbsp;2(n - 1)</li>
+                            <li>&nbsp;1</li>
+                        </ol>
+                    </li>
+                </ol>
             </div>
+        </div>
 
-            <div class="row mb-4 pl-md-4">
-                <div class="algoNotesPara col-12">
-                    <h5 class="co-c text-center">Analysis of Example</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-12">
+                <h5 class="co-c text-center">Analysis of Example</h5>
+                <br>
+                <pre>The total number of operations: <span class="co-c">7n - 1</span></pre>
+                <pre><span class="co-kg">Estimating Running Time</span>:</pre>
+                <pre><span class="co-y">Worst Case</span>: <span class="co-c">7n - 1</span></pre>
+                <pre><span class="co-y">Best Case</span>: <span class="co-c">5n + 1</span></pre>
+
+                <p class="pl-4">
+                    - Loop executes 0 times
                     <br>
-                    <pre>The total number of operations: <span class="co-c">7n - 1</span></pre>
-                    <pre><span class="co-kg">Estimating Running Time</span>:</pre>
-                    <pre><span class="co-y">Worst Case</span>: <span class="co-c">7n - 1</span></pre>
-                    <pre><span class="co-y">Best Case</span>: <span class="co-c">5n + 1</span></pre>
-
-                    <p class="pl-4">
-                        - Loop executes 0 times
-                        <br>
-                        - If loop executes, best case is when the inner <span class="co-r">if</span> statement always returns false. Therefore, <span class="co-c">5n + 1</span> is the best case
-                        <br>
-                        - Why: Line 5 is excluded
-                    </p>
-                    <pre>Equation: Let <span class="co-c">a</span> be fastest operation time and <span class="co-c">b</span> be the slowest operation time:</pre>
-                    <pre><span class="co-c">a(7n - 1) &#x2264; T(n) &#x2264; b(7n - 1)</span></pre>
-                    <pre>Therefore, <span class="co-c">T(n)</span> is bounded by linear functions</pre>
-                </div>
+                    - If loop executes, best case is when the inner <span class="co-r">if</span> statement always returns false. Therefore, <span class="co-c">5n + 1</span> is the best case
+                    <br>
+                    - Why: Line 5 is excluded
+                </p>
+                <pre>Equation: Let <span class="co-c">a</span> be fastest operation time and <span class="co-c">b</span> be the slowest operation time:</pre>
+                <pre><span class="co-c">a(7n - 1) &#x2264; T(n) &#x2264; b(7n - 1)</span></pre>
+                <pre>Therefore, <span class="co-c">T(n)</span> is bounded by linear functions</pre>
             </div>
+        </div>
 
-			<div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ">Growth Rates</h3>
-            		<hr>
-                </div>
+		<div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ">Growth Rates</h3>
+        		<hr>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="col-auto">
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
 <div class="exBoxKelly  mb-4">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -140,32 +138,32 @@
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
-            <div class="row pl-md-4">
-                <div class="col-12">
-                    <p>Growth rate is not affected by constant factors or lower-order terms</p>
-                </div>
+        </div>
+        <div class="row pl-md-4">
+            <div class="col-12">
+                <p>Growth rate is not affected by constant factors or lower-order terms</p>
             </div>
+        </div>
 
-			<div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading">Asymptotic Complexity</h3>
-            		<hr>
-                </div>
+		<div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading">Asymptotic Complexity</h3>
+        		<hr>
             </div>
+        </div>
 
-            <div class="row pl-md-4">
-                <div class="col-12">
-                    <p>Worst case running time of an algorithm
-                        <br>
-                        Do not express as exact time, just the highest-order term
-                    </p>
-                </div>
+        <div class="row pl-md-4">
+            <div class="col-12">
+                <p>Worst case running time of an algorithm
+                    <br>
+                    Do not express as exact time, just the highest-order term
+                </p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <h5 class="co-c text-center">Asymptotic Notation</h5>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <h5 class="co-c text-center">Asymptotic Notation</h5>
 <div class="exBoxKelly mb-4">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -180,20 +178,20 @@
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
-            <div class="row pl-md-4">
-                <div class="col-12">
-                    <p>Big implies inclusive bounds
-                        <br>
-                        Little implies exclusive bounds
-                        <br>
-                        These are rate-of-growth relations (RoG)
-                    </p>
-                </div>
+        </div>
+        <div class="row pl-md-4">
+            <div class="col-12">
+                <p>Big implies inclusive bounds
+                    <br>
+                    Little implies exclusive bounds
+                    <br>
+                    These are rate-of-growth relations (RoG)
+                </p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-auto">
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
 <div class="exBoxKelly mb-4">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -207,11 +205,11 @@
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="co-auto">
-                    <h5 class="co-c text-center">Examples</h5>
+        </div>
+        <div class="row justify-content-center">
+            <div class="co-auto">
+                <h5 class="co-c text-center">Examples</h5>
 <div class="exBoxPurple mb-4">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -228,47 +226,47 @@ O(n<sup>2</sup>)
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
-            <div class="row pl-md-4">
-                <div class="col-12">
-                    <p class=" co-c">n<sup>2</sup> <span class="co-w">is not</span>
-                        O(n) <span class="co-w">as</span> n<sup>2</sup> &#x2270; <span class="co-w">n (not lt or eq to)</span>
-                    </p>
-                </div>
+        </div>
+        <div class="row pl-md-4">
+            <div class="col-12">
+                <p class=" co-c">n<sup>2</sup> <span class="co-w">is not</span>
+                    O(n) <span class="co-w">as</span> n<sup>2</sup> &#x2270; <span class="co-w">n (not lt or eq to)</span>
+                </p>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ">Math Review Topics</h3>
-            		<hr>
-                </div>
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ">Math Review Topics</h3>
+        		<hr>
             </div>
+        </div>
 
-			<div class="row pl-md-4">
-                <div class="col-12 mb-4">
-                    <p>Summations
-                        <br>
-                        Logarithms and Exponents
-                        <br>
-                        Proof Techniques
-                        <br>
-                        Basic Probability
-                    </p>
-                </div>
+		<div class="row pl-md-4">
+            <div class="col-12 mb-4">
+                <p>Summations
+                    <br>
+                    Logarithms and Exponents
+                    <br>
+                    Proof Techniques
+                    <br>
+                    Basic Probability
+                </p>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 d-flex mb-4 pl-5 pr-5 justify-content-between">
-                    <a href="/index.php" style="display: inline-block;">Home</a>
-                    <a href="./ElementaryDataStructures.php" style="display: inline-block;">Elementary Data Structures</a>
-                </div>
+        <div class="row">
+            <div class="col-12 d-flex mb-4 pl-5 pr-5 justify-content-between">
+                <a href="/index.php" style="display: inline-block;">Home</a>
+                <a href="./ElementaryDataStructures.php" style="display: inline-block;">Elementary Data Structures</a>
             </div>
-		</div>
-		</div>
-		</div>
+        </div>
+	</div>
+
 	<?php
-		require_once("$headerData[Path]inc/php/Fringes/footer.inc.php");
+		require_once("$headerData[Path]inc/php/fringes/footer.inc.php");
+        require_once("$headerData[Path]inc/php/fringes/required.inc.php");
 	?>
 
 </body>

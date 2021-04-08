@@ -8,24 +8,24 @@
 		/* Prevent empty comment */
 		if(empty($_POST['comment']) || ctype_space($_POST['comment']))
 		{
-			return array("message" => "Empty comment - comment failed to be inserted.",
-						 "comment" => $_POST['comment'], "parentNum" => strtolower($_POST['parentNum']));
+			return ["message" => "Empty comment - comment failed to be inserted.",
+						 "comment" => $_POST['comment'], "parentNum" => strtolower($_POST['parentNum'])];
 		}
 
 		/* Prevent duplicate inserton */
         if(isset($_SESSION['SameText']) && isset($_SESSION['SameParent']))
         {
             if(($_SESSION['SameText'] == $_POST['comment']) && ($_SESSION['SameParent'] == $_POST['parentNum']))
-                return array("message" => "Duplicate comment - comment failed to be inserted.",
-				             "comment" => $_POST['comment'], "parentNum" => strtolower($_POST['parentNum']));
+                return ["message" => "Duplicate comment - comment failed to be inserted.",
+				             "comment" => $_POST['comment'], "parentNum" => strtolower($_POST['parentNum'])];
         }
 
 		/* Prevent too large of a comment */
 		$comment = addslashes($_POST['comment']);
 		if(strlen($comment) > 4500)
 		{
-			return array("message" => "Comment is too large. Please keep it &lt;= 4096 characters.",
-						 "comment" => $_POST['comment'], "parentNum" => strtolower($_POST['parentNum']));
+			return ["message" => "Comment is too large. Please keep it &lt;= 4096 characters.",
+						 "comment" => $_POST['comment'], "parentNum" => strtolower($_POST['parentNum'])];
 		}
 
 
@@ -36,7 +36,7 @@
 		$entryNumCount = $conn->prepare("SELECT MAX(EntryNum) AS Max FROM Comments WHERE ArticleID = ?;");
 		$entryNumCount->bindParam(1, $articleID, PDO::PARAM_STR, 16);
 		$entryNumCount->execute();
-		$entryNumCount = $entryNumCount->fetch(PDO::FETCH_ASSOC);
+		$entryNumCount->fetch(PDO::FETCH_ASSOC);
 
         /* This is true if SELECT statement was successful, not the result of MAX() */
 		if($entryNumCount)
@@ -44,21 +44,20 @@
 			$entryNum = $entryNumCount['Max'] + 1;
 
 			/* Insert into database */
-			$commentInsert = $conn->prepare("INSERT INTO Comments VALUES (?, ?, ?, ?, ?, ?);");
-			$commentInsert->execute(array($_SESSION['ID'], $articleID, $entryNum,
-										  $parentNum, $comment, $timestamp));
+			$commentInsert = $conn->prepare("INSERT INTO Comments VALUES (?, ?, ?, ?, ?, ?);")
+			                      ->execute(array($_SESSION['ID'], $articleID, $entryNum, $parentNum, $comment, $timestamp));
 		}
 		else
 		{
-			return array("message" => "Comment unable to be entered into the database. Try again later.",
-						 "comment" => $_POST['comment'], "parentNum" => strtolower($_POST['parentNum']));
+			return ["message" => "Comment unable to be entered into the database. Try again later.",
+						 "comment" => $_POST['comment'], "parentNum" => strtolower($_POST['parentNum'])];
 		}
 
         /* Prevent duplication of insertion */
         $_SESSION['SameText'] = $_POST['comment'];
         $_SESSION['SameParent'] = $_POST['parentNum'];
 
-		return array();
+		return [];
 	}
 
 	/* Check to ensure there are an even amount of opening and closing backticks (multiples of 2) */

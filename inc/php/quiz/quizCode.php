@@ -31,13 +31,13 @@
     {
         $html = "<div class='ml-3 mb-4 exBoxPurpleQuiz' id='result$qNum'>\n"
                 ."<figure class='code'>\n"
-                ."<pre><table class='table borderless my-auto'>\n"
+                ."<table class='table borderless my-auto'>\n"
                 ."<tr>\n"
                 ."<td><pre id='lineNum$qNum' class='co-o'>$numLines"
                 ."</pre></td>\n"
                 ."<td><pre class='co-g' id='sourceCode$qNum'>$code"
                 ."</pre></td>\n"
-                ."</tr></table></pre>\n"
+                ."</tr></table>\n"
                 ."<p class='ml-2 mb-2' id='output$qNum'>$output</p>\n"
                 ."</figure>\n"
                 ."</div>\n";

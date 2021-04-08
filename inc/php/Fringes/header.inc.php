@@ -15,7 +15,7 @@
 
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
 
 <head>
@@ -23,13 +23,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Landen Marchand">
-	<meta name="description" content="Personal Project of Landen Marchand">
-	<meta name="keywords" content="Tutlegoss, C++, Cpp, Tutorial, Beginner, Programming">
+	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
+	<meta name="keywords" content="<?php echo $headerData["Keywords"]; ?>">
 
-	<link rel="icon" href="<?php echo $headerData["Path"]; ?>img/SiteImgs/K_Ico.png">
+	<title><?php echo $headerData["Title"]; ?></title>
+
+	<link rel="icon" href="<?php echo $headerData["Path"]; ?>img/SiteImgs/K_Ico.ico">
 
 	<!-- Directory relative to article page and not header.inc.php -->
 	<link rel="stylesheet" href="<?php echo $headerData["Path"]; ?>inc/fontAwesome/css/all.min.css">
 	<link rel="stylesheet" href="<?php echo $headerData["Path"]; ?>inc/css/normalize.min.css">
 	<link rel="stylesheet" href="<?php echo $headerData["Path"]; ?>inc/bootstrap/css/bootstrap.min.css">
+
 	<link rel="stylesheet" href="<?php echo $headerData["Path"]; ?>inc/css/main.css">

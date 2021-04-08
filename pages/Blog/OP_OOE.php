@@ -3,32 +3,28 @@
     session_start();
 
 	$article = "OpPrec and OrdOfEval";
-	require_once("../../inc/php/Fringes/header.inc.php");
+	require_once("../../inc/php/fringes/header.inc.php");
 
 ?>
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-	<title><?php echo $headerData["Title"]; ?></title>
-	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
 
 </head>
+
 <body>
 
-	<?php require_once("../../inc/php/Fringes/navbar.inc.php"); ?>
+	<?php require_once("../../inc/php/fringes/navbar.inc.php"); ?>
 
-
-	<div class="container-fluid">
-	<div class="row">
-	<div id="article" class="col-12">
-		<h2 class="heading mt-3 text-center">Does Operator Precedence Determine Order of Evaluation?</h2>
-		<p class="pre mt-3 mb-5"><!--
-		-->  Creation Date: 22/JUN/2020
-<!--    -->  Edit Date:     12/NOV/2020<!--
-    --></p>
+    <div class="container-fluid">
+	    <div class="row">
+	        <div class="col-12">
+		        <h2 class="heading mt-5 text-center">Does Operator Precedence Determine Order of Evaluation?</h2>
+		        <pre class="mt-3 mb-5 co-w"><!--
+	    	-->  Creation Date: 22/JUN/2020
+<!--        -->  Edit Date:     12/NOV/2020</pre>
+            </div>
+        </div>
 
         <div class="row justify-content-center mb-5">
-            <div class="col-auto">
+            <div class="col-12 col-md-9 col-xl-7">
         		<div class="exBoxYellow">
         			<p class="yellow exBoxTitle text-center mt-3">Prerequisites</p>
         			<ul>
@@ -39,7 +35,7 @@
         				<li class="mb-3">
         					<span class="yellow">PEMDAS</span> or <span class="yellow">BEDMAS</span>
                             - Basic mathematical order of operations
-        					<ol class="numberedList">
+        					<ol>
         						<li>Parenthesis</li>
         						<li>Exponents</li>
         						<li>Multiplication/Division</li>
@@ -62,7 +58,7 @@
         </div>
 
         <div class="row justify-content-center mb-5">
-            <div class="col-auto">
+            <div class="col-12 col-md-9 col-xl-7">
         		<div class="exBoxCyan">
         			<p class="cyan exBoxTitle text-center mt-3">Terms and Definitions</p>
         			<ul>
@@ -574,7 +570,7 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
         			<span class="co-y">&amp;&amp; ++</span>rhs</span> using operator precedence and associativity to
         			clarify what associativity really is.
         		</p>
-        		<ul class="indent-list exFont">
+        		<ul class="indent-list">
         			<li><span class="co-y">Level 3</span>: Prefix increment, Dereference (right-to-left)
         				<ul>
         					<li><span class="green highlight">lhs <span class="co-y">|| </span>
@@ -596,7 +592,7 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
         			<span class="green highlight">lhs</span>. The dereference operator is further right than
         			the prefix increment operator and both of said operators are attached to the same variable.
         		</p>
-        		<ul class="indent-list exFont">
+        		<ul class="indent-list">
         			<li><span class="co-y">Level 14</span>: Logical AND (left-to-right)
         				<ul>
         					<li><span class="green highlight">lhs <span class="co-y">|| </span>
@@ -633,7 +629,7 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
         </div>
 
         <div class="row justify-content-center mb-5">
-            <div class="col-auto">
+            <div class="col-12 col-md-9 col-xl-7">
         		<div class="exBoxGreen">
         			<p class="green exBoxTitle text-center mt-3">Key Points</p>
         			<ul>
@@ -668,7 +664,7 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
         		<h3 class="heading ml-4">Quiz</h3>
         		<hr>
         		<?php
-                    require_once("$headerData[Path]inc/php/quiz.php");
+                    require_once("$headerData[Path]inc/php/quiz/quiz.php");
                     echo "<script>var numQuestions = $numQuestions; var fn = '$fn'; var path = '$headerData[Path]';</script>";
                 ?>
             </div>
@@ -684,17 +680,15 @@ movl  <span class="co-c">%</span>eax, -<span class="co-m">12</span><span class="
         		?>
             </div>
         </div>
+    </div>
 
-	</div> <!-- End Article -->
-	</div>
-	</div>
+    <?php
+        require_once("$headerData[Path]inc/php/fringes/footer.inc.php");
+        require_once("$headerData[Path]inc/php/fringes/required.inc.php");
+    ?>
 
-	<?php
-		require_once("$headerData[Path]inc/php/Fringes/footer.inc.php");
-	?>
-
-    <script src="<?php echo $headerData['Path']; ?>inc/js/quiz.js"?></script>
-    <script src="<?php echo $headerData['Path'] ?>inc/js/comments.js"></script>
+    <script src="<?php echo $headerData['Path']; ?>inc/js/quiz.js"></script>
+    <script src="<?php echo $headerData['Path']; ?>inc/js/comments.js"></script>
     <script>
     	$(document).ready(function() {
             <?php
