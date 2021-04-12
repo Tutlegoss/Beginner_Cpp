@@ -42,8 +42,8 @@
 }
 
 @font-face {
-    font-family: 'Space Mono';
-    src: url('../fonts/SpaceMono.ttf') format('truetype');
+    font-family: 'Cutive Mono';
+    src: url('../fonts/CutiveMono.ttf') format('truetype');
 }
 
 @font-face {
@@ -105,7 +105,7 @@
     --ylw: rgb(255 255 0);
 
     /* Fonts */
-    --fontCode: 'Space Mono', Monospace;
+    --fontCode: 'Cutive Mono', Monospace;
     --fontCreep: 'Creepster', 'Share Tech Mono', Monospace;
     --fontLT: 'LooneyTunes', 'Share Tech Mono', Monospace;
     --fontMain: 'Share Tech Mono', Monospace;
@@ -555,7 +555,7 @@ button#toggler {
 .cancel {
 	border: 3px inset var(--blk);
 	color: var(--red);
-    background: var(--blk;);
+    background: var(--blk);
     background: rgb(0 0 0 / 0.4);
 }
 
@@ -651,13 +651,14 @@ button#toggler {
     font-family: var(--fontCode);
 	margin-top: 0;
 	margin-bottom: 0;
-	font-size: 1rem;
+	font-size: 1.05rem;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 767.98px)
 {
     .code pre {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
 }
 
@@ -907,19 +908,13 @@ a.dirBtnMarioBlu {
     color: var(--wht);
     white-space: pre-wrap;
     font-size: 1rem;
+    margin-left: 2%;
 }
 
-.algoNotesPara p.co-c {
-    font-size: 1.2rem;
+.algoNotesPara>p:first-child {
+    font-size: 1.4rem;
 }
 
-@media only screen and (max-width: 767.98px)
-{
-    .algoNotesPara>pre,
-    .algoNotesPara>p:first-child {
-        font-size: 0.95rem;
-    }
-}
 
 .redBlackTreeHighlight {
     color: var(--blk);

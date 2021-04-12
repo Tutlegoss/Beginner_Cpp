@@ -26,8 +26,8 @@
             </div>
         </div>
 
-        <div class="row mb-4 justify-content-center">
-            <div class="algoNotesPara col-12">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
                 <p class="ml-4">- Container that stores arbitrary objects
                     <br>
                     - Insertions / Deletions follow <span class="co-kg">LIFO (Last In First Out)</span>
@@ -57,8 +57,8 @@ Auxiliary:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Applications</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Applications</p>
                 <pre><span class="co-kg">Direct</span>:</pre>
                 <pre>    Page visited history (web browser)</pre>
                 <pre>    Undo sequence (text editor)</pre>
@@ -70,8 +70,8 @@ Auxiliary:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Array-Based Stack</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Array-Based Stack</p>
                 <pre>Let <span class="co-m">S = array, N = array capacity, t = index of top element</span></pre>
                 <pre>Add elements from beginning of <span class="co-m">S</span></pre>
                 <pre>Size is <span class="co-m">t + 1</span><span class="co-r"> (start t = -1)</span></pre>
@@ -81,7 +81,8 @@ Auxiliary:
 
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
-<div class="exBoxPurple mb-4 ml-4" >
+                <h5 class="text-center co-c">Push / Pop</h5>
+<div class="exBoxPurple" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -120,7 +121,7 @@ Algorithm <span class="co-y">pop</span>():
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
+            <div class="algoNotesPara col-md-9 col-12">
                 <pre><span class="co-kg">Extendable</span>:</pre>
                 <pre>    In <span class="co-m">push(o)</span>, when array is full, create a larger array, copy values, and reference the larger array</pre>
                 <pre>    Size of new array methods:</pre>
@@ -131,7 +132,8 @@ Algorithm <span class="co-y">pop</span>():
 
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
-<div class="exBoxPurple mb-4 ml-4" >
+                <h5 class="text-center co-c">Push</h5>
+<div class="exBoxPurple" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -169,7 +171,7 @@ Algorithm <span class="co-y">pop</span>():
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
+            <div class="algoNotesPara col-md-9 col-12">
                 <p class="ml-4"><span class="co-kg">- Amortization</span>: Tool to understand running times of algorithms
                     that have steps with widely varying performance.
                     <br>
@@ -199,8 +201,8 @@ Algorithm <span class="co-y">pop</span>():
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Doubling Strategy</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Doubling Strategy</p>
                 <p class="mt-4 ml-4 fontCode co-o">So, for example, an array is doubled in size when its size is equal to its capacity,
                     which adds n operations to the algorithm. Only a few insertion operations will do this, so the worst case
                     scenerio is too pessimistic for larger inputs
@@ -216,8 +218,13 @@ Algorithm <span class="co-y">pop</span>():
                 <pre>    <span class="co-m">= 3n - 1</span></pre>
                 <pre>Therefore, <span class="co-m">T(n)</span> is <span class="co-m">O(n)</span></pre>
                 <pre><span class="co-y">Amortized Time</span>: <span class="co-m">O(1)</span></pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
                 <h5 class="co-c text-center">Example</h5>
-<div class="exBoxCyan mb-4 ml-4" >
+<div class="exBoxCyan" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -260,9 +267,8 @@ So, <span class="co-m">8 <span class="co-y">+</span> 15 <span class="co-y">=</sp
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Incremental Strategy</p>
-
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Incremental Strategy</p>
                 <pre>Replace the array <span class="co-m">k = n/c</span></pre>
                 <pre><span class="co-m">T(n) = n inserts into array + # of copies</span></pre>
                 <pre>Total time <span class="co-m">T(n)</span> of a series of <span class="co-m">n</span> operations is proportional to:</pre>
@@ -274,8 +280,13 @@ So, <span class="co-m">8 <span class="co-y">+</span> 15 <span class="co-y">=</sp
                 <pre>    <span class="co-o">n + 1/c * n<sup>2</sup> + n</span></pre>
                 <pre>    <span class="co-o">1/c * n<sup>2</sup> + 2n</span></pre>
                 <pre><span class="co-y">Amortized Time</span>: <span class="co-m">O(n)</span></pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
                 <h5 class="co-c text-center">Example</h5>
-<div class="exBoxCyan mb-4 ml-4" >
+<div class="exBoxCyan" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -307,8 +318,8 @@ Last insertion <span class="co-y">==&gt;</span> [<span class="co-m">1</span>][<s
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Accounting Method Analysis</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Accounting Method Analysis</p>
                 <pre><span class="co-kg">Accounting Method</span>: Finding amortized running time via credits and debits</pre>
                 <pre>One primitive operation = <span class="co-m">$1</span></pre>
                 <pre>Must always have enough money to pay for operation in full</pre>
@@ -319,17 +330,17 @@ Last insertion <span class="co-y">==&gt;</span> [<span class="co-m">1</span>][<s
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Accounting Method Analysis: Doubling Strategy</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Accounting Method Analysis: Doubling Strategy</p>
                 <pre> Find out how much to charge per push operation <span class="co-r">(Includes money for copying)</span></pre>
                 <pre>Insert and Copy cost <span class="co-m">$1</span> apiece</pre>
-                <h5 class="co-c text-center">Strategy</h5>
             </div>
         </div>
 
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
-<div class="exBoxCyan mb-4 ml-4" >
+                <h5 class="co-c text-center">Strategy</h5>
+<div class="exBoxCyan" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -359,7 +370,7 @@ Charging <span class="co-m">$3</span>:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
+            <div class="algoNotesPara col-md-9 col-12">
                 <pre>Each execution runs in <span class="co-m">O(1)</span> amortized time</pre>
                 <pre>For <span class="co-m">n</span> executions, runs in <span class="co-m">O(n)</span> time</pre>
             </div>
@@ -373,7 +384,7 @@ Charging <span class="co-m">$3</span>:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
+            <div class="algoNotesPara col-md-9 col-12">
                 <p class="ml-4">- Container that stores objects
                     <br>
                     - Insertions / Deletions follow <span class="co-kg">FIFO (First In Last Out)</span>
@@ -384,7 +395,7 @@ Charging <span class="co-m">$3</span>:
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
                 <h5 class="text-center co-c">Operations</h5>
-<div class="exBoxKelly mb-4 ml-4" >
+<div class="exBoxKelly" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -403,8 +414,8 @@ Auxiliary:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Applications</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Applications</p>
                 <pre><span class="co-kg">Direct</span>:</pre>
                 <pre>    Waiting lines</pre>
                 <pre>    Access to shared resources</pre>
@@ -416,8 +427,8 @@ Auxiliary:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Queue Singly Linked List</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Queue Singly Linked List</p>
                 <pre>Sequence of nodes</pre>
                 <pre>Each node contains an element and a link to the next node</pre>
                 <pre>First node is the front</pre>
@@ -434,7 +445,7 @@ Auxiliary:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
+            <div class="algoNotesPara col-md-9 col-12">
                 <p class="ml-4">- Collection of objects ordered WRT their position
                     <br>
                     <span class="co-kg">- Position</span>: The node storing an element
@@ -447,7 +458,7 @@ Auxiliary:
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
                 <h5 class="text-center co-c">Operations</h5>
-<div class="exBoxKelly mb-4 ml-4" >
+<div class="exBoxKelly" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -475,8 +486,8 @@ Update:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Doubly Linked List</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Doubly Linked List</p>
                 <pre>Natural List ADT</pre>
                 <pre><span class="co-kg">Node</span>: Implements position / Stores element and links to prev/next nodes</pre>
                 <pre>Special <span class="co-y">head</span> and <span class="co-y">tail</span> nodes</pre>
@@ -493,7 +504,7 @@ Update:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
+            <div class="algoNotesPara col-md-9 col-12">
                 <p class="ml-4">- Linear sequence
                     <br>
                     - Access to its elements by their rank
@@ -508,7 +519,7 @@ Update:
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
                 <h5 class="text-center co-c">Operations</h5>
-<div class="exBoxKelly mb-4 ml-4" >
+<div class="exBoxKelly" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -527,8 +538,8 @@ Update:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Array-Based Vector</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Array-Based Vector</p>
                 <pre>Array of size <span class="co-m">N</span> (who labels this stuff?)</pre>
                 <pre><span class="co-m">n</span> tracks the size (# elems stored)</pre>
                 <pre><span class="co-y">elemAtRank</span>(r) is <span class="co-m">O(1)</span> by returning <span class="co-m">vector[r]</span></pre>
@@ -536,8 +547,8 @@ Update:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Insertion</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Insertion</p>
                 <pre>Shift forward <span class="co-m">n - r</span> elements</pre>
                 <pre>    <span class="co-m">vector[r], ..., vector[n-1]</span></pre>
                 <pre><span class="co-y">Worst Case</span>: <span class="co-m">r = 0 (O(n))</span></pre>
@@ -547,8 +558,8 @@ Update:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Deletion</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Deletion</p>
                 <pre>Shift backward <span class="co-m">n - r - 1</span> elements</pre>
                 <pre>    <span class="co-m">vector[r+1], ..., vector[n-1]</span></pre>
                 <pre><span class="co-y">Worst Case</span>: <span class="co-m">r = 0 (O(n))</span></pre>
@@ -563,7 +574,7 @@ Update:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
+            <div class="algoNotesPara col-md-9 col-12">
                 <p class="ml-4">- Generalized ADT
                     <br>
                     - Includes all methods from <span class="co-y">vector</span> and <span class="co-y">list</span> ADTs
@@ -578,7 +589,7 @@ Update:
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
                 <h5 class="text-center co-c">Operations / Runtime Comparison</h5>
-<div class="exBoxCyan mb-4 ml-4" >
+<div class="exBoxCyan" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -600,7 +611,7 @@ Update:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
+            <div class="algoNotesPara col-md-9 col-12">
                 <pre>Example:</pre>
                 <pre>    <span class="co-m">n<sup>2</sup></span> calls to <span class="co-y">replaceAtRank</span></pre>
                 <pre>    <span class="co-m">n</span> calls to <span class="co-y">insertAfter</span></pre>
@@ -618,7 +629,7 @@ Update:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
+            <div class="algoNotesPara col-md-9 col-12">
                 <p class="ml-4">- Stores elements hierarchically
                     <br>
                     - Each node has parent/child relation
@@ -629,8 +640,8 @@ Update:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Terms</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Terms</p>
                 <pre><span class="co-kg">Root Node</span>: Top (first) element</pre>
                 <pre><span class="co-kg">Internal Node</span>: Elements with at least one child</pre>
                 <pre>    <span class="co-o">{Internal Nodes can contain NULLPTRs as children}</span></pre>
@@ -649,8 +660,8 @@ Update:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Tree ADT</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Tree ADT</p>
                 <pre>The positions in a tree are its nodes</pre>
             </div>
         </div>
@@ -658,7 +669,7 @@ Update:
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
                 <h5 class="text-center co-c">Operations</h5>
-<div class="exBoxKelly mb-4 ml-4" >
+<div class="exBoxKelly" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -685,8 +696,8 @@ Generic:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Tree Traversal</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Tree Traversal</p>
                 <pre><span class="co-kg">Traversal</span>: Visitation of the nodes in a defined order</pre>
                 <pre>   Start at root node</pre>
                 <pre><span class="co-kg">Preorder</span>: Node is visited <span class="co-y">before</span> its children</pre>
@@ -695,7 +706,7 @@ Generic:
 
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
-<div class="exBoxPurple mb-4 ml-4" >
+<div class="exBoxPurple" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -720,7 +731,7 @@ Generic:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
+            <div class="algoNotesPara col-md-9 col-12">
                 <pre>    Used for linear ordering (parents first)</pre>
                 <pre><span class="co-kg">Postorder</span>: Node is visited <span class="co-y">after</span> its children</pre>
             </div>
@@ -728,7 +739,7 @@ Generic:
 
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
-<div class="exBoxPurple mb-4 ml-4" >
+<div class="exBoxPurple" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -753,14 +764,14 @@ Generic:
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="col-12">
-                <p>Used to determine space used by files in a dir and its subdirs</p>
+            <div class="algoNotesPara col-12">
+                <pre>Used to determine space used by files in a dir and its subdirs</pre>
             </div>
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">(Full) Binary Trees</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">(Full) Binary Trees</p>
                 <pre><span class="co-kg">Binary Tree</span>: Tree with:</pre>
                 <pre>    Each internal node has <span class="co-c">two</span> children</pre>
                 <pre>    Children are an ordered pair (<span class="co-c">left child, right child</span>)</pre>
@@ -777,7 +788,7 @@ Generic:
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
                 <h5 class="text-center co-c">Properties</h5>
-<div class="exBoxKelly mb-4 ml-4" >
+<div class="exBoxKelly" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -799,8 +810,8 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Arithmetic Expression Tree</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Arithmetic Expression Tree</p>
                 <pre>Binary Tree representation of a math expression</pre>
                 <pre><span class="co-y">Internal Nodes</span>: Operators</pre>
                 <pre><span class="co-y">External Nodes</span>: Operands</pre>
@@ -810,7 +821,7 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
                 <h5 class="text-center co-c">Example</h5>
-<div class="exBoxCyan mb-4 ml-4" >
+<div class="exBoxCyan" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -832,8 +843,8 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Decision Tree</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Decision Tree</p>
                 <pre>Binary Tree representation of decisions</pre>
                 <pre><span class="co-y">Internal Nodes</span>: Yes/No Questions</pre>
                 <pre><span class="co-c">External Nodes</span>: Decisions</pre>
@@ -843,7 +854,7 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
                 <h5 class="text-center co-c">Example</h5>
-<div class="exBoxCyan mb-4 ml-4" >
+<div class="exBoxCyan" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -862,15 +873,15 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Inorder Traversal of Binary Tree</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Inorder Traversal of Binary Tree</p>
                 <pre><span class="co-kg">Inorder</span>: Node is visited <span class="co-y">after</span> its left subtree and <span class="co-y">before</span> its right subtree</pre>
             </div>
         </div>
 
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
-<div class="exBoxPurple mb-4 ml-4" >
+<div class="exBoxPurple" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -899,8 +910,8 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Print Arithmetic Expressions</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Print Arithmetic Expressions</p>
                 <pre>Uses Inorder Traversal</pre>
                 <pre>    Print operand/operator when visiting node</pre>
                 <pre>    Print <span class="co-y">(</span> before visiting left subtree</pre>
@@ -910,7 +921,7 @@ h <span class="co-y">&#x2265; log<sub>2</sub></span>(n <span class="co-y">+</spa
 
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
-<div class="exBoxPurple mb-4 ml-4" >
+<div class="exBoxPurple" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -933,8 +944,8 @@ Look at Arithmetic Expression Tree above for example
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Euler Tour Traversal</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Euler Tour Traversal</p>
                 <pre>Generic traversal</pre>
                 <pre>Includes Preorder, Postorder, Inorder</pre>
                 <pre>Visit node 3 times while traversing left to right</pre>
@@ -943,7 +954,7 @@ Look at Arithmetic Expression Tree above for example
 
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
-<div class="exBoxCyan mb-4 ml-4" >
+<div class="exBoxCyan" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -988,8 +999,8 @@ START left   <span class="co-y">+</span>
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Linked Data Structure for (Binary) Trees</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Linked Data Structure for (Binary) Trees</p>
                 <pre>Linked List representation</pre>
                 <pre>A general tree node contains:</pre>
                 <pre>    <span class="co-y">Element</span></pre>
@@ -1008,8 +1019,8 @@ START left   <span class="co-y">+</span>
         </div>
 
         <div class="row mb-4 pl-md-4">
-            <div class="algoNotesPara col-12">
-                <p class="co-c text-center">Array-Based Binary Trees</p>
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Array-Based Binary Trees</p>
                 <pre>Nodes are stored in array</pre>
                 <pre><span class="co-y">rank</span>(root) <span class="co-y">=</span> <span class="co-m">1</span></pre>
                 <pre><span class="co-r">if</span> (<span class="co-y">rank</span>(root) <span class="co-y">=</span> i)</pre>
@@ -1022,7 +1033,7 @@ START left   <span class="co-y">+</span>
         <div class="row mb-4 justify-content-center">
             <div class="col-auto">
                 <h5 class="text-center co-c">Example</h5>
-<div class="exBoxCyan mb-4 ml-4" >
+<div class="exBoxCyan" >
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -1056,7 +1067,7 @@ E is right child of D:
         </div>
 
         <div class="row">
-            <div class="col-12 d-flex mb-4 pl-5 pr-5 justify-content-between">
+            <div class="col-12 d-flex mb-4 mt-5 pl-5 pr-5 justify-content-between">
                 <a href="./AlgoNotes.php" style="display: inline-block;">Algorithm Notes</a>
                 <a href="./DictionaryHashTable.php" style="display: inline-block;">Dictionary Hash Table</a>
             </div>
@@ -1069,5 +1080,4 @@ E is right child of D:
 	?>
 
 </body>
-
 </html>

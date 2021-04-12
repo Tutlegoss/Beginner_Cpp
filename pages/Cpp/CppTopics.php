@@ -8,34 +8,33 @@
     $pdfLocation = "window.location.href='$headerData[Path]inc/cppPDF/";
     $idNum = 0;
 ?>
-	<title><?php echo $headerData["Title"]; ?></title>
-	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
 
 </head>
 
-<body>
+<body id="topicsBkgnd">
 
-	<?php require_once("$headerData[Path]inc/php/Fringes/navbar.inc.php"); ?>
+	<?php require_once("$headerData[Path]inc/php/fringes/navbar.inc.php"); ?>
 
-		<div class="container-fluid">
+	<div class="container-fluid">
 		<div class="row">
-		<div id="cppTopics" class="col-12">
-            <div class="row mt-3">
-			    <h2 class="col-12 heading mt-3 text-center">C++ PDFs - Needs Reviewed/Updated</h2>
+		    <div id="cppTopics" class="col-12">
+			    <h2 class="heading mt-3 text-center">C++ PDFs - Needs Reviewed/Updated</h2>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <ul class="ml-4">
-                        <li><a href="#BASICS">Basics</a></li>
-                        <li><a href="#OOP">Object-Oriented</a></li>
-                        <li><a href="#DS">Data Structures</a></li>
-                        <li><a href="#MISC">Miscellaneous</a></li>
-                    </ul>
-                </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="ml-4">
+                    <li><a href="#BASICS">Basics</a></li>
+                    <li><a href="#OOP">Object-Oriented</a></li>
+                    <li><a href="#DS">Data Structures</a></li>
+                    <li><a href="#MISC">Miscellaneous</a></li>
+                </ul>
             </div>
+        </div>
 
-			<div class="row">
+        <div id="linkTopicsBkgnd">
+    		<div class="row">
                 <div class="col-12 mt-4 mb-4">
                     <h3 id="BASICS" class="heading ml-4">Basics</h3>
             		<hr>
@@ -43,11 +42,11 @@
             </div>
 
             <div class="row mb-4">
-				<div class="col-12">
-                    <p class="ml-5">Primitives</p>
+    			<div class="col-12">
+                    <p class="ml-2">Primitives</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
     					<li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-grn mb-3"
                                 onclick="<?php echo $pdfLocation; ?>Types.pdf';">Types
@@ -69,10 +68,10 @@
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Branching and Looping</p>
+                    <p class="ml-2">Branching and Looping</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
                         <li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-grn mb-3"
                                 onclick="<?php echo $pdfLocation; ?>IfElseIfElse.pdf';">If/Else If/Else
@@ -108,11 +107,11 @@
             </div>
 
             <div class="row mb-4">
-				<div class="col-12">
-                    <p class="ml-5">Functions</p>
+    			<div class="col-12">
+                    <p class="ml-2">Functions</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
     					<li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-grn mb-3"
                                 onclick="<?php echo $pdfLocation; ?>Functions.pdf';">Functions
@@ -139,10 +138,10 @@
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Visibility</p>
+                    <p class="ml-2">Visibility</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
     					<li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-grn mb-3"
                                 onclick="<?php echo $pdfLocation; ?>Scope.pdf';">Variable Scope
@@ -163,11 +162,11 @@
             </div>
 
             <div class="row mb-4">
-				<div class="col-12">
-                    <p class="ml-5">Numerical</p>
+    			<div class="col-12">
+                    <p class="ml-2">Numerical</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
     					<li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-grn mb-3"
                                 onclick="<?php echo $pdfLocation; ?>Math.pdf';">Math
@@ -184,10 +183,10 @@
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Files</p>
+                    <p class="ml-2">Files</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
     					<li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-grn mb-3"
                                 onclick="<?php echo $pdfLocation; ?>IFiles.pdf';">Input Files
@@ -204,10 +203,10 @@
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Arrays and Strings</p>
+                    <p class="ml-2">Arrays and Strings</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
     					<li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-grn mb-3"
                                 onclick="<?php echo $pdfLocation; ?>Array.pdf';">Arrays
@@ -234,8 +233,8 @@
                             </button>
                         </li>
                     </ol>
-				</div>
-			</div>
+    			</div>
+    		</div>
 
             <div class="row">
                 <div class="col-12 mt-5 mb-4">
@@ -246,10 +245,10 @@
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Primitives</p>
+                    <p class="ml-2">Primitives</p>
                 </div>
-				<div class="col-12">
-                    <ol class="ml-5 pl-5">
+    			<div class="col-12">
+                    <ol class="pl-5">
     					<li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-cyan mb-3"
                                 onclick="<?php echo $pdfLocation; ?>Struct.pdf';">Structs
@@ -261,10 +260,10 @@
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Class Basics</p>
+                    <p class="ml-2">Class Basics</p>
                 </div>
-				<div class="col-12">
-                    <ol class="ml-5 pl-5">
+    			<div class="col-12">
+                    <ol class="pl-5">
     					<li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-cyan mb-3"
                                 onclick="<?php echo $pdfLocation; ?>ClassTerms.pdf';">Class Terms
@@ -281,10 +280,10 @@
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Class Functions</p>
+                    <p class="ml-2">Class Functions</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
                         <li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-cyan mb-3"
                                 onclick="<?php echo $pdfLocation; ?>Constructors.pdf';">Constructors
@@ -321,10 +320,10 @@
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Rules</p>
+                    <p class="ml-2">Rules</p>
                 </div>
-				<div class="col-12">
-                    <ol class="ml-5 pl-5">
+    			<div class="col-12">
+                    <ol class="pl-5">
 
                         <li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-cyan mb-3"
@@ -337,10 +336,10 @@
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Inheritance</p>
+                    <p class="ml-2">Inheritance</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
                         <li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-cyan mb-3"
                                 onclick="<?php echo $pdfLocation; ?>Inheritance.pdf';">Inheritance
@@ -357,17 +356,17 @@
 
             <div class="row">
                 <div class="col-12 mt-5 mb-4">
-                    <h3 id="OOP" class="heading ml-4">Data Structures</h3>
+                    <h3 id="DS" class="heading ml-4">Data Structures</h3>
             		<hr>
                 </div>
             </div>
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Basics</p>
+                    <p class="ml-2">Basics</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
                         <li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-ylw mb-3"
                                 onclick="<?php echo $pdfLocation; ?>Templates.pdf';">Templates
@@ -394,10 +393,10 @@
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Structures</p>
+                    <p class="ml-2">Structures</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
                         <li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-ylw mb-3"
                                 onclick="<?php echo $pdfLocation; ?>Vector.pdf';">Vector
@@ -424,10 +423,10 @@
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Trees and Hash</p>
+                    <p class="ml-2">Trees and Hash</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
                         <li>
                             <button id="<?php echo "btn" . strval($idNum++) ?>" class="btn-push btn-push-ylw mb-3"
                                 onclick="<?php echo $pdfLocation; ?>BinaryTreeTerms.pdf';">Binary Tree Terms
@@ -466,10 +465,10 @@
 
             <div class="row mb-4">
                 <div class="col-12">
-                    <p class="ml-5">Primitives</p>
+                    <p class="ml-2">Primitives</p>
                 </div>
                 <div class="col-12">
-                    <ol class="ml-5 pl-5">
+                    <ol class="pl-5">
                         <li>
                             <button id="<?php echo "btn" . strval($idNum) ?>" class="btn-push btn-push-prpl mb-3"
                                 onclick="<?php echo $pdfLocation; ?>SyntacticSugar.pdf';">Syntactic Sugar
@@ -478,15 +477,13 @@
                     </ol>
                 </div>
             </div>
-
-		</div>
-		</div>
-		</div>
+        </div>
+	</div>
 
 	<?php
-		require_once("$headerData[Path]inc/php/Fringes/footer.inc.php");
+		require_once("$headerData[Path]inc/php/fringes/footer.inc.php");
+        require_once("$headerData[Path]inc/php/fringes/required.inc.php");
 	?>
 
 </body>
-
 </html>

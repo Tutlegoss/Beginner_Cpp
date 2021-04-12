@@ -257,7 +257,7 @@ O(n<sup>2</sup>)
         </div>
 
         <div class="row">
-            <div class="col-12 d-flex mb-4 pl-5 pr-5 justify-content-between">
+            <div class="col-12 d-flex mb-4 mt-5 pl-5 pr-5 justify-content-between">
                 <a href="/index.php" style="display: inline-block;">Home</a>
                 <a href="./ElementaryDataStructures.php" style="display: inline-block;">Elementary Data Structures</a>
             </div>

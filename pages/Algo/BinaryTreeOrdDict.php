@@ -5,40 +5,42 @@
 	$article = "BST/Ordered Dict";
 	require_once("../../inc/php/fringes/header.inc.php");
 ?>
-	<title><?php echo $headerData["Title"]; ?></title>
-	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 	<?php require_once("$headerData[Path]inc/php/fringes/navbar.inc.php"); ?>
 
-		<div class="container-fluid">
+	<div class="container-fluid">
+		<div class="row mt-4">
+		    <div class="col-12">
+			    <h2 class="heading mt-3 text-center">Ordered Dictionaries and Binary Tree Ops</h2>
+            </div>
+        </div>
+
 		<div class="row">
-		<div id="article" class="col-12">
-            <div class="row mt-3">
-			    <h2 class="col-12 heading mt-3 text-center">Ordered Dictionaries and Binary Tree Ops</h2>
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading">Ordered Dictionaries</h3>
+        		<hr>
             </div>
+        </div>
 
-			<div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ">Ordered Dictionaries</h3>
-            		<hr>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="">- Ordered keys
+                    <br>
+                    - <span class="co-kg">insertItem, removeItem, findElement</span> (usual operations still performed)
+                    <br>
+                    - Maintains order relation for the keys
+                </p>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="">- Ordered keys
-                        <br>
-                        - <span class="co-kg">insertItem, removeItem, findElement</span> (usual operations still performed)
-                        <br>
-                        - Maintains order relation for the keys
-                    </p>
-                    <h5 class="text-center co-c">New Operations/Macro</h5>
-<div class="exBoxKelly mb-4" style="margin: auto;">
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">New Operations/Macro</h5>
+<div class="exBoxKelly">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -53,26 +55,31 @@
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ">Binary Tree Operations</h3>
-            		<hr>
-                </div>
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ">Binary Tree Operations</h3>
+        		<hr>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Binary Search</p>
-                    <br>
-                    <pre>Elements ordered in sorted sequence</pre>
-                    <pre>Goal: Find element with key <span class="co-m">k</span></pre>
-                    <pre>        After checking a key <span class="co-m">j</span>, we know if <span class="co-m">k</span> goes before/after <span class="co-m">j</span></pre>
-                    <pre class="co-r">Start comparison with the middle element</pre>
-                    <h5 class="text-center co-c">BinarySearch()</h5>
-<div class="exBoxPurple mb-4" style="margin: auto;">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Binary Search</p>
+                <br>
+                <pre>Elements ordered in sorted sequence</pre>
+                <pre>Goal: Find element with key <span class="co-m">k</span></pre>
+                <pre>        After checking a key <span class="co-m">j</span>, we know if <span class="co-m">k</span> goes before/after <span class="co-m">j</span></pre>
+                <pre class="co-r">Start comparison with the middle element</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">BinarySearch()</h5>
+<div class="exBoxPurple">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -91,9 +98,13 @@ Algorithm <span class="co-y">BinarySearch</span>(S, k, low, high):
 </tr></tbody></table>
 </figure>
 </div>
+            </div>
+        </div>
 
-                    <h5 class="text-center co-c">Example</h5>
-<div class="exBoxCyan mb-4" style="margin: auto;">
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example</h5>
+<div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -124,47 +135,57 @@ Therefore, key <span class="co-m">68</span>'s index is <span class="co-m">5</spa
 </tr></tbody></table>
 </figure>
 </div>
-                    <pre><span  class="co-y">BinarySearch</span>(...) has a runtime of <span class="co-m">O(log(n))</span></pre>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Lookup Table</p>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <pre><span  class="co-y">BinarySearch</span>(...) has a runtime of <span class="co-m">O(log(n))</span></pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Lookup Table</p>
+                <br>
+                <pre>Array-based dictionary with keys sorted</pre>
+                <pre><span class="co-y">insertItem</span> takes <span class="co-m">O(n)</span> time to make room by shifting items</pre>
+                <pre><span class="co-y">removeItem</span> takes <span class="co-m">O(n)</span> time to compact by shifting items</pre>
+                <pre><span class="co-y">insertItem</span> takes <span class="co-m">O(n)</span> time, using binary search</pre>
+                <pre>Effective Uses:</pre>
+                <pre>    Small dictionary</pre>
+                <pre>    Most common operation is searching, insertion and removals rarely used</pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ">Binary Search Tree</h3>
+        		<hr>
+            </div>
+        </div>
+
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="">- Binary Tree
                     <br>
-                    <pre>Array-based dictionary with keys sorted</pre>
-                    <pre><span class="co-y">insertItem</span> takes <span class="co-m">O(n)</span> time to make room by shifting items</pre>
-                    <pre><span class="co-y">removeItem</span> takes <span class="co-m">O(n)</span> time to compact by shifting items</pre>
-                    <pre><span class="co-y">insertItem</span> takes <span class="co-m">O(n)</span> time, using binary search</pre>
-                    <pre>Effective Uses:</pre>
-                    <pre>    Small dictionary</pre>
-                    <pre>    Most common operation is searching, insertion and removals rarely used</pre>
-                </div>
+                    - All internal nodes store a <span class="co-c">(key, element)-pair</span>
+                    <br>
+                    - All <span class="co-y">left subtree</span> elements are smaller than <span class="co-c">root</span>
+                    <br>
+                    - All <span class="co-y">right subtree</span> elements are larger than <span class="co-c">root</span>
+                    <br>
+                    - <span class="co-y">Left/Right subtrees</span> are <span class="co-kg">Binary Search Trees</span>
+                    <br>
+                    - <span class="co-kg">Inorder Traversal</span> visits nodes in ascending order
+                </p>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ">Binary Search Tree</h3>
-            		<hr>
-                </div>
-            </div>
-
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="">- Binary Tree
-                        <br>
-                        - All internal nodes store a <span class="co-c">(key, element)-pair</span>
-                        <br>
-                        - All <span class="co-y">left subtree</span> elements are smaller than <span class="co-c">root</span>
-                        <br>
-                        - All <span class="co-y">right subtree</span> elements are larger than <span class="co-c">root</span>
-                        <br>
-                        - <span class="co-y">Left/Right subtrees</span> are <span class="co-kg">Binary Search Trees</span>
-                        <br>
-                        - <span class="co-kg">Inorder Traversal</span> visits nodes in ascending order
-                    </p>
-                    <h5 class="text-center co-c">Left/Right Subtrees</h5>
-<div class="exBoxCyan  mb-4" style="margin: auto;">
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Left/Right Subtrees</h5>
+<div class="exBoxCyan ">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -182,22 +203,27 @@ Therefore, key <span class="co-m">68</span>'s index is <span class="co-m">5</spa
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Insert(k, e)</p>
-                    <pre>Find free spot in tree</pre>
-                    <pre>    Add node that stores <span class="co-c">(k, e)</span></pre>
-                    <pre>Start at <span class="co-c">Root</span> r</pre>
-                    <pre>    If <span class="co-m">k</span> <span class="co-y">&lt; key</span>(<span class="co-m">r</span>)</pre>
-                    <pre>        Continue in <span class="co-y">Left subtree</span></pre>
-                    <pre>    If <span class="co-m">k</span> <span class="co-y">&gt; key</span>(<span class="co-m">r</span>)</pre>
-                    <pre>        Continue in <span class="co-y">Right subtree</span></pre>
-                    <pre>Runtime is <span class="co-m">O(h)</span></pre>
-                    <pre>    <span class="co-m">h</span> is the height of the tree</pre>
-<h5 class="text-center co-c">Example:</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Insert(k, e)</p>
+                <pre>Find free spot in tree</pre>
+                <pre>    Add node that stores <span class="co-c">(k, e)</span></pre>
+                <pre>Start at <span class="co-c">Root</span> r</pre>
+                <pre>    If <span class="co-m">k</span> <span class="co-y">&lt; key</span>(<span class="co-m">r</span>)</pre>
+                <pre>        Continue in <span class="co-y">Left subtree</span></pre>
+                <pre>    If <span class="co-m">k</span> <span class="co-y">&gt; key</span>(<span class="co-m">r</span>)</pre>
+                <pre>        Continue in <span class="co-y">Right subtree</span></pre>
+                <pre>Runtime is <span class="co-m">O(h)</span></pre>
+                <pre>    <span class="co-m">h</span> is the height of the tree</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example:</h5>
 <div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -267,23 +293,28 @@ Insert the numbers <span class="co-m">22, 80, 18, 9, 90, 20</span>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Find</p>
-                    <pre>Find node with key <span class="co-m">k</span></pre>
-                    <pre>Start at <span class="co-c">Root</span> r</pre>
-                    <pre>    If <span class="co-m">k</span> <span class="co-y">= key</span>(<span class="co-m">r</span>)</pre>
-                    <pre>        return r</pre>
-                    <pre>    If <span class="co-m">k</span> <span class="co-y">&lt; key</span>(<span class="co-m">r</span>)</pre>
-                    <pre>        Continue in <span class="co-y">Left subtree</span></pre>
-                    <pre>    If <span class="co-m">k</span> <span class="co-y">&gt; key</span>(<span class="co-m">r</span>)</pre>
-                    <pre>        Continue in <span class="co-y">Right subtree</span></pre>
-                    <pre>Runtime is <span class="co-m">O(h)</span></pre>
-                    <pre>    <span class="co-m">h</span> is the height of the tree</pre>
-<h5 class="text-center co-c">Example:</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Find</p>
+                <pre>Find node with key <span class="co-m">k</span></pre>
+                <pre>Start at <span class="co-c">Root</span> r</pre>
+                <pre>    If <span class="co-m">k</span> <span class="co-y">= key</span>(<span class="co-m">r</span>)</pre>
+                <pre>        return r</pre>
+                <pre>    If <span class="co-m">k</span> <span class="co-y">&lt; key</span>(<span class="co-m">r</span>)</pre>
+                <pre>        Continue in <span class="co-y">Left subtree</span></pre>
+                <pre>    If <span class="co-m">k</span> <span class="co-y">&gt; key</span>(<span class="co-m">r</span>)</pre>
+                <pre>        Continue in <span class="co-y">Right subtree</span></pre>
+                <pre>Runtime is <span class="co-m">O(h)</span></pre>
+                <pre>    <span class="co-m">h</span> is the height of the tree</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example:</h5>
 <div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -307,22 +338,27 @@ Find <span class="co-m">20</span>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Delete</p>
-                    <pre>Delete node with key <span class="co-m">k</span></pre>
-                    <pre>Let <span class="co-m">n</span> be the position of <span class="co-y">FindElement</span>(<span class="co-m">k</span>)</pre>
-                    <pre>Remove n without creating &quot;separation&quot; of the tree</pre>
-                    <pre><span class="co-c">Case 1</span>:</pre>
-                    <pre>    <span class="co-m">n</span> has at least one external child</pre>
-                    <pre><span class="co-c">Case 2</span>:</pre>
-                    <pre>    <span class="co-m">n</span> has two children with internal nodes</pre>
-                    <pre>Runtime is <span class="co-m">O(h)</span></pre>
-                    <pre>    <span class="co-m">h</span> is the height of the tree</pre>
-                    <h5 class="text-center co-c">Case 1a: Two External Children</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Delete</p>
+                <pre>Delete node with key <span class="co-m">k</span></pre>
+                <pre>Let <span class="co-m">n</span> be the position of <span class="co-y">FindElement</span>(<span class="co-m">k</span>)</pre>
+                <pre>Remove n without creating &quot;separation&quot; of the tree</pre>
+                <pre><span class="co-c">Case 1</span>:</pre>
+                <pre>    <span class="co-m">n</span> has at least one external child</pre>
+                <pre><span class="co-c">Case 2</span>:</pre>
+                <pre>    <span class="co-m">n</span> has two children with internal nodes</pre>
+                <pre>Runtime is <span class="co-m">O(h)</span></pre>
+                <pre>    <span class="co-m">h</span> is the height of the tree</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Case 1a: Two External Children</h5>
 <div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -353,8 +389,12 @@ Delete <span class="co-r">9</span>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
+            </div>
+        </div>
 
-                    <h5 class="text-center co-c">Case 1b: Child Is Interal Node</h5>
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Case 1b: Child Is Interal Node</h5>
 <div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -382,8 +422,12 @@ Delete <span class="co-r">80</span>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
+            </div>
+        </div>
 
-                    <h5 class="text-center co-c">Case 2: Two Internal Children</h5>
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Case 2: Two Internal Children</h5>
 <div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -418,17 +462,22 @@ Replace n (<span class="co-r">18</span>) with m (<span class="co-t">19</span>)
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Performance</p>
-                    <pre>Space used is <span class="co-m">O(n)</span></pre>
-                    <pre>Runtime of all operations is <span class="co-m">O(h)</span></pre>
-                    <pre>    <span class="co-m">h</span> is worse-case when BST has only left childern or only right children</pre>
-                    <pre>    Worst-case: <span class="co-m">h</span> <span class="co-y">&#x2208;</span> <span class="co-m">O(n)</span></pre>
-                    <h5 class="text-center co-c">Example Worse-Case:</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Performance</p>
+                <pre>Space used is <span class="co-m">O(n)</span></pre>
+                <pre>Runtime of all operations is <span class="co-m">O(h)</span></pre>
+                <pre>    <span class="co-m">h</span> is worse-case when BST has only left childern or only right children</pre>
+                <pre>    Worst-case: <span class="co-m">h</span> <span class="co-y">&#x2208;</span> <span class="co-m">O(n)</span></pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example Worse-Case:</h5>
 <div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -448,21 +497,19 @@ Replace n (<span class="co-r">18</span>) with m (<span class="co-t">19</span>)
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ">Worse-Case Comparison</h3>
-                    <hr>
-                </div>
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ">Worst-Case Comparison</h3>
+                <hr>
             </div>
+        </div>
 
-
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-
-                    <h5 class="text-center co-c">Dictionary Worse-Cases:</h5>
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Dictionary Worse-Cases:</h5>
 <div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -483,20 +530,19 @@ Operation                 Log  Hash     Lookup     Binary   Balanced
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ">Questions</h3>
-                    <hr>
-                </div>
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ">Questions</h3>
+                <hr>
             </div>
+        </div>
 
-
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <h5 class="text-center co-c">Two Questions:</h5>
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Two Questions:</h5>
 <div class="exBoxCyan mb-4 " style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -539,23 +585,21 @@ Determine if there exists an index i such that <span class="co-c">A</span>[i]</s
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 d-flex mb-4 pl-5 pr-5 justify-content-between">
-                    <a href=".\DictionaryHashTable.php" style="display: inline-block;">Dictionary Hash Tables</a>
-                    <a href=".\RedBlackTrees.php" style="display: inline-block;">Red-Black Trees</a>
-                </div>
+        <div class="row">
+            <div class="col-12 d-flex mb-4 mt-5 pl-5 pr-5 justify-content-between">
+                <a href=".\DictionaryHashTable.php" style="display: inline-block;">Dictionary Hash Tables</a>
+                <a href=".\RedBlackTrees.php" style="display: inline-block;">Red-Black Trees</a>
             </div>
-		</div>
-		</div>
-		</div>
+        </div>
+	</div>
 
 	<?php
 		require_once("$headerData[Path]inc/php/fringes/footer.inc.php");
+        require_once("$headerData[Path]inc/php/fringes/required.inc.php");
 	?>
 
 </body>
-
 </html>

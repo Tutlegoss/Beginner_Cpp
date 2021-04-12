@@ -3,16 +3,9 @@
     session_start();
 
 	$article = "Connect 4";
-	require_once("../inc/php/Fringes/header.inc.php");
+	require_once("../inc/php/fringes/header.inc.php");
 ?>
-	<title><?php echo $headerData["Title"]; ?></title>
-	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
 
-</head>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Breakout</title>
     <style>
         #bdr {
             margin: 20px auto;
@@ -34,28 +27,32 @@
             text-align: center;
         }
     </style>
-</head>
-<body style="background-color: #1a1a1a;">
 
-    <?php require_once("../inc/php/Fringes/navbar.inc.php"); ?>
+</head>
+
+<body>
+
+    <?php require_once("$headerData[Path]inc/php/fringes/navbar.inc.php"); ?>
 
     <div class="container-fluid">
-	<div class="row">
-	<div id="article" class="col-12">
-        <p id="playerTurn"></p>
-        <div id="bdr">
-            <div id="game"></div>
+       <div class="row">
+            <div class="col-12">
+                <p id="playerTurn"></p>
+                <div id="bdr">
+                    <div id="game"></div>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-    </div>
 
+	<?php
+		require_once("../inc/php/fringes/footer.inc.php");
+        require_once("../inc/php/fringes/required.inc.php");
+	?>
 
     <script src="./phaser/dist/phaser.min.js"></script>
     <script stc="./phaser/dist/phaser-arcade-physics.min.js"></script>
     <script src="./connect4.js"></script>
-	<?php
-		require_once("../inc/php/Fringes/footer.inc.php");
-	?>
+
 </body>
 </html>

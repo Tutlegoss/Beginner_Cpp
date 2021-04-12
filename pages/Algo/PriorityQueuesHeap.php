@@ -5,8 +5,6 @@
 	$article = "Priority Queue / Heap";
 	require_once("../../inc/php/fringes/header.inc.php");
 ?>
-	<title><?php echo $headerData["Title"]; ?></title>
-	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
 
 </head>
 
@@ -14,28 +12,33 @@
 
 	<?php require_once("$headerData[Path]inc/php/fringes/navbar.inc.php"); ?>
 
-		<div class="container-fluid">
+	<div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-12">
+		        <h2 class="col-12 heading mt-3 text-center">Priority Queues and Heaps</h2>
+            </div>
+        </div>
+
 		<div class="row">
-		<div id="article" class="col-12">
-            <div class="row mt-3">
-			    <h2 class="col-12 heading mt-3 text-center">Priority Queues and Heaps</h2>
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ml-4">Priority Queues</h3>
+        		<hr>
             </div>
+        </div>
 
-			<div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Priority Queues</h3>
-            		<hr>
-                </div>
+        <div class="row mb-4 justify-content-center">
+            <div class="algoNotesPara col-12">
+                <p class="ml-4">- Stores a collection of <span class="co-c">(key, element)</span> pairs
+                    <br>
+                    - Some tasks are more important
+                </p>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="ml-4">- Stores a collection of <span class="co-c">(key, element)</span> pairs
-                        <br>
-                        - Some tasks are more important
-                    </p>
-                    <h5 class="text-center co-c">Main Methods</h5>
-<div class="exBoxKelly ml-4 mb-4" style="margin: auto;">
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Main Methods</h5>
+<div class="exBoxKelly ml-4">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -50,24 +53,34 @@
 </tr></tbody></table>
 </figure>
 </div>
-                    <pre><span class="co-kg">Applications</span>:</pre>
-                    <pre>    Multithreading</pre>
-                    <pre>    Triage</pre>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Comparable Keys</p>
-                    <br>
-                    <pre>Keys can be arbitrary objects on which a total order relation is defined</pre>
-                    <pre><span class="co-kg">Comparator ADT</span>:</pre>
-                    <pre>    Generic priority queue</pre>
-                    <pre>    Encapsulates the action of comparing two objects</pre>
-                    <pre>        Total order relation</pre>
-                    <pre>    Comparator is external to the compared keys</pre>
-                    <h5 class="text-center co-c">Functions</h5>
-<div class="exBoxKelly mb-4" style="margin: auto;">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <pre><span class="co-kg">Applications</span>:</pre>
+                <pre>    Multithreading</pre>
+                <pre>    Triage</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Comparable Keys</p>
+                <br>
+                <pre>Keys can be arbitrary objects on which a total order relation is defined</pre>
+                <pre><span class="co-kg">Comparator ADT</span>:</pre>
+                <pre>    Generic priority queue</pre>
+                <pre>    Encapsulates the action of comparing two objects</pre>
+                <pre>        Total order relation</pre>
+                <pre>    Comparator is external to the compared keys</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Functions</h5>
+<div class="exBoxKelly">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -81,20 +94,25 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Priority Queue Sorting</p>
-                    <br>
-                    <pre>Insert elements one-by-one</pre>
-                    <pre>    <span class="co-y">insertItem</span>(e<sub>1</sub>,e<sub>2</sub>)</pre>
-                    <pre>Remove elements in sorted order</pre>
-                    <pre>    <span class="co-y">removeMin</span>()</pre>
-                    <pre>Running time depends on implementation</pre>
-                    <h5 class="text-center co-c">Implementation</h5>
-<div class="exBoxPurple mb-4" style="margin: auto;">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Priority Queue Sorting</p>
+                <br>
+                <pre>Insert elements one-by-one</pre>
+                <pre>    <span class="co-y">insertItem</span>(e<sub>1</sub>,e<sub>2</sub>)</pre>
+                <pre>Remove elements in sorted order</pre>
+                <pre>    <span class="co-y">removeMin</span>()</pre>
+                <pre>Running time depends on implementation</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Implementation</h5>
+<div class="exBoxPurple">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -113,132 +131,141 @@ isGreaterThanOrEqualTo<span class="co-g">(x,y)</span>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Sequence Based Priority Queue</p>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Sequence Based Priority Queue</p>
+                <br>
+                <pre><span class="co-kg">Unsorted Sequence</span></pre>
+                <pre>    <span class="co-y">insertItem</span> takes <span class="co-m">O(1)</span> time</pre>
+                <pre>        Insert at beginning or end of the sequence</pre>
+                <pre><span class="co-kg">removeMin, minKey, minElement</span> take <span class="co-m">O(n)</span> time</pre>
+                <pre>        Traverse entire sequence to find smallest key</pre>
+                <pre><span class="co-kg">Sorted Sequence</pre>
+                <pre>    <span class="co-y">insertItem</span> takes <span class="co-m">O(n)</span> time</pre>
+                <pre>        Have to find the place where to insert element</pre>
+                <pre><span class="co-kg">removeMin, minKey, minElement</span> take <span class="co-m">O(1)</span> time</pre>
+                <pre>        Smallest key is at beginning of the sequence</pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ml-4">Selection Sort</h3>
+        		<hr>
+            </div>
+        </div>
+
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="ml-4">- Variation of PQ-sort
                     <br>
-                    <pre><span class="co-kg">Unsorted Sequence</span></pre>
-                    <pre>    <span class="co-y">insertItem</span> takes <span class="co-m">O(1)</span> time</pre>
-                    <pre>        Insert at beginning or end of the sequence</pre>
-                    <pre><span class="co-kg">removeMin, minKey, minElement</span> take <span class="co-m">O(n)</span> time</pre>
-                    <pre>        Traverse entire sequence to find smallest key</pre>
-                    <pre><span class="co-kg">Sorted Sequence</pre>
-                    <pre>    <span class="co-y">insertItem</span> takes <span class="co-m">O(n)</span> time</pre>
-                    <pre>        Have to find the place where to insert element</pre>
-                    <pre><span class="co-kg">removeMin, minKey, minElement</span> take <span class="co-m">O(1)</span> time</pre>
-                    <pre>        Smallest key is at beginning of the sequence</pre>
-                </div>
+                    - Implemented with an unsorted sequence
+                    <br>
+                    - Runs in <span class="co-m">O(n<sup class="co-c">2</sup>)</span>
+                    <br>
+                    - <a href="https://stackoverflow.com/tags/selection-sort/info">Stack Overflow: Selection Sort</a>
+                </p>
+                <img src=<?php echo '"' . $headerData["Path"] . 'img/Algo/SelectionSort.png"'; ?> alt="Selection Sort Graphic"
+                     class="mx-auto d-block">
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Selection Sort</h3>
-            		<hr>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Running Time</p>
+                <pre><span class="co-y">insertItem</span> with <span class="co-m">n</span> insertions takes <span class="co-m">O(n)</span> time</pre>
+                <pre>Remove elements in sorted order with <span class="co-m">n</span> <span class="co-y">removeMin</span> operations takes</pre>
+                <pre>    <span class="co-m">1 + 2 + ... + <span class="co-m">n</span></span></pre>
+                <pre>Bottleneck during selecting minimum element</pre>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="ml-4">- Variation of PQ-sort
-                        <br>
-                        - Implemented with an unsorted sequence
-                        <br>
-                        - Runs in <span class="co-m">O(n<sup class="co-c">2</sup>)</span>
-                        <br>
-                        - <a href="https://stackoverflow.com/tags/selection-sort/info">Stack Overflow: Selection Sort</a>
-                    </p>
-                    <img src=<?php echo '"' . $headerData["Path"] . 'img/Algo/SelectionSort.png"'; ?> alt="Selection Sort Graphic"
-                         class="mx-auto d-block">
-                </div>
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ml-4">Insertion Sort</h3>
+        		<hr>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Running Time</p>
-                    <pre><span class="co-y">insertItem</span> with <span class="co-m">n</span> insertions takes <span class="co-m">O(n)</span> time</pre>
-                    <pre>Remove elements in sorted order with <span class="co-m">n</span> <span class="co-y">removeMin</span> operations takes</pre>
-                    <pre>    <span class="co-m">1 + 2 + ... + <span class="co-m">n</span></span></pre>
-                    <pre>Bottleneck during selecting minimum element</pre>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="ml-4">- Variation of PQ-sort
+                    <br>
+                    - Implemented with a sorted sequence
+                    <br>
+                    - Runs in <span class="co-m">O(n<sup class="co-c">2</sup>)</span>
+                </p>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Insertion Sort</h3>
-            		<hr>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Running Time</p>
+                <pre><span class="co-y">insertItem</span> with <span class="co-m">n</span> insertion operations takes</pre>
+                <pre>    <span class="co-m">1 + 2 + ... + <span class="co-m">n</span></span></pre>
+                <pre>Remove elements in sorted order with <span class="co-m">n</span> <span class="co-y">removeMin</span> operations takes <span class="co-m">O(n)</span> time</pre>
+                <pre>Bottleneck during insert</pre>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="ml-4">- Variation of PQ-sort
-                        <br>
-                        - Implemented with a sorted sequence
-                        <br>
-                        - Runs in <span class="co-m">O(n<sup class="co-c">2</sup>)</span>
-                    </p>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">In-Place Insertion Sort</p>
+                <pre>Forgo an external data structure</pre>
+                <pre>    Implement selection sort and insertion sort in-place</pre>
+                <pre>Part of the sequence is the priority queue</pre>
+                <pre>Keep initial portion sorted</pre>
+                <pre>Use <span class="co-y">swapElements</span> versus making a new sequence</pre>
+                <pre><a href="https://www.w3resource.com/php-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-3.php">w3resource: Insertion Sort</a></pre>
+                <pre>    <span class="co-o">Link for next two images (PHP)</span></pre>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Running Time</p>
-                    <pre><span class="co-y">insertItem</span> with <span class="co-m">n</span> insertion operations takes</pre>
-                    <pre>    <span class="co-m">1 + 2 + ... + <span class="co-m">n</span></span></pre>
-                    <pre>Remove elements in sorted order with <span class="co-m">n</span> <span class="co-y">removeMin</span> operations takes <span class="co-m">O(n)</span> time</pre>
-                    <pre>Bottleneck during insert</pre>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-12">
+                <img src=<?php echo '"' . $headerData["Path"] . 'img/Algo/SelectionSort.png"'; ?> alt="Selection Sort Graphic"
+                     class="mx-auto d-block">
+                <img src=<?php echo '"' . $headerData["Path"] . 'img/Algo/InsertionSortAnim.gif"'; ?> alt="Insertion Sort QR" class="mx-auto d-block mt-4">
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">In-Place Insertion Sort</p>
-                    <pre>Forgo an external data structure</pre>
-                    <pre>    Implement selection sort and insertion sort in-place</pre>
-                    <pre>Part of the sequence is the priority queue</pre>
-                    <pre>Keep initial portion sorted</pre>
-                    <pre>Use <span class="co-y">swapElements</span> versus making a new sequence</pre>
-                    <pre><a href="https://www.w3resource.com/php-exercises/searching-and-sorting-algorithm/searching-and-sorting-algorithm-exercise-3.php">w3resource: Insertion Sort</a></pre>
-                    <pre>    <span class="co-o">Link for next two images (PHP)</span></pre>
-                    <img src=<?php echo '"' . $headerData["Path"] . 'img/Algo/SelectionSort.png"'; ?> alt="Selection Sort Graphic"
-                         class="mx-auto d-block">
-                    <img src=<?php echo '"' . $headerData["Path"] . 'img/Algo/InsertionSortAnim.gif"'; ?> alt="Insertion Sort QR" class="mx-auto d-block mt-4">
-                    </p>
-                </div>
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <p class="co-c">Insertion Sort (with Bubble Sort)</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TZRWRjq2CAg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+        </div>
 
-            <div class="row mb-4">
-                <div class="col-12 text-center">
-                    <p class="co-c">Insertion Sort (with Bubble Sort)</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TZRWRjq2CAg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ml-4">Heap-Based Priority Queue</h3>
+        		<hr>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Heap-Based Priority Queue</h3>
-            		<hr>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Heap</p>
+                <pre>Binary tree that:</pre>
+                <pre>    Stores keys in internal nodes</pre>
+                <pre>    <span class="co-kg">Heap-Order</span>:</pre>
+                <pre>        <span class="co-y">key</span>(<span class="co-m">v</span>) <span class="co-o">&#x2265;</span> <span class="co-y">key</span>(<span class="co-y">parent</span>(<span class="co-m">v</span>))</pre>
+                <pre>        For every interal node <span class="co-m">v</span> except the root</pre>
+                <pre>    <span class="co-kg">Complete Binary Tree</span>:</pre>
+                <pre>        Let <span class="co-m">h</span> = height</pre>
+                <pre>        for <span class="co-m">i = 0 ,..., h - 2</span>, there are <span class="co-m">2<sup class="co-c">i</sup></span> of depth <span class="co-m">i</span></pre>
+                <pre>        Depth <span class="co-m">h - 1</span>, internal nodes are left of external nodes</pre>
+                <pre>Last node is the rightmost internal node of depth <span class="co-m">h - 1</span></pre>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Heap</p>
-                    <pre>Binary tree that:</pre>
-                    <pre>    Stores keys in internal nodes</pre>
-                    <pre>    <span class="co-kg">Heap-Order</span>:</pre>
-                    <pre>        <span class="co-y">key</span>(<span class="co-m">v</span>) <span class="co-o">&#x2265;</span> <span class="co-y">key</span>(<span class="co-y">parent</span>(<span class="co-m">v</span>))</pre>
-                    <pre>        For every interal node <span class="co-m">v</span> except the root</pre>
-                    <pre>    <span class="co-kg">Complete Binary Tree</span>:</pre>
-                    <pre>        Let <span class="co-m">h</span> = height</pre>
-                    <pre>        for <span class="co-m">i = 0 ,..., h - 2</span>, there are <span class="co-m">2<sup class="co-c">i</sup></span> of depth <span class="co-m">i</span></pre>
-                    <pre>        Depth <span class="co-m">h - 1</span>, internal nodes are left of external nodes</pre>
-                    <pre>Last node is the rightmost internal node of depth <span class="co-m">h - 1</span></pre>
-<h5 class="text-center co-c">Example</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example</h5>
+<div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -257,22 +284,27 @@ Therefore, the <span class="co-y">last node</span> is <span class="co-m">5</span
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Height of Heap</p>
-                    <pre>Complete binary tree</pre>
-                    <pre><span class="co-y">Theorem</span>:</pre>
-                    <pre>    A heap storing <span class="co-m">n</span> keys has height <span class="co-m">O(log(n))</span></pre>
-                    <pre>        Let <span class="co-m">h</span> = height, <span class="co-m">n</span> = keys</pre>
-                    <pre>        <span class="co-m">2<sup class="co-c">i</sup></span> keys at depth <span class="co-m">i = 0 ,..., h - 2</span></pre>
-                    <pre>        Minimum of one key at depth <span class="co-m">h - 1</span>,</pre>
-                    <pre>        <span class="co-m">n &#x2265; 1 + 2 + 4 + ... + 2<sup class="co-c">h-2</sup> + 1</span></pre>
-                    <pre>        So, <span class="co-m">n &#x2265; 2<sup class="co-c">h-1</sup></span>, that is, <span class="co-m"> h &#x2264; log(n) + 1</span></pre>
-<h5 class="text-center co-c">Example</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Height of Heap</p>
+                <pre>Complete binary tree</pre>
+                <pre><span class="co-y">Theorem</span>:</pre>
+                <pre>    A heap storing <span class="co-m">n</span> keys has height <span class="co-m">O(log(n))</span></pre>
+                <pre>        Let <span class="co-m">h</span> = height, <span class="co-m">n</span> = keys</pre>
+                <pre>        <span class="co-m">2<sup class="co-c">i</sup></span> keys at depth <span class="co-m">i = 0 ,..., h - 2</span></pre>
+                <pre>        Minimum of one key at depth <span class="co-m">h - 1</span>,</pre>
+                <pre>        <span class="co-m">n &#x2265; 1 + 2 + 4 + ... + 2<sup class="co-c">h-2</sup> + 1</span></pre>
+                <pre>        So, <span class="co-m">n &#x2265; 2<sup class="co-c">h-1</sup></span>, that is, <span class="co-m"> h &#x2264; log(n) + 1</span></pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example</h5>
+<div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -296,18 +328,23 @@ h <span class="co-y">=</span> <span class="co-m">4</span>, <span class="co-m">n<
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Heaps and Priority Queues</p>
-                    <pre>Priority queue uses heap</pre>
-                    <pre>Keep track of <span class="co-r">last node</span>'s position</pre>
-                    <pre>Store <span class="co-c">(key, element)</span> item in each internal node</pre>
-                    <pre>    <span class="co-o">element not shown in examples</span></pre>
-<h5 class="text-center co-c">Example</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Heaps and Priority Queues</p>
+                <pre>Priority queue uses heap</pre>
+                <pre>Keep track of <span class="co-r">last node</span>'s position</pre>
+                <pre>Store <span class="co-c">(key, element)</span> item in each internal node</pre>
+                <pre>    <span class="co-o">element not shown in examples</span></pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example</h5>
+<div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -324,17 +361,22 @@ h <span class="co-y">=</span> <span class="co-m">4</span>, <span class="co-m">n<
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">insertItem(k,e)</p>
-                    <pre>Find new <span class="co-r">last node Z</span></pre>
-                    <pre>Store <span class="co-m">k</span> at <span class="co-r">Z</span>, and make <span class="co-r">Z</span> an internal node</pre>
-                    <pre>Restore heap-order</pre>
-<h5 class="text-center co-c">Example: insertItem(1,Elem)</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">insertItem(k,e)</p>
+                <pre>Find new <span class="co-r">last node Z</span></pre>
+                <pre>Store <span class="co-m">k</span> at <span class="co-r">Z</span>, and make <span class="co-r">Z</span> an internal node</pre>
+                <pre>Restore heap-order</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example: insertItem(1,Elem)</h5>
+<div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -364,19 +406,24 @@ Restore heap-order below
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Heapify Upward</p>
-                    <pre>Heap-order may be violated after insertion</pre>
-                    <pre><span class="co-kg">upheap</span>: Restores heap-order</pre>
-                    <pre>    Swaps <span class="co-m">k</span> with its parent node (upward path)</pre>
-                    <pre>Finish when <span class="co-m">k</span> is Root or parent is &#x2264; <span class="co-m">k</span></pre>
-                    <pre>Runs in <span class="co-m">O(log(n))</span></pre>
-<h5 class="text-center co-c">Example: insertItem(1,Elem)</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Heapify Upward</p>
+                <pre>Heap-order may be violated after insertion</pre>
+                <pre><span class="co-kg">upheap</span>: Restores heap-order</pre>
+                <pre>    Swaps <span class="co-m">k</span> with its parent node (upward path)</pre>
+                <pre>Finish when <span class="co-m">k</span> is Root or parent is &#x2264; <span class="co-m">k</span></pre>
+                <pre>Runs in <span class="co-m">O(log(n))</span></pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example: insertItem(1,Elem)</h5>
+<div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -404,17 +451,22 @@ Since <span class="co-m">1</span> is less than its parent (again), swap
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Removal</p>
-                    <pre>Replace root key with key of <span class="co-r">Z</span></pre>
-                    <pre>Compress <span class="co-r">Z</span> and its children into a single leaf</pre>
-                    <pre>Restore heap-order</pre>
-<h5 class="text-center co-c">Example: removeMin()</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Removal</p>
+                <pre>Replace root key with key of <span class="co-r">Z</span></pre>
+                <pre>Compress <span class="co-r">Z</span> and its children into a single leaf</pre>
+                <pre>Restore heap-order</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example: removeMin()</h5>
+<div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -447,19 +499,24 @@ Restore heap-order below
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Heapify Downward</p>
-                    <pre>Replacing root key with the <span class="co-r">last node</span>'s key, heap-order may be violated</pre>
-                    <pre><span class="co-kg">downheap</span>: Restores heap-order</pre>
-                    <pre>    Swaps <span class="co-m">k</span> with the key of its smallest child (downward path)</pre>
-                    <pre>Finish when <span class="co-m">k</span> is a leaf or child keys are <span class="co-o">&#x2265;</span> <span class="co-m">k</span></pre>
-                    <pre>Runs in <span class="co-m">O(log(n))</span></pre>
-<h5 class="text-center co-c">Example: removeMin()</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Heapify Downward</p>
+                <pre>Replacing root key with the <span class="co-r">last node</span>'s key, heap-order may be violated</pre>
+                <pre><span class="co-kg">downheap</span>: Restores heap-order</pre>
+                <pre>    Swaps <span class="co-m">k</span> with the key of its smallest child (downward path)</pre>
+                <pre>Finish when <span class="co-m">k</span> is a leaf or child keys are <span class="co-o">&#x2265;</span> <span class="co-m">k</span></pre>
+                <pre>Runs in <span class="co-m">O(log(n))</span></pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example: removeMin()</h5>
+<div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -483,88 +540,93 @@ Last node now needs to be found (below is the pseudocode)
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Find New Last Node (Insertion)</p>
-                    <pre>Traverse path of <span class="co-m">O(log(n))</span> nodes:</pre>
-                    <pre>    While current node is <span class="co-y">right child</span>, go to parent</pre>
-                    <pre>    If current node is <span class="co-y">left child</span>, go to parent's <span class="co-y">right child</span></pre>
-                    <pre>    While current node is internal, go to <span class="co-y">left child</span></pre>
-                    <pre>Akin to updating last node after removal</pre>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Find New Last Node (Insertion)</p>
+                <pre>Traverse path of <span class="co-m">O(log(n))</span> nodes:</pre>
+                <pre>    While current node is <span class="co-y">right child</span>, go to parent</pre>
+                <pre>    If current node is <span class="co-y">left child</span>, go to parent's <span class="co-y">right child</span></pre>
+                <pre>    While current node is internal, go to <span class="co-y">left child</span></pre>
+                <pre>Akin to updating last node after removal</pre>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Find New Last Node (Removal)</p>
-                    <pre>Traverse path of <span class="co-m">O(log(n))</span> nodes:</pre>
-                    <pre>    While current node is left, go to parent</pre>
-                    <pre>    If current node is <span class="co-y">right child</span>, go to parent's <span class="co-y">left child</span></pre>
-                    <pre>    While current node is internal, go to <span class="co-y">right child</span></pre>
-                    <pre>Akin to updating last node after removal</pre>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Find New Last Node (Removal)</p>
+                <pre>Traverse path of <span class="co-m">O(log(n))</span> nodes:</pre>
+                <pre>    While current node is left, go to parent</pre>
+                <pre>    If current node is <span class="co-y">right child</span>, go to parent's <span class="co-y">left child</span></pre>
+                <pre>    While current node is internal, go to <span class="co-y">right child</span></pre>
+                <pre>Akin to updating last node after removal</pre>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Heap Sort</p>
-                    <pre>Priority queue with <span class="co-m">n</span> items via a heap</pre>
-                    <pre><span class="co-m">O(n)</span> space</pre>
-                    <pre><span class="co-kg">insertItem, removeMin</span> take <span class="co-m">O(log(n))</span> time</pre>
-                    <pre><span class="co-kg">isEmpty, minKey, minElement</span> take <span class="co-m">O(1)</span> time</pre>
-                    <pre>Sort <span class="co-m">n</span> elements in <span class="co-m">O(nlog(n))</span> time (faster then quadratic algorithems)</pre>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Heap Sort</p>
+                <pre>Priority queue with <span class="co-m">n</span> items via a heap</pre>
+                <pre><span class="co-m">O(n)</span> space</pre>
+                <pre><span class="co-kg">insertItem, removeMin</span> take <span class="co-m">O(log(n))</span> time</pre>
+                <pre><span class="co-kg">isEmpty, minKey, minElement</span> take <span class="co-m">O(1)</span> time</pre>
+                <pre>Sort <span class="co-m">n</span> elements in <span class="co-m">O(nlog(n))</span> time (faster then quadratic algorithems)</pre>
             </div>
+        </div>
 
-            <div class="row mb-4">
-                <div class="col-12 text-center">
-                    <p class="co-c">Heap / Heap Sort</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/H5kAcmGOn4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <p class="co-c">Heap / Heap Sort</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/H5kAcmGOn4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Misc Heap Info</h3>
-            		<hr>
-                </div>
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ml-4">Misc Heap Info</h3>
+        		<hr>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Vector-based Heap</p>
-                    <pre>Heap with <span class="co-m">n</span> keys uses vector of length <span class="co-m">n + 1</span></pre>
-                    <pre>    <span class="co-o">{Start at index 1}</span></pre>
-                    <pre>Node at rank <span class="co-m">i</span>:</pre>
-                    <pre>    <span class="co-y">Left child</span> is rank <span class="co-m">2i</span></pre>
-                    <pre>    <span class="co-y">Right child</span> is rank <span class="co-m">2i + 1</span></pre>
-                    <pre>No links nor leaves</pre>
-                    <pre>Last node is at rank <span class="co-m">n</span></pre>
-                    <pre>    <span class="co-kg">insertItem</span> inserts at rank <span class="co-m">n + 1</span></pre>
-                    <pre>    <span class="co-kg">removeMin</span> removes at rank <span class="co-m">n</span></pre>
-                    <pre>        Swap root with last node</pre>
-                    <pre>In-place Heap-sort</pre>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Vector-based Heap</p>
+                <pre>Heap with <span class="co-m">n</span> keys uses vector of length <span class="co-m">n + 1</span></pre>
+                <pre>    <span class="co-o">{Start at index 1}</span></pre>
+                <pre>Node at rank <span class="co-m">i</span>:</pre>
+                <pre>    <span class="co-y">Left child</span> is rank <span class="co-m">2i</span></pre>
+                <pre>    <span class="co-y">Right child</span> is rank <span class="co-m">2i + 1</span></pre>
+                <pre>No links nor leaves</pre>
+                <pre>Last node is at rank <span class="co-m">n</span></pre>
+                <pre>    <span class="co-kg">insertItem</span> inserts at rank <span class="co-m">n + 1</span></pre>
+                <pre>    <span class="co-kg">removeMin</span> removes at rank <span class="co-m">n</span></pre>
+                <pre>        Swap root with last node</pre>
+                <pre>In-place Heap-sort</pre>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Bottom-Up Heap Construction</p>
-                    <pre>All keys already known:</pre>
-                    <pre>    Build heap recursively</pre>
-                    <pre><span class="co-o">{A heap with only the root node has HEIGHT 1}</span></pre>
-                    <pre>Example:</pre>
-                    <pre>    Number of keys <span class="co-m">n</span> <span class="co-o">=</span> <span class="co-m">2<sup class="co-c">h</sup> - 1</span> (Complete Heap)</pre>
-                    <pre>    Each depth <span class="co-m">i</span> <span class="co-o">=</span> <span class="co-m">0,...,h - 2</span> has <span class="co-m">2<sup class="co-c">i</sup></span> internal nodes</pre>
-                    <pre>Build heap bottom-up with <span class="co-m">log(n)</span> phases</pre>
-                    <pre>Phase <span class="co-m">i</span>:</pre>
-                    <pre>    Pairs of heaps with <span class="co-m">2<sup class="co-c">i</sup> - 1</span> keys are merged with <span class="co-m">2<sup class="co-c">i+1</sup> - 1</span> keys</pre>
-                    <pre>    <span class="co-o">{Each sub-heap has this property}</span></pre>
-<h5 class="text-center co-c">Bottom-Up Heap</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Bottom-Up Heap Construction</p>
+                <pre>All keys already known:</pre>
+                <pre>    Build heap recursively</pre>
+                <pre><span class="co-o">{A heap with only the root node has HEIGHT 1}</span></pre>
+                <pre>Example:</pre>
+                <pre>    Number of keys <span class="co-m">n</span> <span class="co-o">=</span> <span class="co-m">2<sup class="co-c">h</sup> - 1</span> (Complete Heap)</pre>
+                <pre>    Each depth <span class="co-m">i</span> <span class="co-o">=</span> <span class="co-m">0,...,h - 2</span> has <span class="co-m">2<sup class="co-c">i</sup></span> internal nodes</pre>
+                <pre>Build heap bottom-up with <span class="co-m">log(n)</span> phases</pre>
+                <pre>Phase <span class="co-m">i</span>:</pre>
+                <pre>    Pairs of heaps with <span class="co-m">2<sup class="co-c">i</sup> - 1</span> keys are merged with <span class="co-m">2<sup class="co-c">i+1</sup> - 1</span> keys</pre>
+                <pre>    <span class="co-o">{Each sub-heap has this property}</span></pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Bottom-Up Heap</h5>
+<div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -610,17 +672,22 @@ echo str_replace($lookFor, $replaceWith, $STRING); ?>
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Merging Two Heaps</p>
-                    <pre>We are given two heaps and a key <span class="co-m">k</span></pre>
-                    <pre>Create new heap with <span class="co-c">Root Node</span> storing <span class="co-m">k</span> and with two heaps as subtrees</pre>
-                    <pre>Perform <span class="co-kg">downheap</span> to restore heap-order</pre>
-<h5 class="text-center co-c">Example</h5>
-<div class="exBoxCyan mb-4 ml-4" style="margin: auto;">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Merging Two Heaps</p>
+                <pre>We are given two heaps and a key <span class="co-m">k</span></pre>
+                <pre>Create new heap with <span class="co-c">Root Node</span> storing <span class="co-m">k</span> and with two heaps as subtrees</pre>
+                <pre>Perform <span class="co-kg">downheap</span> to restore heap-order</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example</h5>
+<div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -712,36 +779,34 @@ HEAPIFY (SWAP 10/4, 10/5, 10/7)
 <p class="% ml-2 mb-2"></p>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Analysis</p>
-                    <pre>Worst-Case of <span class="co-kg">downheap</span> with <span class="co-y">proxy path</span></pre>
-                    <pre>    Goes right then left until bottom of heap</pre>
-                    <pre>Each node is traversed by at most two <span class="co-y">proxy paths</span></pre>
-                    <pre>    Total number of nodes of proxy paths is <span class="co-m">O(n)</span></pre>
-                    <pre>Bottom-Up heap construction is <span class="co-m">O(n)</span> time</pre>
-                    <pre>    Faster than <span class="co-m">n</span> successive insertions</pre>
-                    <pre>    Speeds up first phase of heap-sort</pre>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Analysis</p>
+                <pre>Worst-Case of <span class="co-kg">downheap</span> with <span class="co-y">proxy path</span></pre>
+                <pre>    Goes right then left until bottom of heap</pre>
+                <pre>Each node is traversed by at most two <span class="co-y">proxy paths</span></pre>
+                <pre>    Total number of nodes of proxy paths is <span class="co-m">O(n)</span></pre>
+                <pre>Bottom-Up heap construction is <span class="co-m">O(n)</span> time</pre>
+                <pre>    Faster than <span class="co-m">n</span> successive insertions</pre>
+                <pre>    Speeds up first phase of heap-sort</pre>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 d-flex mb-4 pl-5 pr-5 justify-content-between">
-                    <a href=".\DictionaryHashTable.php" style="display: inline-block;">Dictionary Hash Tables</a>
-                    <a href=".\BinaryTreeOrdDict.php" style="display: inline-block;">Binary Trees/Ord Dictionary</a>
-                </div>
+        <div class="row">
+            <div class="col-12 d-flex mb-4 mt-5 pl-5 pr-5 justify-content-between">
+                <a href="./DictionaryHashTable.php" style="display: inline-block;">Dictionary Hash Tables</a>
+                <a href="./BinaryTreeOrdDict.php" style="display: inline-block;">Binary Trees/Ord Dictionary</a>
             </div>
-		</div>
-		</div>
-		</div>
+        </div>
+	</div>
 
 	<?php
 		require_once("$headerData[Path]inc/php/fringes/footer.inc.php");
+        require_once("$headerData[Path]inc/php/fringes/required.inc.php");
 	?>
 
 </body>
-
 </html>

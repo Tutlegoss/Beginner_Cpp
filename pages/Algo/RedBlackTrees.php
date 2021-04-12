@@ -5,10 +5,8 @@
 	$article = "Red Black Trees";
 	require_once("../../inc/php/fringes/header.inc.php");
 
-    $redBlack = "<span style='color: #880000;'>Red-</span><span class='redBlackTreeHighlight'>Black</span>";
+    $redBlack = "<span style='font-weight: bold; color: #880000;'>Red-</span><span class='redBlackTreeHighlight'>Black</span>";
 ?>
-	<title><?php echo $headerData["Title"]; ?></title>
-	<meta name="description" content="<?php echo $headerData["Description"]; ?>">
 
 </head>
 
@@ -16,35 +14,40 @@
 
 	<?php require_once("$headerData[Path]inc/php/fringes/navbar.inc.php"); ?>
 
-		<div class="container-fluid">
+	<div class="container-fluid">
+		<div class="row mt-4">
+		    <div class="col-12">
+			    <h2 class="heading mt-3 text-center">Red-Black Trees</h2>
+            </div>
+        </div>
+
 		<div class="row">
-		<div id="article" class="col-12">
-            <div class="row mt-3">
-			    <h2 class="col-12 heading mt-3 text-center">Red-Black Trees</h2>
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ml-4">(2,4) Trees</h3>
+        		<hr>
             </div>
+        </div>
 
-			<div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">(2,4) Trees</h3>
-            		<hr>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="ml-4">- Multi-way tree
+                    <br>
+                    - Internal node has <span class="co-m">k</span> children
+                    <br>
+                    - Internal node stores <span class="co-m">k-1</span> elements
+                    <br>
+                    - <span class="co-kg">Node-Size Property</span>: Internal nodes have at most 4 children
+                    <br>
+                    - <span class="co-kg">Depth Property</span>: External nodes have the same depth
+                    <br>
+                    - Internal nodes are called by # of children: 2-node, 3-node, 4-node
+                </p>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="ml-4">- Multi-way tree
-                        <br>
-                        - Internal node has <span class="co-m">k</span> children
-                        <br>
-                        - Internal node stores <span class="co-m">k-1</span> elements
-                        <br>
-                        - <span class="co-kg">Node-Size Property</span>: Internal nodes have at most 4 children
-                        <br>
-                        - <span class="co-kg">Depth Property</span>: External nodes have the same depth
-                        <br>
-                        - Internal nodes are called by # of children: 2-node, 3-node, 4-node
-                    </p>
-                    <h5 class="text-center co-c">Example (2,4) Tree</h5>
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example (2,4) Tree</h5>
 <div class="exBoxCyan ml-4 mb-4" style="margin: auto;">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -63,27 +66,32 @@
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4"><?php echo $redBlack; ?> Trees</h3>
-            		<hr>
-                </div>
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ml-4"><?php echo $redBlack; ?> Trees</h3>
+        		<hr>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="ml-4">- Representation of a (2,4) tree via a binary tree
-                        <br>
-                        - Nodes are colored <span class="co-r">red</span> or <span class="redBlackTreeHighlight">black</span> children
-                        <br>
-                        - Same logarithmic time performance as (2,4)
-                        <br>
-                        - Simpler implementation (single node type) as (2,4)
-                    </p>
-                    <h5 class="text-center co-c">Translation Example</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="ml-4">- Representation of a (2,4) tree via a binary tree
+                    <br>
+                    - Nodes are colored <span class="co-r">red</span> or <span class="redBlackTreeHighlight">black</span> children
+                    <br>
+                    - Same logarithmic time performance as (2,4)
+                    <br>
+                    - Simpler implementation (single node type) as (2,4)
+                </p>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Translation Example</h5>
 <div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -107,24 +115,29 @@
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Color Properties</p>
-                    <br>
-                    <pre><span class="co-kg">Root Property</span>:</pre>
-                    <pre>    Root is <span class="blackHighlight">Black</span></pre>
-                    <pre><span class="co-kg">External Property</span>:</pre>
-                    <pre>    Every leaf is <span class="blackHighlight">black</span></pre>
-                    <pre><span class="co-kg">Internal Property</span>:</pre>
-                    <pre>    Children of a <span class="co-r">red</span> node are <span class="blackHighlight">Black</span></pre>
-                    <pre><span class="co-kg">Depth Property</span>:</pre>
-                    <pre>    All leaves have same <span class="blackHighlight">Black</span> depth</pre>
-                    <pre>    <span class="blackHighlight">Black</span> depth of node is # of <span class="blackHighlight">Black</span> nodes from [<span class="co-c">node</span> to <span class="co-c">root</span>] inclusive</pre>
-                    <pre>    Every path from root to any external node has the same # of <span class="blackHighlight">Black</span> nodes</pre>
-                    <h5 class="text-center co-c">Example</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Color Properties</p>
+                <br>
+                <pre><span class="co-kg">Root Property</span>:</pre>
+                <pre>    Root is <span class="blackHighlight">Black</span></pre>
+                <pre><span class="co-kg">External Property</span>:</pre>
+                <pre>    Every leaf is <span class="blackHighlight">black</span></pre>
+                <pre><span class="co-kg">Internal Property</span>:</pre>
+                <pre>    Children of a <span class="co-r">red</span> node are <span class="blackHighlight">Black</span></pre>
+                <pre><span class="co-kg">Depth Property</span>:</pre>
+                <pre>    All leaves have same <span class="blackHighlight">Black</span> depth</pre>
+                <pre>    <span class="blackHighlight">Black</span> depth of node is # of <span class="blackHighlight">Black</span> nodes from [<span class="co-c">node</span> to <span class="co-c">root</span>] inclusive</pre>
+                <pre>    Every path from root to any external node has the same # of <span class="blackHighlight">Black</span> nodes</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Example</h5>
 <div class="exBoxKelly">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -152,16 +165,21 @@
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Height of <?php echo $redBlack; ?> tree</p>
-                    <br>
-                    <pre><span class="co-y">Theorem</span>:</pre>
-                    <pre>    A <?php echo $redBlack; ?> tree storing <span class="co-m">n</span> has height <span class="co-m">O(log(n))</span></pre>
-                    <h5 class="text-center co-c">Proof:</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Height of <?php echo $redBlack; ?> tree</p>
+                <br>
+                <pre><span class="co-y">Theorem</span>:</pre>
+                <pre>    A <?php echo $redBlack; ?> tree storing <span class="co-m">n</span> has height <span class="co-m">O(log(n))</span></pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Proof:</h5>
 <div class="exBoxPurple">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -197,18 +215,23 @@
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Insertion</p>
-                    <br>
-                    <pre>Use BST insertion algorithm</pre>
-                    <pre>Color <span class="co-r">red</span> the newly inserted node <span class="co-m">Z</span>...</pre>
-                    <pre>    Unless it is <span class="co-c">root</span></pre>
-                    <pre>Have to preserve the <span class="co-kg">root, external, depth properties</span></pre>
-                    <h5 class="text-center co-c">Case 1:</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Insertion</p>
+                <br>
+                <pre>Use BST insertion algorithm</pre>
+                <pre>Color <span class="co-r">red</span> the newly inserted node <span class="co-m">Z</span>...</pre>
+                <pre>    Unless it is <span class="co-c">root</span></pre>
+                <pre>Have to preserve the <span class="co-kg">root, external, depth properties</span></pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Case 1:</h5>
 <div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -248,8 +271,12 @@ Change the node where <span class="co-c">Z</span> is to <span class="co-r">Red</
 </tr></tbody></table>
 </figure>
 </div>
+            </div>
+        </div>
 
-                    <h5 class="text-center co-c mt-4">Case 2:</h5>
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c mt-4">Case 2:</h5>
 <div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -290,31 +317,36 @@ Insert <span class="co-m">4</span>
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Fixing Double Red</h3>
-            		<hr>
-                </div>
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ml-4">Fixing Double Red</h3>
+        		<hr>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="ml-4">- Consider a <span class="co-r">double red</span> with
-                        <br>
-                        - Child <span class="co-m">Z</span>
-                        <br>
-                        - Parent <span class="co-m">P</span> of <span class="co-m">Z</span>
-                        <br>
-                        - Sibling <span class="co-m">W</span> of <span class="co-m">P</span>
-                        <br>
-                        - Parent <span class="co-m">U</span> of <span class="co-m">W,P</span>
-                        <br>
-                        <span class="co-o">{NOTE: Dangling edge examples are subtrees}</span>
-                    </p>
-                    <h5 class="text-center co-c">Case 1:</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="ml-4">- Consider a <span class="co-r">double red</span> with
+                    <br>
+                    - Child <span class="co-m">Z</span>
+                    <br>
+                    - Parent <span class="co-m">P</span> of <span class="co-m">Z</span>
+                    <br>
+                    - Sibling <span class="co-m">W</span> of <span class="co-m">P</span>
+                    <br>
+                    - Parent <span class="co-m">U</span> of <span class="co-m">W,P</span>
+                    <br>
+                    <span class="co-o">{NOTE: Dangling edge examples are subtrees}</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c">Case 1:</h5>
 <div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -424,8 +456,12 @@ All four cases restructure to:
 </tr></tbody></table>
 </figure>
 </div>
+            </div>
+        </div>
 
-                    <h5 class="text-center co-c mt-4">Case 2:</h5>
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c mt-4">Case 2:</h5>
 <div class="exBoxCyan">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -468,22 +504,27 @@ Recoloring of above <?php echo $redBlack; ?> tree:
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Analysis of Insertion</p>
-                    <br>
-                    <pre><?php echo $redBlack; ?> tree has <span class="co-m">O(log(n))</span> height</pre>
-                    <pre>1) takes <span class="co-m">O(log(n))</span> time</pre>
-                    <pre>    As we visit <span class="co-m">O(log(n))</span> nodes</pre>
-                    <pre>2) Takes <span class="co-m">O(1)</span> time</pre>
-                    <pre>3) Takes <span class="co-m">O(log(n))</span> time, because:</pre>
-                    <pre>    <span class="co-m">O(log(n))</span> recolorings each taking <span class="co-m">O(1)</span> time</pre>
-                    <pre>    At most one restructuring taking <span class="co-m">O(1)</span> time</pre>
-                    <pre>So, insertion is a <?php echo $redBlack; ?> tree takes <span class="co-m">O(log(n))</span> time</pre>
-                    <h5 class="text-center co-c mt-4">Algorithm:</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Analysis of Insertion</p>
+                <br>
+                <pre><?php echo $redBlack; ?> tree has <span class="co-m">O(log(n))</span> height</pre>
+                <pre>1) takes <span class="co-m">O(log(n))</span> time</pre>
+                <pre>    As we visit <span class="co-m">O(log(n))</span> nodes</pre>
+                <pre>2) Takes <span class="co-m">O(1)</span> time</pre>
+                <pre>3) Takes <span class="co-m">O(log(n))</span> time, because:</pre>
+                <pre>    <span class="co-m">O(log(n))</span> recolorings each taking <span class="co-m">O(1)</span> time</pre>
+                <pre>    At most one restructuring taking <span class="co-m">O(1)</span> time</pre>
+                <pre>So, insertion is a <?php echo $redBlack; ?> tree takes <span class="co-m">O(log(n))</span> time</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c mt-4">Algorithm:</h5>
 <div class="exBoxPurple">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -504,28 +545,33 @@ Recoloring of above <?php echo $redBlack; ?> tree:
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4">Fixing <span class="blackHighlight">double black</span></h3>
-            		<hr>
-                </div>
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ml-4">Fixing <span class="blackHighlight">double black</span></h3>
+        		<hr>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Deletion</p>
-                    <br>
-                    <pre> Deletion takes <span class="co-m">O(log(n))</span> time</pre>
-                    <pre>Use deletion algorithm for BST</pre>
-                    <pre>    Delete internal node <span class="co-t">P</span> and its external whild <span class="co-y">W</span></pre>
-                    <pre>    Let <span class="co-m">R</span> be the sibling of <span class="co-y">W</span></pre>
-                    <pre>If <span class="co-t">P</span> or <<span class="co-m">R</span> is <span class="co-r">Red</span></pre>
-                    <pre>    Color <span class="co-m">R</span> <span class="blackHighlight">Black</span></pre>
-                    <pre><span class="co-o">{If deleted node has two internal children, find next internal node using in-order traversal and swap values. Next internal node in-order will always have at least one external child}</span></pre>
-                    <h5 class="text-center co-c mt-4">Example:</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Deletion</p>
+                <br>
+                <pre>Deletion takes <span class="co-m">O(log(n))</span> time</pre>
+                <pre>Use deletion algorithm for BST</pre>
+                <pre>    Delete internal node <span class="co-t">P</span> and its external whild <span class="co-y">W</span></pre>
+                <pre>    Let <span class="co-m">R</span> be the sibling of <span class="co-y">W</span></pre>
+                <pre>If <span class="co-t">P</span> or <<span class="co-m">R</span> is <span class="co-r">Red</span></pre>
+                <pre>    Color <span class="co-m">R</span> <span class="blackHighlight">Black</span></pre>
+                <pre><span class="co-o">{If deleted node has two internal children, find next internal node using in-order traversal and swap values. Next internal node in-order will always have at least one external child}</span></pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c mt-4">Example:</h5>
 <div class="exBoxCyan mb-4">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -599,11 +645,21 @@ Turns into this <?php echo $redBlack; ?> tree:
 </tr></tbody></table>
 </figure>
 </div>
-                    <pre>Another situation (if above does not hold):</pre>
-                    <pre>    <span class="co-t">P</span>, <span class="co-m">R</span> are <span class="blackHighlight">Black</span></pre>
-                    <pre>        Color <span class="co-m">R</span> <span class="blackHighlight">Double Black</span></pre>
-                    <pre>        Reorganize the tree</pre>
-                    <h5 class="text-center co-c mt-4">Example:</h5>
+            </div>
+        </div>
+
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <pre>Another situation (if above does not hold):</pre>
+                <pre>    <span class="co-t">P</span>, <span class="co-m">R</span> are <span class="blackHighlight">Black</span></pre>
+                <pre>        Color <span class="co-m">R</span> <span class="blackHighlight">Double Black</span></pre>
+                <pre>        Reorganize the tree</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c mt-4">Example:</h5>
 <div class="exBoxCyan mb-4">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -645,22 +701,32 @@ Turns into this <?php echo $redBlack; ?> tree:
 </tr></tbody></table>
 </figure>
 </div>
-                    <pre>By removing two <span class="blackHighlight">Black</span> nodes</pre>
-                    <pre>    The <span class="blackHighlight">Black</span> depth is altered</pre>
-                    <pre>Fixing this <span class="blackHighlight">Double Black</span></pre>
-                    <pre>    Many cases to consider (akin to <span class="co-r">Double Red</span>)</pre>
-                </div>
             </div>
+        </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="algoNotesPara col-12 col-md-10">
-                    <p class="co-c text-center">Fixing a Double Black</p>
-                    <br>
-                    <pre>Parent <span class="co-m">P</span></pre>
-                    <pre>Sibling <span class="co-m">Y</span> of <span class="co-m">R</span></pre>
-                    <pre>Child <span class="co-m">Z</span> of <span class="co-m">Y</span></pre>
-                    <pre>There are three cases</pre>
-                    <h5 class="text-center co-c mt-4">Case 1:</h5>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <pre>By removing two <span class="blackHighlight">Black</span> nodes</pre>
+                <pre>    The <span class="blackHighlight">Black</span> depth is altered</pre>
+                <pre>Fixing this <span class="blackHighlight">Double Black</span></pre>
+                <pre>    Many cases to consider (akin to <span class="co-r">Double Red</span>)</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Fixing a Double Black</p>
+                <br>
+                <pre>Parent <span class="co-m">P</span></pre>
+                <pre>Sibling <span class="co-m">Y</span> of <span class="co-m">R</span></pre>
+                <pre>Child <span class="co-m">Z</span> of <span class="co-m">Y</span></pre>
+                <pre>There are three cases</pre>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c mt-4">Case 1:</h5>
 <div class="exBoxCyan mb-4">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -701,8 +767,12 @@ Turns into this <?php echo $redBlack; ?> tree:
 </tr></tbody></table>
 </figure>
 </div>
+            </div>
+        </div>
 
-                    <h5 class="text-center co-c mt-4">Case 2:</h5>
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+                <h5 class="text-center co-c mt-4">Case 2:</h5>
 <div class="exBoxCyan mb-4">
 <figure class="code">
 <table class="table borderless my-auto">
@@ -744,36 +814,45 @@ Turns into this <?php echo $redBlack; ?> tree:
 </tr></tbody></table>
 </figure>
 </div>
-
-                    <p class="co-c text-center">Case 3:</p>
-                    <br>
-                    <pre><span class="co-t">Y</span> is <span class="co-r">Red</span></pre>
-                    <pre>Perform an <span class="co-y">Adjustment</span></pre>
-                    <pre>    After, either <span class="co-c">Case 1</span> or <span class="co-c">Case 2</span> applies</pre>
-                    <p class="co-c text-center mt-4">Misc:</p>
-                    <br>
-                    <pre>More cases than <span class="co-r">Double Red</span> (not covered)</pre>
-                    <pre>    Not complicated, but tedious</pre>
-                    <pre>Be able to find and insert into a <?php echo $redBlack; ?> tree</pre>
-                    <pre>For Deletion, know that it takes <span class="co-m">O(log(n))</span></pre>
-                    <pre>    Due to height of the tree</pre>
-                    <pre>    Easy removal if child is <span class="co-r">Red</span></pre>
-                    <pre>    Either perform <span class="co-y">Restructuring</span></pre>
-                    <pre>    Or <span class="co-y">Recoloring</span> (may propogate up)</pre>
-                    <pre>    Or an <span class="co-y">Adjustment</span></pre>
-                </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12 mt-4 mb-4">
-                    <h3 class="heading ml-4"><?php echo $redBlack; ?> Reorganization</h3>
-                    <hr>
-                </div>
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c">Case 3:</p>
+                <br>
+                <pre><span class="co-t">Y</span> is <span class="co-r">Red</span></pre>
+                <pre>Perform an <span class="co-y">Adjustment</span></pre>
+                <pre>    After, either <span class="co-c">Case 1</span> or <span class="co-c">Case 2</span> applies</pre>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="algoNotesPara col-12 col-md-10">
-<div class="exBoxKelly mb-4 ml-4" style="margin: auto;">
+        <div class="row mb-4 pl-md-4">
+            <div class="algoNotesPara col-md-9 col-12">
+                <p class="co-c mt-4">Misc:</p>
+                <br>
+                <pre>More cases than <span class="co-r">Double Red</span> (not covered)</pre>
+                <pre>    Not complicated, but tedious</pre>
+                <pre>Be able to find and insert into a <?php echo $redBlack; ?> tree</pre>
+                <pre>For Deletion, know that it takes <span class="co-m">O(log(n))</span></pre>
+                <pre>    Due to height of the tree</pre>
+                <pre>    Easy removal if child is <span class="co-r">Red</span></pre>
+                <pre>    Either perform <span class="co-y">Restructuring</span></pre>
+                <pre>    Or <span class="co-y">Recoloring</span> (may propogate up)</pre>
+                <pre>    Or an <span class="co-y">Adjustment</span></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h3 class="heading ml-4"><?php echo $redBlack; ?> Reorganization</h3>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row mb-4 justify-content-center">
+            <div class="col-auto">
+<div class="exBoxKelly">
 <figure class="code">
 <table class="table borderless my-auto">
 <tbody><tr>
@@ -793,24 +872,21 @@ DELETION (Fix <span class="blackHighlight">double black</span>)
 </tr></tbody></table>
 </figure>
 </div>
-                </div>
             </div>
+        </div>
 
-
-            <div class="row">
-                <div class="col-12 d-flex mb-4 pl-5 pr-5 justify-content-between">
-                    <a href=".\BinaryTreeOrdDict.php" style="display: inline-block;">Binary Trees/Ordered Dicts</a>
-                    <a href=".\MergeQuickSelection.php" style="display: inline-block;">Sorting (Merge/Quick/Selection)</a>
-                </div>
+        <div class="row">
+            <div class="col-12 d-flex mb-4 mt-5 pl-5 pr-5 justify-content-between">
+                <a href="./BinaryTreeOrdDict.php" style="display: inline-block;">Binary Trees/Ordered Dicts</a>
+                <a href="./MergeQuickSelection.php" style="display: inline-block;">Sorting (Merge/Quick/Selection)</a>
             </div>
-		</div>
-		</div>
-		</div>
+        </div>
+	</div>
 
 	<?php
 		require_once("$headerData[Path]inc/php/fringes/footer.inc.php");
+        require_once("$headerData[Path]inc/php/fringes/required.inc.php");
 	?>
 
 </body>
-
 </html>

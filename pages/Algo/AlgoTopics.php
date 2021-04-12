@@ -88,7 +88,7 @@
             </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-5">
             <div class="col-11 col-sm-8 col-md-7 text-center">
                 <a href="./MergeQuickSelection.php" id="<?php echo "btn" . strval($idNum++) ?>" class="dirBtn dirBtnGrn btn-push btn-push-grn mb-4">
                     Sets <br>
