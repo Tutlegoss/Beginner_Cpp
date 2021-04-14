@@ -94,7 +94,7 @@
                         <tr>
                             <td class="marioKartNameSdw">Mach 8</td>
                             <td><i class="mario-grn fas fa-flag-checkered"></i></td>
-                            <td><i class="mario-red fas fa-flag"></i></td>
+                            <td><i class="mario-grn fas fa-flag-checkered"></i></td>
                             <td><i class="mario-red fas fa-flag"></i></td>
                         </tr>
                         <tr>
@@ -120,13 +120,13 @@
                             <td rowspan="2"><span class="marioKartNameSdw" style="color: rgb(193 67 89)">Peach</span></td>
                             <td class="marioKartNameSdw">Standard</td>
                             <td><i class="mario-grn fas fa-flag-checkered"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
+                            <td><i class="mario-grn fas fa-flag-checkered"></i></td>
+                            <td><i class="mario-red fas fa-flag"></i></td>
                         </tr>
                         <tr>
                             <td class="marioKartNameSdw">P-Wing</td>
                             <td><i class="mario-grn fas fa-flag-checkered"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
+                            <td><i class="mario-red fas fa-flag"></i></td>
                             <td><i class="co-sdw fas fa-car-crash"></i></td>
                         </tr>
                         <tr>
@@ -147,7 +147,7 @@
                             <td class="marioKartNameSdw">B-Dasher</td>
                             <td><i class="mario-grn fas fa-flag-checkered"></i></td>
                             <td><i class="co-sdw fas fa-car-crash"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
+                            <td><i class="mario-red fas fa-flag"></i></td>
                         </tr>
                         <tr>
                             <td class="marioKartNameSdw">mach 8</td>
@@ -173,20 +173,20 @@
                             <td class="marioKartNameSdw">Standard</td>
                             <td><i class="co-sdw fas fa-car-crash"></i></td>
                             <td><i class="mario-grn fas fa-flag-checkered"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
+                            <td><i class="mario-red fas fa-flag"></i></td>
                         </tr>
                         <tr>
                             <td rowspan="1"><span class="marioKartNameSdw" style="color: rgb(103 35 74)">Wario</span></td>
                             <td class="marioKartNameSdw">Standard</td>
                             <td><i class="mario-grn fas fa-flag-checkered"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
+                            <td><i class="mario-red fas fa-flag"></i></td>
+                            <td><i class="mario-red fas fa-flag"></i></td>
                         </tr>
                         <tr>
                             <td rowspan="1"><span class="marioKartNameSdw" style="color: rgb(100 42 78)">Waluigi</span></td>
                             <td class="marioKartNameSdw">Bandwagon</td>
                             <td><i class="co-sdw fas fa-car-crash"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
+                            <td><i class="mario-red fas fa-flag"></i></td>
                             <td><i class="mario-grn fas fa-flag-checkered"></i></td>
                         </tr>
                         <tr>
@@ -194,7 +194,7 @@
                             <td class="marioKartNameSdw">Bandwagon</td>
                             <td><i class="co-sdw fas fa-car-crash"></i></td>
                             <td><i class="mario-grn fas fa-flag-checkered"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
+                            <td><i class="mario-red fas fa-flag"></i></td>
                         </tr>
                         <tr>
                             <td rowspan="2"><span class="marioKartNameSdw" style="color: rgb(107 32 27)">Shy Guy</span></td>
@@ -213,14 +213,14 @@
                             <td rowspan="1"><span class="marioKartNameSdw" style="color: rgb(61 86 31)">Koopa Troopa</span></td>
                             <td class="marioKartNameSdw">Circuit Special</td>
                             <td><i class="mario-grn fas fa-flag-checkered"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
+                            <td><i class="mario-red fas fa-flag"></i></td>
+                            <td><i class="mario-red fas fa-flag"></i></td>
                         </tr>
                         <tr>
                             <td rowspan="1"><span class="marioKartNameSdw" style="color: rgb(128 128 128)">Dry Bones</span></td>
                             <td class="marioKartNameSdw">Circuit Special</td>
                             <td><i class="mario-grn fas fa-flag-checkered"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
+                            <td><i class="mario-red fas fa-flag"></i></td>
                             <td><i class="co-sdw fas fa-car-crash"></i></td>
                         </tr>
                         <tr>
@@ -233,7 +233,7 @@
                         <tr>
                             <td class="marioKartNameSdw">Sports Coupe</td>
                             <td><i class="mario-grn fas fa-flag-checkered"></i></td>
-                            <td><i class="co-sdw fas fa-car-crash"></i></td>
+                            <td><i class="mario-red fas fa-flag"></i></td>
                             <td><i class="co-sdw fas fa-car-crash"></i></td>
                         </tr>
                         <tr>

@@ -71,7 +71,7 @@
                                 <a class="dropdown-item" href="<?php echo $headerData["Path"]; ?>pages/Catalog/Catalogs.php">Menu</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="<?php echo $headerData["Path"]; ?>pages/Catalog/MarioFiguresCatalog.php">Mario Jakks Pacific</a>
+                                <a class="dropdown-item" href="<?php echo $headerData["Path"]; ?>pages/Catalog/MarioWarning.php">Mario Jakks Pacific</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?php echo $headerData["Path"]; ?>pages/Catalog/MarioKartCatalog.php">Mario Hot Wheels</a>

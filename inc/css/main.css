@@ -345,6 +345,12 @@ footer p {
 /* -------------------- Links LVFHA -------------------- */
 a:link {
 	color: var(--ex-ylw);
+    text-decoration: underline;
+}
+
+.navbar a:link,
+a.btn:link {
+    text-decoration: none;
 }
 
 a:visited {
@@ -557,6 +563,10 @@ button#toggler {
 	color: var(--red);
     background: var(--blk);
     background: rgb(0 0 0 / 0.4);
+}
+
+.cancel:visited {
+    color: var(--red);
 }
 
 .cancel:hover {
