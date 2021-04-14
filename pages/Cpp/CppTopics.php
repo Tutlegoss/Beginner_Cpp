@@ -3,7 +3,7 @@
     session_start();
 
 	$article = "C++ Topics";
-	require_once("../../inc/php/Fringes/header.inc.php");
+	require_once("../../inc/php/fringes/header.inc.php");
 
     $pdfLocation = "window.location.href='$headerData[Path]inc/cppPDF/";
     $idNum = 0;
