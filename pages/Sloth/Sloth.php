@@ -51,6 +51,11 @@
             margin-right: 1rem;
             padding-bottom: 1rem;
         }
+        .figNormal {
+            width: 310px;
+            height: auto;
+            margin: auto;
+        }
         @media only screen and (max-width: 575.98px)
         {
             .figLeft {
@@ -59,7 +64,8 @@
             }
         }
 
-        .figLeft img {
+        .figLeft img,
+        .figNormal img {
             width: 310px;
             height: auto;
             cursor: pointer;
@@ -204,19 +210,7 @@
                         Fig. 3. <em>Ground Sloth height comparison</em>. Prehistoric Wildlife, <a href="http://www.prehistoric-wildlife.com/species/m/megalonyx.html">Megalonyx</a>
                     </figcaption>
                 </figure>
-                <figure class="figLeft">
-                    <img src="./Skeleton.jpg" data-toggle="modal" data-target="#Modal4">
-                    <figcaption class="text-center">
-                        Fig. 4. <em>Megalonyx skeleton</em>. Sankar, Vijay, <a href="https://www.google.com/maps/uv?pb=!1s0x88388ebf075c152d%3A0x839ef9937149e1d4!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNW5NhciAs2PS06kh3wU6SWsFtMHvyyMU__Qv5t%3Dw266-h200-k-no!5sGeological%20Museum%20of%20the%20Ohio%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipNW5NhciAs2PS06kh3wU6SWsFtMHvyyMU__Qv5t&hl=en&sa=X&ved=2ahUKEwiZ47rVxoTwAhWKaM0KHTYrC8MQoiowFHoECB0QAw"><em>Megalonyx Skeleton</em></a>. Orton Geological Museum, October 2019.
-                    </figcaption>
-                </figure>
-                <figure class="figLeft" style="clear: left">
-                    <img src="./ZooSloth.jpg" data-toggle="modal" data-target="#Modal5">
-                    <figcaption class="text-center">
-                        Fig. 5. <em>Megalonyx skeleton</em>. Katy, <a href="https://kccd.wordpress.com/2013/08/19/oops-i-ignored-july-part-two-ui-natural-history-museum/"><em>Giant Ground Sloth</em></a>. <a href="https://mnh.uiowa.edu/ice-age-giant-ground-sloth">University of Iowa Museum of Natural History</a>, 19 August 2013.
-                    </figcaption>
-                </figure>
-                <p class="m-0">
+                <p class="pb-4">
                     The <em class="co-c">Megalonyx</em> is of average size in terms of giant sloths coming in at most 9.8 feet long and up to 2,200 pounds. Figure 3 illustrates the height comparisons of each sloth (on average) and includes a human as a reference <span class="kentBlue">(Bradford)</span>. We see that the height is formidable due
                     to the sloths ability to stand on their flat-footed hind legs.
                     <br>
@@ -230,6 +224,24 @@
                     <br>
                     They were covered in fur for environmental protection.
                 </p>
+                <div class="row">
+                    <div class="col-12 pb-4 pb-md-0 col-md-6">
+                        <figure class="figNormal">
+                            <img src="./Skeleton.jpg" data-toggle="modal" data-target="#Modal4">
+                            <figcaption class="text-center">
+                                Fig. 4. <em>Megalonyx skeleton</em>. Sankar, Vijay, <a href="https://www.google.com/maps/uv?pb=!1s0x88388ebf075c152d%3A0x839ef9937149e1d4!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNW5NhciAs2PS06kh3wU6SWsFtMHvyyMU__Qv5t%3Dw266-h200-k-no!5sGeological%20Museum%20of%20the%20Ohio%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipNW5NhciAs2PS06kh3wU6SWsFtMHvyyMU__Qv5t&hl=en&sa=X&ved=2ahUKEwiZ47rVxoTwAhWKaM0KHTYrC8MQoiowFHoECB0QAw"><em>Megalonyx Skeleton</em></a>. Orton Geological Museum, October 2019.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <figure class="figNormal">
+                            <img src="./ZooSloth.jpg" data-toggle="modal" data-target="#Modal5">
+                            <figcaption class="text-center">
+                                Fig. 5. <em>Megalonyx skeleton</em>. Katy, <a href="https://kccd.wordpress.com/2013/08/19/oops-i-ignored-july-part-two-ui-natural-history-museum/"><em>Giant Ground Sloth</em></a>. <a href="https://mnh.uiowa.edu/ice-age-giant-ground-sloth">University of Iowa Museum of Natural History</a>, 19 August 2013.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
             </div>
         </div>
 
