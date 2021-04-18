@@ -89,13 +89,13 @@
 		<div class="row mt-5 mb-4">
 		    <div class="col-12">
                 <div class="title mx-auto">
-                    <h2 class="text-center p-3 p-md-4">Giant Ground Sloth</h2>
+                    <h2 class="text-center p-3 p-md-4">Megalonyx</h2>
                 </div>
                 <div class="author mx-auto">
                     <p>
                         <span class="kentYellow">Researched by</span>: Landen Marchand
                         <br>
-                        <span class="pl-5">Edited: 17/Apr/2021</span>
+                        <span class="pl-5 kentYellow">Edited</span>: 17/Apr/2021
                     </p>
                 </div>
             </div>
@@ -108,10 +108,10 @@
                 <p class="m-0">
                     There are several genera of Giant Ground Sloths that have roamed the Americas. The earliest
                     sloths were endemic to South America, and is thought to have island-hopped, or crossed an ephemeral land bridge between South America and the Greater Antilles, to reach North
-                    America <span class="kentBlue">(Delsuc 2)</span>. The focus of this page is geared toward the <em>Megalonyx</em> which resided in
-                    Ohio. The most common species of this genus is the <em>Megalonyx jeffersonii</em>, of which may
+                    America <span class="kentBlue">(Delsuc 2)</span>. The focus of this page is geared toward the <em class="co-c">Megalonyx</em> which resided in
+                    Ohio. The most common species of this genus is the <em class="co-c">Megalonyx jeffersonii</em>, of which may
                     have an unexpected founder. Let's take a look at the life, actions, and physical features of the
-                    <em>Megalonyx</em>, as well as how this genus compares with other sloth genera.
+                    <em class="co-c">Megalonyx</em>, as well as how this genus compares with other sloth genera.
                 </p>
             </div>
         </div>
@@ -127,7 +127,7 @@
                     </figcaption>
                 </figure>
                 <p class="m-0">
-                    The <em>Megalonyx</em> lived during the Pleistocene with its demise during the Quaternary extinction event.
+                    The <em class="co-c">Megalonyx</em> lived during the Pleistocene with its demise during the Quaternary extinction event.
                     In terms of years, this falls into the (estimated) range 2.6 mya to 10,000 years ago, which includes
                     the ice age <span class="kentBlue">(Grayson xxi-xxii)</span>. There are two main
                     hypotheses in regards to their extinction: natural climate change, and humans. There has been
@@ -157,7 +157,7 @@
                 <h2 class="header pl-3">Habitat</h2>
         		<hr>
                 <figure class="figLeft">
-                    <img src="./LivingArea.png" data-toggle="modal" data-target="#Modal1">
+                    <img src="./Living.png" data-toggle="modal" data-target="#Modal1">
                     <figcaption class="text-center">
                         Fig. 1. <em>Megalonyx jeffersonii</em>: Ice Age Distribution. Grayson, Donald K., and Wally Woolfenden<em>
                         Giant Sloths and Sabertooth Cats: Extinct Mammals and the Archaeology of the Ice Age Great Basin</em>.
@@ -165,7 +165,7 @@
                     </figcaption>
                 </figure>
                 <p class="m-0">
-                    The <em>Megalonyx</em> lived all throughout North America. This differs from other sloths during this
+                    The <em class="co-c">Megalonyx</em> lived all throughout North America. This differs from other sloths during this
                     time who mostly lived in specific North American regions. Therefore, it is the most wide-ranging of all
                     sloths as remains have been found from Mexico to Alaska <span class="kentBlue">(Grayson)</span>. Figure 1 shows that most lived in the
                     eastern United States with smaller concentrations on the west coast.
@@ -174,7 +174,7 @@
                     <br>
                     As for its environment, they thrived primarily in woodlands and forest where conifers
                     were abundant and spruce being the dominant tree. It seems as if the majority of
-                    <em>Megalonyx</em> resided around the Mississippi River basin. This means that they experienced cool and moist conditions  <span class="kentBlue">(Hoganson 77)</span>.
+                    <em class="co-c">Megalonyx</em> resided around the Mississippi River basin. This means that they experienced cool and moist conditions  <span class="kentBlue">(Hoganson 77)</span>.
                 </p>
             </div>
         </div>
@@ -188,7 +188,7 @@
                         <button type="button" class="btn btnBlue" data-dismiss="modal">Close</button>
                     </div>
                     <div class="modal-body">
-                        <img src="./LivingArea.png" class="d-block w-100" alt="North American Distribution">
+                        <img src="./Living.png" class="d-block w-100" alt="North American Distribution">
                     </div>
                 </div>
             </div>
@@ -217,7 +217,18 @@
                     </figcaption>
                 </figure>
                 <p class="m-0">
-
+                    The <em class="co-c">Megalonyx</em> is of average size in terms of giant sloths coming in at most 9.8 feet long and up to 2,200 pounds. Figure 3 illustrates the height comparisons of each sloth (on average) and includes a human as a reference <span class="kentBlue">(Bradford)</span>. We see that the height is formidable due
+                    to the sloths ability to stand on their flat-footed hind legs.
+                    <br>
+                    <br>
+                    Its forelimbs contained 3 very strong claws used to latch onto trees, especially when consuming vegetation.
+                    In order to eat, their jaws were huge consisting of teeth that continuously grew <span class="kentBlue">(Bradford)</span>.
+                    <br>
+                    <br>
+                    Its nose was blunt, and its tail was stout <span class="kentBlue">(McDonald, 44)</span>.
+                    <br>
+                    <br>
+                    They were covered in fur for environmental protection.
                 </p>
             </div>
         </div>
@@ -251,10 +262,10 @@
 
         <div class="row mb-4 justify-content-center">
             <div class="col-12 col-md-10 col-lg-9 col-xl-7 pt-4 pb-4 slothRow">
-                <h2 class="header pl-3">Preditor/Prey</h2>
+                <h2 class="header pl-3">Life and Diet</h2>
         		<hr>
                 <figure class="figLeft">
-                    <img src="./LivingArea.png" data-toggle="modal" data-target="#Modal1">
+                    <img src="./Living.png" data-toggle="modal" data-target="#Modal1">
                     <figcaption class="text-center">
 
                     </figcaption>
@@ -273,37 +284,7 @@
                         <button type="button" class="btn btnBlue" data-dismiss="modal">Close</button>
                     </div>
                     <div class="modal-body">
-                        <img src="./LivingArea.png" class="d-block w-100" alt="North American Distribution">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mb-4 justify-content-center">
-            <div class="col-12 col-md-10 col-lg-9 col-xl-7 pt-4 pb-4 slothRow">
-                <h2 class="header pl-3">Circle of Life</h2>
-        		<hr>
-                <figure class="figLeft">
-                    <img src="./LivingArea.png" data-toggle="modal" data-target="#Modal1">
-                    <figcaption class="text-center">
-
-                    </figcaption>
-                </figure>
-                <p class="m-0">
-
-                </p>
-            </div>
-        </div>
-
-        <div class="modal fade" id="Modal1" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content" style="background-color: var(--blk);">
-                    <div class="modal-header">
-                        <h5 class="modal-title kentYellow" id="exampleModalLabel"></h5>
-                        <button type="button" class="btn btnBlue" data-dismiss="modal">Close</button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="./LivingArea.png" class="d-block w-100" alt="North American Distribution">
+                        <img src="./Living.png" class="d-block w-100" alt="North American Distribution">
                     </div>
                 </div>
             </div>
@@ -321,8 +302,38 @@
                         <a href="https://ifunny.co/picture/www-ll-15-this-giant-sloth-was-named-after-thomas-el2AeAXZ4">iFunny post</a>, 8 February 2017.
                     </figcaption>
                 </figure>
+                <figure class="figLeft" style="clear: left">
+                    <img src="./JeffersonBones.jpg" data-toggle="modal" data-target="#Modal7">
+                    <figcaption class="text-center">
+                        Fig. 7. <em>Megalonyx Claws</em>. <a href="https://en.wikipedia.org/wiki/Megalonyx"><em>Wikipedia Public Domain</em></a>.
+                </figure>
                 <p class="m-0">
-
+                    What does the third president of the USA have anything to do with the <em class="co-c">Megalonyx</em>?
+                    Figure 6 is not your formal image for a field guide, but it conveys a little-known fact
+                    in a contemporary style.
+                    <br>
+                    <br>
+                    In 1796, Thomas Jefferson was sent bones from Colo. John Stewart. In West Virginia,
+                    mining of <a href="https://en.wikipedia.org/wiki/Niter">nitre</a> allowed for the finding of
+                    <em class="co-c">Megalonyx</em> remains <span class="kentBlue">("Memoir on the Megalonyx," 2002)</span>.
+                    <br>
+                    <br>
+                    Jefferson was sent a radius, ulna (fore-arm), 3 claws, and 6 foot bones. He concluded that the
+                    closest known animal was the lion after the appropriate skeletal comparison  <span class="kentBlue">("Memoir on the Megalonyx," 2002)</span>. He named this
+                    newfound animal the <em class="co-c">Great-claw</em>, which is English for <em class="co-c">Megalonyx</em> in Greek!
+                    <br>
+                    <br>
+                    The most notable characteristic of the <em class="co-c">Great-Claw</em> is the much larger size of its claw versus
+                    the claw of a lion. In fact, the <em class="co-c">Great-Claw</em>'s claw size was 7.5in whereas the lion measured in at
+                    1.41in  <span class="kentBlue">("Memoir on the Megalonyx," 2002)</span>.
+                    <br>
+                    <br>
+                    Eventually, French zoologist Anselme Ga&#xeb;tan Desmarest gave the specific epithet <em class="co-c">jeffersoni</em>
+                    thus creating <em class="co-c">Megalonyx jeffersoni</em>.
+                    <br>
+                    <br>
+                    Lastly, it stands to reason that the official state fossil of West Virginia
+                    is indeed the <em class="co-c">Megalonyx jeffersoni</em>.
                 </p>
             </div>
         </div>
@@ -340,31 +351,51 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="Modal7" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: var(--blk);">
+                    <div class="modal-header">
+                        <h5 class="modal-title kentYellow" id="exampleModalLabel">Claws</h5>
+                        <button type="button" class="btn btnBlue" data-dismiss="modal">Close</button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./JeffersonBones.jpg" class="d-block w-100" alt="First Claws Found">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="row mb-4 justify-content-center">
             <div class="col-12 col-md-10 col-lg-9 col-xl-7 pt-4 pb-4 slothRow">
                 <h2 class="header pl-3">In Ohio</h2>
         		<hr>
                 <figure class="figLeft">
-                    <img src="./OhioMap.gif" data-toggle="modal" data-target="#Modal7">
+                    <img src="./OhioMap.gif" data-toggle="modal" data-target="#Modal8">
                     <figcaption class="text-center">
 
                     </figcaption>
                 </figure>
-                <ul>
-                    <li><i class="fas fa-paw co-m"></i>: Darke</li>
-                    <li><i class="fas fa-paw co-o"></i>: Fairfield</li>
-                    <li><i class="fas fa-paw co-kg"></i>: Holmes</li>
-                    <li><i class="fas fa-paw kentBlue"></i>: Huron</li>
-                </ul>
+                <p class="m-0 pb-2">
+                    There are four locations in Ohio in which remains of the <em class="co-c">Megalonyx jeffersonii</em> have been found. The counties are:
+                </p>
+                <p>
+                    <i class="fas fa-paw co-m"></i>: Darke
+                    <br>
+                    <i class="fas fa-paw co-o"></i>: Fairfield
+                    <br>
+                    <i class="fas fa-paw co-kg"></i>: Holmes
+                    <br>
+                    <i class="fas fa-paw kentBlue"></i>: Huron
+                </p>
                 <p class="m-0">
-
+                    The closest fossils to Kent State - Stark came from Berlin Township, Holmes county in 1890, and
+                    can be seen in reconstructed form at the <a href="https://ortongeologicalmuseum.osu.edu/">Ohio State University Orton Geological Museum</a> (Figure 4) <span class="kentBlue">("Ground Sloth")</span>.
                 </p>
             </div>
         </div>
 
 
-        <div class="modal fade" id="Modal7" tabindex="-1">
+        <div class="modal fade" id="Modal8" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content" style="background-color: var(--blk);">
                     <div class="modal-header">
@@ -451,7 +482,12 @@
                     </svg>
                     Bradford, Alina. “Facts About the Giant Ground Sloth.” <em>LiveScience</em>, Purch, 5 Nov. 2016, <a href="https://www.livescience.com/56762-giant-ground-sloth.html#:~:text=The%20giant%20ground%20sloth%20was,forests%20along%20rivers%20or%20lakes.&text=Giant%20ground%20sloths%20were%20large,related%20to%20anteaters%20and%20armadillos">www.livescience.com/56762-giant-ground-sloth.html#:~:text=The%20giant%20ground%20sloth%20was,forests%20along%20rivers%20or%20lakes.&text=Giant%20ground%20sloths%20were%20large,related%20to%20anteaters%20and%20armadillos</a>.
                 </p>
-
+                <p>
+                    <svg data-icon="claw-marks" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 20px;">
+                        <path fill="var(--lt-gold)" d="M6.99 224.51c-5-2.37-9.4 4.09-5.49 8l85.12 85.13c6 6 9.37 14.14 9.37 22.63V384h43.74c8.49 0 16.63 3.37 22.63 9.37l117.15 117.16c3.86 3.86 10.32-.56 7.99-5.49C206.4 333.11 63.36 251.26 6.99 224.51zM246.63 29.63c6 6 9.37 14.14 9.37 22.63V96h43.74c8.49 0 16.63 3.37 22.63 9.37l52.26 52.26c6 6 9.37 14.14 9.37 22.63V224h43.73c8.49 0 16.63 3.37 22.63 9.37l53.16 53.16c3.86 3.86 10.32-.56 7.99-5.49C430.4 109.11 287.36 27.26 230.99.51c-5-2.37-9.4 4.09-5.49 8l21.13 21.12zm-42.36 90.69c-7.8-6.05-12.27-15.15-12.27-25.03V64h-57.99c-6.01 0-12.04-1.84-17.12-5.05C74.85 32.39 38.37 13.23 12.42.91 3.54-3.3-4.28 8.18 2.67 15.13l179.96 179.96c6 6 9.37 14.14 9.37 22.63V256h38.29c8.49 0 16.62 3.37 22.63 9.37l89.71 89.71c6 6 9.37 14.14 9.37 22.63V416h38.29c8.49 0 16.62 3.37 22.63 9.37l84.01 84.01c6.86 6.86 18.34-.99 14.2-9.76-82.73-175.34-201.55-297.65-306.86-379.3z"></path>
+                    </svg>
+                    “Ground Sloth” <em>Ohio Memory Collection</em>, <a href="https://ohiomemory.org/digital/collection/p267401coll36/id/8959/">https://ohiomemory.org/digital/collection/p267401coll36/id/8959/</a>.
+                </p>
                 <p class="header pl-3">Misc</p>
         		<hr>
                 <p>
